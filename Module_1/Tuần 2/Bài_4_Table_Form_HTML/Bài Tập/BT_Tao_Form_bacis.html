@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Tập Tạo Form Đơn Giản</title>
+    <style>
+        .formsothich{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width:40%;
+        padding:6rem;
+        background: red;
+        box-sizing: border-box;
+        box-shadow: 0 10px 30px rgba(0,0,0,1);
+        border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="formsothich">
+
+<h3 style="background-color: greenyellow" "><center>Sở Thích Của Bạn</center></h3>
+ <form >
+
+    <p> <b>Họ Và Tên : </b><input type="text" name="your name"  ></p>
+    <p><b>Email : </b> <input type="text" name="yourEmail" size="10"></p>
+    <h3 >Sở Thích :</h3>
+     <p style="color: greenyellow">
+        <input type="checkbox" name="hobby" value="thể thao"> Thể Thao
+        <input type="checkbox" name="hobby" value="âm nhạc">Âm Nhạc
+        <input type="checkbox" name="hobby" value="đọc sách">Đọc Sách <br/>
+        <input type="checkbox" name="hobby" value="chơi game"> Chơi game
+        <input type="checkbox" name="hobby" value="điện ảnh">Điện ẢNh
+        <input type="checkbox" name="hobby" value="du lịch"> Du Lịch <br/>
+        <input type="checkbox" name="hobby" value="lướt web"> Lướt Web
+        </p>
+
+    <input type="submit" name="submit form" value="Gửi Thông Tin">
+    <input type="reset" name="reset form" value="Nhập Lại">
+</div>
+</body>
+</html>
