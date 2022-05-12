@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Tập Tạo Form Đơn Giản</title>
+    <style>
+        .formsothich{
+            font-size: 30px;
+            color: red;
+
+        }
+    </style>
+</head>
+    <h3 style="background-color: orange ; color: white ; text-align: center ; font-size: 50px" >Sở Thích Của Bạn</h3>
+
+ <form action="BT" method="post" style="background-color: floralwhite">
+    <table>
+        <tr style="text-align: center ; font-size: 30px">
+            <th  style="color: blue"> Họ và Tên </th>
+            <td> <input type="text" name="ten" > </td>
+        </tr>
+        <tr style="text-align: left ; font-size: 30px" >
+            <th  style="color: blue" > Email </th>
+            <td> <input type="text" name="email"></td>
+        </tr>
+
+    </table>
+     <table>
+            <tr  style="font-size: 30px">
+                <th rowspan="5" style="color: blue" >Sở Thích </th>
+            </tr>
+            <tr class="formsothich">
+                <td><input type="checkbox" name="hobby" value="thể thao"> Thể Thao</td>
+                <td><input type="checkbox" name="hobby" value="âm nhạc"> âm nhạc</td>
+                <td><input type="checkbox" name="hobby" value="Đọc Sách"> Đọc Sách</td>
+            </tr>
+            <tr class="formsothich">
+                <td><input type="checkbox" name="hobby" value="Đọc Sách"> Đọc Sách</td>
+                <td><input type="checkbox" name="hobby" value="Điện ẢNh"> Điện Ảnh</td>
+                <td><input type="checkbox" name="hobby" value="Du Lịch"> Du Lịch</td>
+            </tr>
+            <tr class="formsothich">
+                 <td><input type="checkbox" name="hobby" value="Lướt Web"> Lướt Web</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" name="submit form" value="Gửi Thông Tin">
+                    <input type="reset" name="reset form" value="Nhập Lại">
+                </td>
+                <td></td>
+            </tr>
+     </table>
+ </form>
+
+<h3 style="background-color: lightskyblue ; color: blue; text-align: center ; font-size: 50px" >Đăng Kí Học Viên</h3>
+     <form action="BT_Tao_Form_Dongian.html" method="post" style="background-color: greenyellow">
+        <table>
+            <tr style="text-align: left ; font-size: 30px ; color: darkblue">
+                <th>Họ Và Tên </th>
+                <td><input type="text" name="ten"></td>
+            </tr>
+            <tr style="text-align: left; font-size: 30px ;color: darkblue" >
+                <th> Ngày Sinh </th>
+                <td><input type="text" name="date"></td>
+            </tr>
+        </table>
+        <h2 style="color: darkblue">Giới Tính : <input type="radio" name="gender" > <span style="color: black">Nam</span>
+                                    <input type="radio" name="gender" > <span  style=" color: black"> Nữ</span>
+        </h2>
+        <table>
+            <tr>
+                <th rowspan="6"></th>
+            </tr>
+            <tr style="text-align: left ; font-size: 30px ; color: darkblue">
+                <th> Địa Chỉ </th>
+                <td> <textarea cols="20" rows="3"></textarea></td>
+            </tr>
+            <tr style="text-align: left ; font-size: 30px ; color: darkblue">
+                <th> Lớp</th>
+                <td>
+                    <select>
+                        <option name="cla"> --Chọn-- </option>
+                        <option name="cla"> Lớp 1- Lớp 5 </option>
+                        <option name="cla"> Lớp 6 - Lớp 9 </option>
+                        <option name="cla"> Lớp 10 - Lớp 12 </option>
+                        <option name="cla"> Đại Học </option>
+                    </select>
+                </td>
+            <tr style="text-align: left ; font-size: 30px ; color: darkblue">
+                <th> Email </th>
+                <td> <input type="email" name="mail"></td>
+            </tr>
+             <tr style="text-align: center ; font-size: 30px ; color: darkblue">
+                <th> Điện Thoại</th>
+                <td><input type="number" name="phone"> </td>
+            </tr>
+            <tr style="text-align: left ; font-size: 30px ; color: darkblue">
+                <td></td>
+                <td><input type="submit" name="sub" value="Đăng Kí"> <button type="button"> Đăng Nhập</td>
+            </tr>
+        </table>
+     </form>
+ </body>
+</html>
