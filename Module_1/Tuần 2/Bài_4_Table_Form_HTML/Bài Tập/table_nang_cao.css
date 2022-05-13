@@ -1,0 +1,13 @@
+#black{
+    background-color: black;
+}
+#background{
+    background-color: yellow;
+}
+table ,td{
+    border-spacing: 0px;
+    padding: 10px;
+}
+/* table{
+    border-spacing: 0px;
+} */
