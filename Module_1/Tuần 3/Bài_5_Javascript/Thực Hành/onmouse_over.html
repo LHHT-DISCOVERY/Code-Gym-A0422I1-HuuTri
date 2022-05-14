@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bắt Sự Kiện On Mouse Over</title>
+</head>
+<body>
+    <p style="color: rgb(0, 255, 213); background-color: black; ">facebook me<a href="https://www.facebook.com/photo?fbid=534732761599873&set=pcb.534733378266478" id ="demo"> click vào đây</a>
+    
+    <span style="color: rgb(0, 255, 0);">Trí Trắng Trẻo</span>
+    
+    </p>
+    <script>
+        let demo = document.getElementById("demo")
+        demo.addEventListener("mouseover",mouseover)
+        demo.addEventListener("mouseout",mouseout)
+        function mouseover(){
+            document.getElementById("demo").style.color = "red"
+        }
+        function mouseout (){
+            document.getElementById("demo").style.color="black"
+        }
+    </script>
+</body>
+</html>

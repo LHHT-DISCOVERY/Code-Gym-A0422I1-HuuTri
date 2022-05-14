@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On change bắt sự kiện</title>
+</head>
+<body>
+    <select id ="do">
+        <option> -- Chọn --</option>
+        <option value="audi"> Audi</option>
+        <option value="honda"> Honda</option>
+        <option value="mercerdec"> Mecerdec</option>
+    </select>
+    <script>
+        // function do_something(){
+        //    var v_l = document.getElementById("do").value;
+        //    alert(v_l)
+        // }
+        // hoặc
+        let valuElement = document.getElementById("do")
+        valuElement.addEventListener("change" , changeFunction);
+        function changeFunction(){
+            let selectvalue = document.getElementById("do").value;
+            alert(selectvalue)
+        }
+    </script>
+</body>
+</html>

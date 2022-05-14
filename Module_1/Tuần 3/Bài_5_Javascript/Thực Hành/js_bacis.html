@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực Hành Hiển Thị Javascrpit</title>
+</head>
+
+<body>
+    <button type="button" onclick="baitap_1();" > Kick Bài Tập 1 </button>
+    <button type="button" onclick="baitap_2();">Kich  Bài Tập 2</button>
+    <div id="baitap2"> </div>
+    <button type="button" onclick="baitap_3();"> Kich Bài Tập 3</button>
+    <button type="button" onclick="baitap_4();"> Kich Bài Tập 4 </button>
+    <script>
+        function baitap_1(){
+            alert("Hello Đây Là Bài tập 1")
+        }
+        let doi = true;
+       function baitap_2(){
+           if(doi){
+                document.getElementById("baitap2").innerHTML="Hello Đây Là Bài Tập 2";
+                doi = false;
+            }
+            else{
+                document.getElementById("baitap2").innerHTML=" ";
+                doi = true;
+                
+            }
+       }
+       function baitap_3(){
+           document.write("Hello Đây Là Bài Tập 3")
+       }
+       function baitap_4 (){
+           console.log("Đây Là Bài Tập 4")};
+    </script>
+   
+   <script type="text/javascript">
+       let flag = true;
+       function c_m(){
+           let data = " <form action = 'Comment'> " + " Name:<input type='text' name='name'>" + 
+           "<br>Comment : <textarea clos = '50' rows = '8'></textarea>"  
+           + "</form>"
+          
+           if(flag) {
+               document.getElementById("locaction").innerHTML = data;
+               flag = false;
+               
+           }
+           else{
+               document.getElementById("locaction").innerHTML="";
+               flag = true;
+           }
+        }
+   </script>
+   <button type="button" onclick="c_m();"> Comment </button>
+   <input type="submit" value="Submit">
+   <div id = "locaction"  ></div>
+</body>
+</html>
