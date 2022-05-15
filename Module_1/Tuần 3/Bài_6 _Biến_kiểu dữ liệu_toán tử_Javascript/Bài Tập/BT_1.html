@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Tập 1</title>
+</head>
+<body>
+    <script>
+        let input_ly = prompt(" Nhập vào điểm vật lý ");
+        let input_hoa = prompt(" Nhập vào điểm hóa học ");
+        let input_sinh= prompt(" Nhập vào điểm sinh học ");
+        let ly = parseInt(input_ly)
+        let hoa = parseInt(input_hoa)
+        let sinh = parseInt(input_sinh)
+        let total = ly + hoa + sinh ;
+        let dtb = (ly + hoa +sinh) / 3
+        document.write( " điểm tổng 3 môn là  : " + total + "<br>")
+        document.write( " điểm trung bình 3 môn là : " + dtb)
+    </script>
+</body>
+</html>

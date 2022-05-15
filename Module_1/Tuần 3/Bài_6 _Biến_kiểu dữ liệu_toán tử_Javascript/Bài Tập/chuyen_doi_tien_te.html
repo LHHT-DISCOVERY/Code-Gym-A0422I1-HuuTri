@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển Đổi Tiền tệ</title>
+</head>
+<body style="background-color: rgb(99, 198, 188); ">
+    <h1 style=" color: rgb(162, 254, 164);text-align: center;">
+        <span id ="dimo" > Chuyển Đổi Tiền Tệ</span>
+    </h1>
+    <form action="chuyen_doi_tien_te.html">
+        <table style="width: 50%; text-align: center;">
+            <tr id="dimo">
+                <th>Amount </th>
+                <th>From Currentcy </th>
+                <th>To Currenetcy</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td><input id="uniqueID" type="number" name="sotien"></td>
+                <td> 
+                    <select id="QG">
+                        <option value="VietNam"> Việt Nam</option>
+                        <option value="Canada"> Canada</option>
+                        <option value="USA"> Mỹ </option>
+                        <option value="LonDon">Bảng Anh</option>
+                        <option value="Euro"> Euro</option>
+                    </select> 
+                </td>
+                <td>
+                    <select id="From_QG" >
+                        <option value="Euro"> Euro</option>
+                        <option value="LonDon">Bảng Anh</option>
+                        <option value="USA"> Mỹ </option>
+                        <option value="Canada"> Canada</option>
+                        <option value="VietNam"> Việt Nam</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="button" value="Convert" onclick="showkq();">
+                </td>
+            </tr>
+        </table> <br>
+        <h3 id = "demo"></h3>
+    </form>
+   
+    <script>
+        let flag = true
+        document.write(2+4 +"1")
+        function showkq(){
+            let so_tien = document.getElementById("uniqueID").value
+            let q_g = document.getElementById("QG").value
+            let fr_q_g = document.getElementById("From_QG").value
+            if(fr_q_g ==q_g){
+                kq = so_tien * 23
+            }
+            if (flag){
+                document.getElementById("demo").innerHTML = "RESULT : " + kq + " VND";
+                flag = false ;
+            }
+            else{
+                document.getElementById("demo").innerHTML = "";
+                flag =true;
+            }
+        }
+        let dimo = document.getElementById("dimo")
+        dimo.addEventListener("mouseover" , mouseoevr)
+        dimo.addEventListener("mouseout" , mouseout)
+        function mouseoevr(){
+            document.getElementById("dimo").style.color="rgb(1, 255, 6)"
+        }
+        function mouseout(){
+            document.getElementById("dimo").style.color = "rgb(5, 172, 8)"
+        }
+    </script>
+</body>
+</html>
