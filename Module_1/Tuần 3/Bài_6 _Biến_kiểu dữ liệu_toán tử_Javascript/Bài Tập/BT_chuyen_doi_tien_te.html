@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chuyển Đổi Tiền tệ</title>
 </head>
-<body style="background-color: rgb(99, 198, 188); ">
-    <h1 style=" color: rgb(162, 254, 164);text-align: center;">
+<body style="background-color: rgb(161, 187, 184); text-align: center; ">
+    <h1 style=" color: rgb(162, 254, 164);text-align: center; font-size: 60px;">
         <span id ="dimo" > Chuyển Đổi Tiền Tệ</span>
-    </h1>
+    </h1><br><br>
     <form action="chuyen_doi_tien_te.html">
-        <table style="width: 50%; text-align: center;">
+        <table style="width: 90%; text-align: center;" cellspacing="12">
             <tr id="dimo">
                 <th>Amount </th>
                 <th>From Currentcy </th>
                 <th>To Currenetcy</th>
-                <th></th>
+               
             </tr>
             <tr>
-                <td><input id="uniqueID" type="number" name="sotien"></td>
+                <td><input id="uniqueID" type="number" name="sotien" style= "font-size: 20px;"></td>
                 <td> 
-                    <select id="QG">
+                    <select id="QG" style="font-size: 20px;">
                         <option value="VietNam"> Việt Nam</option>
                         <option value="Canada"> Canada</option>
                         <option value="USA"> Mỹ </option>
@@ -30,7 +30,7 @@
                     </select> 
                 </td>
                 <td>
-                    <select id="From_QG" >
+                    <select id="From_QG" style="font-size: 20px;">
                         <option value="Euro"> Euro</option>
                         <option value="LonDon">Bảng Anh</option>
                         <option value="USA"> Mỹ </option>
@@ -39,25 +39,21 @@
                     </select>
                 </td>
                 <td>
-                    <input type="button" value="Convert" onclick="showkq();">
+                    <input  style="font-size: 20px;" type="button" value="Convert" onclick="showkq();">
                 </td>
             </tr>
-        </table> <br>
-        <h3 id = "demo"></h3>
+        </table> <br><br>
+        <h3 style="font-size: 50px  ;color: rgb(254, 67, 67);" id = "demo"></h3>
     </form>
    
     <script>
         let flag = true
-        document.write(2+4 +"1")
         function showkq(){
             let so_tien = document.getElementById("uniqueID").value
             let q_g = document.getElementById("QG").value
             let fr_q_g = document.getElementById("From_QG").value
-            if(fr_q_g ==q_g){
-                kq = so_tien * 23
-            }
             if (flag){
-                document.getElementById("demo").innerHTML = "RESULT : " + kq + " VND";
+                document.getElementById("demo").innerHTML = "RESULT : " + so_tien + " VND";
                 flag = false ;
             }
             else{
