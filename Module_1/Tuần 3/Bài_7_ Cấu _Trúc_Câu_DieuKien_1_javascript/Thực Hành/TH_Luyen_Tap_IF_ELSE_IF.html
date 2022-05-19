@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TH_Luyen_Tap_IF_ELSE_IF</title>
+</head>
+<body>
+    
+    <script>
+        let input = prompt("User")
+        if (input == "Admin"){
+           let input_mk = prompt("Nhập vào mật khẩu")
+           if(input_mk == "TheMaster"){
+               document.write("Well come")
+               document.getElementById("demo")
+           }else if(input_mk = null){
+               document.write("Hủy")
+           }else{
+               document.write(" Sai password")
+           }
+        }else if (input == null){
+            document.write("Delete")
+        }else{
+            document.write("Bạn Đã Nhập Sai Rồi")
+        }
+    </script>
+</body>
+</html>

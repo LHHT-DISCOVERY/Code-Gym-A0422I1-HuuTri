@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js cơ bản</title>
+</head>
+<body>
+    
+    <script>
+        // Tiền Tố , Hậu Tố
+    // let  a = 6 ;
+    // let sum = ++a + a++ - --a + a-- ; // 7 + 7 - 7+ 7
+    // document.write(sum )
+
+        //  Toán Tử 3 Ngôi 
+    // let input_age = prompt("Nhập vào số tuổi của bạn : ")
+    // let age = parseInt(input_age)
+    // let du_doan = (age>18) ? " bạn đã già" : " bạn còn trẻ"
+    // document.write(du_doan)
+
+        // switch case
+    // let a = prompt(" nhập vào a : ")
+    // let b = prompt(" nhập vào a : ")
+    // let a_s = parseInt(a)
+    // let b_s = parseInt(b)
+    // let phep_toan = prompt("nhập vào phép toán bạn muốn thực hiện <br>")
+    //     switch(phep_toan){
+    //         case "+":
+    //             let sum = a_s + b_s;
+    //             document.write(sum)
+    //             break ;
+    //             case "-":
+    //                 let h = a_s - b_s
+    //                 document.write(h)
+    //                 break;
+    //                 default :
+    //                 document.write("nhập ngu")
+    //             }
+    let a_s =prompt("nhập vào 1 số ")
+    let a = parseInt(a_s)
+
+    let day = ""
+    switch (a) {
+    case 0:
+        day = "Chủ Nhật";
+        document.write(day)
+        break;
+    case 1:
+        day = "Thứ hai";
+        document.write(day)
+        break;
+    case 2:
+        day = "Thứ ba";
+        document.write(day)
+        break;
+    case 3:
+        day = "Thứ tư";
+        document.write(day)
+        break;
+    case 4:
+        day = "Thứ năm";
+        document.write(day)
+        break;
+    case 5:
+        day = "Thứ sáu";
+        document.write(day)
+        break;
+    case 6:
+        day = "Thứ bảy";
+        document.write(day)
+        break;
+    default:
+        document.write("nhập Ngu")
+
+    }
+
+    </script>
+</body>
+</html>

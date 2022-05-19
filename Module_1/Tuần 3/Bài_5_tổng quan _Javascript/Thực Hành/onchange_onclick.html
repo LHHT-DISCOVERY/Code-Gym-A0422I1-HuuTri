@@ -13,7 +13,12 @@
         <option value="honda"> Honda</option>
         <option value="mercerdec"> Mecerdec</option>
     </select>
+    <button onclick="time();"> ckick vào đây để xem thời gian</button>
+    <p id="tim"></p>
     <script>
+        function time(){
+            document.getElementById("tim").innerHTML=Date()
+        }
         // function do_something(){
         //    var v_l = document.getElementById("do").value;
         //    alert(v_l)

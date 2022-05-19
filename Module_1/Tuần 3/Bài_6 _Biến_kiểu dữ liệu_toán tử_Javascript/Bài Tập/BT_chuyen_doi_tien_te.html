@@ -6,36 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chuyển Đổi Tiền tệ</title>
 </head>
-<body style="background-color: rgb(161, 187, 184); text-align: center; ">
-    <h1 style=" color: rgb(162, 254, 164);text-align: center; font-size: 60px;">
+<body style="background-image: url('i3.jpg');">
+    <h1 style=" color: rgb(255, 0, 98);text-align: center; font-size: 60px;">
         <span id ="dimo" > Chuyển Đổi Tiền Tệ</span>
     </h1><br><br>
     <form action="chuyen_doi_tien_te.html">
         <table style="width: 90%; text-align: center;" cellspacing="12">
-            <tr id="dimo">
+            <tr style="color: rgb(0, 255, 255);font-size: 30px;" id="dimo">
                 <th>Amount </th>
-                <th>From Currentcy </th>
+                <th>From Currentcy </th>x
                 <th>To Currenetcy</th>
                
             </tr>
             <tr>
-                <td><input id="uniqueID" type="number" name="sotien" style= "font-size: 20px;"></td>
+                <td><input id="amount" type="text" name="sotien" style= "font-size: 20px;"></td>
                 <td> 
-                    <select id="QG" style="font-size: 20px;">
-                        <option value="VietNam"> Việt Nam</option>
-                        <option value="Canada"> Canada</option>
+                    <select id="QG" style="font-size: 20px; color: rgb(255, 0, 0);">
+                        <option  value="VietNam"> Việt Nam</option>
                         <option value="USA"> Mỹ </option>
-                        <option value="LonDon">Bảng Anh</option>
-                        <option value="Euro"> Euro</option>
+                        <option value="Lao"> Lào </option>
                     </select> 
                 </td>
                 <td>
-                    <select id="From_QG" style="font-size: 20px;">
-                        <option value="Euro"> Euro</option>
-                        <option value="LonDon">Bảng Anh</option>
+                    <select id="From_QG" style="font-size: 20px;color: rgb(255, 0, 115)">
                         <option value="USA"> Mỹ </option>
-                        <option value="Canada"> Canada</option>
                         <option value="VietNam"> Việt Nam</option>
+                        <option value="Lao"> Lào</option>
                     </select>
                 </td>
                 <td>
@@ -43,24 +39,38 @@
                 </td>
             </tr>
         </table> <br><br>
-        <h3 style="font-size: 50px  ;color: rgb(254, 67, 67);" id = "demo"></h3>
+        <h3 style="font-size: 30px; text-align: center ;color: rgb(255, 0, 0);" id = "demo"></h3>
     </form>
    
     <script>
         let flag = true
         function showkq(){
-            let so_tien = document.getElementById("uniqueID").value
+            let so_tien = document.getElementById("amount").value
             let q_g = document.getElementById("QG").value
             let fr_q_g = document.getElementById("From_QG").value
-            if (flag){
-                document.getElementById("demo").innerHTML = "RESULT : " + so_tien + " VND";
-                flag = false ;
-            }
-            else{
-                document.getElementById("demo").innerHTML = "";
-                flag =true;
+            if( isNaN(so_tien) || so_tien <= 0 ){
+                var RESULT = " Chọn Số Tiền Không Hợp Lệ" ;
+                document.getElementById("demo").innerHTML =  RESULT ;
+            }else{
+                if(q_g == fr_q_g){
+                    var RESULT = " Bạn ĐÃ Chọn Cùng Loại Tiền " ;
+                }else if (q_g == "VietNam" &&  fr_q_g =="USA" ){
+                    var RESULT = so_tien / 230000 + " USD" ;
+                }else if (q_g == "USA" &&  fr_q_g =="VietNam"){
+                    var RESULT = so_tien * 23000 + " VND";
+                }else if(q_g == "VietNam" && fr_q_g == "Lao" ){
+                    var RESULT = so_tien * 572.36 + " Kíp"
+                }else if (q_g == "Lao" && fr_q_g == "VietNam"){
+                    var RESULT = so_tien / 572.36 + "VND" 
+                }else if(q_g == "Lao" && fr_q_g == "USA"){
+                    var RESULT = so_tien * 13.245 + " Kíp"
+                }else if(q_g == "USA" && fr_q_g =="Lao"){
+                    var RESULT = so_tien / 13.245 + " USD"
+                }
+                    document.getElementById("demo").innerHTML =  RESULT ;
             }
         }
+
         let dimo = document.getElementById("dimo")
         dimo.addEventListener("mouseover" , mouseoevr)
         dimo.addEventListener("mouseout" , mouseout)
@@ -68,8 +78,9 @@
             document.getElementById("dimo").style.color="rgb(1, 255, 6)"
         }
         function mouseout(){
-            document.getElementById("dimo").style.color = "rgb(5, 172, 8)"
+            document.getElementById("dimo").style.color = "rgb(255, 0, 98)"
         }
     </script>
+    
 </body>
 </html>
