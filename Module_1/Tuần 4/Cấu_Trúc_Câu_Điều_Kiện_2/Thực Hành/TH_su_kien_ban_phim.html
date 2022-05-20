@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực Hành Sự Kiện Bàn Phím</title>
+</head>
+<body onload="docReady()">
+
+    <img src="4058-Kangaroo-Singles-1.JPG" id="MyImg" style="position: absolute;left: 0; top: 0 ;" height= "100" width="80">
+    <script>
+        function len() {
+            let Element = document.getElementById("MyImg")
+            Element.style.top = parseInt(Element.style.top) - 5 + "px"
+        }
+        function Xuong() {
+            let Element = document.getElementById("MyImg")
+            Element.style.top = parseInt(Element.style.top) + 5 + "px"
+        }
+        function  trai() {
+            let Element = document.getElementById("MyImg")
+            Element.style.left = parseInt(Element.style.left) - 5 + "px"
+        }
+        function phai() {
+            let Element = document.getElementById("MyImg");
+            Element.style.left = parseInt(Element.style.left) + 5 + "px"
+        }
+        function moveSelection(evt) {
+
+
+            switch (evt.keyCode) {
+                case 2 :
+                    Xuong();
+                    break;
+                case 8 :
+                    len();
+                    break;
+                case 4 :
+                    trai();
+                    break;
+                case 6:
+                    phai();
+                    break;
+            }
+        }
+        function docReady() {
+            window.addEventListener('keydown', moveSelection);
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Tập Tính Chỉ Số Cân Nặng Của Cơ Thể</title>
+</head>
+<body>
+<script>
+    let inputHeight = prompt("Nhập vào chiều cao của bạn")
+    let Height = parseInt(inputHeight)
+    let inputWeight = prompt("Nhập vào cân nặng của bạn")
+    let Weight = parseInt(inputWeight)
+
+    let Bmi = Weight/(Height)
+    if(Bmi <= 0){
+        alert("nhập sai chiều cao vs cân nặng sai")
+    }
+    else if( Bmi < 18.5){
+        alert("UnderWeight")
+    }else if(Bmi < 25){
+        alert("Normal")
+    }else if(Bmi < 30){
+        alert("overWeight")
+    }else if(Bmi >= 30){
+        alert("Obese")
+    }
+</script>
+
+</body>
+</html>

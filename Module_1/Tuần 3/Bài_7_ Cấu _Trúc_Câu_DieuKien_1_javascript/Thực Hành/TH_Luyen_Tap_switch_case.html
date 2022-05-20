@@ -57,15 +57,19 @@
 
 
         // c2 sd switch case 
-        switch(a){
-            case a :
+        switch(a < 0){
+            case true :
                 alert("-1")
-            case 0 :
-                alert("0")
                 break;
-            default:
-                alert("1")
-                break
+            case false:
+                switch (a > 0) {
+                case true:
+                    alert("1")
+                        break;
+                default:
+                    alert("0")
+                        break;
+                }
         }
     </script>
 </body>

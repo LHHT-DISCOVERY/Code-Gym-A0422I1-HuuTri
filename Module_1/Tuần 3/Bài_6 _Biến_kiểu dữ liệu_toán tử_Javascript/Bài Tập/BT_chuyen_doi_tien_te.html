@@ -25,7 +25,7 @@
                         <option  value="VietNam"> Việt Nam</option>
                         <option value="USA"> Mỹ </option>
                         <option value="Lao"> Lào </option>
-                    </select> 
+                    </select>
                 </td>
                 <td>
                     <select id="From_QG" style="font-size: 20px;color: rgb(255, 0, 115)">
@@ -35,7 +35,7 @@
                     </select>
                 </td>
                 <td>
-                    <input  style="font-size: 20px;" type="button" value="Convert" onclick="showkq();">
+                    <input  style="font-size: 20px;" type="button" value="Convert" onclick="showKq();">
                 </td>
             </tr>
         </table> <br><br>
@@ -43,31 +43,37 @@
     </form>
    
     <script>
-        let flag = true
-        function showkq(){
+        function showKq(){
             let so_tien = document.getElementById("amount").value
             let q_g = document.getElementById("QG").value
             let fr_q_g = document.getElementById("From_QG").value
             if( isNaN(so_tien) || so_tien <= 0 ){
-                var RESULT = " Chọn Số Tiền Không Hợp Lệ" ;
+                let RESULT = " Chọn Số Tiền Không Hợp Lệ" ;
                 document.getElementById("demo").innerHTML =  RESULT ;
             }else{
                 if(q_g == fr_q_g){
-                    var RESULT = " Bạn ĐÃ Chọn Cùng Loại Tiền " ;
-                }else if (q_g == "VietNam" &&  fr_q_g =="USA" ){
-                    var RESULT = so_tien / 230000 + " USD" ;
-                }else if (q_g == "USA" &&  fr_q_g =="VietNam"){
-                    var RESULT = so_tien * 23000 + " VND";
-                }else if(q_g == "VietNam" && fr_q_g == "Lao" ){
-                    var RESULT = so_tien * 572.36 + " Kíp"
-                }else if (q_g == "Lao" && fr_q_g == "VietNam"){
-                    var RESULT = so_tien / 572.36 + "VND" 
-                }else if(q_g == "Lao" && fr_q_g == "USA"){
-                    var RESULT = so_tien * 13.245 + " Kíp"
-                }else if(q_g == "USA" && fr_q_g =="Lao"){
-                    var RESULT = so_tien / 13.245 + " USD"
-                }
+                    let RESULT = " Bạn ĐÃ Chọn Cùng Loại Tiền " ;
                     document.getElementById("demo").innerHTML =  RESULT ;
+                }else if (q_g == "VietNam" &&  fr_q_g =="USA" ){
+                    let RESULT = so_tien / 230000 + " USD" ;
+                    document.getElementById("demo").innerHTML =  RESULT ;
+                }else if (q_g == "USA" &&  fr_q_g =="VietNam"){
+                    let RESULT = so_tien * 23000 + " VND";
+                    document.getElementById("demo").innerHTML =  RESULT ;
+                }else if(q_g == "VietNam" && fr_q_g == "Lao" ){
+                    let RESULT = so_tien * 572.36 + " Kíp"
+                    document.getElementById("demo").innerHTML =  RESULT ;
+                }else if (q_g == "Lao" && fr_q_g == "VietNam"){
+                    let RESULT = so_tien / 572.36 + "VND"
+                    document.getElementById("demo").innerHTML =  RESULT ;
+                }else if(q_g == "Lao" && fr_q_g == "USA"){
+                    let RESULT = so_tien * 13.245 + " Kíp"
+                    document.getElementById("demo").innerHTML =  RESULT ;
+                }else if(q_g == "USA" && fr_q_g =="Lao"){
+                    let RESULT = so_tien / 13.245 + " USD"
+                    document.getElementById("demo").innerHTML =  RESULT ;
+                }
+
             }
         }
 
@@ -75,9 +81,9 @@
         dimo.addEventListener("mouseover" , mouseoevr)
         dimo.addEventListener("mouseout" , mouseout)
         function mouseoevr(){
-            document.getElementById("dimo").style.color="rgb(1, 255, 6)"
+            document.getElementById("dimo").style.color="rgb(40,248,40)"
         }
-        function mouseout(){
+        function mouseout() {
             document.getElementById("dimo").style.color = "rgb(255, 0, 98)"
         }
     </script>
