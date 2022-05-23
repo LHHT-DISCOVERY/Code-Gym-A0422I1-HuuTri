@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Tập Máy Tính Đơn Giản</title>
+    <link rel="stylesheet" href="maytinh.css">
+</head>
+<body>
+    <h1>Bài Tập Máy Tính Đơn Giản</h1>
+    
+    <table>
+        <tr>
+            <th colspan="4" > <p class="manhHinh" id="Result" ></p> </th>
+        </tr>
+        <tr id="giatri">
+            <th><input class="button" type="button" value="1"  onclick="hamSo(1);" ></th>
+            <th><input class="button" type="button" value="2" onclick="hamSo(2);"></th>
+            <th><input class="button" type="button" value="3" onclick="hamSo(3);"></th>
+            <th><input class="button" type="button" value="+" onclick="hamTinhCong('+');"></th>
+
+        </tr>
+        <tr>
+            <th><input class="button"   type="button" value="4" onclick="hamSo(4)"></th>
+            <th><input class="button"   type="button" value="5" onclick="hamSo(5)"></th>
+            <th><input class="button"   type="button" value="6" onclick="hamSo(6)"></th>
+            <th><input  class="button"  type="button" value="-" onclick="hamTinhTru('-');" ></th>
+
+        </tr>
+        <tr >
+            <th><input class="button"  type="button" value="7" onclick="hamSo(7)"></th>
+            <th><input class="button"  type="button" value="8" onclick="hamSo(8)"></th>
+            <th><input class="button"  type="button" value="9" onclick="hamSo(9)"></th>
+            <th><input class="button"  type="button" value="x" onclick="hamTinhNhan('x');"></th>
+
+        </tr>
+        <tr>
+            <th><input class="button"  type="button" value="C"></th>
+            <th><input class="button"  type="button" value="0" onclick="hamSo(0)" ></th>
+            <th><input class="button"  type="button" value="=" onclick = "ketQuaTinhToan();"></th>
+            <th><input class="button"  type="button" value="/" onclick="hamTinh('/');"></th>
+
+        </tr>
+    </table>
+    <script src="mayTinh.js"></script>
+</body>
+</html>
