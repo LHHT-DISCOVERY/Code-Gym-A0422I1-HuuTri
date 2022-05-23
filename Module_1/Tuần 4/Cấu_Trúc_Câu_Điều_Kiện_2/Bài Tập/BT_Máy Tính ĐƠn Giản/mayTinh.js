@@ -2,18 +2,14 @@ function hamSo (number) {
       let a = document.getElementById("Result");
       a.innerHTML += parseInt(number);
 }
-function hamTinhCong(phepcong){
+function hamTinh(pheptinh){
       let b = document.getElementById("Result");
-      b.innerHTML += phepcong ;
+      b.innerHTML += pheptinh ;
 }
-function hamTinhTru(pheptru) {
-      let d = document.getElementById("Result");
-      d.innerHTML -= pheptru;
-
+function del() {
+      let e = document.getElementById("Result").innerHTML = " ";
 }
 function ketQuaTinhToan() {
       let c = document.getElementById("Result").innerHTML;
-      console.log(c)
       document.getElementById('Result').innerHTML = eval(c);
-      console.log(eval(c))
 }
