@@ -8,8 +8,8 @@
     <form>
     <img id="myImg" src="Hinh-anh-khung-long-cute-Diembaog.jpg" style="width: 500px">
     <h5> CLick vào nút bên dưới </h5>
-    <input type="button" onclick="moveRight();" value="click me right !" >
     <input type="button" onclick="moveLeft();" value="click me left !" >
+    <input type="button" onclick="moveRight();" value="click me right !" >
     </form>
     <script>
         let imgObj = null;
@@ -17,7 +17,7 @@
         function init(){
             imgObj = document.getElementById("myImg");
             imgObj.style.position ="relative"
-            imgObj.style.left='-100px'
+            imgObj.style.left='10px'
         }
         function  moveRight() {
             imgObj.style.left=parseInt(imgObj.style.left) + 100 + "px";

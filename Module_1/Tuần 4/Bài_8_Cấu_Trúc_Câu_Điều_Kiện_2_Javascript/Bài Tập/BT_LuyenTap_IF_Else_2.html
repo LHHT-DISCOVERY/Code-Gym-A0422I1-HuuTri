@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[*Bài tập] Luyện tập cấu trúc điều kiện 02</title>
+</head>
+<body>
+<script>
+        // BÀI 6 giải phương trình bật 1
+    // let soA = parseInt(prompt("nhập vào số A "))
+    // let soB = parseInt(prompt("nhập vào số B "))
+    // if(soA== 0){
+    //     if(soB == 0 ){
+    //     document.write("số A : " + soA + "<br>" )
+    //     document.write("số B : " + soB + "<br>")
+    //     document.write("Phương trình vừa nhập là : "+ soA +"X"  + "+" + soB  + "= 0" + "<br>")
+    //     document.write(" Phương trình vô số nghiệm " )
+    //     }else{
+    //     document.write("số A : " + soA + "<br>" )
+    //     document.write("số B : " + soB + "<br>")
+    //     document.write("Phương trình vừa nhập là : " + soA +"X"  + "+" + soB  + "= 0" + "<br>")
+    //     document.write(" Phương trình vô nghiệm"  )
+    //     }
+    // }
+    // else{
+    //         let X = -soB/soA
+    //         document.write("số A : " + soA + "<br>" )
+    //         document.write("số B : " + soB + "<br>")
+    //         document.write("Phương trình vừa nhập là : " + soA +"X"  + "+" + soB  + "= 0" + "<br>")
+    //         document.write(" kết quả X là  : " + X )
+    // }
+
+
+        // Bài 7 : Giải phương trình bậc 2.
+
+        let soA = parseInt(prompt("nhập vào số A "))
+        let soB = parseInt(prompt("nhập vào số B "))
+        let soC = parseInt(prompt("nhập vào số C "))
+        let delTa = soB*soB - (4*soA*soC)
+        if(delTa > 0 ){
+                    let x1 = (-soB + (Math.sqrt(delTa)) )/(2*soA)
+                    let x2 = (-soB - (Math.sqrt(delTa)) )/(2*soA)
+                    document.write("số A : " + soA + "<br>" )
+                    document.write("số B : " + soB + "<br>")
+                    document.write("số C : " + soC + "<br>")
+                    document.write("Delta là : " + delTa+ "<br>")
+                    document.write("Phương trình vừa nhập là : " + soA +"X^2"  + "+" + soB + "x " + "+" + soC  + "= 0" + "<br>")
+                    document.write(" kết quả X1 , X2 là  : " + "<br>" + " X1 là : "+ x1 + "<br>" + "X2 là : " + x2 )
+        }else  if (delTa == 0 ){
+            let xx = (-soB )/2*soA
+            document.write("số A : " + soA + "<br>" )
+            document.write("số B : " + soB + "<br>")
+            document.write("số C : " + soC + "<br>")
+            document.write("Delta là : " + delTa+ "<br>")
+            document.write("Phương trình vừa nhập là : " + soA +"X^2"  + "+" + soB + "x " + "+" + soC  + "= 0" + "<br>")
+            document.write("Phương trình có nghiệm kép là : " + xx )
+        }else {
+            document.write("số A : " + soA + "<br>" )
+            document.write("số B : " + soB + "<br>")
+            document.write("số C : " + soC + "<br>")
+            document.write("Delta là : " + delTa+ "<br>")
+            document.write("Phương trình vừa nhập là : " + soA +"X^2"  + "+" + soB + "x " + "+" + soC  + "= 0" + "<br>")
+            document.write("Phương trình Vô Nghiệm " )
+        }
+
+
+            // Bài 9 kiểm tra 3 cạnh của Tam Giác
+        // let canhA = parseInt(prompt("nhập vào cạnh A"))
+        // let canhB = parseInt(prompt("nhập vào Cạnh B "))
+        // let canhC = parseInt(prompt("nhập vào Cạnh C "))
+        // if( canhA > 0 && canhB > 0 && canhC > 0){
+        //     if( canhA+canhB > canhC && canhA + canhC > canhB && canhB+canhC > canhA){
+        //         document.write("A,B C là cạnh của Tam giác ")
+        //     }else {
+        //         document.write("A,B C không cạnh của Tam giác ")
+        //     }
+        // }else {
+        //     document.write("A , B , C Không là cạnh cảu một tam giác")
+        // }
+
+
+</script>
+</body>
+</html>
