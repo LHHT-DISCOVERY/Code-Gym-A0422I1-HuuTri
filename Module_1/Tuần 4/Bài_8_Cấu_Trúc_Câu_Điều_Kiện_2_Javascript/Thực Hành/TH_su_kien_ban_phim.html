@@ -6,9 +6,9 @@
 </head>
 <body onload="docReady()">
 
-    <img src="4058-Kangaroo-Singles-1.JPG" id="MyImg" style="position: absolute;left: 0; top: 0 ;" height= "200" width="200px">
+    <img src="4058-Kangaroo-Singles-1.JPG" id="MyImg" style="position: absolute;left: 0; top: 0 ;" height= "200px" width="200px">
     <script>
-        function len() {
+        function Len() {
             let Element = document.getElementById("MyImg")
             Element.style.top = parseInt(Element.style.top) - 5 + "px"
         }
@@ -16,29 +16,27 @@
             let Element = document.getElementById("MyImg")
             Element.style.top = parseInt(Element.style.top) + 5 + "px"
         }
-        function  trai() {
+        function  Trai() {
             let Element = document.getElementById("MyImg")
             Element.style.left = parseInt(Element.style.left) - 5 + "px"
         }
-        function phai() {
+        function Phai() {
             let Element = document.getElementById("MyImg");
             Element.style.left = parseInt(Element.style.left) + 5 + "px"
         }
         function moveSelection(evt) {
-
-
             switch (evt.keyCode) {
-                case 2 :
+                case  40:
                     Xuong();
                     break;
-                case 8 :
-                    len();
+                case 38 :
+                    Len();
                     break;
-                case 4 :
-                    trai();
+                case 37 :
+                    Trai();
                     break;
-                case 6:
-                    phai();
+                case 39:
+                    Phai();
                     break;
             }
         }

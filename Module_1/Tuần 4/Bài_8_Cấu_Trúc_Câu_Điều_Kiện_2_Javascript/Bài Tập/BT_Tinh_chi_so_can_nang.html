@@ -7,11 +7,11 @@
 <body>
 <script>
     let inputHeight = prompt("Nhập vào chiều cao của bạn")
-    let Height = parseInt(inputHeight)
+    let Height = parseFloat(inputHeight)
     let inputWeight = prompt("Nhập vào cân nặng của bạn")
-    let Weight = parseInt(inputWeight)
+    let Weight = parseFloat(inputWeight)
 
-    let Bmi = Weight/(Height)
+    let Bmi = Weight/(Height*Height)
     if(Bmi <= 0){
         alert("nhập sai chiều cao vs cân nặng sai")
     }
