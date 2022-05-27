@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[*Bài tập] Luyện tập vòng lặp 01</title>
+</head>
+
+<body>
+<input type="button" value="Chơi" onclick="choi();">
+<input type="button" value="Chơilai" onclick="choi()">
+
+</body>
+    <script>
+    function choi() {
+        let count = 0 ;
+        function Khoang10Dv() {
+            let e = Math.random()*10
+        }
+        function Khoang100Dv() {
+            let a =Math.random()*100
+        }
+        while (count < 3){
+        let a = parseInt(prompt(" Bạn muốn nhập trong khoảng nào"))
+        alert( "bạn nhập khoảng "+ a)
+            let e = Math.random()*a
+            if(e == a ){
+                alert("chúc mừng bạn nhập đúng ")
+                break;
+            }else if(e>a){
+                alert("Lớn hơn")
+            }else {
+                alert("Bé hơn")
+            }
+            count ++ ;
+        }
+    }
+    </script>
+</html>
