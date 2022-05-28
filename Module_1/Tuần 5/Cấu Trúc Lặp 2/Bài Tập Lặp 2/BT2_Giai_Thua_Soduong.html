@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[*Bài tập] Luyện tập vòng lặp 02</title>
+</head>
+        <h1 style="background: black ; color: #00ffe0 ; text-align: center"> Chương trình tính giai thừa của một số</h1>
+        <div style="text-align: center">
+            <input type="text" id="n" >
+            <input type="button" value="Kết Quả" onclick="kq();"> <br><br>
+            <b id="dimo" style="color: #3dff00 ; font-size: 50px"></b>
+        </div>
+<body style="background: #ff61a3">
+    <script>
+        function kq(){
+            let b = document.getElementById("n").value
+            let kq = 1;
+
+            if(isNaN(b)||b<=0){
+                document.getElementById("dimo").innerHTML = "Nhập sai giá trị"
+            }else{
+                for(let j = 2 ; j <= b ; j ++){
+                kq *= j ;
+                }
+                document.getElementById("dimo").innerHTML= "Kết quả của " + b +"! = " +kq
+            }
+        }
+    </script>
+</body>
+</html>

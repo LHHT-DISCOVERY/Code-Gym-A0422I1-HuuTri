@@ -46,23 +46,23 @@
         // fiBonassi(inPut)
 
         // Bài 4  Tìm số đầu tiên trong dãy fibonacci chia hết cho 5.
-        // let n = parseInt(prompt("Nhập vào n phần tử "))
-        // let number1 = 0 ;
-        // let number2 = 1;
-        // let number ;
-        // let count = 0 ;
-        // for(let i= 1 ; i <= n ; i ++ ){
-        //     number = number1 + number2 ;
-        //     if(number % 5  == 0){
-        //         count ++ ;
-        //         if(count == 5 ){
-        //             document.write("số thứ 5 chia hết cho 5 là : " , number , " tại vị trí thứ " , i+2)
-        //             break ;
-        //         }
-        //     }
-        //         number1 = number2
-        //         number2 = number
-        // }
+        let n = parseInt(prompt("Nhập vào n phần tử "))
+        let number1 = 0 ;
+        let number2 = 1;
+        let number ;
+        let count = 0 ;
+        for(let i= 1 ; i <= n ; i ++ ){
+            number = number1 + number2 ;
+            if(number % 5  == 0){
+                count ++ ;
+                if(count == 5 ){
+                    document.write("số thứ 5 chia hết cho 5 là : " , number , " tại vị trí thứ " , i+2)
+                    break ;
+                }
+            }
+                number1 = number2
+                number2 = number
+        }
 
 
 

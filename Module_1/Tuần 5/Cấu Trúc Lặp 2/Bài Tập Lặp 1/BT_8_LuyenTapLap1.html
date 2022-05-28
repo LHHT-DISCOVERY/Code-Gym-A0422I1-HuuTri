@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[*Bài tập] Luyện tập vòng lặp 01</title>
+</head>
+<style>
+    body{
+        background-image: url("tim-so-200.jpg");
+    }
+    .button{
+        font-size: 100px;
+        background: #00ffe0;
+        text-align: center;
+        height: 200px;
+        width: 500px;
+        position: relative;
+        border: 30px solid green;
+        margin-top: 300px;
+        margin-left: 620px;
+    }
+</style>
+<body>
+<input class="button" type="button" value="Chơi" onclick="choi();">
+
+</body>
+    <script>
+            let nam = Math.random()*5
+            let muoi =Math.random()*10
+        function choi() {
+            let b
+            let count = 0 ;
+            while (count < 3){
+            let a = parseInt(prompt(" Bạn muốn dự đoán trong khoảng nào (5 or 10)"))
+            alert( "bạn đã chọn dự đoán giá trị trong khoảng "+ a + " đơn vị")
+                if(a == 5 ){
+                    do{
+                    b = parseFloat(prompt(" nhập giá trị bạn dự đoán "))
+                     if(b > a ){
+                         alert("nhập quá khoảng cho phép")
+                     }else {
+                         alert("nhập thành công")
+                     }
+                    } while (b > a )
+                        if(b < nam){
+                            alert("Giá trị đc random ngẫu nhiên là : " + nam)
+                            alert("Giá trị bạn chọn là : " + b)
+                            alert("số bạn dự đoán Nhỏ hơn")
+                        }else if(b > nam){
+                            alert("số bạn dự đoán Lớn hơn vì =>")
+                            alert("Giá trị đc random ngẫu nhiên là : " + nam)
+                            alert("Giá trị bạn chọn là : " + b)
+                        }else{
+                            alert("Chúc mừng bạn đã dự đoán ")
+                            break;
+                        }
+                        count ++ ;
+                        if(count == 3 ){
+                            alert("Bạn đã hết 3 lượt chơi rồi ,bấm nút chơi lại bên dưới")
+                        }
+                }else if(a == 10){
+                    do{
+                        b = parseFloat(prompt(" nhập giá trị bạn dự đoán "))
+                        if(b > a ){
+                            alert("nhập quá khoảng cho phép")
+                        }else {
+                            alert("nhập thành công")
+                        }
+                    } while (b > a )
+                        if(b < muoi){
+                            alert("số bạn dự đoán Nhỏ hơn vì => ")
+                            alert("Giá trị đc random ngẫu nhiên là : " + muoi)
+                            alert("Giá trị bạn chọn là : " + b)
+                        }else if(b > muoi){
+                            alert("Giá trị đc random ngẫu nhiên là : " + muoi)
+                            alert("Giá trị bạn chọn là : " + b)
+                            alert("số bạn dự đoán Lớn hơn")
+                        }else{
+                            alert("Chúc mừng bạn đã dự đoán đúng ")
+                            break;
+                        }
+                    count ++ ;
+                    if(count == 3 ){
+                        alert("Bạn đã hết 3 lượt chơi rồi , bấm nút chơi lại bên dưới ")
+                    }
+                }else {
+                    alert("Bạn nhập ko đúng trong khoản đã đưa ra")
+                }
+            }
+        }
+    </script>
+</html>

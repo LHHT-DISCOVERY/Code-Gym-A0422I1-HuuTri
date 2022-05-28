@@ -16,7 +16,6 @@
                 <th>Amount </th>
                 <th>From Currentcy </th>x
                 <th>To Currenetcy</th>
-               
             </tr>
             <tr>
                 <td><input id="amount" type="text" name="sotien" style= "font-size: 20px;"></td>
@@ -48,8 +47,7 @@
             let q_g = document.getElementById("QG").value
             let fr_q_g = document.getElementById("From_QG").value
             if( isNaN(so_tien) || so_tien <= 0 ){
-                let RESULT = " Chọn Số Tiền Không Hợp Lệ" ;
-                document.getElementById("demo").innerHTML =  RESULT ;
+                document.getElementById("demo").innerHTML = " Chọn Số Tiền Không Hợp Lệ" ;
             }else{
                 if(q_g == fr_q_g){
                     let RESULT = " Bạn ĐÃ Chọn Cùng Loại Tiền " ;
