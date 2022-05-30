@@ -13,25 +13,26 @@
         background: #00ffe0;
         text-align: center;
         height: 200px;
-        width: 500px;
+        width: 700px;
         position: relative;
         border: 30px solid green;
         margin-top: 300px;
-        margin-left: 620px;
+        margin-left: 550px;
     }
 </style>
 <body>
-<input class="button" type="button" value="Chơi" onclick="choi();">
+<input class="button" type="button" value="Play Game" onclick="Play();">
 
 </body>
     <script>
-            let nam = Math.random()*5
-            let muoi =Math.random()*10
-        function choi() {
+            alert("Bấm Okey sau đó bấm nút 'Play Game' để bắt đầu chơi")
+            let distanceFive = Math.random()*5
+            let distanceTen =Math.random()*10
+        function Play() {
             let b
             let count = 0 ;
             while (count < 3){
-            let a = parseInt(prompt(" Bạn muốn dự đoán trong khoảng nào (5 or 10)"))
+            let a = parseInt(prompt(" Bạn muốn dự đoán trong khoảng nào (5 đơn vị or 10 đơn vị)"))
             alert( "bạn đã chọn dự đoán giá trị trong khoảng "+ a + " đơn vị")
                 if(a == 5 ){
                     do{
@@ -42,13 +43,13 @@
                          alert("nhập thành công")
                      }
                     } while (b > a )
-                        if(b < nam){
-                            alert("Giá trị đc random ngẫu nhiên là : " + nam)
+                        if(b < distanceFive){
+                            alert("Giá trị đc random ngẫu nhiên là : " + distanceFive)
                             alert("Giá trị bạn chọn là : " + b)
                             alert("số bạn dự đoán Nhỏ hơn")
-                        }else if(b > nam){
+                        }else if(b > distanceFive){
                             alert("số bạn dự đoán Lớn hơn vì =>")
-                            alert("Giá trị đc random ngẫu nhiên là : " + nam)
+                            alert("Giá trị đc random ngẫu nhiên là : " + distanceFive)
                             alert("Giá trị bạn chọn là : " + b)
                         }else{
                             alert("Chúc mừng bạn đã dự đoán ")
@@ -56,7 +57,7 @@
                         }
                         count ++ ;
                         if(count == 3 ){
-                            alert("Bạn đã hết 3 lượt chơi rồi ,bấm nút chơi lại bên dưới")
+                            alert("Bạn đã hết 3 lượt chơi rồi ,bấm lại nút chơi bên dưới để tiếp tục chơi")
                         }
                 }else if(a == 10){
                     do{
@@ -67,12 +68,12 @@
                             alert("nhập thành công")
                         }
                     } while (b > a )
-                        if(b < muoi){
+                        if(b < distanceTen ){
                             alert("số bạn dự đoán Nhỏ hơn vì => ")
-                            alert("Giá trị đc random ngẫu nhiên là : " + muoi)
+                            alert("Giá trị đc random ngẫu nhiên là : " + distanceTen )
                             alert("Giá trị bạn chọn là : " + b)
-                        }else if(b > muoi){
-                            alert("Giá trị đc random ngẫu nhiên là : " + muoi)
+                        }else if(b > distanceTen ){
+                            alert("Giá trị đc random ngẫu nhiên là : " + distanceTen )
                             alert("Giá trị bạn chọn là : " + b)
                             alert("số bạn dự đoán Lớn hơn")
                         }else{
@@ -81,10 +82,18 @@
                         }
                     count ++ ;
                     if(count == 3 ){
-                        alert("Bạn đã hết 3 lượt chơi rồi , bấm nút chơi lại bên dưới ")
+                        alert("Bạn đã hết 3 lượt chơi rồi , bấm nút lại nút chơi bên dưới để tiếp tục chơi ")
                     }
                 }else {
-                    alert("Bạn nhập ko đúng trong khoản đã đưa ra")
+                    alert("Vui Lòng Nhập Trong Khoảng 5 Đơn Vị Hoặc 10 Đơn Vị ")
+                    let q = prompt("bấm 'q' để thoát or 'N' để nhập lại")
+                    if(q == 'q' || q == "Q"){
+                        alert("BẠN ĐÃ CHỌN THOÁT CHƯƠNG TRÌNH")
+                        alert("bấm lại nút 'Play Game' bên dưới để tiếp tục chơi")
+                        break ;
+                    }else if(q == "N" || q == 'n'){
+                        alert( "bạn đã chọn tiếp tục chơi trò chơi , bấm 'OK' để tiếp tục chơi")
+                    }
                 }
             }
         }

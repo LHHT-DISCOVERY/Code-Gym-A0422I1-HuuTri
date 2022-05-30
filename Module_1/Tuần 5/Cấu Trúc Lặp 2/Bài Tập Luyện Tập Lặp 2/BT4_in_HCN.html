@@ -6,11 +6,11 @@
 </head>
 <body>
     <script>
-        let dai = parseInt(prompt("Nhập chiều dài hình chữ nhật"))
-        let rong = parseInt(prompt("Nhập chiều rộng hình chữ nhật"))
-        // // In hình chữ nhật đặc
-        // for(let i = 0 ; i < rong ; i ++){
-        //     for(let j = 0 ; j < dai; j++){
+        let lenght = parseInt(prompt("Nhập chiều dài hình chữ nhật"))
+        let width = parseInt(prompt("Nhập chiều rộng hình chữ nhật"))
+        // In hình chữ nhật đặc
+        // for(let i = 0 ; i < width ; i ++){
+        //     for(let j = 0 ; j < lenght; j++){
         //         document.write("*")
         //     }
         //     document.write("<br>")
@@ -19,9 +19,9 @@
 
         // In hình chữ nhật rỗng.
 
-        for( let i = 1 ; i <= rong; i ++){
-            for(let j = 1 ; j <= dai ; j++){
-                if(i==1|| i == rong || j == 1 || j == dai  ){
+        for( let i = 1 ; i <= width; i ++){
+            for(let j = 1 ; j <= lenght ; j++){
+                if(i==1|| i == width || j == 1 || j == lenght  ){
                     document.write("*")
                 }else{
                     document.write("&ensp;")
