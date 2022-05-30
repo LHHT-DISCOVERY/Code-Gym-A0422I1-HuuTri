@@ -2,9 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>[*Bài tập] Luyện tập vòng lặp 02</title>
 </head>
 <body>
-$END$
+    <script>
+        let dai = parseInt(prompt("Nhập chiều dài hình chữ nhật"))
+        let rong = parseInt(prompt("Nhập chiều rộng hình chữ nhật"))
+        // // In hình chữ nhật đặc
+        // for(let i = 0 ; i < rong ; i ++){
+        //     for(let j = 0 ; j < dai; j++){
+        //         document.write("*")
+        //     }
+        //     document.write("<br>")
+        // }
+
+
+        // In hình chữ nhật rỗng.
+
+        for( let i = 1 ; i <= rong; i ++){
+            for(let j = 1 ; j <= dai ; j++){
+                if(i==1|| i == rong || j == 1 || j == dai  ){
+                    document.write("*")
+                }else{
+                    document.write("&ensp;")
+                }
+            }
+            document.write("<br>")
+        }
+    </script>
 </body>
 </html>

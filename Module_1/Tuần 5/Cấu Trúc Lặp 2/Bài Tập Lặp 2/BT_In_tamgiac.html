@@ -2,9 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>[*Bài tập] Luyện tập vòng lặp 02</title>
 </head>
 <body>
-$END$
+    <script>
+        let n = parseInt(prompt("Nhập kích thước chiều cao của tam giác "))
+
+       // Hình 1
+    document.write("Hình 1 <br><br>")
+       for(let i = 1 ; i <= n; i++ ){
+           for(let j = 0 ; j < i  ; j++){
+               document.write("*" )
+           }
+           document.write("<br>")
+       }
+    document.write("<br><br><br><br>")
+        // Hình 2
+        document.write("Hình 2 <br><br>")
+        for(let i = n ; i > 0; i--){
+            for(let j = 1 ; j <= i; j++){
+                document.write("*")
+            }
+            document.write("<br>")
+        }
+        document.write("<br><br><br><br>")
+
+       // Hình 3
+         document.write("Hình 3 <br><br>")
+         for(let i = n ; i > 0 ; i --){
+             for(let j = 1 ; j <= n; j ++ ){
+                 if(j >= i){
+                     document.write("*")
+                 }else {
+                     document.write("&ensp;")
+                 }
+             }
+             document.write("<br>")
+         }
+        document.write("<br><br><br><br>")
+        // Hình 4
+        document.write("Hình 4 <br><br>")
+        for(let i = 1 ; i <= n; i ++){
+            for(let j = 1; j <= n ; j ++){
+            if(j>=i){
+                document.write("*")
+            }else {
+                document.write("&ensp;")
+            }
+            }
+            document.write("<br>")
+        }
+    </script>
 </body>
 </html>
