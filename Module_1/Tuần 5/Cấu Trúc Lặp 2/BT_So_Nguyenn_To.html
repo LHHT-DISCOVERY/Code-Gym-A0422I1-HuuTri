@@ -6,34 +6,33 @@
 </head>
 <body>
 <script>
-    function checkPrime(n)
-    {
-        for(let i = 2; i < n; i++)
-        {
-            if(n % i == 0) {
+    function checkPrime(n) {
+        for (let i = 2; i < n; i++) {
+            if (n % i == 0) {
                 return false;
             }
         }
         return true;
     }
-    let number ;
-    do{
-        number = parseInt(prompt( " Nhập vào số lượng số N : "))
-        if(number < 0 ){
+
+    let number;
+    do {
+        number = parseInt(prompt(" Nhập vào số lượng số N : "))
+        if (number < 0) {
             alert("Nhập sai số lượng ")
-        }else {
+        } else {
             alert("Nhập thành công số lượng")
         }
-    }while (number<0)
-    let N = 2 ;
-    let count = 1 ;
-        while ( count <= number ){
-            if(checkPrime(N)) {
-                document.write( "Số nguyên tố thứ " + count  + " là : " + N + "<br>" );
-            count ++ ;
-            }
-            N ++ ;
+    } while (number < 0)
+    let N = 2;
+    let count = 1;
+    while (count <= number) {
+        if (checkPrime(N)) {
+            document.write("Số nguyên tố thứ " + count + " là : " + N + "<br>");
+            count++;
         }
+        N++;
+    }
 </script>
 </body>
 </html>

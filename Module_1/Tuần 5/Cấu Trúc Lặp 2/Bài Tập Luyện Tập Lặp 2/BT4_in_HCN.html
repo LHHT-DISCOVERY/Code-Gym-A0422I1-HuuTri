@@ -5,30 +5,30 @@
     <title>[*Bài tập] Luyện tập vòng lặp 02</title>
 </head>
 <body>
-    <script>
-        let lenght = parseInt(prompt("Nhập chiều dài hình chữ nhật"))
-        let width = parseInt(prompt("Nhập chiều rộng hình chữ nhật"))
-        // In hình chữ nhật đặc
-        // for(let i = 0 ; i < width ; i ++){
-        //     for(let j = 0 ; j < lenght; j++){
-        //         document.write("*")
-        //     }
-        //     document.write("<br>")
-        // }
+<script>
+    let lenght = parseInt(prompt("Nhập chiều dài hình chữ nhật"))
+    let width = parseInt(prompt("Nhập chiều rộng hình chữ nhật"))
+    // In hình chữ nhật đặc
+    // for(let i = 0 ; i < width ; i ++){
+    //     for(let j = 0 ; j < lenght; j++){
+    //         document.write("*")
+    //     }
+    //     document.write("<br>")
+    // }
 
 
-        // In hình chữ nhật rỗng.
+    // In hình chữ nhật rỗng.
 
-        for( let i = 1 ; i <= width; i ++){
-            for(let j = 1 ; j <= lenght ; j++){
-                if(i==1|| i == width || j == 1 || j == lenght  ){
-                    document.write("*")
-                }else{
-                    document.write("&ensp;")
-                }
+    for (let i = 1; i <= width; i++) {
+        for (let j = 1; j <= lenght; j++) {
+            if (i == 1 || i == width || j == 1 || j == lenght) {
+                document.write("*")
+            } else {
+                document.write("&ensp;")
             }
-            document.write("<br>")
         }
-    </script>
+        document.write("<br>")
+    }
+</script>
 </body>
 </html>

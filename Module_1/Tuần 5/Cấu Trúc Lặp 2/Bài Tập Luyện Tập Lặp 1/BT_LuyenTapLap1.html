@@ -5,181 +5,155 @@
     <title>[*Bài tập] Luyện tập vòng lặp 01</title>
 </head>
 <body>
-    <script>
-        // Bài 1: Sử dụng vòng lặp để đếm từ 1 đến 100. Khi số là 99, hiển thị hộp thoại thông báo là đã hoàn thành.
-        // for(let i = 1 ; i < 100 ; i++ ){
-        //     document.write("i= " , i , "<br>")
-        //     if(i == 99){
-        //         alert("Hoàn Thành")
-        //     }
-        // }
+<script>
+    // Bài 1: Sử dụng vòng lặp để đếm từ 1 đến 100. Khi số là 99, hiển thị hộp thoại thông báo là đã hoàn thành.
+    // for(let i = 1 ; i < 100 ; i++ ){
+    //     document.write("i= " , i , "<br>")
+    //     if(i == 99){
+    //         alert("Hoàn Thành")
+    //     }
+    // }
 
 
+    //Bài 2: Sử dụng hàm prompt() để lấy thông tin nhiệt độ hiện tại được nhập bởi người truy cập.
+    // Nếu nhiệt độ nhập vào trên 100, yêu cầu người dùng giảm nhiệt độ.
+    // let nhietDo ;
+    // do{
+    //     nhietDo = parseInt(prompt(" Nhập vào nhiệt độ "));
+    //     if(nhietDo > 100){
+    //         alert(" Giảm nhiệt độ")
+    //     }else if(nhietDo < 20) {
+    //         alert("Tăng nhiệt độ")
+    //
+    //     }
+    // }while (true)
 
 
+    //Bài 3: Hiển thị ra 20 số trong dãy fibonacci đầu tiên.
+    // let n = parseInt(prompt("Nhập vào n phần tử đầu tiên trong dãy Fibanacci"))
+    // let number1 = 0 ;
+    // let number2 = 1;
+    // let number ;
+    // let count = 3 ; // nghĩa là bỏ qua 2 giá trị o và 1
+    // document.write("number 1 is : " , number1 , "<br>")
+    // document.write("number 2 is : " , number2 , "<br>")
+    // while(count <= n ){
+    //     number = number1 + number2 ;
+    //     document.write("number " , count , " is : " , number,"<br>")
+    //     number1 = number2
+    //     number2 = number
+    //     count ++ ;
+    // }
+    //
+    // Hoặc dùng for
+    // let inPut = parseInt(prompt(" Nhập vào n số Fibonacci cần in ra"));
+    // let number1 = 0 ;
+    // let number2 = 1;
+    // document.write("số thứ 1 là : " ,number1 , "<br>")
+    // document.write("số thứ 2 là : " ,number2 , "<br>")
+    // let number;
+    // function fiBonassi (n) {
+    //     for(let i = 3 ; i <= n ; i ++){
+    //         number = number1 + number2;
+    //         document.write("số thứ " , i, " là : " , number , "<br>")
+    //         number1= number2;
+    //         number2 = number
+    //     }
+    // }
+    // fiBonassi(inPut)
 
 
-        //Bài 2: Sử dụng hàm prompt() để lấy thông tin nhiệt độ hiện tại được nhập bởi người truy cập.
-        // Nếu nhiệt độ nhập vào trên 100, yêu cầu người dùng giảm nhiệt độ.
-        // let nhietDo ;
-        // do{
-        //     nhietDo = parseInt(prompt(" Nhập vào nhiệt độ "));
-        //     if(nhietDo > 100){
-        //         alert(" Giảm nhiệt độ")
-        //     }else if(nhietDo < 20) {
-        //         alert("Tăng nhiệt độ")
-        //
-        //     }
-        // }while (true)
+    // Bài 4  Tìm số đầu tiên trong dãy fibonacci chia hết cho 5 hoặc số thứ n chia hết cho 5.
+
+    // let n = parseInt(prompt("Nhập vào vị trí muốn tìm số chia hết cho 5 "))
+    // let number1 = 0 ;
+    // let number2 = 1;
+    // let number ;
+    // let count = 1 ;
+    // while (true){
+    //     if(n == 1){
+    //         document.write(" Số đầu tiên chia hết cho 5 là : " , number1)
+    //         break;
+    //     } else {
+    //         number = number1 + number2 ;
+    //         if(number % 5  == 0){
+    //             count ++ ;
+    //             if(count == n ){
+    //                 document.write("số thứ " ,n," chia hết cho 5 có gái trị là : " , number )
+    //                 break ;
+    //             }
+    //         }
+    //     }
+    //         number1 = number2
+    //         number2 = number
+    // }
 
 
+    // Bài 5 Tính tổng của 20 số đầu tiên trong dãy fibonacci.(hoặc tổng n số đầu tiên)
+    // let n = parseInt(prompt("Nhập vào n phần tử đầu tiên trong dãy Fibanacci"))
+    // let number1 = 0 ;
+    // let number2 = 1;
+    // let number ;
+    // let count = 1;
+    // let Sum = 0;
+    // while(count <= n ){
+    //     number = number1 + number2 ;
+    //     document.write("number " , count , " is : " , number,"<br>")
+    //     Sum += number ;
+    //     number1 = number2
+    //     number2 = number
+    //     count ++ ;
+    // }
+    // document.write("Sum " , n , " fist number Fibonacci :  " ,Sum)
+
+    // // Hoặc dùng for
+    // let n = parseInt(prompt("Nhập vào n phần tử "))
+    // let number1 = 0 ;
+    // let number2 = 1;
+    // let number ;
+    // let kq = 0 ;
+    // for(let i= 1 ; i <= n ; i ++ ){
+    //     number = number1 + number2 ;
+    //     document.write("number " ,i, " : "  ,number, "<br>")
+    //     kq += number ;
+    //     number1 = number2
+    //     number2 = number
+    // }
+    // document.write("Tổng " , n , " số fibonacci : " ,kq)
 
 
+    // Bài 6 :  Tính tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên hoặc n số đầu tiên chia hết cho 7.
+    // let inPut = parseInt(prompt("Nhập vào n số hạng đầu tiên hết cho 7 : "))
+    // let Sum = 0 ;
+    // let count = 1 ;
+    // let i = 0 ;
+    // while(count <= inPut){
+    //     if( i % 7 == 0 ){
+    //         Sum +=i ;
+    //         document.write("số thứ " , count, " chia hết cho 7 là : " , i , "<br>")
+    //         count ++;
+    //     }
+    //         i++ ;
+    // }
+    // document.write("tổng của " , inPut ," số đầu tiên chia hết cho 7 là : " ,Sum)
 
 
-        //Bài 3: Hiển thị ra 20 số trong dãy fibonacci đầu tiên.
-        // let n = parseInt(prompt("Nhập vào n phần tử đầu tiên trong dãy Fibanacci"))
-        // let number1 = 0 ;
-        // let number2 = 1;
-        // let number ;
-        // let count = 3 ; // nghĩa là bỏ qua 2 giá trị o và 1
-        // document.write("number 1 is : " , number1 , "<br>")
-        // document.write("number 2 is : " , number2 , "<br>")
-        // while(count <= n ){
-        //     number = number1 + number2 ;
-        //     document.write("number " , count , " is : " , number,"<br>")
-        //     number1 = number2
-        //     number2 = number
-        //     count ++ ;
-        // }
-        //
-        // Hoặc dùng for
-        // let inPut = parseInt(prompt(" Nhập vào n số Fibonacci cần in ra"));
-        // let number1 = 0 ;
-        // let number2 = 1;
-        // document.write("số thứ 1 là : " ,number1 , "<br>")
-        // document.write("số thứ 2 là : " ,number2 , "<br>")
-        // let number;
-        // function fiBonassi (n) {
-        //     for(let i = 3 ; i <= n ; i ++){
-        //         number = number1 + number2;
-        //         document.write("số thứ " , i, " là : " , number , "<br>")
-        //         number1= number2;
-        //         number2 = number
-        //     }
-        // }
-        // fiBonassi(inPut)
+    //Bài 7: Hãy viết một chương trình in ra các số từ 1 đến 100. Nhưng nếu số chia hết cho 3 thì in ra "Fizz",
+    // 5 thì in ra "Buzz" thay vì in ra số đó. Và nếu số đó chia hết cho cả 3 và 5 thì in ra chữ "FizzBuzz".
+    // muốn chia hết cho 3 vs 5 thì là bội chung của tích 3 vs 5
+    for (let i = 1; i <= 100; i++) {
+        if (i % 15 == 0) {
+            document.write(i, " .FizzBuzz <br>")
+        } else if (i % 3 == 0) {
+            document.write(i, ".Fizz <br>")
+        } else if (i % 5 == 0) {
+            document.write(i, " .Buzz <br>")
+        } else {
 
-
-
-
-
-
-        // Bài 4  Tìm số đầu tiên trong dãy fibonacci chia hết cho 5 hoặc số thứ n chia hết cho 5.
-
-        // let n = parseInt(prompt("Nhập vào vị trí muốn tìm số chia hết cho 5 "))
-        // let number1 = 0 ;
-        // let number2 = 1;
-        // let number ;
-        // let count = 1 ;
-        // while (true){
-        //     if(n == 1){
-        //         document.write(" Số đầu tiên chia hết cho 5 là : " , number1)
-        //         break;
-        //     } else {
-        //         number = number1 + number2 ;
-        //         if(number % 5  == 0){
-        //             count ++ ;
-        //             if(count == n ){
-        //                 document.write("số thứ " ,n," chia hết cho 5 có gái trị là : " , number )
-        //                 break ;
-        //             }
-        //         }
-        //     }
-        //         number1 = number2
-        //         number2 = number
-        // }
-
-
-
-
-
-
-
-        // Bài 5 Tính tổng của 20 số đầu tiên trong dãy fibonacci.(hoặc tổng n số đầu tiên)
-        // let n = parseInt(prompt("Nhập vào n phần tử đầu tiên trong dãy Fibanacci"))
-        // let number1 = 0 ;
-        // let number2 = 1;
-        // let number ;
-        // let count = 1;
-        // let Sum = 0;
-        // while(count <= n ){
-        //     number = number1 + number2 ;
-        //     document.write("number " , count , " is : " , number,"<br>")
-        //     Sum += number ;
-        //     number1 = number2
-        //     number2 = number
-        //     count ++ ;
-        // }
-        // document.write("Sum " , n , " fist number Fibonacci :  " ,Sum)
-
-        // // Hoặc dùng for
-        // let n = parseInt(prompt("Nhập vào n phần tử "))
-        // let number1 = 0 ;
-        // let number2 = 1;
-        // let number ;
-        // let kq = 0 ;
-        // for(let i= 1 ; i <= n ; i ++ ){
-        //     number = number1 + number2 ;
-        //     document.write("number " ,i, " : "  ,number, "<br>")
-        //     kq += number ;
-        //     number1 = number2
-        //     number2 = number
-        // }
-        // document.write("Tổng " , n , " số fibonacci : " ,kq)
-
-
-
-
-
-
-
-        // Bài 6 :  Tính tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên hoặc n số đầu tiên chia hết cho 7.
-        // let inPut = parseInt(prompt("Nhập vào n số hạng đầu tiên hết cho 7 : "))
-        // let Sum = 0 ;
-        // let count = 1 ;
-        // let i = 0 ;
-        // while(count <= inPut){
-        //     if( i % 7 == 0 ){
-        //         Sum +=i ;
-        //         document.write("số thứ " , count, " chia hết cho 7 là : " , i , "<br>")
-        //         count ++;
-        //     }
-        //         i++ ;
-        // }
-        // document.write("tổng của " , inPut ," số đầu tiên chia hết cho 7 là : " ,Sum)
-
-
-
-
-
-
-        //Bài 7: Hãy viết một chương trình in ra các số từ 1 đến 100. Nhưng nếu số chia hết cho 3 thì in ra "Fizz",
-        // 5 thì in ra "Buzz" thay vì in ra số đó. Và nếu số đó chia hết cho cả 3 và 5 thì in ra chữ "FizzBuzz".
-        // muốn chia hết cho 3 vs 5 thì là bội chung của tích 3 vs 5
-        for (let i = 1 ; i <= 100 ; i++){
-           if(i %15 == 0){
-               document.write(i," .FizzBuzz <br>")
-            }else if(i % 3 == 0){
-               document.write(i ,".Fizz <br>")
-           }else if(i % 5 == 0 ){
-               document.write( i , " .Buzz <br>")
-           }else {
-
-            document.write(i," <br>")
-           }
+            document.write(i, " <br>")
         }
+    }
 
-    </script>
+</script>
 </body>
 </html>

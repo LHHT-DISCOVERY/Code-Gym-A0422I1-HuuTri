@@ -5,35 +5,35 @@
     <title>[Thực hành] Sử dụng vòng lặp lồng nhau</title>
 </head>
 <body>
-    <script>
-        // Bài 1
-        // let kq = "<table border='1' width='50%'>";
-        // for (let i = 1; i <= 10; i++) { // xong lần lặp đầu trả về i bắt đầu = 2 ;
-        //         kq += "<tr>"
-        //     for (j = 1; j <= 10; j++) { // xong lần lặp đầu trả về j bắt đầu = 2;
-        //         kq += "<td>" +  i * j + "</td>" ;
-        //     }
-        //     kq += "</tr>"
-        // }
-        // kq += "</table>"
-        // document.write(kq)
+<script>
+    // Bài 1
+    // let kq = "<table border='1' width='50%'>";
+    // for (let i = 1; i <= 10; i++) { // xong lần lặp đầu trả về i bắt đầu = 2 ;
+    //         kq += "<tr>"
+    //     for (j = 1; j <= 10; j++) { // xong lần lặp đầu trả về j bắt đầu = 2;
+    //         kq += "<td>" +  i * j + "</td>" ;
+    //     }
+    //     kq += "</tr>"
+    // }
+    // kq += "</table>"
+    // document.write(kq)
 
-            // Bài 2 thay đổi mã trên với while lồng
-        let  kq = "<table border='1' width='10%' cellpadding='10'>"
-        let i = 1 ;
-        while ( i <= 10 ){
-            kq += "<tr>"
-            let j = 1;
-            while(j<=10){
-                kq += "<td>" + i*j + "</td>"
-                j++;
-            }
-            kq += "</tr>"
-            i++;
+    // Bài 2 thay đổi mã trên với while lồng
+    let kq = "<table border='1' width='10%' cellpadding='10'>"
+    let i = 1;
+    while (i <= 10) {
+        kq += "<tr>"
+        let j = 1;
+        while (j <= 10) {
+            kq += "<td>" + i * j + "</td>"
+            j++;
         }
-        kq += "</table>"
-        document.write(kq)
+        kq += "</tr>"
+        i++;
+    }
+    kq += "</table>"
+    document.write(kq)
 
-    </script>
+</script>
 </body>
 </html>

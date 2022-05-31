@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Tạo và thao tác với mảng</title>
+</head>
+<body>
+<input type="text" id="txtValue">
+<input type="button" value="Add" onclick="btAdd();">
+<input type="button" value="Display" onclick="btdsPlay();">
+<div id="result"></div>
+<script>
+    let x = 0;
+    let array = Array();
+
+    function btAdd() {
+        array[x] = document.getElementById("txtValue").value;
+        alert("Element : " + array[x] + " Index : " + x)
+        x++;
+        document.getElementById("txtValue").value = ""
+    }
+
+    function btdsPlay() {
+        let e = "<hr/>"
+        for (let i = 0; i < array.length; i++) {
+            e += "Element " + i + " = " + array[i] + "<br>"
+        }
+        document.getElementById("result").innerHTML = e;
+
+    }
+</script>
+</body>
+</html>

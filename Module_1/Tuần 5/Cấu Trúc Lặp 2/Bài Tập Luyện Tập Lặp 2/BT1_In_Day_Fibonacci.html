@@ -5,23 +5,25 @@
     <title>[*Bài tập] Luyện tập vòng lặp 02</title>
 </head>
 <body>
-    <script>
+<script>
 
-        let inPut = parseInt(prompt(" Nhập vào n số Fibonacci cần in ra"));
-        let number1 = 0 ;
-        let number2 = 1;
-        document.write("số thứ 1 là : " ,number1 , "<br>")
-        document.write("số thứ 2 là : " ,number2 , "<br>")
-        let number;
-        function fiBonassi (n) {
-            for(let i = 3 ; i < n + 1 ; i ++){
-                number = number1 + number2;
-                document.write("số thứ " , i, " là : " , number , "<br>")
-                number1= number2;
-                number2 = number
-            }
+    let inPut = parseInt(prompt(" Nhập vào n số Fibonacci cần in ra"));
+    let number1 = 0;
+    let number2 = 1;
+    document.write("số thứ 1 là : ", number1, "<br>")
+    document.write("số thứ 2 là : ", number2, "<br>")
+    let number;
+
+    function fiBonassi(n) {
+        for (let i = 3; i < n + 1; i++) {
+            number = number1 + number2;
+            document.write("số thứ ", i, " là : ", number, "<br>")
+            number1 = number2;
+            number2 = number
         }
-        fiBonassi(inPut)
-    </script>
+    }
+
+    fiBonassi(inPut)
+</script>
 </body>
 </html>
