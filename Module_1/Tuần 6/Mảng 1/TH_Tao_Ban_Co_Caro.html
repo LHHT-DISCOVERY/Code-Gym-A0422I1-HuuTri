@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .center {
+        margin-left: auto;
+        margin-right: auto;
+        background: #00ffe0;
+    }
+
+    .color {
+        background: #ff61a3;
+
+    }
+</style>
+<body class="color">
+<h3 style="text-align: center ; background: #3dff00  ;color: brown"> Caro Game Simple</h3>
+<div style="text-align: center">
+    <p id="carogame"></p>
+    <input type="button" value="Change Value" onclick="changeValue();">
+</div>
+<script>
+    let b = document.getElementById("carogame")
+    let board = []
+    let data = ""
+    for (let i = 0; i < 5; i++) {
+        board[i] = new Array(0, 0, 0, 0, 0)
+    }
+    for (let i = 0; i < 5; i++) {
+        data += "<br>"
+        for (j = 0; j < 5; j++) {
+            data += board[i][j] + "&nbsp;&nbsp;"
+        }
+    }
+    b.innerHTML = data;
+
+    function changeValue() {
+        let positionX = prompt("X: ");
+        let positionY = prompt("Y: ");
+        data = "<table class='center' border='5px' style='text-align: center'>";
+        board[positionX][positionY] = "x";
+        for (let i = 0; i < 5; i++) {
+            data += "<tr>";
+            for (let j = 0; j < 5; j++) {
+                data += "<td>" + board[i][j] + "&nbsp;&nbsp;&nbsp;&nbsp;" + "</td>";
+            }
+            data += "</tr>"
+        }
+        data += "</table>"
+        b.innerHTML = "<hr width='20%'/>" + data;
+        data += "<br><br><input type='button' value='Change Value 1 ' onclick='changeValue();'>"
+    }
+</script>
+</body>
+</html>

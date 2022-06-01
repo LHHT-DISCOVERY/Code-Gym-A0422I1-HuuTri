@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Sử dụng các hàm có sẵn của mảng</title>
+</head>
+<body>
+<script>
+    // Bài 1 :
+    let myColor = ["Red", "Green", "White", "Black"];
+    // document.write(myColor.join() + "<br>")
+    // document.write(myColor.toString() + "<br>")
+    // document.write(myColor.join("+") + "<br>")
+
+    // Bài 2
+    let lenght = parseInt(prompt("Nhập vào kích thước mảng "))
+    let array = Array()
+    let vaLue
+    for (let i = 0; i < lenght; i++) {
+        vaLue = parseInt(prompt("Nhập vị trí thứ " + i ))
+        array.push(vaLue);
+    }
+    for(let i = 0 ; i < lenght ; i++){
+        if(array[i] % 2 == 0){
+            document.write(array[i]+"-")
+        }
+        else {
+            document.write(array[i])
+        }
+    }
+
+
+</script>
+</body>
+</html>

@@ -27,8 +27,9 @@
 </body>
 <script>
     alert("Bấm Okey sau đó bấm nút 'Play Game' để bắt đầu chơi")
-    let distanceFive = Math.random() * 5
-    let distanceTen = Math.random() * 10
+    let distanceFive = Math.floor(Math.random() * 5)
+    let distanceTen = Math.floor(Math.random() * 10)
+    console.log(distanceFive)
 
     function Play() {
         let b
