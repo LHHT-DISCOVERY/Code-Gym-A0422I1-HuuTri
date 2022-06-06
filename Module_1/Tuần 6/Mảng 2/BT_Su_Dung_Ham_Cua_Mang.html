@@ -7,29 +7,55 @@
 <body>
 <script>
     // Bài 1 :
-    let myColor = ["Red", "Green", "White", "Black"];
+    // let myColor = ["Red", "Green", "White", "Black"];
     // document.write(myColor.join() + "<br>")
     // document.write(myColor.toString() + "<br>")
     // document.write(myColor.join("+") + "<br>")
 
     // Bài 2
-    let lenght = parseInt(prompt("Nhập vào kích thước mảng "))
-    let array = Array()
-    let vaLue
-    for (let i = 0; i < lenght; i++) {
-        vaLue = parseInt(prompt("Nhập vị trí thứ " + i ))
-        array.push(vaLue);
+    // const num = window.prompt()
+    // const str = num.toString()
+    // const result = [str[0]]  
+    // for (let i = 1; i < str.length; i++) {
+    //     if (str[i - 1] % 2 === 0 && str[i] % 2 === 0) {
+    //         result.push("-", str[i])
+    //     } else {
+    //         result.push(str[i])
+    //     }
+    // }
+    // document.write(result.join(""));
+
+    /*
+    Cách 2 : 
+    let n = parseInt(prompt("Nhập vào kích thước mảng : "))
+    var array = Array()
+    for (let i = 0 ; i < n; i++){
+        array[i] = parseInt(prompt(" Nhập vào phần tử thứ " + i  ))
     }
-    for(let i = 0 ; i < lenght ; i++){
-        if(array[i] % 2 == 0){
-            document.write(array[i]+"-")
-        }
-        else {
+    for( let i = 0 ; i < array.length ; i++){
+
+        if( array[i-1] % 2 == 0 && array[i] % 2 == 0){
+            document.write("-" , array[i])
+        }else{
             document.write(array[i])
         }
+    } */
+
+    // Bài 3 
+
+    let input = prompt("Nhập vào kí tự : ")
+    const str = input.toString()
+    let result = []
+    for (let i = 0 ; i < str.length ; i++){
+        if(str[i] === str[i].toUpperCase()){
+            result.push(str[i].toLowerCase())
+        }else if(str[i] === str[i].toLowerCase()){
+            result.push(str[i].toUpperCase())
+        }else{
+            result.push(str[i])
+        }
     }
-
-
+    document.write(result.join(""))
 </script>
 </body>
 </html>

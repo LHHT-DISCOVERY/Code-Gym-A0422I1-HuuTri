@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(52, 219, 102);">
+    <h1 style="text-align: center"> Bài Tập Từ Điển</h1>
+    <table border="1px" >
+        <tr>
+            <th>  English </th>
+            <th> <button onclick="bt() ;"> Convert </button> </th>
+            <th> VietNamese </th>
+        </tr>
+        <tr>
+            <th><input id="en" type="text"></th>
+            <th> => </th>
+            <th><p style="width: 150px;" id="vn"></p></th>
+        </tr>
+    </table>
+</body>
+<script>
+    function bt(){
+        let English = ["Chicken" , "Facebook" , "Youtube"]
+        let vietNam = ["Gà" , "Mạng Xã Hội" , "Phim"]
+        let result = document.getElementById("en").value
+        for(let i = 0 ; i <English.length ; i ++){
+            if(result == English[0]){
+                let c = vietNam[0]
+                document.getElementById("vn").innerHTML=c
+                break;
+            }else if(result ==English[1]){
+                let c = vietNam[1]
+                document.getElementById("vn").innerHTML=c
+            }else if(result ==English[2]){
+                let c = vietNam[2]
+                document.getElementById("vn").innerHTML=c
+            }
+        }
+    }
+</script>
+</html>
