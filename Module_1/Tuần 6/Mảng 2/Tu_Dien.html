@@ -23,8 +23,8 @@
 </body>
 <script>
     function bt(){
-        let English = ["Chicken" , "Facebook" , "Youtube"]
-        let vietNam = ["Gà" , "Mạng Xã Hội" , "Phim"]
+        let English = ["Chicken" , "Facebook" , "Youtube" , "Admin"]
+        let vietNam = ["Gà" , "Mạng Xã Hội" , "Phim" , "Lý Huỳnh Hữu Trí"]
         let result = document.getElementById("en").value
         for(let i = 0 ; i <English.length ; i ++){
             if(result == English[0]){
@@ -37,6 +37,11 @@
             }else if(result ==English[2]){
                 let c = vietNam[2]
                 document.getElementById("vn").innerHTML=c
+            }else if (result == English[3]){
+                let c = vietNam[3]
+                document.getElementById("vn").innerHTML = c
+            }else{
+                document.getElementById("vn").innerHTML = " Không có trong từ điển"
             }
         }
     }
