@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Bài 1 
+        /*
+        let A = [3,4,54,3,32,32,10,4,23,232]
+        let B = []
+        for ( let i = 0 ; i < A.length ; i++){
+            if(A[i] >= 10 ){
+               B.push(A[i])
+            }
+        }
+        document.write("Mảng có những số lớn hơn hoặc bằng 10 là : " , B)
+        */
+
+
+
+        // Bài 2 
+        /*
+        let A = [3,4,54,3,32,332,10,4,23,232]
+        let max = A[0];
+        let count ;
+        for(let i = 0 ; i < A.length ; i++){
+            if(A[i] > max){
+                max = A[i]
+                count = i  ;
+            } 
+        }
+        document.write( " Max của mảng là : " , max , " Tại vị trí thứ " , count)
+        */
+
+        // Bài 3 
+        /*
+        let A = [3,4,54,3,32,332,10,4,23,232]
+        let max = A[0];
+        let sum = 0 ;
+        for(let i = 0 ; i < A.length ; i++){
+            sum += A[i];
+            if(A[i] > max){
+                max = A[i]
+            } 
+        }
+        document.write( " Max của mảng là : " , max , " Giá trị trung bình của mảng là : " , sum / (A.length))
+        */
+        // Bài 4 
+        /*
+        let A = [3,4,54,3,32,332,10,4,23,232]
+        let first = 0;
+        let last = A.length - 1
+        while (first < last) {
+            let b = A[first]
+            A[first] = A[last]
+            A[last] = b
+            first++;
+            last--;
+        }
+        document.write(A , "<br>")
+
+        */
+
+        // hoặc dùng phương thức 
+        // document.write(A.reverse())
+    
+    //Bài 5 
+    /*
+    let A = [3,-4,54,-3,32,-332,10,-4,23,-232]
+    let count = 0;
+    for(let i = 0 ; i <A.length ; i ++ ){
+        if(A[i] < 0 ){
+            ++count ;
+        }
+    }
+    document.write("Số lượng số nguyên âm trong mảng  là : " , count ) */
+
+    // Bài 6 
+    /*
+    let n = parseInt(prompt("Nhập vào số lượng phần tử của mảng : "))
+    let array = [];
+    for(let i = 0 ; i < n; i ++ ){
+        array[i] = parseInt(prompt(" Nhập phần tử thứ " + i))
+    }
+    document.write(" Mảng vừa nhập là : " , array , "<br>")
+    let V = parseInt(prompt("Nhập giá trị bạn muốn kiểm tra : "))
+    let isFlag = false;
+    for(let i = 0 ; i < array.length ; i++){
+        if(array[i] == V){
+            document.write("V in array")
+            isFlag= true;
+        }
+    } 
+    if(isFlag == false) {
+        document.write("V not in array")
+    }
+    */
+
+    // Bài 7 
+    /* 
+    let n = parseInt(prompt("Nhập vào số lượng phần tử của mảng : "))
+    let array = [];
+    for(let i = 0 ; i < n; i ++ ){
+        array[i] = parseInt(prompt(" Nhập phần tử thứ " + i))
+    }
+    document.write(" Mảng vừa nhập là : " , array , "<br>")
+    let V = parseInt(prompt("Nhập giá trị bạn muốn xóa: "))
+    let isFlag = false;
+    let count = 0 ;
+    for(let i = 0 ; i < array.length ; i++){
+        //let count = i ;
+        if(array[i] == V){
+            array.splice(i,1)
+            array.push(0)
+            document.write("phần tử còn lại trong mảng sau khi xóa : " ,array)
+            isFlag= true;
+        }
+    } 
+    if(isFlag == false) {
+        document.write("ko có phần tử trong mảng : ",array)
+    }
+    */
+
+    // Bài 8 
+    /* 
+    let n = parseInt(prompt("Nhập vào số lượng phần tử của mảng : "))
+    let array = [];
+    for(let i = 0 ; i < n; i++ ){
+        array[i] = parseInt(prompt(" Nhập phần tử thứ " + i))
+    }
+    let tg ;
+    document.write(" Mảng vừa nhập là : " , array , "<br>")
+    for (let i = 0 ; i < array.length ; i++ ){
+        for(let j = i+1 ; j < array.length; j++ ){
+            if(array[i] < array[j]){
+                tg = array[i];
+                array[i] = array[j];
+                array[j] = tg;
+            }
+        }
+    }
+    document.write(array)
+    */ 
+    // Bài 9 
+    let n = parseInt(prompt("Nhập vào số lượng phần tử của mảng : "))
+    let a = [];
+    for(let i = 0 ; i < n; i++ ){
+        a[i] = parseInt(prompt(" Nhập phần tử thứ " + i))
+    }
+    let b = [1,2,3,4,5,6,7,8,9,10]
+    let result = a.concat(b)
+    let c = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+    document.write(" result : "  , result.concat(c))
+    </script>
+</body>
+</html>
