@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Bài 1
+        /*
+        var a = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]];
+        for (var i in a) {
+            document.write("row " + i + " : " );
+            for (var j of a[i]) 
+            {
+                document.write(" " + j);
+            }
+            document.write("<br>")
+        }
+        */
+
+        // Bài 2
+        /* 
+        let array = [ 'c', 's', 'c', '2', '6', '1' ] ;
+        let result = array.reverse().join("")
+        document.write(result)
+        */
+
+
+        // Bài 3 
+        /* 
+        let array = [ 'c', 's', 'c', 2, 6, 1] ;
+        let count = 0 ;
+        array.map((item)=>{
+            count ++ ;
+        })
+        document.write("Kí thước mảng là : " , array.length , "<br>")
+        document.write("Số kí tự trong mảng là : " , count)
+        */  
+
+
+        // Bài 4 
+        /* 
+        let S = "LyHuynhHuuTri"
+        let count = 0 ;
+        for(let n of S){
+            count++ ;
+        }
+        document.write("Số kí tự trong chuỗi trên là : " , count)
+        */
+
+
+
+        // Bài 5 
+        /* 
+        let A = []
+        let B = []
+        let isEqual = false
+        let n = prompt("Nhập vào kích thước của mảng : " )
+        alert("Nhập vào mảng A ")
+        for (let i = 0 ; i < n ; i++){
+            A[i] = prompt("nhập vào phần tử thứ " + i )
+        }
+        alert("Nhập vào mảng B ")
+        for(let j = 0 ; j < n ; j++){
+            B[j] = prompt("Nhập vào phần tử thứ " + j )
+        }
+        document.write("Mảng A :  " ,A , "<br>")
+        document.write("Mảng B : " ,B , "<br>")
+        for(let i = 0 ; i < A.length ; i++){
+            for(let j = 0 ; j < B.length ; j ++){
+                if(A[i] == B[j]){
+                    isEqual = true ;
+                }
+            }
+            if(isEqual == false){
+                break;
+            }
+        }
+        document.write(isEqual)
+        */
+       
+        
+       // Bài 6 
+
+        let a = prompt("nhập vào kích thước mảng ")
+        let array = [] 
+        for(let i = 0 ; i < a ; i++){
+            array[i]=prompt("nhập vào phần tử thứ " + i)
+        }
+        for (let i = 0 ; i < array.length ; i++){
+            if(array[i] == "-"){
+                array.splice(i,1,"_")
+            }
+        }
+        document.write(array.join(""))
+    </script>
+</body>
+</html>
