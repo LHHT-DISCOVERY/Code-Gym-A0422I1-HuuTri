@@ -27,18 +27,18 @@
         let vietNam = ["Gà" , "Mạng Xã Hội" , "Phim" , "Lý Huỳnh Hữu Trí"]
         let result = document.getElementById("en").value
         for(let i = 0 ; i <English.length ; i ++){
-            if(result == English[0]){
-                let c = vietNam[0]
+            if(result == English[i]){
+                let c = vietNam[i]
                 document.getElementById("vn").innerHTML=c
                 break;
-            }else if(result ==English[1]){
-                let c = vietNam[1]
+            }else if(result ==English[i]){
+                let c = vietNam[i]
                 document.getElementById("vn").innerHTML=c
-            }else if(result ==English[2]){
-                let c = vietNam[2]
+            }else if(result ==English[i]){
+                let c = vietNam[i]
                 document.getElementById("vn").innerHTML=c
-            }else if (result == English[3]){
-                let c = vietNam[3]
+            }else if (result == English[i]){
+                let c = vietNam[i]
                 document.getElementById("vn").innerHTML = c
             }else{
                 document.getElementById("vn").innerHTML = "Không có trong từ điển"
