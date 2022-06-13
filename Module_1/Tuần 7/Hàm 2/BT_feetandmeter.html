@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1 style="text-align: center; color: red;"> CONVERT FEET TO METER</h1>
+<body style="background-color: pink;">
+   <table border="1px" style="width: 50%; background-color: rgb(255, 95, 95);">
+    <tr>
+        <th>Feet</th>
+        <th> => </th>
+        <th>Meter </th>
+        
+    </tr>
+    <tr>
+        <td><input id="feet" type="text"></td>
+        <th><input type="button" value="Convert" onclick="footToMeter();"></th>
+        <td><p id="result1"></p></td>
+        
+    </tr>
+    <th>Meter </th>
+    <th>=></th>
+    <th>Feet</th>
+    
+</tr>
+    <tr>
+        <td><input id="meter"  type="text"></td>
+        <th><input type="button" value="Convert" onclick="meterToFoot();"></th>
+        <td><p id="result2"></p></td>
+        
+    </tr>
+   </table>
+    <script>
+        
+        function footToMeter(){
+            let b = document.getElementById("feet").value
+            meter = 0.305 * b
+            document.getElementById("result1").innerText = meter ;
+            
+        }
+        function meterToFoot(){
+            let a = document.getElementById("meter").value
+            foot2 = 3.279 * a;
+            document.getElementById("result2").innerText = foot2;
+        }
+    </script>
+</body>
+</html>

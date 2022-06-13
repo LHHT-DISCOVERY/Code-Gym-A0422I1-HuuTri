@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+Input:
+<input id="input" type="text">
+<input type="button" value="Check" onclick="disPlay();">
+<p id="result"></p>
+
+
+<script>
+    //Bài 1
+    /*
+    let a = parseFloat(prompt("Nhập vào số : "))
+    function binhPhuong(a){
+        return a*a
+    }
+    document.write("Kết quả là : " , binhPhuong(a))
+    */
+
+
+    // Bài 2
+    /*
+    let r = parseFloat(prompt("nhập vào bán kính hình tròn : "))
+    function chuVi(r){
+        return 2*r*3.14
+    }
+    function dienTich(r){
+        return r*r*3.14
+    }
+    document.write("Chu vi hình tròn là : " , chuVi(r) , "<br>")
+    document.write("Diện tích hình tròn là : " , dienTich(r))
+    */
+
+
+
+    //Bài 3
+    /*
+
+    let n = parseInt(prompt(" Nhập vào số nguyên n "))
+    function giaiThua(n){
+        if(n==1){
+            return 1 ;
+        }
+        return n * (giaiThua(n-1))
+    }
+    document.write("Giai thừa của " , n , " là : " , giaiThua(n))
+    */
+
+    // Bài 4
+    /*
+    function check() {
+        let vaLue = document.getElementById("input").value
+        if (isNaN(vaLue)) {
+            return false // nếu là string
+        }else{
+            return true // nếu là số
+        }
+    }
+    function disPlay(){
+        if(check()){
+            document.getElementById("result").innerText = "true"
+
+        }else{
+            document.getElementById("result").innerText = "false"
+
+        }
+
+    }
+    */
+
+
+    // Bài 5
+    /*
+
+    let a = parseInt(prompt("Nhập số a"))
+    let b = parseInt(prompt("Nhập số b"))
+    let c = parseInt(prompt("Nhập số c"))
+    function Min(a, b, c) {
+        let min = a < b ? a : b;
+        min = min < c ? min : c
+        return min
+    }
+    document.write("giá trị nhỏ nhất cuả 3 số là : ", Min(a, b, c))
+    */
+
+    // Bài 6 
+    /*
+    function check(){
+        let number = parseInt(prompt("Nhập vào một số : "))
+        if(number >= 0){
+            return true
+        }else{
+            return false
+        }
+    }
+    document.write(check())
+    */
+
+
+    // Bài 7
+    /*
+    let a = parseInt(prompt("Nhập vào số nguyên A : "))
+    let b = parseInt(prompt("Nhập vào số nguyên B : "))
+
+    //c1
+    function swap(a, b) {
+        return [b, a]
+    }
+
+    document.write("kết quả là : ", swap(a, b))
+
+
+    // cách 2
+    function Swap(x, y) {
+        var t = x;
+        x = y;
+        y = t;
+        return [x, y];
+    }
+    document.write("kết quả là : ", Swap(a, b));
+    */
+
+
+    // Bài 8
+    /*
+    let n = parseInt(prompt("Nhập vào kích thước của mảng"))
+    let array = []
+    for(let i = 0 ; i < n; i++){
+        array[i] = parseInt(prompt("Nhập phần tử thứ " + i ))
+    }
+    function Reverser(arr) {
+       return arr.reverse()
+    }
+    document.write("kết quả sau khi đảo là : " , Reverser(array))
+    */
+
+    // bài 9 
+    let n = prompt("Nhập vào kích thước của mảng")
+    let array = []
+    let count = 0
+    for(let i = 0 ; i < n; i++){
+        array[i] = parseInt(prompt("Nhập phần tử thứ " + i ))
+    }
+    let find = prompt("Nhập vào kí tự muốn tìm ")
+    let isFlag = false ;
+    document.write("Mảng vừa nhập là : " , array ,"<br>")
+    function Check(arr){
+        for(let i = 0 ; i <arr.length ; i++){
+            if(find == arr[i]){
+                count ++ ;
+                isFlag = true
+            }
+        }
+        if(isFlag == true){
+            return count ;
+        }
+        else{
+            return -1 ;
+        }
+    document.write("số lần xuất hiện của kí tự " , find , " Là : " , count)
+    }
+    document.write(Check(array))
+</script>
+</body>
+</html>

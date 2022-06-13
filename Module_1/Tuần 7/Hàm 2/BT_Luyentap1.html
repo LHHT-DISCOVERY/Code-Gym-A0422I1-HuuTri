@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // Bài 1
+    /*
+    function alertMessage(){
+        alert("Xinchao")
+    }
+    alertMessage()
+    */
+
+    // Bài 2
+    /*
+
+    let n1 = parseInt(prompt("nhập vào Number1: "))
+    let n2 = parseInt(prompt("nhập vào Number2: "))
+    function Check(a,b){
+        if(a>b){
+            document.write(" số " ,a , " Lớn hơn số " , b)
+            return ;
+        }
+        document.write("Number1 : " , n1 , "<br>")
+        document.write("Number2 : " , n2,"<br>")
+        document.write("Tổng 2 số là : " ,n1+n2)
+    }
+    Check(n1,n2);
+    */
+
+    // Bài 4 
+    function addNumbers() {
+        firstNum = 4;
+        secondNum = 8;
+        result = firstNum + secondNum;
+        return result;
+    }
+
+    result = 0;
+    result = addNumbers();
+    alert(result)
+
+
+    // Bài 5
+    let input = prompt("Nhập vào tên của ngôi sao : ")
+    document.write("Ngôi sao bạn vừa nhập là : ", input, "<br>")
+    let ngoiSao = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", " Regulus"]
+    let chomSao = ["UrsaMinor", "Tarurus", "Cygnus", "Lyra", " Aquila", " UrsaMajor", " Leo"]
+
+    function Check() {
+        for (let i = 0; i < ngoiSao.length; i++) {
+            if (input === ngoiSao[i]) {
+                return i;
+            }
+        }
+        return false;
+    }
+
+    document.write(" Thứ tự ngôi sao", input, " trong mảng đã cho là : ", Check(), "<br>")
+
+    function ngoisaoOfchomsao() {
+        for (let j = 0; j < chomSao.length; j++) {
+            return chomSao[Check()]
+        }
+    }
+
+    if (ngoisaoOfchomsao()) {
+
+        document.write(" Tên chòm sao của ngôi sao ", ngoiSao[Check()], " là chòm sao : ", ngoisaoOfchomsao())
+    } else {
+        document.write(" Không có tên ngôi sao  bạn vừa nhập ")
+    }
+</script>
+</body>
+</html>
