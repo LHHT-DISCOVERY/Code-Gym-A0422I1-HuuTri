@@ -144,27 +144,28 @@ Input:
     let n = prompt("Nhập vào kích thước của mảng")
     let array = []
     let count = 0
-    for(let i = 0 ; i < n; i++){
-        array[i] = parseInt(prompt("Nhập phần tử thứ " + i ))
+    for (let i = 0; i < n; i++) {
+        array[i] = parseInt(prompt("Nhập phần tử thứ " + i))
     }
     let find = prompt("Nhập vào kí tự muốn tìm ")
-    let isFlag = false ;
-    document.write("Mảng vừa nhập là : " , array ,"<br>")
-    function Check(arr){
-        for(let i = 0 ; i <arr.length ; i++){
-            if(find == arr[i]){
-                count ++ ;
+    let isFlag = false;
+    document.write("Mảng vừa nhập là : ", array, "<br>")
+
+    function Check(arr) {
+        for (let i = 0; i < arr.length; i++) {
+            if (find == arr[i]) {
+                count++;
                 isFlag = true
             }
         }
-        if(isFlag == true){
-            return count ;
+        if (isFlag == true) {
+            return count;
+        } else {
+            return -1;
         }
-        else{
-            return -1 ;
-        }
-    document.write("số lần xuất hiện của kí tự " , find , " Là : " , count)
+        document.write("số lần xuất hiện của kí tự ", find, " Là : ", count)
     }
+
     document.write(Check(array))
 </script>
 </body>
