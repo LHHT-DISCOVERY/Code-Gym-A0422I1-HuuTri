@@ -1,0 +1,25 @@
+table{
+    background-color: antiquewhite;
+    width: 100%;
+}
+.edit{
+    background-color: rgb(5, 232, 5);
+}
+.delete{
+    background-color: red;
+}
+.add{
+    background-color: rgb(0, 238, 255);
+}
+.fontsize{
+    background-color: rgb(0, 82, 82);
+    color: chartreuse;
+}
+h1{
+    background-color: rgb(14, 255, 151);
+    color: coral;
+    text-align: center;
+}
+td{
+    text-align: center;
+}

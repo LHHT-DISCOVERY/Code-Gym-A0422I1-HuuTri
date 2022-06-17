@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<h1> MOBILE PHONE (By Huu Tri)</h1>
+<p hight="100%" id="display"></p>
+<table border="1px">
+    <tr>
+        <th>Iphone</th>
+        <th>Xiaomi</th>
+        <th>SamSung</th>
+    </tr>
+    <tr>
+        <td><img src="/Tuần 7/Hàm 2/BT_Quản Lý Sản Phẩm/image/OIP.jpg"  width="98%" height="100%"></td>
+        <td><img src="/Tuần 7/Hàm 2/BT_Quản Lý Sản Phẩm/image/xiaomi-redmi-note-10-5g-global-version-dual-sim-65-inch-6gb-128gb-nfc-smartphone-france.jpg"  width="100%" height="100%" ></td>
+        <td><img src="/Tuần 7/Hàm 2/BT_Quản Lý Sản Phẩm/image/Link_Product_Desktop_2-3.jpg " width="80%" height="50%" ></td>
+    </tr>
+</table>
+<script>
+    let count = 0;
+    let listProduct = [
+        "Sony Experia",
+        "Samsung Galaxy",
+        "Nokia 6",
+        "Xiaomi Redmi K40 ",
+        "Apple Iphone 11 promax",
+        "Oppo reno5",
+        "Apple Iphone XSMAX"
+    ]
+    let Result;
+
+    function Display(listProduct) {
+        console.log(listProduct);
+        Result = "<table border='1px'>" +
+            "<tr>" +
+                "<th class='fontsize'>"
+                    + "<h3> Add New product <br> (Chức năng thêm sản phẩm)</h3>" +
+                "</th>" +
+            "</tr>"
+            + "<tr>"
+                + "<th>"
+                    + "<input id='add' placeholder='New Product'>" +
+                "</th>" +
+                "<th>" +
+                    "<button class='add' onclick='Add(listProduct);'> Add</button>" +
+                " </th>" +
+            "</tr>" +
+            "<tr>" +
+                "<th class='fontsize'>" +
+                    "<h3 disPlay All Product <br> (Hiển thị sản phẩm) </h3>" +
+                "</th>" +
+            " </tr>" +
+            " <tr>" +
+                "<th class='fontsize'>" +
+                    "<h4> Name Product <br> (Tên sản phẩm) </h4>" +
+                "</th>" +
+                "<th class='fontsize'>Edit <br> (Chỉnh sửa tên sản phẩm)</th>" +
+                "<th class='fontsize'>Delete<br> (Xóa sản phẩm)</th>" +
+                "<th class='fontsize'>" +
+                    " <h4> 9 product <br> (Số lượng sản phẩm)</h4>" +
+                "</th>" +
+            "</tr>";
+        for (let i = 0; i < listProduct.length; i++) {
+            Result += "<tr>"
+                + "<th style =' text-align: left'>" + listProduct[i] + "</th>"
+                + "<td><button class='edit' onclick='Edit("+i+");'> Edit</button></td>"
+                + "<td><button class='delete' onclick='Delete("+i+");'> Delete</button></td>"
+                + "</tr>"
+        }
+        Result += "</table>"
+        document.getElementById("display").innerHTML = Result;
+    }
+    Display(listProduct)
+    function Add(listProduct) {
+        let  newProduct = document.getElementById("add").value 
+        if(newProduct != "") {
+            let conf = confirm(" Bạn muốn thêm sản phẩm :  " + newProduct)
+            if(conf){
+                listProduct.push(newProduct);
+            }
+        }else{
+            alert("Bạn chưa nhập thông tin sản phẩm" );
+        }
+        Display(listProduct)
+        return listProduct;
+    }
+    function Edit(index) {
+        let editName = prompt(" Chỉnh sửa lại tên sản phẩm : ")
+        if(editName){
+            listProduct.splice(index, 1, editName)
+        }
+        Display(listProduct)
+        return listProduct
+    }
+    function Delete(index) {
+           let config =  confirm("Bạn muốn xóa sản phẩm " + listProduct[index] )
+            if(config){
+                let deleteProduct = listProduct.splice(index, 1)
+            }
+        Display(listProduct)
+        return listProduct;
+    }
+</script>
+</body>
+</html>
