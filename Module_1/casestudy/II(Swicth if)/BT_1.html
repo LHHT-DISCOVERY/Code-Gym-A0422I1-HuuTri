@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Luong = parseFloat(prompt("Nhập tiền lương nhân viên (đơn vị triệu VND) : "))
+        if(Luong < 0){
+            document.write("Nhập sai số tiền")
+        }else if(Luong >= 15){
+            let luongRong = Luong - 0.2*Luong
+            document.write("Lương ròng là : " , luongRong * (10**6) , " VND")
+        }else if(Luong >= 7){
+            let luongRong =Luong - 0.1 * Luong
+            document.write("Lương ròng là : " , luongRong* (10**6)," VND")
+
+        }else{
+            let luongRong = Luong - 0.05 * Luong
+            document.write("Lương ròng là : " , luongRong* (10**6), " VND")
+        }
+    </script>
+</body>
+</html>
