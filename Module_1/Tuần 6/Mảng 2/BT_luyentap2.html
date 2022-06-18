@@ -69,13 +69,18 @@
         }
         document.write("Mảng A :  " ,A , "<br>")
         document.write("Mảng B : " ,B , "<br>")
-         for (let i= 0 ; i < B.length ;i++){
-                if(A[i] != B[i]){
-                    isFlag = false ;
-                    break ;
+        for(let i = 0 ; i < A.length ; i ++){
+            for(let j = 0 ; j < B.length ; j++){
+                if(A[i] == B[j]){
+                  B.splice(j,1)
                 }
             }
-        document.write(isFlag)
+        }
+        if(B.length == 0){
+            document.write("Mảng giống nhau")
+        }else{
+            document.write("mảng khác nhau")
+        }
         
        
         
