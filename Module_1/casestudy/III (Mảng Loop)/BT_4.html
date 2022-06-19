@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function Resever() {
+
+        let a = parseInt(prompt("Nhập vào các số :"))
+        for (; a != 0; a = parseInt(a / 10)) {
+            let s = a % 10
+            switch (s) {
+                case 0:
+                    document.write("Khong ");
+                    break;
+                case 1:
+                    document.write("Mot ");
+                    break;
+                case 2:
+                    document.write("Hai ");
+                    break;
+                case 3:
+                    document.write("Ba ");
+                    break;
+                case 4:
+                    document.write("Bon ");
+                    break;
+                case 5:
+                    document.write("Nam ");
+                    break;
+                case 6:
+                    document.write("Sau ");
+                    break;
+                case 7:
+                    document.write("Bay ");
+                    break;
+                case 8:
+                    document.write("Tam ");
+                    break;
+                case 9:
+                    document.write("Chin ");
+                    break;
+            }
+
+        }
+    }
+
+    Resever()
+</script>
+</body>
+</html>

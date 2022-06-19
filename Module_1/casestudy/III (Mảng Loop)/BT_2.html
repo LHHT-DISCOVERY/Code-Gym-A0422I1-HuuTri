@@ -5,24 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head> 
+</head>
 <body>
-    <script>
-        let a = [7,2,5,3,5,3]   
-        let b = [3,5,2,3,7,5]
-        let isFlag = false ;
-        for(let i = 0 ; i < a.length ; i ++){
-            for(let j = 0 ; j < b.length ; j++){
-                if(a[i] == b[j]){
-                  b.splice(j,1)
+<script>
+    let c = []
+    // document.write(a , "<br>" , b , "<br>")
+    // let intersection = b.filter(x => !a.includes(x));
+    // document.write("Hiệu b/a : " ,intersection , "<br>");
+    // // Phép giao 2 mảng
+    // for(let i = 0 ; i < b.length ; i++){
+    //     for(let j = 0 ; j < a.length ; j++){
+    //         if(b[i] == a[j] && c.indexOf(b[i]) === -1){ // mảng c ko chứa phần tử b
+    //             c.push(b[i])
+    //             break
+    //         }
+    //     }
+    // }
+    // document.write("Giao : ",c)
+    let a = [7, 2, 5, 3, 5, 3]
+    let b = [2, 5, 4, 4,6, 3, 7, 5, 3]
+    let isflag = true
+    let d = []
+        for (let i = 0; i < b.length; i++) {
+            for (let j = 0; j < a.length; j++) {
+                if (b[i] == a[j]) {
+                    isflag = false
+                    break;
                 }
             }
+            if (isflag == true && d.indexOf(b[i] === -1)) {
+                d.push(b[i])
+            } else {
+                isflag = true
+            }
         }
-        if(b.length == 0){
-            document.write("Mảng giống nhau")
-        }else{
-            document.write("mảng khác nhau")
-        }
-    </script>
+        document.write("Hiệu B/A : ", d) // d = [4,4,6]
+
+</script>
 </body>
 </html>

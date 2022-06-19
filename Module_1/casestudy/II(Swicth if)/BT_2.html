@@ -9,21 +9,21 @@
 <body>
     <script>
         a = prompt("Nhập vào kí tự cần kiểm tra : ")
-        alert(typeof a)
         let arr = ['o','u', 'i', 'a', 'e','O', 'U', 'I', 'A', 'E']
         let isFlag = false
         if(isNaN(a) == false){
             alert("Nhập sai kí tự")
         }else{
             for(let i = 0 ; i <arr.length ; i++){
-            if(arr[i] == a){
-                alert("Kí tự vừa nhập là nguyên âm")
-                isFlag = true
+                if(arr[i] == a){
+                    alert("Kí tự vừa nhập là nguyên âm")
+                    isFlag = true ;
+                    break
+                }
             }
-        }
-            if(isFlag = false){
-               alert("Là phụ âm")
-        }
+            if(isFlag == false){
+                alert(" kí tự vừa nhập là phụ âm ")
+            }
         }
         
         
