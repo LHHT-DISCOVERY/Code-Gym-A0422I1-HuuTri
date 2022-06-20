@@ -22,7 +22,7 @@
     //     }
     // }
     // document.write("Giao : ",c)
-    let a = [7, 2, 5, 3, 5, 3]
+    let a = [7, 2,5, 3, 5, 3]
     let b = [2, 5, 4, 4,6, 3, 7, 5, 3]
     let isflag = true
     let d = []
@@ -33,13 +33,13 @@
                     break;
                 }
             }
-            if (isflag == true && d.indexOf(b[i] === -1)) {
-                d.push(b[i])
+            if (isflag == true) {
+               d.push(b[i])
             } else {
                 isflag = true
             }
         }
-        document.write("Hiệu B/A : ", d) // d = [4,4,6]
+        document.write("Hiệu B/A : ", [...new Set(d)]) // d = [4,6] lọc bỏ các phần tử giống nhau trong mảng
 
 </script>
 </body>

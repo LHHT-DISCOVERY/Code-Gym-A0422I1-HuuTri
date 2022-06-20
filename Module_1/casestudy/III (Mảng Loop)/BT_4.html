@@ -8,8 +8,9 @@
 </head>
 <body>
 <script>
-        let b = []
-        let a = parseInt(prompt("Nhập vào các số :"))
+    let b = []
+    let a = parseInt(prompt("Nhập vào các số :"))
+    if(isNaN(a) == false){
         document.write("CÁC SỐ VỪA NHẬP LÀ : " + a + "<br>")
         for (; a != 0; a = parseInt(a / 10)) {
             let s = a % 10
@@ -34,7 +35,7 @@
                         document.write("Bốn ");
                         break;
                     case 5:
-                        document.write("Năn ");
+                        document.write("Năm ");
                         break;
                     case 6:
                         document.write("Sáu ");
@@ -50,9 +51,11 @@
                         break;
                 }
             }
-    }
+        }
+    }else{
+        document.write("Bạn nhập không phải là chuỗi số")
+        }
     Result()
-
 </script>
 </body>
 </html>
