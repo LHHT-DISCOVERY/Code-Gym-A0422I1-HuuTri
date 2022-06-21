@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="500" height="500" style="border:1px solid #ff1515;"></canvas>
+    <script>
+         class  Rectangle {
+        constructor(width , lenght){
+            this.lenght = lenght = parseInt(prompt("Nhập chiều dài")) ;
+            this.width = width = parseInt(prompt("Nhập chiều rộng ")) ;
+        }
+        Perimeter(){
+            let cv = (this.lenght + this.width) * 2
+            return cv
+        }
+        Area(){
+            let dt = this.lenght * this.width;
+            return dt 
+        }
+        Point(){
+            let c = document.getElementById("myCanvas");
+            let ctx = c.getContext("2d");
+            ctx.moveTo(0,0);
+            ctx.lineTo(0,this.width);
+            ctx.lineTo(this.lenght,this.width);
+            ctx.lineTo(this.lenght,0);
+            ctx.lineTo(0,0);
+            ctx.stroke();
+        }
+    }
+    let result = new Rectangle()
+    let perimeter = result.Perimeter()
+    let area  = result.Area()
+    let point = result.Point()
+    document.write("<br>")
+    document.write("Chu vi là : " ,v , "<br>")
+    document.write("diện tích là : " ,area )
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Temperature{
+            constructor(C){
+                this.C = C = parseFloat(prompt("Nhập vào nhiệt độ "))
+            }
+            F(){
+                return this.C * 25 
+            }
+            Kenvin(){
+                    return this.C 
+            }
+        }
+        document.write("Nhiệt độ được đổi sang độ F là : " , new Temperature().F())
+        document.write("Nhiệt độ được đổi sang độ Kenvin là : " , new Temperature().Kenvin())
+    </script>
+</body>
+</html>

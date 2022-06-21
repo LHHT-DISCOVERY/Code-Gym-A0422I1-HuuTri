@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-image: url('autumn_fruits.jpg') ; background-repeat: no-repeat;">
+<h1 style="background: #3dff00 ; color: rgba(255,0,0,0.95) ; text-align: center">Thức uống</h1>
+<select onchange="beverageChange(this)">
+        <option>Chọn thức uống</option>
+        <option value="orange"> Cam vắt</option>
+        <option value="carrot"> Nước ép cà rốt </option>
+        <option value="tomato"> Nước ép cà chua</option>
+        <option value="coconut"> Nước dừa </option>
+        <option value="water"> Nước lọc </option>
+    </select>
+    <p id="dongia"> </p>
+    <input id="soluong" type="number" placeholder="số lượng">
+    <button onclick="thanhToan(this)" onchange="beverageChange(this)"> Thanh Toán </button>
+    <p id="sotien"> Số tiền cần phải thanhToan là : </p>
+    <script>
+            function thanhToan(obj){
+                let beverage = obj.value
+                alert(beverage)
+                let soluong = parseInt(document.getElementById("soluong").value)
+                let sotien = document.getElementById("sotien")
+                if(beverage === "orange"){
+                    sotien.innerHTML = soluong*20000
+                }
+            }
+            function beverageChange(obj){
+            let beverage = obj.value
+            alert(beverage)
+            let dongia = document.getElementById("dongia")
+            if(beverage === " "){
+                alert("Bạn chưa chọn thức uống")
+            }else if(beverage === "orange"){
+                let conf = confirm ("bạn đã chọn :  Cam vắt " )
+                if(conf){
+                    dongia.innerHTML = "20.000 VND" ;
+                }
+            }else if(beverage ==="carrot"){
+                let conf = confirm("bạn đã chọn :  Nước ép cà rốt ")
+                if(conf){
+                    dongia.innerHTML = "25.000 VND" ;
+                }
+            }else if(beverage === "tomato"){
+                let conf = confirm("bạn đã chọn :  Nước ép cà chua " )
+                if(conf){
+                    dongia.innerHTML = "15.000 VND" ;
+                }
+            }else if(beverage === "coconut"){
+                let conf = confirm("bạn đã chọn :  Nước dừa " )
+                if(conf){
+                    dongia.innerHTML = "30.000 VND" ;
+                }
+            }else if(beverage === "water"){
+                let conf = confirm ("bạn đã chọn :  nước lọc " )
+                if(conf){
+                    dongia.innerHTML = "5.000 VND" ;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
