@@ -7,5 +7,21 @@
     <title>Document</title>
 </head>
 <body>
+    <script>
+        class Circle {
+            constructor(radius){
+                this.radius = radius ;
+            }
+            getRadius(){
+                return this.radius
+            }
+            getArea(){
+                return 3.14 * this.radius * this.radius 
+            }
+        }
+        let result = new Circle(2)
+        document.write("bán kính hình tròn là : " ,result.getRadius() , "<br>")
+        document.write("diện tích hình tròn là : ",result.getArea())
+    </script>
 </body>
 </html>

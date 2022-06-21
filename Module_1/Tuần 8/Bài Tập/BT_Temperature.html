@@ -8,19 +8,31 @@
 </head>
 <body>
     <script>
-        class Temperature{
-            constructor(C){
-                this.C = C = parseFloat(prompt("Nhập vào nhiệt độ "))
-            }
-            F(){
-                return this.C * 25 
-            }
-            Kenvin(){
-                    return this.C
-            }
+        class Temperature {
+        constructor(c) {
+            this.doC = c;
         }
-        document.write("Nhiệt độ được đổi sang độ F là : " , new Temperature().F())
-        document.write("Nhiệt độ được đổi sang độ Kenvin là : " , new Temperature().Kenvin())
+        c(){
+            return this.doC ;
+        }
+        f() {
+            return this.doC * 25;
+        }
+        k() {
+            return this.doC + 273;
+        }
+    }
+    function inputDoC() {
+       let tempDoC = parseInt(prompt("Mời bạn nhập độ c: "));
+       displayTemp(tempDoC)
+    }
+    function displayTemp(tempDoC) {
+        let temperature = new Temperature(tempDoC);
+        alert("Nhiệt độ được chuyển sang độ F là : " + temperature.f());
+        alert("Nhiệt độ được chuyển sang độ KelVin là : " + temperature.k());
+        alert("Nhiệt độ vừa nhập là : " + temperature.c());
+    }
+    inputDoC()
     </script>
 </body>
 </html>
