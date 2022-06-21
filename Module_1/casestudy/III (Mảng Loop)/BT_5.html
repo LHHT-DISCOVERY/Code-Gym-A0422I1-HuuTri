@@ -16,17 +16,16 @@
         <option value="coconut"> Nước dừa </option>
         <option value="water"> Nước lọc </option>
     </select>
-    <p id="dongia"> </p>
+    <p id="dongia" style="background-color: aqua;"> </p>
     <input id="soluong" type="number" placeholder="số lượng">
     <button onclick="thanhToan(this)" onchange="beverageChange(this)"> Thanh Toán </button>
-    <p id="sotien"> Số tiền cần phải thanhToan là : </p>
+    <p id="sotien" style="background-color: rgb(0, 0, 0); color:rgb(0, 255, 242) ; "> Số tiền cần phải thanh toán là : </p>
     <script>
             function thanhToan(obj){
-                let beverage = obj.value
-                alert(beverage)
                 let soluong = parseInt(document.getElementById("soluong").value)
                 let sotien = document.getElementById("sotien")
-                if(beverage == true){
+                alert(beverageChange(this))
+                if(beverageChange() == "orange" ){
                     sotien.innerHTML = soluong*20000
                 }
             }
