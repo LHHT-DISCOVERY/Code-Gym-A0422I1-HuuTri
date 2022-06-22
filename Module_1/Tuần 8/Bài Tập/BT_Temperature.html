@@ -12,13 +12,10 @@
         constructor(c) {
             this.doC = c;
         }
-        c(){
-            return this.doC ;
-        }
-        f() {
+        convertToF() {
             return this.doC * 25;
         }
-        k() {
+        convertToKenvil() {
             return this.doC + 273;
         }
     }
@@ -28,13 +25,10 @@
     }
     function displayTemp(tempDoC) {
         let temperature = new Temperature(tempDoC);
-        alert("Nhiệt độ được chuyển sang độ F là : " + temperature.f());
-        alert("Nhiệt độ được chuyển sang độ KelVin là : " + temperature.k());
-        alert("Nhiệt độ vừa nhập là : " + temperature.c());
+        alert("Nhiệt độ được chuyển sang độ F là : " + temperature.convertToF());
+        alert("Nhiệt độ được chuyển sang độ KelVin là : " + temperature.convertToKenvil());
     }
     inputDoC()
-    var per = {}
-    alert(typeof per)
     </script>
 </body>
 </html>

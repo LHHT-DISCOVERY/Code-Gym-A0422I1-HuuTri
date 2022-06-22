@@ -11,14 +11,14 @@
     <script>
          class  Rectangle {
         constructor(width , lenght){
-            this.lenght = lenght = parseInt(prompt("Nhập chiều dài")) ;
-            this.width = width = parseInt(prompt("Nhập chiều rộng ")) ;
+            this.lenght = lenght ;
+            this.width = width ;
         }
-        Perimeter(){
+        convertPerimeter(){
             let cv = (this.lenght + this.width) * 2
             return cv
         }
-        Area(){
+        convertArea(){
             let dt = this.lenght * this.width;
             return dt
         }
@@ -33,14 +33,21 @@
             ctx.stroke();
         }
     }
-    let result = new Rectangle()
-    let perimeter = result.Perimeter()
-    let area  = result.Area()
-    let point = result.Point()
-    document.write("<br>")
-    document.write("Chu vi là : " ,perimeter , "<br>")
-    document.write("diện tích là : " ,area )
-
+    function inPut(){
+        let lenght = parseFloat(prompt("Nhập chiều dài : "))
+        let width = parseFloat(prompt("Nhập chiều rộng : "))
+        disPlay(lenght,width)
+    }
+    function disPlay(lenght,width){
+        let result = new Rectangle(lenght,width)
+        let perimeter = result.convertPerimeter()
+        let area  = result.convertArea()
+        let point = result.Point()
+        document.write("<br>")
+        document.write("Chu vi là : " ,perimeter , "<br>")
+        document.write("diện tích là : " ,area )
+    }
+    inPut()
     </script>
 </body>
 </html>
