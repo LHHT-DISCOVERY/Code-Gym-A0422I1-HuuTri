@@ -9,10 +9,75 @@
 <body>
     <script>
         class Apple{
-            constructor(mass,){
-
+            constructor(weight){
+                this.weight = 10 ;
+            }
+            Decrease(){
+                this.weight = this.weight - 5;
+            }
+            isEmpty(){
+                if(this.weight > 0 ){
+                    return true ; 
+                }else {
+                    return false
+                }
+            }
+            getWeight(){
+                return this.weight ;
             }
         }
+        class Human{    
+            constructor(name, gender , weightHuman){
+                this.name = name ;
+                this.gender = gender ;
+                this.weightHuman = weightHuman ;
+            }
+            isMale(){
+                if(this.gender){
+                    return true ;
+                }else{
+                    return false 
+                }
+            }
+            setGender(){
+                this.gender = gender ; 
+            }
+            checkApple(Apple){
+                if(Apple > 0 ){
+                    return true ;
+                }else{
+                    return false; 
+                }
+            }
+            Eat(Apple){
+                Apple.Decrease();
+            }
+            sayString(string){
+                document.write(string)
+            }
+            getName(){
+                return this.name
+            }
+            setName(string){
+                this.name = string;
+            }
+            getWeight(){
+                return this.weight;
+            }
+        }
+        let Eva = new Human("Eva" , false , 45 )
+        let Adam = new Human("Adam", true , 50)
+        let apple = new Apple()
+        while(apple.isEmpty()){
+            document.write("Eva eat 1 piece => ")
+            Eva.Eat(apple)
+            document.write("Apple weight " + apple.getWeight() , "đv.<br>")
+            document.write("Adam eat 1 piece => ")
+            Adam.Eat(apple)
+            document.write("Apple weight " + apple.getWeight(), "đv.<br>")
+        }
+        document.write("Eat Finish the Apple")
+
     </script>
 </body>
 </html>
