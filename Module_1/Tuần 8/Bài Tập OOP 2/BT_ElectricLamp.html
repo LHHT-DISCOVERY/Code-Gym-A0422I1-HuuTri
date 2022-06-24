@@ -8,7 +8,43 @@
 </head>
 <body>
     <script>
-        
+        class electricLamp{
+            constructor(static){
+                this.static = static ;
+            }
+            tunOff(){
+                this.static = false
+                return this.static ; 
+            }
+            tunOn(){
+                this.static = true
+                return this.static
+            }
+        }
+        class switchButton{
+            constructor(static , lamp){
+                this.static = static ;
+                this.lamp = lamp ;
+            }
+            connectTolamp(lamp){
+                this.lamp = lamp 
+
+            }
+            switchOff(){
+                this.static = false ;
+                this.lamp.tunOff();
+
+            }
+            switchOn(){
+                this.static = true
+                this.lamp.tunOn();
+
+            }
+        }
+        let electricLamp = new electricLamp1(false);
+        let switchButton = new switchButton(false, electricLamp);
+        let electricLamp1 = new electricLamp(false);
+        switchButton.connectTolamp(electricLamp1);
     </script>
 </body>
 </html>
