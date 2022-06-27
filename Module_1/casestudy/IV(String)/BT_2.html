@@ -8,13 +8,19 @@
 </head>
 <body>
     <script>
-        let s = " acb " ;
-        let len = s.s
-        for(let i in s){
-            if(s.length = i +1==indexedDB.length){
-                return false;
+        let input = "cabca"
+       function differentSymbolsNaive(s) {
+            let array = s.split("")
+            let output = []
+            for(let i = 0; i < array.length ; i++) {
+                if(output.indexOf(array[i]) == -1) {
+                    output.push(array[i])
+                }
             }
+            document.write(" có " ,output.length , " kí tự khác nhau là : " ,output );
         }
+        differentSymbolsNaive(input)
+        
     </script>
 </body>
 </html>

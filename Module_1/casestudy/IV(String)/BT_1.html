@@ -8,15 +8,24 @@
 </head>
 <body>
     <script>
-        let s = "Ly hUYnh  HuU TrI"
-        for(let i in s){
-            if(i == i.toUpperCase()){
-                i.toLocaleLowerCase()
-            }else{
-                i.toUpperCase()
-            }
+        function input(){
+            let input = prompt("Nhập vào xâu kí tự ")
+            conVert(input)
         }
-        document.write(s)
+        function conVert(input){
+            let array = input.toLowerCase().trim().split(" ")
+            let upperCase = array.map(name => name.charAt(0).toUpperCase() + name.slice(1))
+            let output = []
+            for(let i = 0; i < upperCase.length; i++){
+                if(upperCase[i] === " " && upperCase[i+1] === " "){
+                    continue ;
+                }else{
+                    output.push(upperCase[i]) ;
+                }
+            }
+            document.write(output.join(" "))
+        }
+        input()
     </script>
 </body>
 </html>

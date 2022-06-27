@@ -26,22 +26,22 @@
     // document.write("Giao : ",c)
     let a = [7, 2,5, 3, 5, 3]
     let b = [2, 5, 4, 4,6, 3, 7, 5, 3]
-    let isflag = true
+    let isFlag = true
     let d = []
         for (let i = 0; i < b.length; i++) {
             for (let j = 0; j < a.length; j++) {
                 if (b[i] == a[j]) {
-                    isflag = false
+                    isFlag = false
                     break;
                 }
             }
-            if (isflag == true && d.indexOf(b[i])=== -1) {
+            if (isFlag == true && d.indexOf(b[i])=== -1) {
                d.push(b[i])
             } else {
-                isflag = true
+                isFlag = true
             }
         }
-        document.write("Hiệu B/A : " ,d)
+        document.write("Hiệu B/A : " + d)
 </script>
 </body>
 </html>
