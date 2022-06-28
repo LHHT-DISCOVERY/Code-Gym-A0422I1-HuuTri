@@ -8,13 +8,22 @@
 </head>
 <body>
     <script>
-        let s1 = "aabcc" 
+       let s1 = "aabcc"
         let s2 = "adcaa"
         let count = 0 ;
+        let output = []
         for(let i in s1){
-            s1.replace('a', "i") 
+            for(let j in s2){
+                if(s1[i] === s2[j]){
+                    output.push(s1[i]);
+                    let temp2 = s2.replace(s2[j],'');
+                    s2= temp2;
+                    count += 1 ;
+                    break;
+                }
+            }
         }
-        document.write( s1)
+        document.write(count ,output + "<br>")
     </script>
 </body>
 </html>

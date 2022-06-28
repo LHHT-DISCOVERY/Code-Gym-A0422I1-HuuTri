@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = parseInt(prompt("Nhập kích thước chiều dài ma trận"))
+        let y = parseInt(prompt("Nhập kích thước chiều cao ma trận"))
+        function sumEvent(){
+            let sum = 0 ;
+            let array = [];
+            for(let i = 0; i <x ; i++) {
+                let arrTemp = [];
+                for(let j = 0; j < y; j++) {
+                    arrTemp.push(parseInt(prompt("Nhập phần tử")));
+                }
+                array.push(arrTemp);
+            }
+            console.log(array)
+            for(let i = 0; i < x; i++) {
+                for(let j = 0; j < y; j++) {
+                    if(array[i][j] % 2 == 0) {
+                        sum += array[i][j];
+                    }
+                }
+            }
+            document.write( "Kết quả là : " ,sum)
+        }
+        sumEvent(x,y)
+        
+     </script>
+</body>
+</html>
