@@ -1,0 +1,9 @@
+table{
+    background-color: rgb(30, 255, 0);
+    color: rgb(255, 0, 136);
+    width: 50%;
+    height: 50%;
+}
+tr{
+    background-color: aqua;
+}

@@ -8,21 +8,19 @@
 </head>
 <body>
     <script>
-        // function input() {
+            let array = [];
             let x = parseInt(prompt(" Nhập kích thước chiều dài ma trận"))
             let y  = parseInt(prompt(" Nhập kích thước chiều cao ma trận"))
-        // }
-        let array = [];
-        for(let i = 0; i < x; i++){
-            let arrTemp = [] 
-            for(let j = 0; j < y; j++){
-                arrTemp.push(parseInt(prompt("nhập phần tử")));
+            for(let i = 0; i < x; i++){
+                let arrTemp = [] 
+                for(let j = 0; j < y; j++){
+                    arrTemp.push(parseInt(prompt("nhập phần tử")));
+                }
+                array.push(arrTemp);
             }
-            array.push(arrTemp);
-        }
+
         function maxArr(x,y){
             let maxArray = array[0][0]
-            // document.write(array[0][0])
             for(let i = 0; i < x; i++){
                 for(let j = 0; j < y; j++){
                     if(array[i][j] > maxArray){
@@ -30,12 +28,10 @@
                     }
                 }
             }
-            // return maxArray;
-            document.write( " Giá trị lớn nhất là : " , maxArray , "<br>") ;
+            return maxArray;
         }
         function minArr(x,y){
             let minArray = array[0][0]
-            // document.write(array[0][0])
             for(let i = 0; i < x; i++){
                 for(let j = 0; j < y; j++){
                     if(array[i][j] < minArray){
@@ -43,12 +39,14 @@
                     }
                 }
             }
-            // return maxArray;
-            document.write( " Giá trị nhỏ nhất là : " , minArray) ;
+            return minArray;
         }
-        console.log(array)
-        maxArr(x,y)
-        minArr(x,y)
+        console.log(array);
+        let max = maxArr(x,y);
+        document.write( " Giá trị lớn nhất là : " , max , "<br>") ;
+        let min = minArr(x,y);
+        document.write( " Giá trị nhỏ nhất là : " , min) ;
+        
     </script>
 </body>
 </html>

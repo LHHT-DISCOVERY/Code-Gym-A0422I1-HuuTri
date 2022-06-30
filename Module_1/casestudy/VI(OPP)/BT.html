@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <table border="1px">
+        <tr>
+            <th colspan="6"> SỔ SỐ CODEGYM</th>
+        </tr>
+        <tr>
+            <th>15</th>
+            <th>25</th>
+            <th>35</th>
+            <th>45</th>
+            <th>55</th>
+            <th>65</th>
+        </tr>
+        <tr>
+            <th>10</th>
+            <th>20</th>
+            <th>30</th>
+            <th>40</th>
+            <th>50</th>
+            <th>60</th>
+        </tr>
+    </table>
+            <button type="button" onclick="buy();"> Mua Vé </button>
+            <button> Xem Kết Quả</button>
+    <script>
+        function buy(){
+            let select = parseInt( prompt("Bạn có 2 sự lựa chọn \n 1. tự động mua "))
+            if( select <= 0 || select > 2) {
+                alert("Nhập sai vui lòng nhập lại")
+            }
+            else if(select == 1){
+                alert("Bạn Muốn tự chọn số ")
+            }else if( select == 2){
+                alert("Bạn Muốn tự chọn số ")
+            }
+        }
+        // class vietLot{
+        //     constructor(){
+
+        //     }
+        // }
+    </script>
+</body>
+</html>
