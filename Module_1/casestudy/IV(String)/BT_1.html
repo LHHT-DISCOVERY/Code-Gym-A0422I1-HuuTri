@@ -10,9 +10,10 @@
     <script>
         function input(){
             let input = prompt("Nhập vào xâu kí tự ")
-            conVert(input)
+            resultConvert(input)
+            document.write("Từ dài nhất là : " ,resultLength(input))
         }
-        function conVert(input){
+        function resultConvert(input){
             let array = input.toLowerCase().trim().split(" ")
             let upperCase = array.map(name => name.charAt(0).toUpperCase() + name.slice(1))
             let output = []
@@ -23,9 +24,22 @@
                     output.push(upperCase[i]) ;
                 }
             }
-            document.write(output.join(" "))
+            document.write("Xâu trước khi chuẩn hóa là : ",input," => ",output.join(" ") + "<br>")
+            
+        }
+        function resultLength(input){
+            let array = input.toLowerCase().trim().split(" ")
+            let upperCase = array.map(name => name.charAt(0).toUpperCase() + name.slice(1))
+            max = upperCase[0]
+            for(let i = 0; i < upperCase.length; i++) {
+                if(upperCase[i].length > max.length){
+                    max = upperCase[i];
+                }
+            }
+            return max
         }
         input()
+      
     </script>
 </body>
 </html>
