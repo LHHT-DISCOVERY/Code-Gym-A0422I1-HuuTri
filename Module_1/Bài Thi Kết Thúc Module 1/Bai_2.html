@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr =[]
+        let n = parseInt(prompt("Nhập vào số lượng phần tử của mảng : "))
+        for(let i = 0; i < n; i++) {
+            arr[i] = parseInt(prompt(" Nhập phần tử thứ " + i))
+        }
+        function index(arr) {
+            min =arr[0]
+            let index_min;
+            for(let i = 0; i < n; i++) {
+                if(arr[i] < min) {
+                    min = arr[i];
+                    index_min = i;
+                }
+            }
+            max = arr[0]
+            let index_max;
+            for(let i = 0; i < n; i++) {
+                if(arr[i] > max) {
+                    max = arr[i];
+                    index_max = i
+                }
+            }
+            return  [index_min,index_max];
+        }
+       document.write(index(arr)) 
+    </script>
+</body>
+</html>

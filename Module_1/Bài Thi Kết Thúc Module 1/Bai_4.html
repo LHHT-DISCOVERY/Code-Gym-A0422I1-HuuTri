@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <h1> Danh Sách Bệnh Nhân(Hữu Trí)</h1>
+<span>Số lượng bệnh nhân : </span>
+<span id="amount"></span><br>
+<p id="result"></p>
+<script>
+    class human {
+        constructor(name,age, adress , phone) {
+            this.name = name;
+            this.age = age;
+            this.adress = adress;
+            this.phone = phone;
+        }
+        setName(name) {
+            this.name = name;
+        }
+        getName() {
+            return this.name
+        }
+        setAge(age) {
+            this.age = age;
+        }
+        getAge() {
+            return this.age;
+        }
+        setAdress(adress) {
+            this.adress = adress;
+        }
+        getAdress() {
+            return this.adress
+        }
+        setPhone(phone) {
+            this.phone = phone;
+        }
+        getPhone(){
+            return this.phone;
+        }
+    }
+    
+    function display(humans) {
+        let tableString = '<table>\n' +
+            '    <tr>\n' +
+            '        <th>STT</th>\n' +
+            '        <th>Họ và Tên</th>\n' +
+            '        <th>Tuổi</th>\n' +
+            '        <th>Địa Chỉ</th>\n' +
+            '        <th>Số Điện Thoại</th>\n' +
+            '    </tr>';
+        for (let i = 0; i < humans.length; i++) {
+            tableString += '<tr>\n' +
+                '        <th>' + (1 + i) + '</th>\n' +
+                '        <td>' + humans[i].getName() + '</td>\n' +
+                '        <td>' + humans[i].getAge() + '</td>\n' +
+                '        <td>' + humans[i].getAdress() + '</td>\n' +
+                '        <th>' + humans[i].getPhone() + '</th>\n' +
+                '    </tr>';
+        }
+        tableString += '</table>'
+        document.getElementById("result").innerHTML = tableString;
+        document.getElementById("amount").innerHTML = human.length;
+    }
+    function sortName() {
+            let sortName = humansList.name 
+            sortName.sort()
+            display(productList);
+    }
+   
+    let humansList = [];
+    
+    humansList.push(new human( "Nguyễn Lê Hoàng Anh", 20 , "Quảng Nam" ,"0923434564"));
+    humansList.push(new human( "Nguyễn Trần Cảnh", 30 , "Quảng Nam" ,"0923434564"));
+    humansList.push(new human( "Nguyễn Thanh Hùng", 20 , "Quảng Nam" ,"0923434564"));
+    humansList.push(new human( "Trần Lệ Quyên", 20 , "Quảng Nam" ,"0923434564"));
+    display(humansList);
+    sortName()
+    
+</script>
+</body>
+</html>
