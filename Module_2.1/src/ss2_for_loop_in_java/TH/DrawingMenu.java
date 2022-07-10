@@ -1,4 +1,4 @@
-package ss2_ForLoopInJava.TH;
+package ss2_for_loop_in_java.TH;
 
 import java.util.Scanner;
 
