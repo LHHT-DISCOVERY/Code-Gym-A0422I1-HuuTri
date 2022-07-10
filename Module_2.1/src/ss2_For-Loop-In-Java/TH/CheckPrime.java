@@ -22,7 +22,7 @@ public class CheckPrime {
                 }
             }
             if (isFlag == true) {
-                System.out.println(number + " is Prime");
+                System.out.println(number +" is Prime");
             }
         }
     }

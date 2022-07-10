@@ -17,7 +17,7 @@ public class UocChungLonNhat {
             int min = (a < b) ? a : b;
             for (int i = min; i >= 1; --i) {
                 if (a % i == 0 && b % i == 0) {
-                    System.out.println("Ước chung lớn nhất của 2 số là : " + i);
+                    System.out.println(" Ước chung lớn nhất của 2 số là : " + i);
                     break;
                 }
             }

@@ -18,6 +18,6 @@ public class InterestOnInterest {
         for (int i = 0; i < month; i++) {
             totalInterest += money * (interestRate / 100) / 12 * month;
         }
-        System.out.println("Số tiền lãi nhận đc là : " + totalInterest + " VND");
+        System.out.println("Số tiền lãi nhận đc là : " + totalInterest + " VND ");
     }
 }
