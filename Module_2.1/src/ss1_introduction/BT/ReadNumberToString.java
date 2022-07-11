@@ -294,6 +294,8 @@ public class ReadNumberToString {
                 }
 
             }
+        }else {
+            System.out.println("Vui lòng nhập các số từ 0-1000");
         }
     }
 }
