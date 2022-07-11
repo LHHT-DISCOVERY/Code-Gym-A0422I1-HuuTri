@@ -6,9 +6,11 @@ public class ReadNumberToString {
     public static void main(String[] args) {
         int a;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Nhập vào dãy số : ");
+        System.out.print("Nhập vào dãy số : ");
         a = scanner.nextInt();
-        if (0 <= a && a <= 9) {
+        if (a < 0) {
+            System.out.println("Vui lòng nhập số lớn hơn 0");
+        } else if (a <= 9) {
             switch (a) {
                 case 0:
                     System.out.print("Không ");
@@ -42,7 +44,7 @@ public class ReadNumberToString {
             }
         } else if (a == 100) {
             System.out.println("một trăm");
-        } else if (a > 20 && a < 100) {
+        } else if (a < 100) {
             int chuc = a / 10;
             if (chuc >= 1) {
                 switch (chuc) {
@@ -264,37 +266,37 @@ public class ReadNumberToString {
                 } else {
                     switch (dv) {
                         case 1:
-                            System.out.print("Mốt ");
+                            System.out.print(" Mốt ");
                             break;
                         case 2:
-                            System.out.print("Hai ");
+                            System.out.print(" Hai ");
                             break;
                         case 3:
-                            System.out.print("Ba ");
+                            System.out.print(" Ba ");
                             break;
                         case 4:
-                            System.out.print("Bốn ");
+                            System.out.print(" Bốn ");
                             break;
                         case 5:
-                            System.out.print("Năm ");
+                            System.out.print(" Năm ");
                             break;
                         case 6:
-                            System.out.print("Sáu ");
+                            System.out.print(" Sáu ");
                             break;
                         case 7:
-                            System.out.print("Bảy ");
+                            System.out.print(" Bảy ");
                             break;
                         case 8:
-                            System.out.print("Tám ");
+                            System.out.print(" Tám ");
                             break;
                         case 9:
-                            System.out.print("Chín ");
+                            System.out.print(" Chín ");
                     }
 
                 }
 
             }
-        }else {
+        } else {
             System.out.println("Vui lòng nhập các số từ 0-1000");
         }
     }
