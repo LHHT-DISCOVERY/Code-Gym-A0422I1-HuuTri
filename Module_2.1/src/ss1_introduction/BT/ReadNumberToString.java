@@ -204,35 +204,36 @@ public class ReadNumberToString {
                 }
                 if (chuc == 0) {
                     System.out.print("lẻ ");
-                }
-                switch (chuc) {
-                    case 1:
-                        System.out.print("mười ");
-                        break;
-                    case 2:
-                        System.out.print("Hai mươi ");
-                        break;
-                    case 3:
-                        System.out.print("Ba mươi ");
-                        break;
-                    case 4:
-                        System.out.print("Bốn mươi ");
-                        break;
-                    case 5:
-                        System.out.print("Năm mươi ");
-                        break;
-                    case 6:
-                        System.out.print("Sáu mươi ");
-                        break;
-                    case 7:
-                        System.out.print("Bảy mươi");
-                        break;
-                    case 8:
-                        System.out.print("Tám mươi ");
-                        break;
-                    case 9:
-                        System.out.print("Chín mươi ");
-                        break;
+                } else {
+                    switch (chuc) {
+                        case 1:
+                            System.out.print("mười ");
+                            break;
+                        case 2:
+                            System.out.print("Hai mươi ");
+                            break;
+                        case 3:
+                            System.out.print("Ba mươi ");
+                            break;
+                        case 4:
+                            System.out.print("Bốn mươi ");
+                            break;
+                        case 5:
+                            System.out.print("Năm mươi ");
+                            break;
+                        case 6:
+                            System.out.print("Sáu mươi ");
+                            break;
+                        case 7:
+                            System.out.print("Bảy mươi");
+                            break;
+                        case 8:
+                            System.out.print("Tám mươi ");
+                            break;
+                        case 9:
+                            System.out.print("Chín mươi ");
+                            break;
+                    }
                 }
                 if (chuc <= 1) {
                     switch (dv) {
