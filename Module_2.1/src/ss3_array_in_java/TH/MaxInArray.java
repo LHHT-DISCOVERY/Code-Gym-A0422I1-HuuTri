@@ -7,16 +7,16 @@ public class MaxInArray {
         int size;
         int[] array;
         Scanner scanner = new Scanner(System.in);
-        boolean isValidSize;
+        boolean inValidSize;
         do {
             System.out.print("Nhập vào kích thước mảng (0->20) : ");
             size = scanner.nextInt();
-            isValidSize = size < 0 || size > 20;
+            inValidSize = size < 0 || size > 20;
 
-            if (isValidSize) {
+            if (inValidSize) {
                 System.out.println(" Vui lòng nhập size từ [0:20] .Xin nhập lại !! ");
             }
-        } while (isValidSize);
+        } while (inValidSize);
         array = new int[size];
         for (int i = 0; i < array.length; i++) {
             System.out.printf("Nhập vào phần tử thứ [%d] : ", i);
