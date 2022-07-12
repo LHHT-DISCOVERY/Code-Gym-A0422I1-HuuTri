@@ -8,7 +8,7 @@ public class FindElementInArray {
         Scanner scanner = new Scanner(System.in);
         String inputName;
         boolean isFag = false;
-        System.out.println("Nhập tên học sinh bạn muốn tìm kiếm : ");
+        System.out.println("Nhập tên học sinh bạn muốn tìm kiếm : ") ;
         inputName = scanner.nextLine();
         for (int i = 0; i < students.length; i++) {
             if (students[i].equals(inputName)) {

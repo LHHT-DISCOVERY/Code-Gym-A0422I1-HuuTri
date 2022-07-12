@@ -6,7 +6,7 @@ public class ReverseArray {
     public static void main(String[] args) {
         int size;
         int[] array;
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in) ;
         boolean isValidSize;
         do {
             System.out.print("Nhập vào kích thước mảng (0->20) : ");

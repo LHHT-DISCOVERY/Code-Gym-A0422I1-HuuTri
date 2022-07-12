@@ -10,7 +10,7 @@ public class CovertTemperature {
         Scanner input = new Scanner(System.in);
         double fahrenheit;
         double celsius;
-        int choice;
+        int choice ;
         do{
             System.out.println("1. Fahrenheit to Celsius");
             System.out.println("2. Celsius to Fahrenheit");

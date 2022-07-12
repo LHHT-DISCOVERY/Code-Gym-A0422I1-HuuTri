@@ -31,7 +31,7 @@ public class MaxInArray {
         for (int i = 0; i < array.length; i++) {
             if (max < array[i]) {
                 max = array[i];
-                index = i + 1;
+                index = i + 1 ;
             }
         }
         System.out.println("Phần tử lớn nhất của mảng là : " + max + " Tại vị trí " + index);
