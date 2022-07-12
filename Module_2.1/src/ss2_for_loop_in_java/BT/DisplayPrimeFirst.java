@@ -23,7 +23,7 @@ public class DisplayPrimeFirst {
                     isFlag = true;
                 }
             }
-            number ++ ;
+            number++;
         }
     }
 }
