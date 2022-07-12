@@ -49,7 +49,7 @@ public class ReadNumberToString {
             if (chuc >= 1) {
                 switch (chuc) {
                     case 1:
-                        System.out.print("mười ");
+                        System.out.print("Mười ");
                         break;
                     case 2:
                         System.out.print("Hai mươi ");
@@ -92,7 +92,7 @@ public class ReadNumberToString {
                             System.out.print("Bốn ");
                             break;
                         case 5:
-                            System.out.print("Năm ");
+                            System.out.print(" Lăm ");
                             break;
                         case 6:
                             System.out.print("Sáu ");
@@ -121,7 +121,7 @@ public class ReadNumberToString {
                             System.out.print("Bốn ");
                             break;
                         case 5:
-                            System.out.print("Năm ");
+                            System.out.print(" Lăm ");
                             break;
                         case 6:
                             System.out.print("Sáu ");
@@ -279,7 +279,7 @@ public class ReadNumberToString {
                             System.out.print(" Bốn ");
                             break;
                         case 5:
-                            System.out.print(" Năm ");
+                            System.out.print(" Lăm ");
                             break;
                         case 6:
                             System.out.print(" Sáu ");
