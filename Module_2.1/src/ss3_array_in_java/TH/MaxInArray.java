@@ -28,7 +28,7 @@ public class MaxInArray {
         }
         int max = array[0];
         int index = 0;
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 1; i < array.length; i++) {
             if (max < array[i]) {
                 max = array[i];
                 index = i + 1 ;
