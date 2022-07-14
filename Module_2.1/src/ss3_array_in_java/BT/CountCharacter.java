@@ -4,18 +4,18 @@ import java.util.Scanner;
 
 public class CountCharacter {
     public static void main(String[] args) {
-        String name = "LYHUYNHHUUTRI";
+        String name = "LyHUyYNHHUUTRIii";
         Scanner scanner = new Scanner(System.in);
         // kiểm tra kiểu dữ liệu mà ta lấy từ chuỗi
         // syntax : ((Object)NameValue).getClass().getSimpleName()
         System.out.println(((Object) name.charAt(0)).getClass().getSimpleName());
         System.out.println(((Object) name).getClass().getSimpleName());
-        System.out.print("Nhập vào kí tự cần tìm kiếm (không phân biệt chữ hoa hay chữ thường): ");
+        System.out.print("Nhập vào kí tự cần tìm kiếm (có phân biệt chữ hoa với chữ thường): ");
         char input = scanner.next().charAt(0);
         int count = 0;
         boolean isFlag = false;
         for (int i = 0; i < name.length(); i++) {
-            if ((int) input - 32 == (name.charAt(i)) || (int) input + 32 == (name.charAt(i))) {
+            if (input == (name.charAt(i))) {
                 count++;
                 isFlag = true;
             }
