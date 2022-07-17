@@ -6,11 +6,11 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         double a, b, c;
-        System.out.print(" Enter X : ");
+        System.out.print(" Enter A : ");
         a = scanner.nextDouble();
-        System.out.print(" Enter Y : ");
+        System.out.print(" Enter B : ");
         b = scanner.nextDouble();
-        System.out.print(" Enter Z : ");
+        System.out.print(" Enter C : ");
         c = scanner.nextDouble();
         QuadraticEquation quadraticEquation = new QuadraticEquation(a, b, c);
         System.out.println(" A is : " + quadraticEquation.getA());
