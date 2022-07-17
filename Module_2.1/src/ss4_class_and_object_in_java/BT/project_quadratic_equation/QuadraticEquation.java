@@ -48,7 +48,6 @@ public class QuadraticEquation {
                     System.out.println("The equation has one root : 0 ");
                 } else {
                     System.out.println("The equation has one root : " + (-c / b));
-
                 }
             }
         } else {
