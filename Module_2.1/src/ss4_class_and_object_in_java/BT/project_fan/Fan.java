@@ -30,6 +30,8 @@ public class Fan {
             case FAST:
                 s = "FAST";
                 break;
+            default:
+                s = "Fans don't have this speed -_- ";
         }
         return s;
     }
