@@ -16,6 +16,7 @@ public class Main {
         System.out.println(" A is : " + quadraticEquation.getA());
         System.out.println(" B is : " + quadraticEquation.getB());
         System.out.println(" C is : " + quadraticEquation.getC());
-        quadraticEquation.solvingEquation();
+
+        quadraticEquation.solvingEquation() ;
     }
 }
