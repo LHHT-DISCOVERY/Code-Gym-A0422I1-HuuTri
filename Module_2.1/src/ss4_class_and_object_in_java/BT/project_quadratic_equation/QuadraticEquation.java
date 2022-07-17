@@ -45,18 +45,18 @@ public class QuadraticEquation {
 
     // xử lí các case có thể sảy ra đối với pt bậc 2
     public void solvingEquation() {
-        if (a == 0) {
-            if (b == 0) {
-                if (c == 0) {
+        if (this.a == 0) {
+            if (this.b == 0) {
+                if (this.c == 0) {
                     System.out.println(" The equation has countless roots");
                 } else {
                     System.out.println(" The equation has no roots");
                 }
             } else {
-                if (c == 0) {
+                if (this.c == 0) {
                     System.out.println("The equation has one root : 0 ");
                 } else {
-                    System.out.println("The equation has one root : " + (-c / b));
+                    System.out.println("The equation has one root : " + (-this.c / this.b));
                 }
             }
         } else {
@@ -72,18 +72,19 @@ public class QuadraticEquation {
 
     // delta
     public double getDiscriminant() {
-        return b * b - 4 * a * c;
+
+        return this.b * this.b - 4 * this.a * this.c;
     }
 
     // nghiệm 1
     public double getRoot1() {
-        return ((-b + (Math.sqrt(b * b - 4 * a * c)))) / (2 * a);
+        return ((-this.b + (Math.sqrt(this.b * this.b - 4 * this.a * this.c)))) / (2 * this.a);
 
     }
 
     // nghiệm 2
     public double getRoot2() {
-        return ((-b - (Math.sqrt(b * b - 4 * a * c)))) / (2 * a);
+        return ((-this.b - (Math.sqrt(this.b * this.b - 4 * this.a * this.c)))) / (2 * this.a);
 
     }
 }
