@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         StopWatch stopWatch = new StopWatch();
-        Scanner input = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         int choice = -1;
         do {
-            System.out.println("Select : ");
+            System.out.println("Enter your choice ");
             System.out.println(" 1. Start time ");
             System.out.println(" 2. Stop time ");
             System.out.println(" 0. Exit ");
-            System.out.print("Enter your choice: ");
-            choice = input.nextInt();
+            System.out.print("Enter your selection: ");
+            choice = scanner.nextInt();
             switch (choice) {
                 case 1:
                     stopWatch.startTime();
@@ -22,7 +22,7 @@ public class Main {
                 case 2:
                     stopWatch.stopTime();
                     System.out.println(" Stop time: " + stopWatch.getEndTime());
-                    System.out.printf(" Elapsed time:  %,.3f (ms)" , stopWatch.getElapsedTime());
+                    System.out.printf(" Elapsed time:  %,.1f (ms)" , stopWatch.getElapsedTime());
                     System.out.println();
                     break;
                 case 0:
@@ -30,7 +30,7 @@ public class Main {
                     System.exit(0);
                     break;
                 default:
-                    System.out.println("No choice in Menu ...");
+                    System.out.println(" You made the wrong choice. ...");
             }
         } while (choice != 0);
     }
