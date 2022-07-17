@@ -48,6 +48,7 @@ public class Fan {
 
     //set radius
     public void setRadius(double radius) {
+
         this.radius = radius;
     }
 
@@ -65,11 +66,13 @@ public class Fan {
 
     // on
     public void turnOn() {
+
         this.on = true;
     }
 
     // off
     public void turnoff() {
+
         this.on = false;
     }
 
