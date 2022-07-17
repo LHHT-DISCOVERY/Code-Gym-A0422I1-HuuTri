@@ -37,14 +37,18 @@ public class SumDiagonalInArray {
         int sum_2 = 0;
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[0].length; j++) {
+                // tổng các số trên đường chéo thứ nhất
                 if (i == j) {
                     sum_1 += array[i][j];
                 }
-                if (i + j == array.length - 1) {
+                // tổng các số trên đường chéo thứ 2 và loại bỏ đi vị trí trùng nhau trên đường chéo thứ nhất
+                // vì số tại tâm của ma trận vuông trùng lại trên đường chéo chính thứ 2
+                if (i + j == array.length - 1 && i != j) {
                     sum_2 += array[i][j];
                 }
             }
         }
+        // trả về tổng các số trên 2 đường chéo chính
         return sum_1 + sum_2;
     }
 }
