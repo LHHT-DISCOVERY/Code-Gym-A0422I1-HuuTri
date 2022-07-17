@@ -16,6 +16,7 @@ public class Fan {
         color = "Blue";
     }
 
+    // get speed
     public String getSpeed() {
         String s = "";
         switch (speed) {
@@ -32,38 +33,44 @@ public class Fan {
         return s;
     }
 
+    // set speed
     public void setSpeed(int speed) {
 
         this.speed = speed;
     }
 
+    // get radius
     public double getRadius() {
 
         return radius;
     }
 
+    //set radius
     public void setRadius(double radius) {
         this.radius = radius;
     }
 
+    // get color
     public String getColor() {
 
         return color;
     }
 
+    // set color
     public void setColor(String color) {
 
         this.color = color;
     }
 
+    // on
     public void turnOn() {
         this.on = true;
     }
 
+    // off
     public void turnoff() {
         this.on = false;
     }
-
 
     public String toString() {
         if (on) {
