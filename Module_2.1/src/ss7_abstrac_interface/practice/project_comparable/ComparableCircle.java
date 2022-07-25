@@ -1,4 +1,4 @@
-package ss7_abstrac_interface.TH.project_comparable;
+package ss7_abstrac_interface.practice.project_comparable;
 
 public class ComparableCircle extends Circle implements Comparable<ComparableCircle> {
     public ComparableCircle() {

@@ -1,4 +1,4 @@
-package ss7_abstrac_interface.TH.project_animal_interface;
+package ss7_abstrac_interface.practice.project_animal_interface;
 
 public abstract class Animal {
     public String makeSound(){

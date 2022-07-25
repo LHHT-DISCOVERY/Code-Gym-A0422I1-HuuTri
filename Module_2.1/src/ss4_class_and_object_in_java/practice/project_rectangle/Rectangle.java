@@ -1,4 +1,4 @@
-package ss4_class_and_object_in_java.TH.project_rectangle;
+package ss4_class_and_object_in_java.practice.project_rectangle;
 
 public class Rectangle {
     double width, height;
