@@ -3,5 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/ss7_interface/apj-shape" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/ss8_checkout_git/apj-shape" vcs="Git" />
   </component>
 </project>
