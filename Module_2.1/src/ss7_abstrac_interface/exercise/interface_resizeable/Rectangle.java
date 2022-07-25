@@ -1,4 +1,5 @@
-package ss7_abstrac_interface.interface_resizeable;
+package ss7_abstrac_interface.exercise.interface_resizeable;
+
 
 public class Rectangle extends Shape implements Resizeable {
     private double width = 1.0;
