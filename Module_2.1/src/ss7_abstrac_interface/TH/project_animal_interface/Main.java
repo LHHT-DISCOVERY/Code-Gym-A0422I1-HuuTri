@@ -1,7 +1,5 @@
 package ss7_abstrac_interface.TH.project_animal_interface;
 
-import ss6_abstraction.project_circle_and_cylinder.Circle;
-
 public class Main {
     public static void main(String[] args) {
         Animal[] animals = new Animal[2];

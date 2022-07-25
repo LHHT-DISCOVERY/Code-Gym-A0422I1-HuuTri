@@ -1,4 +1,4 @@
-package ss6_abstraction.project_point_two_D_and_point_three_D;
+package ss6_inheritance.project_point_two_D_and_point_three_D;
 
 public class PointThreeD extends PointTwoD {
     private float z;

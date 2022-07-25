@@ -1,4 +1,4 @@
-package ss6_abstraction.project_circle_and_cylinder;
+package ss6_inheritance.project_circle_and_cylinder;
 
 public class Circle {
     private Double radius;

@@ -1,6 +1,4 @@
-package ss6_abstraction.projectmoveablepoint;
-
-import java.util.Arrays;
+package ss6_inheritance.projectmoveablepoint;
 
 public class Main {
     public static void main(String[] args) {

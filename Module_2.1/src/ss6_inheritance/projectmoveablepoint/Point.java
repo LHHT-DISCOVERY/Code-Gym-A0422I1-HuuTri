@@ -1,15 +1,15 @@
-package ss6_abstraction.project_point_two_D_and_point_three_D;
+package ss6_inheritance.projectmoveablepoint;
 
-public class PointTwoD {
+public class Point {
     private float x;
     private float y;
 
-    public PointTwoD() {
+    public Point() {
         this.x = 0.0f;
         this.y = 0.0f;
     }
 
-    public PointTwoD(float x, float y) {
+    public Point(float x, float y) {
         this.setX(x);
         this.setY(y);
     }
@@ -41,7 +41,6 @@ public class PointTwoD {
     }
 
     public String toString() {
-        return " X is : " + this.getX() + "\n Y is : " + this.getY();
+        return "(x,y) = " + "(" + this.getX() + "," + this.getY()+");";
     }
-
 }
