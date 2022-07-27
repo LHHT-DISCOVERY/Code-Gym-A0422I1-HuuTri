@@ -1,4 +1,4 @@
-package ss7_abstrac_interface.exercise.codegym;
+package ss7_abstrac_interface.exercise.interface_colorable;
 
 public class Rectangle extends Shape {
     private double width = 1.0;

@@ -1,4 +1,4 @@
-package ss7_abstrac_interface.exercise.codegym;
+package ss7_abstrac_interface.exercise.interface_colorable;
 
 public class Square extends Shape implements Colorable {
     private double side = 3.0;
