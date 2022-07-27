@@ -1,4 +1,4 @@
-package clearncode_refactoring.project_calculator;
+package ss8_clearncode_refactoring.project_calculator;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

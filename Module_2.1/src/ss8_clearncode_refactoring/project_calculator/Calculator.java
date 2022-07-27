@@ -1,4 +1,4 @@
-package clearncode_refactoring.project_calculator;
+package ss8_clearncode_refactoring.project_calculator;
 
 public class Calculator {
 

@@ -1,4 +1,4 @@
-package clearncode_refactoring.project_split_variable;
+package ss8_clearncode_refactoring.project_split_variable;
 
 import org.junit.jupiter.api.Test;
 
