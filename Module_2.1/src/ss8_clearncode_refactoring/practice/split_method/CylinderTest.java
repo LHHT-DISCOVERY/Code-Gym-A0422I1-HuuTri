@@ -1,4 +1,4 @@
-package ss8_clearncode_refactoring.split_method;
+package ss8_clearncode_refactoring.practice.split_method;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

@@ -1,4 +1,4 @@
-package ss8_clearncode_refactoring.project_split_variable;
+package ss8_clearncode_refactoring.practice.project_split_variable;
 
 public class FizzBuzz {
 
