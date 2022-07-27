@@ -1,7 +1,7 @@
 package ss7_abstrac_interface.exercise.codegym;
 
 public class Square extends Shape implements Colorable {
-    private double side;
+    private double side = 3.0;
     public  Square(){}
     public Square(double side) {
         this.side = side;
@@ -27,6 +27,8 @@ public class Square extends Shape implements Colorable {
     public String toString() {
         return "Square{" +
                 "side=" + side +
+                ", Area is : "
+                + getArea() +
                 '}' + super.toString();
     }
 

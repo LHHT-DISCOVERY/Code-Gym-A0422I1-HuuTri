@@ -1,7 +1,5 @@
 package ss7_abstrac_interface.exercise.codegym;
 
-import com.codegym.Shape;
-
 public class Rectangle extends Shape {
     private double width = 1.0;
     private double length = 1.0;
@@ -50,6 +48,8 @@ public class Rectangle extends Shape {
                 + getWidth()
                 + " and length="
                 + getLength()
+                + ", Area is : "
+                + getArea()
                 + ", which is a subclass of "
                 + super.toString();
     }

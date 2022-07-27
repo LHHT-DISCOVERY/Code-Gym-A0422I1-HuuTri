@@ -8,7 +8,7 @@ public class SquareTest {
         Square square2 = new Square(3.0);
         System.out.println(square2);
 
-        Square square = new Square("red" , true , 3) ;
+        Square square = new Square("red" , true , 4) ;
         System.out.println(square);
     }
 }
