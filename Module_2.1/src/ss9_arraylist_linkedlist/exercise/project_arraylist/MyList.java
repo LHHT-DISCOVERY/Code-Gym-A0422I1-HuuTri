@@ -59,13 +59,13 @@ public class MyList<E> {
     }
 
     // clone
-//    protected MyList<E> clone() {
-//        MyList<E> newList = new MyList<>(elements.length);
-//        for (Object element : elements) {
-//            newList.add((E)element);
-//        }
-//        return newList;
-//    }
+    public MyList<E> clone() {
+        MyList<E> newList = new MyList<>(elements.length);
+        for (int i = 0; i < size(); i++) {
+            newList.add(getElement(i));
+        }
+        return newList;
+    }
 
     // indexOf
     public int indexOf(E element) {
