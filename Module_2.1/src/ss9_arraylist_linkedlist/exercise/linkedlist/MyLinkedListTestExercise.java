@@ -10,9 +10,12 @@ public class MyLinkedListTestExercise {
         integerNode.addLast(4);
         integerNode.addLast(5);
         integerNode.addLast(6);
+        integerNode.addLast(7);
+        integerNode.addLast(8);
+        integerNode.addLast(9);
         integerNode.addFist(2);
-        integerNode.add(0, 1);
-        integerNode.add(7, 7);
+        integerNode.addFist(1);
+        integerNode.add(0, 0);
 
         // Print linked list
         System.out.print("Linked List then Input : ");
@@ -24,11 +27,18 @@ public class MyLinkedListTestExercise {
         System.out.println("------------------------");
 
         // method remove
+        System.out.print("remove first element is : " + integerNode.getFist());
         integerNode.removeFistElement();
+        System.out.println();
+        System.out.print("remove last element is : " + integerNode.getLast());
         integerNode.removeLastElement();
+        System.out.println();
+        System.out.println("remove element is : 4 ");
         integerNode.remove(4);
-        integerNode.remove(6);
-        System.out.print("Linked List then Remove Element [4, 6] : ");
+        System.out.print("remove element index [3]  : " + integerNode.getIndex(3));
+        integerNode.removeElementIndex(3);
+        System.out.println();
+        System.out.print("Linked List then Remove : ");
         integerNode.PrintLinkedList(integerNode.head);
         System.out.println("------------------------");
 
@@ -38,7 +48,7 @@ public class MyLinkedListTestExercise {
         System.out.println("------------------------");
 
         // indexOf
-        System.out.println("Index : " + integerNode.indexOf(3));
+        System.out.println("Index : " + integerNode.indexOf(5));
         System.out.println("Index : " + integerNode.indexOf(23));
         System.out.println("------------------------");
 
@@ -51,6 +61,7 @@ public class MyLinkedListTestExercise {
         // get first , get last
         System.out.println("Get first : " + myLinkedListExerciseClone.getFist());
         System.out.println("Get last : " + myLinkedListExerciseClone.getLast());
+        System.out.println("Get element at index [3]: " + myLinkedListExerciseClone.getIndex(3));
         System.out.println("------------------------");
 
         // clear

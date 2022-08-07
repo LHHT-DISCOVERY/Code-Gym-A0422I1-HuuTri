@@ -31,7 +31,7 @@ class MyLinkedListExercise<E> {
     //method checkIndex
     public void checkIndex(int index) {
         if (index < 0 || index > size) {
-            throw new IndexOutOfBoundsException(" NOT ADD ");
+            throw new IndexOutOfBoundsException(" ERROR ");
         }
     }
 
@@ -66,6 +66,30 @@ class MyLinkedListExercise<E> {
         }
     }
 
+    // method remove at index
+    public void removeElementIndex(int index) {
+        checkEmpty();
+        checkIndex(index);
+        if (index == 0) {
+            removeFistElement();
+        } else if (index == size) {
+            removeLastElement();
+        } else {
+            Node<E> current = head;
+            Node<E> period = null;
+            int count = 0;
+            while (current.next != null) {
+                if (index == count) {
+                    period.next = current.next;
+                    break;
+                }
+                period = current;
+                current = current.next;
+                count++;
+            }
+        }
+    }
+
     // method remove at element
     public void remove(E element) {
         checkEmpty();
@@ -84,12 +108,9 @@ class MyLinkedListExercise<E> {
                     }
                     break;
                 }
-
                 period = current;
                 current = current.next;
-
             }
-
             size--;
         }
     }
@@ -121,6 +142,29 @@ class MyLinkedListExercise<E> {
     public E getLast() {
         checkEmpty();
         return tail.element;
+    }
+
+    // method get index
+    public E getIndex(int index) {
+        checkIndex(index);
+        int n = size - 1;
+        if (index == 0) {
+            getFist();
+        } else if (index == n) {
+            return tail.element;
+        } else {
+            Node<E> checkIndex = head;
+            int count = 0;
+            while (checkIndex.next != null) {
+                if (count == index) {
+                    return checkIndex.element;
+                }
+                checkIndex = checkIndex.next;
+                count++;
+            }
+
+        }
+        return null;
     }
 
     // method get size
