@@ -176,7 +176,7 @@ class MyLinkedListExercise<E> {
     public MyLinkedListExercise<E> clone() {
         checkEmpty();
         Node<E> nodeClone = head;
-        MyLinkedListExercise<E> cloneMyLinkedList = new MyLinkedListExercise<>();
+        MyLinkedListExercise<E> cloneMyLinkedList = new MyLinkedListExercise<E>();
         while (nodeClone != null) {
             cloneMyLinkedList.addLast(nodeClone.element);
             nodeClone = nodeClone.next;
