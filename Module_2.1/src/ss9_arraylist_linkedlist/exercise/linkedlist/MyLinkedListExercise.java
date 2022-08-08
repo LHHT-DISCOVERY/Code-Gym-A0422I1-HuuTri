@@ -72,7 +72,7 @@ class MyLinkedListExercise<E> {
         checkIndex(index);
         if (index == 0) {
             removeFistElement();
-        } else if (index == size) {
+        } else if (index == size-1) {
             removeLastElement();
         } else {
             Node<E> current = head;
