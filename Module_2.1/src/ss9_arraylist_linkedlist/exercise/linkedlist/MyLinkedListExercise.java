@@ -147,10 +147,10 @@ class MyLinkedListExercise<E> {
     // method get index
     public E getIndex(int index) {
         checkIndex(index);
-        int n = size - 1;
+        int lastIndex = size - 1;
         if (index == 0) {
             getFist();
-        } else if (index == n) {
+        } else if (index == lastIndex) {
             return tail.element;
         } else {
             Node<E> checkIndex = head;
