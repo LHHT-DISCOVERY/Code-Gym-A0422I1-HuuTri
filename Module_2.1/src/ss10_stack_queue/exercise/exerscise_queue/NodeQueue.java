@@ -1,4 +1,4 @@
-package ss10_stack_queue.exercis.exercise_queue;
+package ss10_stack_queue.exercise.exerscise_queue;
 
 public class NodeQueue<E> {
     E element;

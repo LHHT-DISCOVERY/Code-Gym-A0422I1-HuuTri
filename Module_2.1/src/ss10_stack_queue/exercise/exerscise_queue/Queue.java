@@ -1,6 +1,4 @@
-package ss10_stack_queue.exercis.exercise_queue;
-
-import ss10_stack_queue.practice.queue_linked_list.Node;
+package ss10_stack_queue.exercise.exerscise_queue;
 
 public class Queue<E> {
     NodeQueue<E> front, rear;
