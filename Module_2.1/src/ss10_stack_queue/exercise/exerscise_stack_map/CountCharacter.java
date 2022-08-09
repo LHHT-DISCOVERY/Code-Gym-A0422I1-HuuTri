@@ -1,4 +1,4 @@
-package ss10_stack_queue.exercise.resever_number;
+package ss10_stack_queue.exercise.exerscise_stack_map;
 
 import java.util.*;
 

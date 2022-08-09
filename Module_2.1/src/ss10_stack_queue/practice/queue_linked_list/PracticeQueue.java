@@ -1,16 +1,16 @@
 package ss10_stack_queue.practice.queue_linked_list;
 
 public class PracticeQueue {
-    Node head , tail ;
+    Node head, tail;
 
     public PracticeQueue() {
         this.head = null;
         this.tail = null;
     }
 
-    public void enqueue(int key){
+    public void enqueue(int key) {
         Node tempt = new Node(key);
-        if(this.tail == null ){
+        if (this.tail == null) {
             this.head = this.tail = tempt;
             return;
         }
@@ -18,12 +18,12 @@ public class PracticeQueue {
         this.tail = tempt;
     }
 
-    public Node dequeue(){
+    public Node dequeue() {
         if (this.head == null)
             return null;
         Node tempt = this.head;
         this.head = this.head.next;
-        if(this.head == null){
+        if (this.head == null) {
             this.tail = null;
         }
         return tempt;
