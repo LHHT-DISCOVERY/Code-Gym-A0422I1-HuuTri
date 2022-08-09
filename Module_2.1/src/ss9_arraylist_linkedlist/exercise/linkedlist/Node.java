@@ -12,10 +12,6 @@ public class Node<E> {
         this.next = next;
     }
 
-    public E getElement() {
-        return element;
-    }
-
     public Node(E element) {
         this.element = element;
     }
