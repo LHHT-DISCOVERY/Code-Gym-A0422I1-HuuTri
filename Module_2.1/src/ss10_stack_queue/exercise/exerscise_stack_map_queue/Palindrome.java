@@ -22,12 +22,12 @@ public class Palindrome {
             if (stringQueue.isEmpty()) {
                 break;
             }
-            reverseString += (stringQueue.poll());
+            reverseString += (stringQueue.poll()).toUpperCase();
         }
 
         // Check Palindrome
         System.out.print("Input : " + stringCheck);
-        if (reverseString.equals(stringCheck)) {
+        if (reverseString.equals(stringCheck.toUpperCase())) {
             System.out.println(" => Output : Palindrome ");
         } else {
             System.out.println(" => Output : Not Palindrome");
