@@ -8,9 +8,8 @@ public class Palindrome {
         System.out.print("Enter String to be check : ");
         String stringCheck = scanner.nextLine().trim();
 
-        Deque<String> stringQueue = new ArrayDeque<>();
-
         // Offer reverse String
+        Deque<String> stringQueue = new ArrayDeque<>();
         for (int i = 0; i < stringCheck.length(); i++) {
             stringQueue.offerFirst(stringCheck.charAt(i) + "");
         }
