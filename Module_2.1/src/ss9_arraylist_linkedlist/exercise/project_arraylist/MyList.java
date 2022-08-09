@@ -45,7 +45,7 @@ public class MyList<E> {
     // E remove index
     public E remove(int index) {
         checkIndex(index);
-        E element = getElement(index);
+        E element = get(index);
         for (int i = index; i < size - 1; i++) {
             elements[i] = elements[i + 1];
         }
@@ -62,7 +62,7 @@ public class MyList<E> {
     public MyList<E> clone() {
         MyList<E> newList = new MyList<>(elements.length);
         for (int i = 0; i < size(); i++) {
-            newList.add(getElement(i));
+            newList.add(get(i));
         }
         return newList;
     }
@@ -86,15 +86,10 @@ public class MyList<E> {
         return true;
     }
 
-    // E getElement
-    private E getElement(int index) {
-        return (E) elements[index];
-    }
-
     // E get
     public E get(int index) {
         checkIndex(index);
-        return getElement(index);
+        return (E) elements[index];
     }
 
     // contains
