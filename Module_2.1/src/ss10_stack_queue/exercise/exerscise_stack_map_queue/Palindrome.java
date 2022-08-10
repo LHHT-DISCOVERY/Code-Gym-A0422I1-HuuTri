@@ -9,7 +9,7 @@ public class Palindrome {
         String stringCheck = scanner.nextLine().trim();
 
         // Offer reverse String
-        Deque<String> stringQueue = new ArrayDeque<>();
+        Deque<String> stringQueue = new ArrayDeque<String>();
         for (int i = 0; i < stringCheck.length(); i++) {
             stringQueue.offerFirst(stringCheck.charAt(i) + "");
         }
