@@ -3,10 +3,12 @@ package ss10_stack_queue.exercise.demerging_queue;
 import java.util.ArrayList;
 
 public class ListEmployee {
-    ArrayList<Employee> employeeList = new ArrayList<>();
+    public ArrayList<Employee> employeeList;
 
     public ListEmployee() {
+        this.employeeList = new ArrayList<>();
     }
+
 
     public ListEmployee(ArrayList<Employee> employeeList) {
         this.employeeList = employeeList;
@@ -16,6 +18,15 @@ public class ListEmployee {
         this.employeeList.add(employee);
     }
 
+    public int size() {
+        return employeeList.size();
+    }
+
+    public Employee get(int i) {
+        return employeeList.get(i);
+
+    }
+
     public void print() {
         for (Employee employee1 :
                 employeeList) {
@@ -23,7 +34,4 @@ public class ListEmployee {
         }
     }
 
-    public static void main(String[] args) {
-
-    }
 }

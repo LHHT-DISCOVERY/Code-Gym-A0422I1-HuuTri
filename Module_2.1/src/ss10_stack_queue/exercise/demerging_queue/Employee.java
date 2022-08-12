@@ -41,8 +41,8 @@ public class Employee {
     @Override
     public String toString() {
         return "Employee : " +
-                "name: " + name  +
-                "\t | sex: " + sex  +
+                "name: " + name +
+                "\t | sex: " + sex +
                 "\t | yearOfBirth: " + yearOfBirth;
     }
 }
