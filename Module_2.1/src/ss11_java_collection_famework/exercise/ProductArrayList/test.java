@@ -21,12 +21,13 @@ public class test {
             scanner.nextLine();
             switch (select) {
                 case 1:
+                    System.out.println("Nhập ID");
+                    int id = scanner.nextInt();
+                    scanner.nextLine();
                     System.out.println("Mời bạn nhập tên sản phẩm : ");
                     String name = scanner.nextLine();
                     System.out.println(" Nhập giá : ");
                     double price = scanner.nextDouble();
-                    System.out.println("Nhập ID");
-                    int id = scanner.nextInt();
                     Product product = new Product(name, id, price);
                     listProduct.addProduct(product);
                     System.out.println("Nhập thành công");
@@ -59,7 +60,6 @@ public class test {
                 case 6:
                     System.out.println("Xắp xếp sản phẩm theo giá từ cao đến thấp");
                     listProduct.sortPrice();
-                    listProduct.show();
                     break;
                 case 0:
                     System.exit(0);

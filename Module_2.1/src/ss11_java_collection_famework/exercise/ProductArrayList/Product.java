@@ -1,6 +1,6 @@
 package ss11_java_collection_famework.exercise.ProductArrayList;
 
-public class Product implements Comparable<Product> {
+public class Product  {
     private String nameProduct;
     private int idProduct;
     private double priceProduct;
@@ -48,10 +48,5 @@ public class Product implements Comparable<Product> {
                 "Name Product : " + nameProduct +
                 " || idProduct : " + idProduct +
                 " || priceProduct : " + priceProduct + "$";
-    }
-
-
-    public int compareTo(Product o) {
-       return  this.nameProduct.compareTo(o.getNameProduct());
     }
 }

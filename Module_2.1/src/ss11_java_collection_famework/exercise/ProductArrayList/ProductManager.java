@@ -71,12 +71,11 @@ public class ProductManager {
                 } else if (o1.getPriceProduct() < o2.getPriceProduct()) {
                     return 1;
                 } else {
-
                     return 0;
                 }
-
             }
         });
+        show();
     }
 
     public void show() {
