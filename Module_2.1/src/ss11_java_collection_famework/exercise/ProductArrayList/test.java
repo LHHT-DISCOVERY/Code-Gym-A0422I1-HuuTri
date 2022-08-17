@@ -66,7 +66,6 @@ public class test {
                 default:
                     System.out.println("NOT select in MENU");
             }
-
         } while (select != 0);
     }
 }
