@@ -1,4 +1,4 @@
-package ss11_java_collection_famework.exercise.ProductArrayList;
+package ss12_java_collection_famework.exercise.product_array_list;
 
 import java.util.ArrayList;
 import java.util.Collections;

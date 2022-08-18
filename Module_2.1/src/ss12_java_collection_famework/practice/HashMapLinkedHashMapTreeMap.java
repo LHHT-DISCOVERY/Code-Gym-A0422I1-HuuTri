@@ -1,4 +1,4 @@
-package ss11_java_collection_famework.practice;
+package ss12_java_collection_famework.practice;
 
 import java.util.*;
 
