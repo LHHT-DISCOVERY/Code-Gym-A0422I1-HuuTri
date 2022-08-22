@@ -3,18 +3,19 @@ package ss15_exception_and_debug.exercise;
 import java.util.Scanner;
 
 public class CheckTriangle {
-    public static void triangleException(double a, double b, double c) throws IllegalTriangleException {
+    public static boolean triangleException(double a, double b, double c) throws IllegalTriangleException {
         if (a <= 0 || b <= 0 || c <= 0) {
-            throw new IllegalTriangleException(" KO the nhap so am hoac bang 0");
-        } else if (a + c <= b || a + b <= c || c + b <= a) {
-            throw new IllegalTriangleException("Ko ton tai tam giac nay");
-        } else {
-            throw new IllegalTriangleException("Nhap thanh cong tam giac");
+            throw new IllegalTriangleException(" Ko the nhap so am hoac bang 0");
         }
+        if (a + c <= b || a + b <= c || c + b <= a) {
+            throw new IllegalTriangleException("Ko ton tai tam giac nay");
+        }
+        return true;
     }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        while (true) {
             try {
                 System.out.print("nhap a : ");
                 double a = scanner.nextInt();
@@ -22,9 +23,14 @@ public class CheckTriangle {
                 double b = scanner.nextInt();
                 System.out.print("nhap c: ");
                 double c = scanner.nextInt();
-                CheckTriangle.triangleException(a, b, c);
+                if (CheckTriangle.triangleException(a, b, c)) {
+                    System.out.println("Nhap thanh cong tam giac ");
+                    break;
+                }
             } catch (IllegalTriangleException x) {
-                x.printStackTrace();
+                System.out.println("Exception : " + x.getMessage());
             }
         }
+
+    }
 }
