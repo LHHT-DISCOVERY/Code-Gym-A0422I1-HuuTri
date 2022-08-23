@@ -15,20 +15,27 @@ public class CheckTriangle {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        System.out.print("nhap a : ");
+        double a = scanner.nextInt();
+        System.out.print("nhap  b: ");
+        double b = scanner.nextInt();
+        System.out.print("nhap c: ");
+        double c = scanner.nextInt();
         while (true) {
             try {
-                System.out.print("nhap a : ");
-                double a = scanner.nextInt();
-                System.out.print("nhap  b: ");
-                double b = scanner.nextInt();
-                System.out.print("nhap c: ");
-                double c = scanner.nextInt();
                 if (CheckTriangle.triangleException(a, b, c)) {
                     System.out.println("Nhap thanh cong tam giac ");
                     break;
                 }
             } catch (IllegalTriangleException x) {
                 System.out.println("Exception : " + x.getMessage());
+                System.out.println();
+                System.out.print("nhap lai a : ");
+                a = scanner.nextInt();
+                System.out.print("nhap lai b: ");
+                b = scanner.nextInt();
+                System.out.print("nhap lai c: ");
+                c = scanner.nextInt();
             }
         }
 
