@@ -14,7 +14,7 @@ public class ReadFileCsv {
         try (BufferedReader reader = new BufferedReader(new FileReader(path))) {
             String data;
             while ((data = reader.readLine()) != null) {
-                // kiểm tra hàng tiếp theo có rỗng ko để tiếng hành cắt hoặc bỏ qua
+                // kiểm tra hàng tiếp theo có rỗng ko để tiến hành cắt hoặc bỏ qua
                 if ("".equals(data.trim())) {
                     continue;
                 }

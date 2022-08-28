@@ -11,7 +11,7 @@ public class DemoFile {
         students.add(new Student("Thanh", 19, "Da Nang"));
         students.add(new Student("Bao", 20, "Quang Nam"));
 
-        FileUtils.writeFile("student.csv", students, false);
+        FileUtils.writeFile("student.txt", students, false);
 
         File file = new File("sample.txt");
 
