@@ -1,12 +1,9 @@
 package ss16_IO_text_file.exercise.copy_file;
 
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
 import ss16_IO_text_file.practice.read_and_write_file.Country;
-import sun.awt.image.ImageWatched;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 public class CopyFile {
@@ -36,8 +33,8 @@ public class CopyFile {
         BufferedWriter writer;
         FileWriter fileWriter = null;
         try {
-           fileWriter = new FileWriter(path);
-           writer = new BufferedWriter(fileWriter);
+            fileWriter = new FileWriter(path);
+            writer = new BufferedWriter(fileWriter);
             for (Country country : countryList
             ) {
                 writer.write(country.getStt() + "," + country.getCode() + "," + country.getName());
