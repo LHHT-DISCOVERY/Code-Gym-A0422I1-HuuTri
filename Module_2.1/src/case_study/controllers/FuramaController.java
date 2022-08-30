@@ -1,5 +1,6 @@
 package case_study.controllers;
 
+import case_study.services.implement_interface.CustomerServiceImpl;
 import case_study.services.implement_interface.EmployeeServiceImpl;
 
 import java.util.Scanner;
@@ -8,6 +9,7 @@ public class FuramaController {
     Scanner scanner = new Scanner(System.in);
     int select = 0;
     EmployeeServiceImpl employeeService = new EmployeeServiceImpl();
+    CustomerServiceImpl customerService = new CustomerServiceImpl();
 
     public void displayMainMenu() {
         do {
@@ -91,10 +93,15 @@ public class FuramaController {
             select = scanner.nextInt();
             switch (select) {
                 case 1:
+                    customerService.display();
                     break;
                 case 2:
+                    scanner.nextLine();
+                    customerService.add();
                     break;
                 case 3:
+                    scanner.nextLine();
+                    customerService.editCustomer();
                     break;
                 case 4:
                     return;

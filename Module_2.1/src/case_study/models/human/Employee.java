@@ -5,13 +5,13 @@ public class Employee extends Person {
     private String employeeId;
     private String skill;
     private String position;
-    private int wage;
+    private double wage;
 
     public Employee() {
     }
 
 
-    public Employee(String name, String date, String sex, int CMND, int phone, String email, String employeeId, String skill, String position, int wage) {
+    public Employee(String name, String date, String sex, int CMND, int phone, String email, String employeeId, String skill, String position, double wage) {
         super(name, date, sex, CMND, phone, email);
         this.employeeId = employeeId;
         this.skill = skill;
@@ -43,11 +43,11 @@ public class Employee extends Person {
         this.position = position;
     }
 
-    public int getWage() {
+    public double getWage() {
         return wage;
     }
 
-    public void setWage(int wage) {
+    public void setWage(double wage) {
         this.wage = wage;
     }
 
@@ -57,6 +57,6 @@ public class Employee extends Person {
                 super.toString() +
                 ", skill='" + skill + '\'' +
                 ", position='" + position + '\'' +
-                ", wage=" + wage ;
+                ", wage=" + wage + " $" ;
     }
 }

@@ -1,8 +1,10 @@
 package case_study.services.implement_interface;
 
 import case_study.models.human.Employee;
+import case_study.regex.Regex;
 import case_study.services.interface_.EmployeeService;
 
+import javax.naming.Name;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -10,13 +12,13 @@ import java.util.Scanner;
 public class EmployeeServiceImpl implements EmployeeService {
     private static List<Employee> employeeList = new ArrayList<Employee>();
     private static Scanner scanner = new Scanner(System.in);
-
+    private static Regex regex = new Regex();
 
     public void add() {
-        System.out.print("Enter Name Employee : ");
-        String name = scanner.nextLine();
-        System.out.print("Enter Date Employee : ");
-        String date = scanner.nextLine();
+        System.out.print("Enter ID Employee : ");
+        String employeeId = scanner.nextLine();
+        String nameEmployee = regex.regexName();
+        String date = regex.regexDate();
         System.out.print("Enter Sex Employee : ");
         String sex = scanner.nextLine();
         System.out.print("Enter CMND Employee : ");
@@ -26,16 +28,14 @@ public class EmployeeServiceImpl implements EmployeeService {
         scanner.nextLine();
         System.out.print("Enter Email Employee :  ");
         String email = scanner.nextLine();
-        System.out.print("Enter ID Employee : ");
-        String employeeId = scanner.nextLine();
         System.out.println("|| --- Enter Skill Employee ---|| ");
         String skill = selectSkill();
         System.out.println("|| --- Enter Position Employee ---||");
         String position = selectPosition();
         System.out.print("Enter Wage employee : ");
-        int wage = scanner.nextInt();
+        Double wage = scanner.nextDouble();
         scanner.nextLine();
-        Employee employee = new Employee(name, date, sex, cmnd, phone, email, employeeId, skill, position, wage);
+        Employee employee = new Employee(nameEmployee, date, sex, cmnd, phone, email, employeeId, skill, position, wage);
         employeeList.add(employee);
     }
 
@@ -77,15 +77,14 @@ public class EmployeeServiceImpl implements EmployeeService {
                         switch (choice) {
                             case 1:
                                 scanner.nextLine();
-                                System.out.print(" Enter new Name : ");
-                                String newName = scanner.nextLine();
-                                employee.setName(newName);
+                                String newNameEmployee = regex.regexName();
+                                employee.setName(newNameEmployee);
                                 System.out.println("Edit Name Successful ");
                                 break;
                             case 2:
                                 scanner.nextLine();
                                 System.out.print(" Enter new date : ");
-                                String newDate = scanner.nextLine();
+                                String newDate = regex.regexDate();
                                 employee.setDate(newDate);
                                 System.out.println("Edit newDate Successful ");
                                 break;
@@ -118,7 +117,7 @@ public class EmployeeServiceImpl implements EmployeeService {
                                 break;
                             case 7:
                                 scanner.nextLine();
-                                System.out.print(" Enter new Email : ");
+                                System.out.print(" Enter new ID : ");
                                 String newIdEmployee = scanner.nextLine();
                                 employee.setEmployeeId(newIdEmployee);
                                 System.out.println("Edit newIdEmployee Successful ");
@@ -135,7 +134,7 @@ public class EmployeeServiceImpl implements EmployeeService {
                                 break;
                             case 10:
                                 System.out.print(" Enter new wage : ");
-                                int newWage = scanner.nextInt();
+                                Double newWage = scanner.nextDouble();
                                 employee.setWage(newWage);
                                 System.out.println("Edit newWage Successful ");
                                 break;
@@ -152,17 +151,17 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     public void menuEdit() {
         System.out.println(" --- Select Edit ---- ");
-        System.out.println("1.\tEdit Name \n" +
-                "2.\tEdit Date\n" +
-                "3.\tEdit Sex\n" +
-                "4.\tEdit CMND\n" +
-                "5.\tEdit Phone\n" +
-                "6.\tEdit Email\n" +
-                "7.\tEdit ID\n" +
-                "8.\tEdit Skill\n" +
-                "9.\tEdit Position\n" +
-                "10.\tEdit  Wage\n" +
-                "0.\tQuit Edit \n");
+        System.out.println("1.\tEdit Name Employee\n" +
+                "2.\tEdit Date Employee\n" +
+                "3.\tEdit Sex Employee\n" +
+                "4.\tEdit CMND Employee\n" +
+                "5.\tEdit Phone Employee\n" +
+                "6.\tEdit Email Employee\n" +
+                "7.\tEdit ID Employee\n" +
+                "8.\tEdit Skill Employee\n" +
+                "9.\tEdit Position Employee\n" +
+                "10.\tEdit Wage Employee\n" +
+                "0.\tQuit Edit Employee\n");
     }
 
     public String selectPosition() {
