@@ -1,4 +1,5 @@
 package case_study.main;
+
 import case_study.controllers.FuramaController;
 
 public class Main {

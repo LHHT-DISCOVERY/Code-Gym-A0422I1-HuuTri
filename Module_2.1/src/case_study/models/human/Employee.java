@@ -1,5 +1,4 @@
 package case_study.models.human;
-import case_study.models.human.Person;
 
 public class Employee extends Person {
     private String employeeId;
@@ -52,11 +51,21 @@ public class Employee extends Person {
     }
 
     @Override
+    public String writeToInfo() {
+        String info = " employeeId = " + this.employeeId +
+                super.writeToInfo() +
+                ", skill = " + this.skill +
+                ", position = " + this.position +
+                ", wage = " + this.wage + " $";
+        return info;
+    }
+
+    @Override
     public String toString() {
-        return "Employee | "+ " employeeId='" + employeeId + '\'' +
+        return "Employee | " + " employeeId='" + employeeId + '\'' +
                 super.toString() +
                 ", skill='" + skill + '\'' +
                 ", position='" + position + '\'' +
-                ", wage=" + wage + " $" ;
+                ", wage=" + wage + " $";
     }
 }

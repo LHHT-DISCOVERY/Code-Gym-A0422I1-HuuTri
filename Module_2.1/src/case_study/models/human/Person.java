@@ -68,6 +68,16 @@ public abstract class Person {
         this.email = email;
     }
 
+    public String writeToInfo() {
+        String info = " name = " + this.name +
+                ", date = " + this.date +
+                ", sex = " + this.sex +
+                ", CMND = " + this.CMND +
+                ", phone = " + this.phone +
+                ", email = " + this.email;
+        return info;
+    }
+
     @Override
     public String toString() {
         return " name ='" + name + '\'' +

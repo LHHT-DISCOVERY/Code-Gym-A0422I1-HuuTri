@@ -1,6 +1,8 @@
 package case_study.services.implement_interface;
 
+import case_study.exception.UserException;
 import case_study.models.human.Customer;
+import case_study.validate.Validator;
 
 import java.util.LinkedList;
 import java.util.Scanner;
@@ -12,10 +14,8 @@ public class CustomerServiceImpl {
     public void add() {
         System.out.print("Enter ID Customer : ");
         String customerId = scanner.nextLine();
-        System.out.print("Enter Name Customer : ");
-        String name = scanner.nextLine();
-        System.out.print("Enter Date Customer : ");
-        String date = scanner.nextLine();
+        String name = Validator.enterName();
+        String date = Validator.enterDate();
         System.out.print("Enter Sex Customer : ");
         String sex = scanner.nextLine();
         System.out.print("Enter CMND Customer : ");
@@ -25,8 +25,9 @@ public class CustomerServiceImpl {
         scanner.nextLine();
         System.out.print("Enter Email Customer :  ");
         String email = scanner.nextLine();
-        System.out.print("Enter type Customer : ");
-        String typeCustomer = scanner.nextLine();
+        System.out.println("Enter type Customer ");
+        String typeCustomer = selectTypeCustomer();
+        scanner.nextLine();
         System.out.print("Enter address customer : ");
         String addressCustomer = scanner.nextLine();
 
@@ -72,15 +73,13 @@ public class CustomerServiceImpl {
                         switch (choice) {
                             case 1:
                                 scanner.nextLine();
-                                System.out.print(" Enter new Name : ");
-                                String newName = scanner.nextLine();
+                                String newName = Validator.enterName();
                                 customer.setName(newName);
                                 System.out.println("Edit Name Successful ");
                                 break;
                             case 2:
                                 scanner.nextLine();
-                                System.out.print(" Enter new date : ");
-                                String newDate = scanner.nextLine();
+                                String newDate = Validator.enterDate();
                                 customer.setDate(newDate);
                                 System.out.println("Edit newDate Successful ");
                                 break;
@@ -120,9 +119,8 @@ public class CustomerServiceImpl {
                                 break;
                             case 8:
                                 scanner.nextLine();
-                                System.out.print(" Enter new type customer : ");
-                                String newTypeCustomer = scanner.nextLine();
-                                customer.setTypeCustomer(newTypeCustomer);
+                                System.out.println(" Enter new type customer ");
+                                customer.setTypeCustomer(selectTypeCustomer());
                                 System.out.println("Edit newTypeCustomer Successful ");
                                 break;
                             case 9:
@@ -140,6 +138,32 @@ public class CustomerServiceImpl {
             }
         } else {
             System.out.println("Not search ID customer");
+        }
+    }
+
+    public String selectTypeCustomer() {
+        while (true) {
+            System.out.println("||----- Selection Type Customer -----||");
+            System.out.println("1.\tDiamond\n" +
+                    "2.\tPlatinium\n" +
+                    "3.\tGold\n" +
+                    "4.\tSilver\n" +
+                    "5.\tMember\n");
+            System.out.print("Enter select : ");
+            int choice = scanner.nextInt();
+            switch (choice) {
+                case 1:
+                    return "Diamond";
+                case 2:
+                    return "Platinium";
+                case 3:
+                    return "Gold";
+                case 4:
+                    return "Silver";
+                case 5:
+                    return "Member";
+            }
+            System.out.println("Not select !! \n ** Again Enter select position ** \n");
         }
     }
 

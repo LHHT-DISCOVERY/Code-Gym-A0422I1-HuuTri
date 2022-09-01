@@ -1,10 +1,10 @@
 package case_study.services.implement_interface;
 
 import case_study.models.human.Employee;
-import case_study.regex.Regex;
+import case_study.read_and_write.ReadAndWriteFile;
 import case_study.services.interface_.EmployeeService;
+import case_study.validate.Validator;
 
-import javax.naming.Name;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -12,13 +12,12 @@ import java.util.Scanner;
 public class EmployeeServiceImpl implements EmployeeService {
     private static List<Employee> employeeList = new ArrayList<Employee>();
     private static Scanner scanner = new Scanner(System.in);
-    private static Regex regex = new Regex();
 
     public void add() {
         System.out.print("Enter ID Employee : ");
         String employeeId = scanner.nextLine();
-        String nameEmployee = regex.regexName();
-        String date = regex.regexDate();
+        String name = Validator.enterName();
+        String date = Validator.enterDate();
         System.out.print("Enter Sex Employee : ");
         String sex = scanner.nextLine();
         System.out.print("Enter CMND Employee : ");
@@ -35,8 +34,9 @@ public class EmployeeServiceImpl implements EmployeeService {
         System.out.print("Enter Wage employee : ");
         Double wage = scanner.nextDouble();
         scanner.nextLine();
-        Employee employee = new Employee(nameEmployee, date, sex, cmnd, phone, email, employeeId, skill, position, wage);
+        Employee employee = new Employee(name, date, sex, cmnd, phone, email, employeeId, skill, position, wage);
         employeeList.add(employee);
+        ReadAndWriteFile.writeToFile("E:\\Code_Gym_A0422I1_HuuTri\\Module_2.1\\src\\case_study\\data\\data_employee.csv", employeeList);
     }
 
     public void display() {
@@ -77,14 +77,13 @@ public class EmployeeServiceImpl implements EmployeeService {
                         switch (choice) {
                             case 1:
                                 scanner.nextLine();
-                                String newNameEmployee = regex.regexName();
+                                String newNameEmployee = Validator.enterName();
                                 employee.setName(newNameEmployee);
                                 System.out.println("Edit Name Successful ");
                                 break;
                             case 2:
                                 scanner.nextLine();
-                                System.out.print(" Enter new date : ");
-                                String newDate = regex.regexDate();
+                                String newDate = Validator.enterDate();
                                 employee.setDate(newDate);
                                 System.out.println("Edit newDate Successful ");
                                 break;
