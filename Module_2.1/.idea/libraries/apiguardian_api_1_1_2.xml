@@ -11,5 +11,8 @@
     <SOURCES>
       <root url="file://$PROJECT_DIR$/src" />
     </SOURCES>
+    <excluded>
+      <root url="file://$PROJECT_DIR$" />
+    </excluded>
   </library>
 </component>

@@ -1,7 +1,5 @@
 package ss10_stack_queue.exercise.exerscise_stack_map_queue;
 
-import sun.security.mscapi.CPublicKey;
-
 import java.util.Scanner;
 import java.util.Stack;
 
