@@ -1,10 +1,10 @@
 package case_study.services.implement_interface;
 
+import case_study.exception.UserException;
 import case_study.models.human.Employee;
 import case_study.read_and_write.ReadAndWriteFile;
 import case_study.services.interface_.EmployeeService;
 import case_study.validate.Validator;
-import case_study.exception.UserException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class EmployeeServiceImpl implements EmployeeService {
     private static List<Employee> employeeList = new ArrayList<Employee>();
     private static Scanner scanner = new Scanner(System.in);
-    
+
     public void add() {
         System.out.print("Enter ID Employee : ");
         String employeeId = scanner.nextLine();
@@ -216,7 +216,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         }
     }
 
-    public  String enterName() {
+    public String enterName() {
         do {
             System.out.print("Enter Name Customer : ");
             String name = scanner.nextLine();
@@ -230,7 +230,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         } while (true);
     }
 
-    public  String enterDate() {
+    public String enterDate() {
         do {
             System.out.print("Enter Date  :");
             String date = scanner.nextLine();

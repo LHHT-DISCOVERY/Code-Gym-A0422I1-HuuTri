@@ -3,7 +3,6 @@ package case_study.services.implement_interface;
 import case_study.exception.UserException;
 import case_study.models.human.Customer;
 import case_study.validate.Validator;
-import case_study.exception.UserException;
 
 import java.util.LinkedList;
 import java.util.Scanner;
@@ -181,7 +180,8 @@ public class CustomerServiceImpl {
                 "9.\tEdit address customer\n" +
                 "0.\tQuit Edit customer\n");
     }
-    public  String enterName() {
+
+    public String enterName() {
         do {
             System.out.print("Enter Name Customer : ");
             String name = scanner.nextLine();
