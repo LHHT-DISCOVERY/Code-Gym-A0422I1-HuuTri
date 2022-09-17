@@ -16,7 +16,7 @@ public class ListSoTietKiem {
     Scanner scanner = new Scanner(System.in);
     List<SoTietKiemNganHan> soTietKiemNganHans = new ArrayList<>();
 
-    public void addSoTietKiem() {
+    public void add() {
         String maSoTietKiem = enterMaTietKiem();
         System.out.println("Nhập mã khách hàng : ");
         String maKhachHang = scanner.nextLine();
@@ -32,9 +32,10 @@ public class ListSoTietKiem {
         int kiHan = Integer.parseInt(scanner.nextLine());
         SoTietKiemNganHan tietKiemNganHan = new SoTietKiemNganHan(maSoTietKiem, maKhachHang, date, thoiGianGui, soTienGui, laiXuat, kiHan);
         soTietKiemNganHans.add(tietKiemNganHan);
-        WriteFile.writeToFileSoTietKiem(DATA_DATA_SO_TIET_KIEM, soTietKiemNganHans, true);
+        ghiFile();
     }
 
+    // validate ngày
     public String enterDate() {
         do {
             System.out.print("Enter Date  :");
@@ -47,7 +48,11 @@ public class ListSoTietKiem {
             }
         } while (true);
     }
+     public void ghiFile(){
+         WriteFile.writeToFileSoTietKiem(DATA_DATA_SO_TIET_KIEM, soTietKiemNganHans, true);
+     }
 
+     // validate String
     public String enterMaTietKiem() {
         Pattern pattern = Pattern.compile(REGEX_MASOTIETKIEM);
         do {
@@ -62,6 +67,7 @@ public class ListSoTietKiem {
         } while (true);
     }
 
+    // validate biến
     public Double enterSoTienGui() {
         do {
             System.out.print("Enter Số Tiền Gửi  : ");
@@ -82,7 +88,7 @@ public class ListSoTietKiem {
             System.out.println(tietKiemNganHan);
         }
     }
-
+    // xóa
     public boolean remove(SoTietKiemNganHan MSTK) {
         return this.soTietKiemNganHans.remove(MSTK);
     }

@@ -21,8 +21,8 @@ public class Validator {
         }
     }
 
-    public static boolean validateTienGui(double soTienGui) throws UserException {
-        if (soTienGui < 1000000) {
+    public static boolean validateTien(double soTien) throws UserException {
+        if (soTien < 0) {
             throw new UserException(Message.TIEN_CORRECT);
         }
         return true;
