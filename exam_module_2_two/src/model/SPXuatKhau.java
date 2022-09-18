@@ -13,6 +13,10 @@ public class SPXuatKhau extends  SanPham{
         super(maSP);
     }
 
+    public String data_inf(){
+        return String.format("%s,%s",giaXuatKhau , quocGiaNhapSP ) + super.data_inf();
+    }
+
     public double getGiaXuatKhau() {
         return giaXuatKhau;
     }
@@ -34,6 +38,6 @@ public class SPXuatKhau extends  SanPham{
         return "SPXuatKhau{" +
                 "giaXuatKhau=" + giaXuatKhau +
                 ", quocGiaNhapSP='" + quocGiaNhapSP + '\'' +
-                '}';
+                '}'+ super.toString();
     }
 }

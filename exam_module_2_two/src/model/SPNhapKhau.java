@@ -40,13 +40,15 @@ public class SPNhapKhau extends SanPham {
         this.thueNhapKhau = thueNhapKhau;
     }
 
-
+    public String data_inf(){
+        return String.format("%s,%s,%s",giaNhapKhau , tinhNhapKhau ,thueNhapKhau) + super.data_inf();
+    }
     @Override
     public String toString() {
         return "SPNhapKhau{" +
                 "giaNhapKhau=" + giaNhapKhau +
                 ", tinhNhapKhau='" + tinhNhapKhau + '\'' +
                 ", thueNhapKhau=" + thueNhapKhau +
-                '}';
+                '}'+ super.toString();
     }
 }

@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class SPNhapKhauImp implements ServiceInterface {
-    public static final String DATA_DATA_NK = "src\\data\\data_spnk.csv";
+//    public static final String DATA_DATA_NK = "src\\data\\data_spnk.csv";
     Scanner scanner = new Scanner(System.in);
     List<SPNhapKhau> nhapKhauList = new ArrayList<>();
 
@@ -33,17 +33,14 @@ public class SPNhapKhauImp implements ServiceInterface {
         String tinhThanhNhap = scanner.nextLine();
         System.out.println("Nhập thuế nhập khẩu : ");
         double thueNhapKhau = Double.parseDouble(scanner.nextLine());
-        SPNhapKhau spNhapKhau =new SPNhapKhau(idSP ,tenSP,maSP,giaSP,soLuongSP,nhaSanXuat,giaNhapKhau,tinhThanhNhap,thueNhapKhau);
+        SPNhapKhau spNhapKhau = new SPNhapKhau(idSP, tenSP, maSP, giaSP, soLuongSP, nhaSanXuat, giaNhapKhau, tinhThanhNhap, thueNhapKhau);
         nhapKhauList.add(spNhapKhau);
-        ghiFile();
+//        WriteFile.writer(DATA_DATA_NK);
 
-    }
-    public void ghiFile() {
-        WriteFile.writeToFileSPNhapKhau(DATA_DATA_NK,nhapKhauList, true);
     }
 
     public boolean remove(SPNhapKhau maSP) {
-        return  this.nhapKhauList.remove(maSP);
+        return this.nhapKhauList.remove(maSP);
     }
 
     @Override

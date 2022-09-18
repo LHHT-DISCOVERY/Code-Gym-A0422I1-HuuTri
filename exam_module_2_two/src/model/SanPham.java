@@ -83,6 +83,9 @@ public abstract class SanPham {
     public int hashCode() {
         return Objects.hash(getIdSP(), getTenSp(), getMaSP(), getGiaSP(), getSoLuongSP(), getNhaSX());
     }
+    public String data_inf(){
+        return String.format("%s,%s,%s,%s,%s,%s",idSP ,tenSp ,maSP,giaSP ,soLuongSP ,nhaSX);
+    }
 
     @Override
     public String toString() {
@@ -93,6 +96,8 @@ public abstract class SanPham {
                 ", giaSP=" + giaSP +
                 ", soLuongSP=" + soLuongSP +
                 ", nhaSX='" + nhaSX + '\'' +
-                '}';
+                '}' ;
     }
+
+
 }

@@ -1,37 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="918ba268-8f5a-40ed-aefa-4c465bd9a2b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/Code_Gym_A0422I1_HuuTri.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module_2.1/src/ss19_string_regex/CrawlData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam_module_2/exam_module_2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exam_module_2_two.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exception/UserException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/SPNhapKhau.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/SPXuatKhau.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/SanPham.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/SPNhapKhauImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/SPXuatKhauImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/ServiceInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/validate/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/validate/Validator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/write_file/WriteFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module_2.1/out/production/Module_2/ss19_string_regex/ValidatePhone.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Module_2.1/out/production/Module_2/ss19_string_regex/ValidatePhone.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../case_study_module2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../case_study_module2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exam_module_2/out/production/exam_module_2/data/data_employee.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../exam_module_2/out/production/exam_module_2/data/data_employee.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exam_module_2/src/controller/ControllerBank.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exam_module_2/src/controller/ControllerBank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exam_module_2/src/data/data_employee.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../exam_module_2/src/data/data_employee.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exam_module_2/src/model/service/ListSoTietKiem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exam_module_2/src/model/service/ListSoTietKiem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exam_module_2/src/validate/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exam_module_2/src/validate/Validator.java" afterDir="false" />
+    <list default="true" id="918ba268-8f5a-40ed-aefa-4c465bd9a2b7" name="Changes" comment="&quot;update&quot;">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/SPNhapKhau.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/SPNhapKhau.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/SPXuatKhau.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/SPXuatKhau.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/SanPham.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/SanPham.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/SPNhapKhauImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/SPNhapKhauImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/SPXuatKhauImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/SPXuatKhauImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/write_file/WriteFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/write_file/WriteFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +87,18 @@
       <workItem from="1662979684116" duration="10216000" />
       <workItem from="1663211831212" duration="672000" />
       <workItem from="1663230439853" duration="116000" />
+      <workItem from="1663407215240" duration="255000" />
+      <workItem from="1663490086969" duration="714000" />
+      <workItem from="1663510321617" duration="3121000" />
     </task>
+    <task id="LOCAL-00001" summary="&quot;update&quot;">
+      <created>1663407255589</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663407255589</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,5 +115,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;update&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;update&quot;" />
   </component>
 </project>
