@@ -19,7 +19,14 @@ value(1,'Ly Huynh Huu Tri' , 21 , 'Quang Nam'),
 (4,'Hua Viet Toan' , 21 , 'Quang Nam');
 
 delete from student_managermen.tearcher where id = 1;
-
+update student_managermen.tearcher
+set 
+name = 'Ng.Ngọc Hiếu' ,
+country = 'Đại Lộc'
+where
+id = 3 ;
+insert into student_managermen.Tearcher(id ,`name`, age , country)
+value(1,'Ly Huynh Huu Tri' , 21 , 'Quang Nam');
 select * from student_managermen.tearcher
 
 
