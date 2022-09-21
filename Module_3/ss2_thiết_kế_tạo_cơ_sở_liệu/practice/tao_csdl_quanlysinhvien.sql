@@ -6,7 +6,7 @@ className varchar(60) not null ,
 startDate datetime ,
 status bit 
 );
-
+select * from class;
 create table student (
 studentID int not null auto_increment primary key ,
 studentName varchar(50) not null ,
@@ -16,14 +16,14 @@ status bit ,
 classID int not null ,
 foreign key (classID) references class(classID)
 );
-
+select * from subject;
 create table subject(
 subID int not null auto_increment primary key,
 subName varchar(30) not null,
 credit tinyint not null default 1 check (credit >= 1),
 status bit default 1
 );
-
+select * from mark;
 create table mark(
 markID int not null auto_increment primary key ,
 subID int not null ,
