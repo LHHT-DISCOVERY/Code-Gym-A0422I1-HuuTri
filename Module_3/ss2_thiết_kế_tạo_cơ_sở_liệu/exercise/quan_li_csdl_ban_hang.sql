@@ -17,7 +17,7 @@ foreign key (cID) references customer(cID)
 
 create table product(
 pID varchar(20) not null primary key ,
-pName varchar(20) not null ,
+pName varchar(50) not null ,
 pPrice float
 );
 
