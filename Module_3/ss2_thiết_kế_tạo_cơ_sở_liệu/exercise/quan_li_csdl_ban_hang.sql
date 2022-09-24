@@ -28,5 +28,4 @@ odQTY varchar(20) not null,
 foreign key (oID) references `order`(oID),
 foreign key (pID) references product (pID)
 );
-insert into customer values(1,N'Lý Huỳnh Hữu Trí' ,21);
 select * from customer ;

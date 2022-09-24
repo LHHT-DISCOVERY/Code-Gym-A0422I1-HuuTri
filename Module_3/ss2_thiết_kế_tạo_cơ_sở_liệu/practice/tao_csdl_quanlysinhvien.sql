@@ -35,4 +35,6 @@ foreign key (subID) references subject (subID),
 foreign key (studentID) references student (studentID)
 );
 
-select * from mark
+select * from mark;
+INSERT INTO student(`studentID`, `studentName`, `address`, `phone`, `status`, `classID`) VALUES ('3', 'Tri', 'DA Nang', '0333915128', b'0', b'1');
+
