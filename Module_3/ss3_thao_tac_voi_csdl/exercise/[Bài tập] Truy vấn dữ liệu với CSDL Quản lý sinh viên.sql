@@ -14,7 +14,9 @@ select subName , credit from subject
 where credit >= 3 and credit <= 5;
 
 -- Thay đổi mã lớp(ClassID) của sinh viên có tên ‘Hung’ là 2.
-
+update student 
+set classID = 2
+where studentname = 'Hung' ;
 
 -- Hiển thị các thông tin: StudentName, SubName, Mark. 
 -- Dữ liệu sắp xếp theo điểm thi (mark) giảm dần. nếu trùng sắp theo tên tăng dần.
