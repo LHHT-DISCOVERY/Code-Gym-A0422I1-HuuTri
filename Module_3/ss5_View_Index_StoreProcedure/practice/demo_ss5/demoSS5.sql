@@ -247,7 +247,7 @@ set loai='giỏi';
 elseif p_point>=7 then
 set loai='khá';
 else 
-set loai ='trung binh';
+set loai ='trung bình k';
 end if;
 return loai;
 end //
