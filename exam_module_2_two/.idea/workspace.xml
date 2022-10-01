@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="918ba268-8f5a-40ed-aefa-4c465bd9a2b7" name="Changes" comment="&quot;update&quot;" />
+    <list default="true" id="918ba268-8f5a-40ed-aefa-4c465bd9a2b7" name="Changes" comment="&quot;update&quot;">
+      <change beforePath="$PROJECT_DIR$/../Module_3/casestudy_furrama_dataabase/sql_co_ban_furrama.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../Module_3/casestudy_furrama_dataabase/sql_co_ban_furrama.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module_3/ss5_View_Index_StoreProcedure/practice/demo_ss5/demoSS5.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../Module_3/ss5_View_Index_StoreProcedure/practice/demo_ss5/demoSS5.sql" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,6 +86,7 @@
       <workItem from="1663490086969" duration="714000" />
       <workItem from="1663510321617" duration="3136000" />
       <workItem from="1663696387486" duration="319000" />
+      <workItem from="1664470369663" duration="35000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;update&quot;">
       <created>1663407255589</created>

@@ -213,3 +213,22 @@ value
 	(8,2,12,2);
 select * from nhan_vien;
 select * from khach_hang;
+
+update dich_vu
+set chi_phi_thue = 1000000
+where ma_dich_vu = 1;
+update dich_vu
+set chi_phi_thue = 500000
+where ma_dich_vu = 2;
+update dich_vu
+set chi_phi_thue = 100000
+where ma_dich_vu = 3;
+update dich_vu
+set chi_phi_thue = 900000
+where ma_dich_vu = 4;
+update dich_vu
+set chi_phi_thue = 400000
+where ma_dich_vu = 5;
+update dich_vu
+set chi_phi_thue = 90000
+where ma_dich_vu = 6;

@@ -106,7 +106,8 @@ select * from student where name like 'nguyen %';
 select * from student where name like '% hai' or name like '% huynh';
 
 -- lấy các học viên có tên bắt đầu bằng chữ h => regexp
-select * from student where name  regexp '(^[a-zA-Z\\s]+\\sh[a-z]+$)';
+use a0422i1_ss5;
+select * from student where name  regexp '(^[a-zA-Z\\s]+\\sv[a-z]+$)';
 
 -- 6. Lấy ra các học viên có điểm lớn hơn 5 .
 select * from student where point >5;
