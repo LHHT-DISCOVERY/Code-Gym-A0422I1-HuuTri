@@ -1,3 +1,4 @@
+drop database furama_managerment ;
 create database `furama_managerment`;
 use `furama_managerment` ;
 create table vi_tri(
