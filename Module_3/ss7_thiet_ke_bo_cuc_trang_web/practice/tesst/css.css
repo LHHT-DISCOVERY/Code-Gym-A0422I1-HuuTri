@@ -1,0 +1,21 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    padding: 10px;
+    border : 10px solid red;
+    box-sizing: border-box;
+}
+
+html, body{
+    margin:  0px;
+}
+/*  Css ảnh nền  */
+.img-header {
+    width: 100%;
+    height: 200vh;
+    background-image: linear-gradient(0 , rgba(255, 3, 171, 0.242) 0%, rgba(255, 255, 255, 0.813) ) ,
+    url(https://photo-cms-kienthuc.zadn.vn/zoom/800/uploaded/thutrang/2020_11_24/2/dang-chuan-mat-dep-gai-xinh-ha-thanh-khien-dan-tinh-xao-xuyen-hinh-2.jpg);
+    background-size: 50% 50%;
+    background-repeat: repeat-x;
+}
