@@ -17,16 +17,15 @@
     <input type="text" name="FirstOperand">
     <h4></h4>
     <select name="operator">
-      <option name="cong">Cong</option>
-      <option name="tru">Tru</option>
-      <option name="nhan">Nhan</option>
-      <option name="chia">Chia</option>
+      <option value="cong">Cong</option>
+      <option value="tru">Tru</option>
+      <option value="nhan">Nhan</option>
+      <option value="chia">Chia</option>
     </select>
     <h4> Operand : </h4>
     <input type="text" name="Operand">
-    <h4> Result ; </h4>
+    <h4> Result : </h4>
     <button type="submit"> Send</button>
   </form>
-
   </body>
 </html>

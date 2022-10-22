@@ -22,25 +22,27 @@ public class ServletCalculator extends HttpServlet {
         double H = FirstOperand - Operand ;
         double N = FirstOperand * Operand ;
         double C = FirstOperand / Operand ;
-        if(operator.equals("cong")){
-            request.setAttribute("KetQua" , T);
-            request.setAttribute("PhepTinh" , " + ");
-            request.getRequestDispatcher("view/Result.jsp").forward(request,response);
-        } else if  (operator.equals("tru")){
-            request.setAttribute("KetQua" , H);
-            request.setAttribute("PhepTinh" , " - ");
-
-            request.getRequestDispatcher("view/Result.jsp").forward(request,response);
-        } else if(operator.equals("nhan")){
-            request.setAttribute("KetQua" , N);
-            request.setAttribute("PhepTinh" , " * ");
-
-            request.getRequestDispatcher("view/Result.jsp").forward(request,response);
-        }else if(operator.equals("chia")){
-            request.setAttribute("KetQua" , C);
-            request.setAttribute("PhepTinh" , " / ");
-
-            request.getRequestDispatcher("view/Result.jsp").forward(request,response);
+        switch (operator) {
+            case "cong":
+                request.setAttribute("KetQua", T);
+                request.setAttribute("PhepTinh", " + ");
+                request.getRequestDispatcher("view/Result.jsp").forward(request, response);
+                break;
+            case "tru":
+                request.setAttribute("KetQua", H);
+                request.setAttribute("PhepTinh", " - ");
+                request.getRequestDispatcher("view/Result.jsp").forward(request, response);
+                break;
+            case "nhan":
+                request.setAttribute("KetQua", N);
+                request.setAttribute("PhepTinh", " * ");
+                request.getRequestDispatcher("view/Result.jsp").forward(request, response);
+                break;
+            case "chia":
+                request.setAttribute("KetQua", C);
+                request.setAttribute("PhepTinh", " / ");
+                request.getRequestDispatcher("view/Result.jsp").forward(request, response);
+                break;
         }
 
     }

@@ -12,6 +12,6 @@
 </head>
 <body>
 <h1> Ket Qua la : </h1>
-<h3> ${FirstOperand} ${PhepTinh} ${Operand} =    ${KetQua} </h3>
+<h1> ${FirstOperand} ${PhepTinh} ${Operand}  =    ${KetQua} </h1>
 </body>
 </html>
