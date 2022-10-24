@@ -5,9 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d18b898-4a54-40bc-9d82-239d585e5884" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ServletCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ServletCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExerciseDisplayListCustomer/.idea/ExerciseDisplayListCustomer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExerciseDisplayListCustomer/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_MVC/practice/Manegerment/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_MVC/practice/Manegerment/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_MVC/practice/Manegerment/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_MVC/practice/Manegerment/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_MVC/practice/Manegerment/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_MVC/practice/Manegerment/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_MVC/practice/Manegerment/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_MVC/practice/Manegerment/src/main/java/controller/CustomerServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_MVC/practice/Manegerment/src/main/java/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_MVC/practice/Manegerment/src/main/java/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_MVC/practice/Manegerment/src/main/java/service/ICustomer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_MVC/practice/Manegerment/src/main/webapp/view/customer/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_MVC/practice/Manegerment/src/main/webapp/view/customer/delete.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_MVC/practice/Manegerment/src/main/webapp/view/customer/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_MVC/practice/Manegerment/src/main/webapp/view/customer/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_MVC/practice/Manegerment/src/main/webapp/view/customer/view.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_MVC/practice/TH_MVC_model/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_MVC/practice/TH_MVC_model/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_MVC/practice/TH_MVC_model/src/main/java/config/FilterUTF8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_MVC/practice/TH_MVC_model/src/main/java/controller/ServletStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_MVC/practice/TH_MVC_model/src/main/java/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_MVC/practice/TH_MVC_model/src/main/java/responsitory/IStudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_MVC/practice/TH_MVC_model/src/main/java/responsitory/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_MVC/practice/TH_MVC_model/src/main/java/service/IStudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_MVC/practice/TH_MVC_model/src/main/java/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_MVC/practice/TH_MVC_model/src/main/webapp/view/student/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_MVC/practice/TH_MVC_model/src/main/webapp/view/student/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_MVC/practice/mvc/mvc/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_MVC/practice/mvc/mvc/.idea/mvc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_MVC/practice/mvc/mvc/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss11_MVC/practice/mvc/mvc/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExerciseDisplayListCustomer/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ExerciseDisplayListCustomer/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/demo_jstl/demo_jstl/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../practice/demo_jstl/demo_jstl/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/demo_jstl/demo_jstl/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../practice/demo_jstl/demo_jstl/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/demo_jstl/demo_jstl/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../practice/demo_jstl/demo_jstl/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../practice/demo_jstl/demo_jstl/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../practice/demo_jstl/demo_jstl/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +79,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -147,7 +184,10 @@
       <option name="presentableId" value="Default" />
       <updated>1666354528184</updated>
       <workItem from="1666354529478" duration="2412000" />
-      <workItem from="1666452440259" duration="411000" />
+      <workItem from="1666452440259" duration="1792000" />
+      <workItem from="1666508283386" duration="794000" />
+      <workItem from="1666509573342" duration="1830000" />
+      <workItem from="1666537087324" duration="1033000" />
     </task>
     <servers />
   </component>
