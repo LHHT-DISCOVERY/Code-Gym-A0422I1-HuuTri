@@ -3,7 +3,7 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 
-@WebServlet(name = "ServletCalculator", value = "/ServletCalculator")
+@WebServlet(name = "ServletCalculator", urlPatterns = "/ServletCalculator")
 public class ServletCalculator extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

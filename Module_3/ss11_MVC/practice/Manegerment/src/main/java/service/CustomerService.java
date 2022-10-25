@@ -42,6 +42,6 @@ public class CustomerService  implements ICustomer{
 
     @Override
     public void remove(int id) {
-
+        customers.remove(id);
     }
 }
