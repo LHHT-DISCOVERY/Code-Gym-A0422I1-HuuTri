@@ -36,7 +36,9 @@
             <td>Description: ${product.getDescription()}</td>
         </tr>
     </table>
-            <td><a href="/Product">Back to product list</a></td>
+    <td><a href="/Product">Back to product list</a></td>
+    <br>
+    <td><a href="/Product?action=view&id=${productNext.getId()}"> ${productNext.getName()} </a></td>
 </fieldset>
 </body>
 </html>

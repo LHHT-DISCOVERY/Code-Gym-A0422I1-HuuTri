@@ -47,12 +47,15 @@ public class ProductServlet extends HttpServlet {
 
     private void showFormView(HttpServletRequest request, HttpServletResponse response) {
         int id = Integer.parseInt(request.getParameter("id"));
+        int idNext = id + 1;
         Product product = productService.findById(id);
+        Product productNext = productService.findById(idNext);
         request.setAttribute("product", product);
         RequestDispatcher dispatcher;
         if (product == null) {
             dispatcher = request.getRequestDispatcher("view/product/Error.jsp");
         } else {
+            request.setAttribute("productNext" , productNext);
             dispatcher = request.getRequestDispatcher("view/product/viewProduct.jsp");
         }
 
@@ -69,6 +72,7 @@ public class ProductServlet extends HttpServlet {
         int id = Integer.parseInt(request.getParameter("id"));
         Product product = productService.findById(id);
         RequestDispatcher dispatcher;
+
         if (product == null) {
             dispatcher = request.getRequestDispatcher("view/product/Error.jsp");
         } else {
