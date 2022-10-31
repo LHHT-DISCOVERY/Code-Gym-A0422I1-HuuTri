@@ -36,6 +36,7 @@ public class StudentServlet extends HttpServlet {
         String name = request.getParameter("name");
         boolean gender = Boolean.parseBoolean(request.getParameter("gender"));
         String birthday = request.getParameter("birthday");
+//        Date birthday = Date.valueOf(request.getParameter("birthday"));
         String email = request.getParameter("email");
         int point = Integer.parseInt(request.getParameter("point"));
         int classId = Integer.parseInt(request.getParameter("classId"));

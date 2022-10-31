@@ -55,7 +55,7 @@ public class ProductServlet extends HttpServlet {
         if (product == null) {
             dispatcher = request.getRequestDispatcher("view/product/Error.jsp");
         } else {
-            request.setAttribute("productNext" , productNext);
+            request.setAttribute("productNext", productNext);
             dispatcher = request.getRequestDispatcher("view/product/viewProduct.jsp");
         }
 
