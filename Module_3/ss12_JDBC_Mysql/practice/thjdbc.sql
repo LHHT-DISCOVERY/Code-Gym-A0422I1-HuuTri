@@ -23,3 +23,13 @@ values("Aý Huynh Huu Trí" , "lytri102@gmail.com" , "Quang Nam"),
     
     select * from users 
     order by `name` ASC;
+    
+delimiter \\
+create procedure add_customer(in new_name varchar(220), in new_email varchar(220) , in new_country varchar(220))
+begin
+insert into users(`name` , email , country)
+values(new_name , new_email ,new_country);
+end \\
+delimiter ;
+
+call add_customer("Hậu" , "haule@gmail.com" , "Hậu giang")

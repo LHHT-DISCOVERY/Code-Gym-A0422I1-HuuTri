@@ -1,5 +1,4 @@
 package controller;
-
 import dao_service.IUserDaoService;
 import dao_service.UserDaoService;
 import model.User;
@@ -127,7 +126,7 @@ public class UserServlet extends HttpServlet {
                 showResultFind(request, response);
                 break;
             case "sort":
-                showFormSort(request,response);
+                showFormSort(request, response);
                 break;
             default:
                 showListUser(request, response);
@@ -138,7 +137,7 @@ public class UserServlet extends HttpServlet {
         List<User> userList = userDaoService.SortByName();
         request.setAttribute("userList", userList);
         try {
-            request.getRequestDispatcher("view/user/list.jsp").forward(request,response);
+            request.getRequestDispatcher("view/user/list.jsp").forward(request, response);
         } catch (ServletException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -153,14 +152,14 @@ public class UserServlet extends HttpServlet {
         userList = userDaoService.findCountry(country);
         request.setAttribute("userList", userList);
         RequestDispatcher dispatcher;
-            if (userList.isEmpty()) {
-                request.setAttribute("message" , "KO TIM THAY => <a href=\"/user\"> Click Back List user  </a>");
-                dispatcher = request.getRequestDispatcher("view/user/list.jsp");
-            } else {
-                dispatcher = request.getRequestDispatcher("view/user/find.jsp");
-            }
+        if (userList.isEmpty()) {
+            request.setAttribute("message", "KO TIM THAY => <a href=\"/user\"> Click Back List user  </a>");
+            dispatcher = request.getRequestDispatcher("view/user/list.jsp");
+        } else {
+            dispatcher = request.getRequestDispatcher("view/user/find.jsp");
+        }
         try {
-            dispatcher.forward(request,response);
+            dispatcher.forward(request, response);
         } catch (ServletException e) {
             e.printStackTrace();
         } catch (IOException e) {
