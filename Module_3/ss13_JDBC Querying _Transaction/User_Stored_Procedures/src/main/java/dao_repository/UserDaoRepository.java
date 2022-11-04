@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserDaoRepository implements dao_repository.IUserDaoRepository {
-    private final String SELECT_ALL = "SELECT * FROM users;";
+    private final String SELECT_ALL = " call display_customer()";
     private final String INSERT_USER = "insert into users(`name` , email , country)\n" +
             "values(?,?,?)";
     private final String GET_INFO = "   select * from users \n" + " where id = ?;";
@@ -20,10 +20,11 @@ public class UserDaoRepository implements dao_repository.IUserDaoRepository {
 
     @Override
     public List<User> findAll() {
+        System.out.println();
         List<User> userList = new ArrayList<>();
         Connection connection = dao_repository.BaseRepository.getConnectDB();
         try {
-            PreparedStatement pr = connection.prepareStatement(SELECT_ALL);
+            CallableStatement pr = connection.prepareCall(SELECT_ALL);
             ResultSet resultSet = pr.executeQuery();
             while (resultSet.next()) {
                 int id = resultSet.getInt("id");

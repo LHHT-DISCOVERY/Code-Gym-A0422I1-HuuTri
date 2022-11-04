@@ -43,13 +43,6 @@ public class UserServlet extends HttpServlet {
         }
     }
 
-    private void showFormDelete(HttpServletRequest request, HttpServletResponse response) {
-        int deleteId = Integer.parseInt(request.getParameter("deleteId"));
-        userDaoService.remove(deleteId);
-        request.setAttribute("mess", "Xoá thành công");
-        showListUser(request, response);
-    }
-
     private void showFormView(HttpServletRequest request, HttpServletResponse response) {
         int id = Integer.parseInt(request.getParameter("id"));
         User user = userDaoService.findById(id);
@@ -61,6 +54,7 @@ public class UserServlet extends HttpServlet {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
 
     private void showFormEdit(HttpServletRequest request, HttpServletResponse response) {
