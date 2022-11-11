@@ -53,3 +53,12 @@ where id = id_edit ;
 end \\
 delimiter ;
  call update_user(16,"Ly Tri" ,"0" ,"hidden")
+ 
+ delimiter \\
+ create procedure display_customer()
+ begin
+ select * from users;
+ end \\
+ delimiter ;
+ 
+ call display_customer()
