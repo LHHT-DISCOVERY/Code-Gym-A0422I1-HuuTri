@@ -20,7 +20,8 @@ public class RoomReponsitory implements IRoomReponsitory {
 
     @Override
     public void insert(Room room) throws SQLException {
-        try (Connection connection = BaseRepository.getConnectDB(); PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USERS_SQL)) {
+        try (Connection connection = BaseRepository.getConnectDB();
+             PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USERS_SQL)) {
             preparedStatement.setString(1, room.getNameCustomer());
             preparedStatement.setInt(2, room.getNumberPhone());
             preparedStatement.setDate(3, Date.valueOf(room.getNgayBatDau()));
@@ -43,7 +44,7 @@ public class RoomReponsitory implements IRoomReponsitory {
                 int sDT = rs.getInt("sdt");
                 String ngayBatDau = rs.getString("ngayBatDau");
                 int idPayMent = rs.getInt("idPayMent");
-                room = new Room(idRoom,name,sDT,ngayBatDau,idPayMent);
+                room = new Room(idRoom, name, sDT, ngayBatDau, idPayMent);
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -103,18 +104,18 @@ public class RoomReponsitory implements IRoomReponsitory {
         List<Room> rooms = new ArrayList<>();
         Connection connection = BaseRepository.getConnectDB();
         try {
-            PreparedStatement pr= connection.prepareStatement(SEARCH);
-            pr.setString(1,"%"+ searchName +"%");
-            pr.setString(2,"%"+ searchNumberPhone+ "%");
-            pr.setString(3, "%"+idPayment_room+"%");
+            PreparedStatement pr = connection.prepareStatement(SEARCH);
+            pr.setString(1, "%" + searchName + "%");
+            pr.setString(2, "%" + searchNumberPhone + "%");
+            pr.setString(3, "%" + idPayment_room + "%");
             ResultSet resultSet = pr.executeQuery();
-            while (resultSet.next()){
+            while (resultSet.next()) {
                 int id = resultSet.getInt("room_id");// columnLable : tên trường trong database// get theo kiểu dữ liệu của Java
                 String name = resultSet.getString("customer_name");
                 int sdt = resultSet.getInt("sdt");
                 String ngayBatDau = resultSet.getString("ngayBatDau");
                 int idPayMent = resultSet.getInt("idPayMent");
-                Room room = new Room(id,name,sdt,ngayBatDau,idPayMent);
+                Room room = new Room(id, name, sdt, ngayBatDau, idPayMent);
                 rooms.add(room);
             }
         } catch (SQLException throwables) {
@@ -127,16 +128,16 @@ public class RoomReponsitory implements IRoomReponsitory {
     public List<Room> findAllWithPaging(int pageNum, int pageSize) {
         List<Room> rooms = new ArrayList<>();
 
-        try(Connection connection = BaseRepository.getConnectDB();
-           PreparedStatement statement = connection.prepareStatement(SELECT_ALL_WITH_PAGING);
-        ){
+        try (Connection connection = BaseRepository.getConnectDB();
+             PreparedStatement statement = connection.prepareStatement(SELECT_ALL_WITH_PAGING);
+        ) {
             statement.setInt(1, pageSize);
-            int offSet = (pageNum -1) * pageSize;
+            int offSet = (pageNum - 1) * pageSize;
             statement.setInt(2, offSet);
 
             ResultSet rs = statement.executeQuery();
 
-            while (rs.next()){
+            while (rs.next()) {
                 int idRoom = rs.getInt("room_id");
                 String nameCustomer = rs.getString("customer_name");
                 int numberPhone = rs.getInt("sdt");
@@ -144,7 +145,7 @@ public class RoomReponsitory implements IRoomReponsitory {
                 int idPayment_room = rs.getInt("idPayMent");
                 rooms.add(new Room(idRoom, nameCustomer, numberPhone, ngayBatDau, idPayment_room));
             }
-        }catch (SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
         }
 

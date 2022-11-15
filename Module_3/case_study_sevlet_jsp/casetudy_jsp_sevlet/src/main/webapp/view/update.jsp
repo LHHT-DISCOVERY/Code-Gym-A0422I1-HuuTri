@@ -48,8 +48,8 @@
                 <td>Gender Customer:</td>
                 <td>
                     <select name="Gender">
-                        <option value="0"> Nam</option>
-                        <option value="1"> Nu</option>
+                        <option value=0> Nam</option>
+                        <option value=1> Nu</option>
                     </select>
                 </td>
             </tr>
