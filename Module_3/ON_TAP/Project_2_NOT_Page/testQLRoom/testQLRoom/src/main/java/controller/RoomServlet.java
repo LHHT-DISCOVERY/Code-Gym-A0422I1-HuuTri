@@ -50,10 +50,10 @@ public class RoomServlet extends HttpServlet {
 
     private void search(HttpServletRequest request, HttpServletResponse response) {
         String searchName = request.getParameter("searchName");
-        String searchAccount = request.getParameter("searchNumberPhone");
-        String searchClassId = request.getParameter("idPayment_rom");
+        String searchNumberPhone = request.getParameter("searchNumberPhone");
+        String searchClassId = request.getParameter("searchIdRoom");
 
-        List<Room> rooms = roomService.search(searchName,searchAccount,searchClassId);
+        List<Room> rooms = roomService.search(searchName,searchNumberPhone,searchClassId);
         request.setAttribute("roomList",rooms);
         List<Payment> paymentList = paymentService.findAll();
         request.setAttribute("paymentList", paymentList);
@@ -135,7 +135,8 @@ public class RoomServlet extends HttpServlet {
         int numberPhone = Integer.parseInt(request.getParameter("numberPhone"));
         String ngayBatDau = request.getParameter("ngayBatDau");
         int idPayment_room = Integer.parseInt(request.getParameter("idPayment_room"));
-        Room room = new Room(id, nameCustomer, numberPhone, ngayBatDau, idPayment_room);
+        String  ghichu = request.getParameter("ghichu");
+        Room room = new Room(id, nameCustomer, numberPhone, ngayBatDau, idPayment_room,ghichu);
         try {
             roomService.updateRom(room);
         } catch (SQLException e) {
@@ -154,8 +155,9 @@ public class RoomServlet extends HttpServlet {
         String nameCustomer = request.getParameter("nameCustomer");
         int numberPhone = Integer.parseInt(request.getParameter("numberPhone"));
         String ngayBatDau = request.getParameter("ngayBatDau");
+        String ghichu = request.getParameter("ghichu");
         int idPayment_room = Integer.parseInt(request.getParameter("idPayment_room"));
-        Room room = new Room(nameCustomer,numberPhone,ngayBatDau,idPayment_room);
+        Room room = new Room(nameCustomer,numberPhone,ngayBatDau,idPayment_room,ghichu);
         try {
             roomService.insert(room);
         } catch (SQLException e) {
@@ -164,11 +166,15 @@ public class RoomServlet extends HttpServlet {
 
         String mess = "Successfully Added New";
         request.setAttribute("mess", mess);
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("view/create.jsp");
         try {
-            requestDispatcher.forward(request, response);
-        } catch (ServletException | IOException e) {
+            list(request,response);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ServletException e) {
             e.printStackTrace();
         }
+
     }
 }

@@ -35,3 +35,4 @@ insert into Sach(tenSach,tacGia,soLuong,moTa) value ('Số đỏ','Vũ Trọng P
 insert into Sach(tenSach,tacGia,soLuong,moTa) value ('Truyện Kiều','Vũ Trọng Phụng',15,'Nhân vật chính là Xuân Tóc Đỏ và ..');
 select* from Sach;
 drop database final_module3_sach;
+select * from TheMuongSach;

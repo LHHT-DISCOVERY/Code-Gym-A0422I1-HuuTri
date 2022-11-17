@@ -151,4 +151,9 @@ public class RoomReponsitory implements IRoomReponsitory {
 
         return rooms;
     }
+
+    public static void main(String[] args) {
+        IRoomReponsitory  roomReponsitory = new RoomReponsitory();
+        roomReponsitory.selectCustomer(1);
+    }
 }

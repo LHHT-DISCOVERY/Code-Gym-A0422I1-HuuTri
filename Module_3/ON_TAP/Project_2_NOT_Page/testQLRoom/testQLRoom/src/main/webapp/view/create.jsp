@@ -1,7 +1,4 @@
-<%@ page import="service.IPaymentService" %>
-
-<%@ page import="java.util.List" %>
-<%@ page import="model.Payment" %><%--
+<%--
   Created by IntelliJ IDEA.
   User: Admin
   Date: 4/11/2022
@@ -84,11 +81,12 @@
             <pre>Ngày Bắt Đầu Thuê : <input required type="date" name="ngayBatDau"></pre>
             <pre>Hình Thức         : <select required class="select-css" style="font-size: 20px; width: 100px"
                                              name="idPayment_room">
-                <option>Chọn hình thức</option>
+<%--                <option>Chọn hình thức</option>--%>
                 <c:forEach var="cls" items="${paymentList}">
                     <option value="${cls.getIdPayment()}">${cls.getNamePayment()}</option>
                 </c:forEach>
             </select></pre>
+            <pre>Ghi Chú    : <input  name="ghichu"></pre>
             <button type="submit" class="btn btn-primary btn-sm">Create</button>
         </form>
         <button type="button" class="btn btn-secondary  btn-sm"><a href="/room">Back</a></button>

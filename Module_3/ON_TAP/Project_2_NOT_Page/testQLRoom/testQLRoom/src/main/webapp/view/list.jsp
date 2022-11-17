@@ -71,18 +71,13 @@
 </head>
 <body>
 <h2 style="text-align: center">Danh sách các phòng</h2>
-<a class="add" href="/room?action=create">+ Add New Product</a>
+<a class="add" href="/room?action=create">+ Thêm Mới Phòng Trọ</a>
 
 <form class="search" action="/room?action=search" method="get">
     <input hidden type="text" name="action" value="search">
+    <input type="text" name="searchIdRoom" placeholder="nhập Mã Phòng trọ ">
     <input type="text" name="searchName" placeholder="nhập tên">
     <input type="text" name="searchNumberPhone" placeholder="nhập số điện thoại">
-    <select name="idPayment_rom">
-        <option value="">--Chọn hình thức-- </option>
-        <c:forEach var="pl" items="${paymentList}">
-            <option value="${pl.getIdPayment()}">${pl.getNamePayment()}</option>
-        </c:forEach>
-    </select>
     <button type="submit">Search</button>
 </form>
 
@@ -94,23 +89,25 @@
         <th>Sđt</th>
         <th>Ngày Bắt Đầu Thuê</th>
         <th>Hình Thức thanh toán</th>
+        <th>Ghi Chú</th>
         <th>Action</th>
     </tr>
     <c:forEach var="rom" items="${roomList}" varStatus="status">
         <tr>
             <td>${status.count}</td>
-            <td>PTX-00${rom.getIdRoom()}</td>
+            <td>MPT-0${rom.getIdRoom()}</td>
             <td>${rom.getNameCustomer()}</td>
-            <td>0${rom.getNumberPhone()}</td>
+            <td>${rom.getNumberPhone()}</td>
             <td>${rom.getNgayBatDau()}</td>
             <c:forEach var="payment" items="${paymentList}">
                 <c:if test="${payment.getIdPayment() == rom.getIdPayment_room()}">
                     <td>${payment.getNamePayment()}</td>
                 </c:if>
             </c:forEach>
+            <td>${rom.getGhichu()}</td>
             <td>
                 <button type="button" class="btn btn-outline-primary btn-update">
-                    <a href="/room?action=edit&id=${rom.getIdRoom()}">Eidt</a>
+                    <a href="/room?action=edit&id=${rom.getIdRoom()}">Edit</a>
                 </button>
                 <!-- Button trigger modal update-->
                 <button type="button" onclick="infoDelete('${rom.getIdRoom()}','${rom.getNameCustomer() }')" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">

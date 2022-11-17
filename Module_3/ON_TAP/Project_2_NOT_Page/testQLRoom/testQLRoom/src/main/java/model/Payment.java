@@ -10,6 +10,7 @@ public class Payment {
         this.namePayment = namePayment;
     }
 
+
     public int getIdPayment() {
         return idPayment;
     }

@@ -7,6 +7,7 @@ import java.util.List;
 
 public interface IRoomService {
 
+
     void insert(Room room) throws SQLException;
 
     Room selectCustomer(int idRoom);

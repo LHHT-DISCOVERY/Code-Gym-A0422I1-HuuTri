@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TheMuonSachRepository implements  ITheMuonSachRepository{
-    private static final String SELECT_ALL_THE_MUON_SACH = "select * from  hoc_sinh;";
+    private static final String SELECT_ALL_THE_MUON_SACH = "select * from  the_muon_sach;";
     @Override
     public List<TheMuonSach> findAll() {
         List<TheMuonSach> theMuonSachList = new ArrayList<>();
@@ -35,5 +35,13 @@ public class TheMuonSachRepository implements  ITheMuonSachRepository{
     @Override
     public Sach select(int id) {
         return null;
+    }
+
+    public static void main(String[] args) {
+        ITheMuonSachRepository  iTheMuonSachRepository  = new TheMuonSachRepository();
+        for (TheMuonSach sach: iTheMuonSachRepository.findAll()
+             ) {
+            System.out.println(sach);
+        }
     }
 }

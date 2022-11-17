@@ -6,20 +6,26 @@ public class Room {
     private int numberPhone;
     private String ngayBatDau;
     private int idPayment_room;
+    private String ghichu;
 
-    public Room(String nameCustomer, int numberPhone, String ngayBatDau, int idPayment_room) {
-        this.nameCustomer = nameCustomer;
-        this.numberPhone = numberPhone;
-        this.ngayBatDau = ngayBatDau;
-        this.idPayment_room = idPayment_room;
-    }
-
-    public Room(int idRoom, String nameCustomer, int numberPhone, String ngayBatDau, int idPayment_room) {
+    public Room(int idRoom, String nameCustomer, int numberPhone, String ngayBatDau, int idPayment_room, String ghichu) {
         this.idRoom = idRoom;
         this.nameCustomer = nameCustomer;
         this.numberPhone = numberPhone;
         this.ngayBatDau = ngayBatDau;
         this.idPayment_room = idPayment_room;
+        this.ghichu = ghichu;
+    }
+
+
+
+
+    public Room(String nameCustomer, int numberPhone, String ngayBatDau, int idPayment_room, String ghichu) {
+        this.nameCustomer = nameCustomer;
+        this.numberPhone = numberPhone;
+        this.ngayBatDau = ngayBatDau;
+        this.idPayment_room = idPayment_room;
+        this.ghichu = ghichu;
     }
 
     public int getIdRoom() {
@@ -60,5 +66,13 @@ public class Room {
 
     public void setIdPayment_room(int idPayment_room) {
         this.idPayment_room = idPayment_room;
+    }
+
+    public String getGhichu() {
+        return ghichu;
+    }
+
+    public void setGhichu(String ghichu) {
+        this.ghichu = ghichu;
     }
 }

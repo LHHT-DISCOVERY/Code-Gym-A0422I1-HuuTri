@@ -92,16 +92,15 @@
             <pre>Hình Thức         : <select required class="select-css" style="font-size: 20px; width: 200px"
                                              name="idPayment_room">
                   <c:forEach var="cls" items="${paymentList}">
-                      <c:if test="${cls.getIdPayment() == rom.getIdPayment_room() }">
-                          <option value="${cls.getIdPayment()}">${cls.namePayment}</option>
+                      <c:if test="${cls.getIdPayment() == rom.getIdPayment_room()}">
+                          <option selected value="${cls.getIdPayment()}">${cls.getNamePayment()}</option>
+                      </c:if>
+                      <c:if test="${cls.getIdPayment() != rom.getIdPayment_room()}">
+                          <option selected value="${cls.getIdPayment()}">${cls.getNamePayment()}</option>
                       </c:if>
                   </c:forEach>
-                    <c:forEach var="cls" items="${paymentList}">
-                        <c:if test="${cls.getIdPayment() != rom.getIdPayment_room() }">
-                            <option value="${cls.getIdPayment()}">${cls.namePayment}</option>
-                        </c:if>
-                    </c:forEach>
             </select></pre>
+            <pre>Ghi Chú    : <input  name="ghichu" value="<c:out value='${rom.getGhichu()}'/>"></pre>
             <button type="submit" class="btn btn-primary btn-sm">Submit</button>
         </form>
         <button type="button" class="btn btn-secondary  btn-sm"><a href="/room">Back</a></button>

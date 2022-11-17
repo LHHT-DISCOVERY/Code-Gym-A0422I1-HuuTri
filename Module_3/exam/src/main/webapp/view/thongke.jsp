@@ -166,25 +166,40 @@
         <th>Action </th>
     </tr>
     <%--    Sửa var items --%>
-    <c:forEach var="sach" items="${sachList}" varStatus="status">
+    <c:forEach var="rom" items="${hocSinhtheMuonSachListList}" varStatus="status">
         <tr>
             <td>${status.count}</td>
-            <td>S-000${sach.getMaSach()}</td>
-            <td>${sach.getTenSach()}</td>
-            <td>${sach.getTacGia()}</td>
-            <c:forEach items="hocSinhList" var="hs">
-                <td>${hs.getHoTen()}</td>
-                <td>${hs.getLop()}</td>
+            <td>MS-000${rom.getMaMuonSach()}</td>
+            <c:forEach var="sach" items="${sachList}">
+                <c:if test="${sach.getMaSach() == rom.getMaSach()}">
+                    <td>${sach.getTenSach()}</td>
+                </c:if>
             </c:forEach>
-            <c:forEach var="the" items="theMuonSachList" >
-                <td>${the.getNgayMuon()}</td>
-                <td>${the.getNgayTra()}</td>
+            <c:forEach var="sach" items="${sachList}">
+                <c:if test="${sach.getMaSach() == rom.getMaSach()}">
+                    <td>${sach.getTacGia()}</td>
+                </c:if>
             </c:forEach>
+            <c:forEach var="hs" items="${hocSinhList}">
+                <c:if test="${hs.getMaHocSinh() == rom.getMaHocSinh()}">
+                    <td>${hs.getHoTen()}</td>
+                </c:if>
+            </c:forEach>
+            <c:forEach var="hs" items="${hocSinhList}">
+                <c:if test="${hs.getMaHocSinh() == rom.getMaHocSinh()}">
+                    <td>${hs.getLop()}</td>
+                </c:if>
+            </c:forEach>
+            <td>${rom.getNgayMuon()}</td>
+            <td>${rom.getNgayTra()}</td>
             <td>
                 <button type="button" class="btn btn-outline-primary btn-update">
-                        <%--                    Sửa href--%>
-                    <a href="/SachServlet?action=muon&id=${sach.getMaSach()}">Trả Sách</a>
+                    trả sách
                 </button>
+                <!-- Button trigger modal update-->
+                    <%--                <button type="button" onclick="infoDelete('${rom.getIdRoom()}','${rom.getNameCustomer() }')" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">--%>
+                    <%--                    Delete--%>
+                    <%--                </button>--%>
             </td>
         </tr>
     </c:forEach>

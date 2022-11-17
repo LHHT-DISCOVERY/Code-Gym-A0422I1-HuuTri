@@ -167,6 +167,5 @@ public class ProductServlet extends HttpServlet {
         } catch (ServletException | IOException e) {
             e.printStackTrace();
         }
-
     }
 }

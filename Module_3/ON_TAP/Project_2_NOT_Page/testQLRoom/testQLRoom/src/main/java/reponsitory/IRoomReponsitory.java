@@ -10,6 +10,7 @@ public interface IRoomReponsitory {
     void insert(Room room) throws SQLException;
     // hiển thị thông tin cần sửa
     Room selectCustomer(int idRoom);
+
     // hiển thị tất cả danh sách
     List<Room> findAll();
     // xóa theo id

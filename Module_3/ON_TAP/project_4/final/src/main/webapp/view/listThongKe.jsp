@@ -80,6 +80,7 @@
     <c:forEach var="rom" items="${hocSinhtheMuonSachListList}" varStatus="status">
         <tr>
             <td>MS-000${rom.getMaMuongSach()}</td>
+<%--            dùng if để set đến đối tượng chứa primary key  để get ra tên  hiển thị --%>
             <c:forEach var="sach" items="${sachList}">
                 <c:if test="${sach.getMaSach() == rom.getMaSach_fk()}">
                     <td>${sach.getTenSach()}</td>

@@ -81,6 +81,12 @@ public class SachServlet extends HttpServlet {
     }
 
     private void show(HttpServletRequest request, HttpServletResponse response) {
+        List<Sach> sachList = iSachService.findAll();
+        List<HocSinh> hocSinhList = iHocSinhService.findAll();
+        List<TheMuonSach> theMuonSachList = iTheMuonSachService.findAll();
+        request.setAttribute("sachList", sachList);
+        request.setAttribute("hocSinhList", hocSinhList);
+        request.setAttribute("hocSinhtheMuonSachListList", theMuonSachList);
         try {
             request.getRequestDispatcher("view/thongke.jsp").forward(request, response);
         } catch (ServletException e) {
