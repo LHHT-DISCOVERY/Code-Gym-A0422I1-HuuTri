@@ -10,9 +10,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import java.util.HashMap;
-import java.util.Map;
-
 
 @Controller
 @RequestMapping("/student")
@@ -33,20 +30,20 @@ public class StudentController {
     }
 
     @GetMapping("/create")
-    public String showCreate(){
+    public String showCreate() {
         return "student/create";
     }
 
     @GetMapping("/delete")
-    public String doDelete(Model model , @RequestParam("id") String id ){
+    public String doDelete(Model model, @RequestParam("id") String id) {
         studentService.deleteById(id);
         return "redirect:/student/list";
     }
 
     @PostMapping("/create")
-    public String doCreate(@RequestParam("id") String id , @RequestParam("name") String name ,
-    @RequestParam("age") int age , @RequestParam("address") String address){
-        Student student = new Student(id , name , age , address);
+    public String doCreate(@RequestParam("id") String id, @RequestParam("name") String name,
+                           @RequestParam("age") int age, @RequestParam("address") String address) {
+        Student student = new Student(id, name, age, address);
         studentService.createOrUpdate(student);
         return "redirect:/student/list";
     }
