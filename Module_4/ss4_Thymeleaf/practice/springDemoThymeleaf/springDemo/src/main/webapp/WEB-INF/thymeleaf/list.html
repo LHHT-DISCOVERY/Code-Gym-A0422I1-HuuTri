@@ -23,7 +23,10 @@
             <td th:text="${iter.current.name}"></td>
             <td th:text="*{age}"></td>
             <td th:text="*{address}" th:if="${stu.address}"></td>
+<!--            sử dung @ thì th:href-->
+<!--            theo cách  path value able-->
             <td><a th:href="@{/student/detail/{id}(id=*{id})}">Detail</a></td>
+<!--            truyền theo cách parameter -->
             <td><a th:href="@{/student/detail(id=*{id})}">Detail</a></td>
             <td><a th:href="@{/student/update(id=*{id})}">Update</a></td>
         </tr>

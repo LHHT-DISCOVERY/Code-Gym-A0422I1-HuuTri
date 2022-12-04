@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>List Product</h1>
+<form th:action="@{/search}" method="get">
+    <input type="text" name="name" placeholder="Enter name">
+    <button> Search </button>
+</form>
+ <a th:href="@{/create}" > Create </a>
+<table border="1">
+    <tr>
+        <th>No</th>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Detail</th>
+        <th>NXS</th>
+        <th>Update</th>
+        <th>Delete</th>
+    </tr>
+    <tr th:each="pro, iter: ${product}" th:object="${pro}">
+        <td th:text="${iter.index}"></td>
+        <td th:text="${pro.id}"></td>
+        <td th:text="${pro.name}"></td>
+        <td th:text="*{price}"></td>
+        <td th:text="*{description}"></td>
+        <td th:text="*{manufacturers}"></td>
+        <!--            sử dung @ thì th:href-->
+        <!--            theo cách  path value able-->
+        <td><a th:href="@{/detail/{id}(id=*{id})}">Detail</a></td>
+        <!--            truyền theo cách parameter -->
+        <!--            <td><a th:href="@{/detail(id=*id})}">Detail</a></td>-->
+        <td><a th:href="@{/update(id=*{id})}">Update</a></td>
+        <td><a th:href="@{/delete(id=*{id})}">Delete</a></td>
+    </tr>
+</table>
+</body>
+</html>

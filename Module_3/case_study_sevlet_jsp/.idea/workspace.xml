@@ -2,39 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c39c7a8-981d-4607-ae00-a0a99366bf37" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Module_4/Tong_Quan_Spring/exercise/convert_money/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/Tong_Quan_Spring/exercise/convert_money/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/Tong_Quan_Spring/exercise/convert_money/src/main/java/Money/Controller/MoneyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/Tong_Quan_Spring/exercise/convert_money/src/main/java/Money/Service/IConvertMoney.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/Tong_Quan_Spring/exercise/convert_money/src/main/java/Money/Service/MoneyConvert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/Tong_Quan_Spring/exercise/convert_money/src/main/java/Money/bean/Money.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/Tong_Quan_Spring/exercise/convert_money/src/main/java/Money/config/AppConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/Tong_Quan_Spring/exercise/convert_money/src/main/java/Money/config/AppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/Tong_Quan_Spring/exercise/convert_money/src/main/java/Money/repository/IMoneyConvertRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/Tong_Quan_Spring/exercise/convert_money/src/main/java/Money/repository/MoneyConvertRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/Tong_Quan_Spring/exercise/convert_money/src/main/webapp/WEB-INF/view/money/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/Tong_Quan_Spring/exercise/convert_money/src/main/webapp/WEB-INF/view/money/result.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/Tong_Quan_Spring/paractice/TH_1/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/Tong_Quan_Spring/paractice/TH_1/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/Tong_Quan_Spring/paractice/TH_1/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/Tong_Quan_Spring/paractice/TH_1/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/Tong_Quan_Spring/paractice/TH_1/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/Tong_Quan_Spring/paractice/TH_1/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/Tong_Quan_Spring/paractice/TH_1/src/main/java/codegym/vn/controller/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/Tong_Quan_Spring/paractice/TH_1/src/main/java/config/AppConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/Tong_Quan_Spring/paractice/TH_1/src/main/java/config/AppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/Tong_Quan_Spring/paractice/TH_1/src/main/webapp/WEB-INF/view/TestHello/test.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casetudy_jsp_sevlet/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/casetudy_jsp_sevlet/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casetudy_jsp_sevlet/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/casetudy_jsp_sevlet/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casetudy_jsp_sevlet/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/casetudy_jsp_sevlet/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casetudy_jsp_sevlet/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/casetudy_jsp_sevlet/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casetudy_jsp_sevlet/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/casetudy_jsp_sevlet/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casetudy_jsp_sevlet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/casetudy_jsp_sevlet/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casetudy_jsp_sevlet/build/libs/casetudy_jsp_sevlet-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/casetudy_jsp_sevlet/build/libs/casetudy_jsp_sevlet-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casetudy_jsp_sevlet/src/main/java/dao_repository/BaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/casetudy_jsp_sevlet/src/main/java/dao_repository/BaseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module_4/New_project_MVC_Spring/springDemo/springDemo/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/New_project_MVC_Spring/springDemo/springDemo/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module_4/New_project_MVC_Spring/springDemo/springDemo/src/main/java/codegym/vn/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/New_project_MVC_Spring/springDemo/springDemo/src/main/java/codegym/vn/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_tong_quan_web/practice/Yummy/.idea/Yummy.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module_4/ss3_Data_Binding_Form/practice/mail/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module_4/ss3_Data_Binding_Form/practice/mail/src/main/java/com/bean/ConfigEmail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module_4/ss3_Data_Binding_Form/practice/mail/src/main/java/com/config/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module_4/ss3_Data_Binding_Form/practice/mail/src/main/java/com/config/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module_4/ss3_Data_Binding_Form/practice/mail/src/main/java/com/controller/MailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module_4/ss3_Data_Binding_Form/practice/mail/src/main/java/com/repository/IRepositoryConfigEmail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module_4/ss3_Data_Binding_Form/practice/mail/src/main/java/com/repository/impl/RepositoryConfigEmail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module_4/ss3_Data_Binding_Form/practice/mail/src/main/java/com/service/IConfigEmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module_4/ss3_Data_Binding_Form/practice/mail/src/main/java/com/service/impl/ConfigEmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module_4/ss3_Data_Binding_Form/practice/mail/src/main/webapp/WEB-INF/view/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module_4/ss3_Data_Binding_Form/practice/mail/src/main/webapp/WEB-INF/view/update.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/exercise/product_managerment/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/exercise/product_managerment/src/main/java/com/bean/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/exercise/product_managerment/src/main/java/com/config/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/exercise/product_managerment/src/main/java/com/config/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/exercise/product_managerment/src/main/java/com/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/exercise/product_managerment/src/main/java/com/repository/IProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/exercise/product_managerment/src/main/java/com/repository/impl/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/exercise/product_managerment/src/main/java/com/service/IProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/exercise/product_managerment/src/main/java/com/service/impl/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/exercise/product_managerment/src/main/webapp/WEB-INF/thymeleaf/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/exercise/product_managerment/src/main/webapp/WEB-INF/thymeleaf/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/exercise/product_managerment/src/main/webapp/WEB-INF/thymeleaf/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/exercise/product_managerment/src/main/webapp/WEB-INF/thymeleaf/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/exercise/product_managerment/src/main/webapp/WEB-INF/thymeleaf/template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/exercise/product_managerment/src/main/webapp/WEB-INF/thymeleaf/update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/practice/springDemoThymeleaf/springDemo/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/practice/springDemoThymeleaf/springDemo/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_4/ss2_Spring_Controller/exercise/caculator/.idea/caculator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_4/ss2_Spring_Controller/exercise/caculator/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_4/ss3_Data_Binding_Form/practice/form_and_data_binding/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss3_Data_Binding_Form/practice/form_and_data_binding/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/practice/springDemoThymeleaf/springDemo/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/practice/springDemoThymeleaf/springDemo/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/practice/springDemoThymeleaf/springDemo/.gradle/7.4/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/practice/springDemoThymeleaf/springDemo/.gradle/7.4/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/practice/springDemoThymeleaf/springDemo/.gradle/7.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/practice/springDemoThymeleaf/springDemo/.gradle/7.4/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/practice/springDemoThymeleaf/springDemo/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/practice/springDemoThymeleaf/springDemo/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/practice/springDemoThymeleaf/springDemo/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/practice/springDemoThymeleaf/springDemo/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/practice/springDemoThymeleaf/springDemo/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/practice/springDemoThymeleaf/springDemo/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/practice/springDemoThymeleaf/springDemo/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/practice/springDemoThymeleaf/springDemo/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/practice/springDemoThymeleaf/springDemo/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/practice/springDemoThymeleaf/springDemo/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/practice/springDemoThymeleaf/springDemo/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/practice/springDemoThymeleaf/springDemo/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/practice/springDemoThymeleaf/springDemo/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/practice/springDemoThymeleaf/springDemo/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/practice/springDemoThymeleaf/springDemo/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/practice/springDemoThymeleaf/springDemo/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/practice/springDemoThymeleaf/springDemo/build/libs/springdemo-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/practice/springDemoThymeleaf/springDemo/build/libs/springdemo-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/practice/springDemoThymeleaf/springDemo/src/main/webapp/WEB-INF/thymeleaf/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/practice/springDemoThymeleaf/springDemo/src/main/webapp/WEB-INF/thymeleaf/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/practice/springDemoThymeleaf/springDemo/src/main/webapp/WEB-INF/thymeleaf/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/practice/springDemoThymeleaf/springDemo/src/main/webapp/WEB-INF/thymeleaf/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/practice/springDemoThymeleaf/springDemo/src/main/webapp/WEB-INF/thymeleaf/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss4_Thymeleaf/practice/springDemoThymeleaf/springDemo/src/main/webapp/WEB-INF/thymeleaf/template.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +68,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/casetudy_jsp_sevlet" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -80,6 +94,7 @@
       <workItem from="1668908258425" duration="31000" />
       <workItem from="1668909229557" duration="24000" />
       <workItem from="1668957335142" duration="494000" />
+      <workItem from="1669967227729" duration="42000" />
     </task>
     <servers />
   </component>
