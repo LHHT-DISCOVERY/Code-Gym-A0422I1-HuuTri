@@ -51,7 +51,7 @@ public class StudentController {
     }
 
     @GetMapping("student/detail/{id}")
-    public String detail(@PathVariable("id") String id, Model  model) {
+    public String detail(@RequestParam("id") String id, Model  model) {
         Student student = studentService.findById(id);
         model.addAttribute("student", student);
         return "detail";
@@ -62,4 +62,6 @@ public class StudentController {
         model.addAttribute("students", studentService.findByName(name));
         return "list";
     }
+
+
 }

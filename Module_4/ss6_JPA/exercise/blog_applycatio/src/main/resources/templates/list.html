@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>List Blog</h1>
+<td><a th:href="@{/blog/create}">Create</a></td>
+
+
+<table border="1">
+    <tr>
+        <th>No</th>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Content</th>x`
+        <th>Detail</th>
+        <th>Update</th>
+        <th>Delete</th>
+    </tr>
+    <tr th:each="stu, iter: ${blog}" th:object="${stu}">
+        <td th:text="${iter.count}"></td>
+        <td th:text="${stu.id}"></td>
+        <td th:text="${iter.current.name}"></td>
+        <td th:text="*{content}"></td>
+        <td><a th:href="@{/blog/detail/{id}(id=*{id})}">Detail</a></td>
+        <td><a th:href="@{/blog/update(id=*{id})}">Update</a></td>
+        <td><a th:href="@{/blog/delete/{id}(id=*{id})}">Delete</a></td>
+    </tr>
+</table>
+</body>
+</html>

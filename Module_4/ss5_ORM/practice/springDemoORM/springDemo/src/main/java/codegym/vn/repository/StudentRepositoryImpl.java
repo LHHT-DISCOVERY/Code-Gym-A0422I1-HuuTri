@@ -12,7 +12,7 @@ import java.util.Map;
 public class StudentRepositoryImpl implements StudentRepository {
     private static Map<String, Student> studentMap;
 
-    static {
+    static {    
         studentMap = new HashMap<>();
         studentMap.put("SV001", new Student("SV001", "Toàn", 22, "Đà Nẵng"));
         studentMap.put("SV002", new Student("SV002", "Khánh", 21, "Quảng Nam"));
