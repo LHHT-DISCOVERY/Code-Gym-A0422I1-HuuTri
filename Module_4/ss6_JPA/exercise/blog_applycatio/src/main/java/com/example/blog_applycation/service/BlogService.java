@@ -8,9 +8,10 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class BlogService  implements  IBlogService{
+public class BlogService implements IBlogService {
     @Autowired
-    IBlogRepository iBlogRepository ;
+    IBlogRepository iBlogRepository;
+
     @Override
     public List<Blog> findAll() {
         return iBlogRepository.findAll();

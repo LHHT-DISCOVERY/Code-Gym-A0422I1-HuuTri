@@ -11,14 +11,12 @@ public class Blog {
     private String name;
     private String content;
 
+    @ManyToOne
+    @JoinColumn(name = "idBlog", referencedColumnName = "idBlog")
+    private Category idBlog;
+
 
     public Blog() {
-    }
-
-    public Blog(int id, String name, String content) {
-        this.id = id;
-        this.name = name;
-        this.content = content;
     }
 
     public int getId() {
@@ -43,5 +41,13 @@ public class Blog {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public Category getIdBlog() {
+        return idBlog;
+    }
+
+    public void setIdBlog(Category idBlog) {
+        this.idBlog = idBlog;
     }
 }

@@ -5,8 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-<div th:fragment="footer">
-    &copy; 2022 Codegym
-</div>
+<h1 th:text="#{'Hello codegym'}">Hello world</h1>
+<div th:replace="~{template.html::footer}"></div>
 </body>
 </html>
