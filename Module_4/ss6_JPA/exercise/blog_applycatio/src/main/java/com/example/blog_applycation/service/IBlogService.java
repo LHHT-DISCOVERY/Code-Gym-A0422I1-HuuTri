@@ -12,6 +12,9 @@ public interface IBlogService {
 
     Blog findById(int id);
 
+    List<Blog> findAllByCategory_IdBlog(int idBlog);
+
+
     void deleteById(int id);
 
 }

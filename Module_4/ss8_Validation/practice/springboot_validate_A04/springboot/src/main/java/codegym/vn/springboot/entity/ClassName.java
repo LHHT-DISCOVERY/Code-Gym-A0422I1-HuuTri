@@ -7,7 +7,7 @@ import java.util.Set;
 public class ClassName {
     @Id
     @Column(length = 20)
-    private String classCode;
+        private String classCode;
     private String className;
 
     @OneToMany(mappedBy = "className", fetch = FetchType.LAZY)

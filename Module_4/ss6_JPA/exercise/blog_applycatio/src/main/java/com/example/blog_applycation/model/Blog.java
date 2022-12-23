@@ -3,6 +3,7 @@ package com.example.blog_applycation.model;
 import javax.persistence.*;
 
 @Entity
+@Table(name = "blog")
 public class Blog {
     @Id
     // ID tự động tăng
@@ -13,7 +14,7 @@ public class Blog {
 
     @ManyToOne
     @JoinColumn(name = "idBlog", referencedColumnName = "idBlog")
-    private Category idBlog;
+    private Category category;
 
 
     public Blog() {
@@ -43,11 +44,11 @@ public class Blog {
         this.content = content;
     }
 
-    public Category getIdBlog() {
-        return idBlog;
+    public Category getCategory() {
+        return category;
     }
 
-    public void setIdBlog(Category idBlog) {
-        this.idBlog = idBlog;
+    public void setCategory(Category category) {
+        this.category = category;
     }
 }

@@ -22,7 +22,7 @@ public class Student {
     private String email;
     private boolean sex;
     private String phoneNumber;
-    @Transient
+    @Transient  
     private String note;
 
 //    @DateTimeFormat(pattern = "yyyy-MM-dd")

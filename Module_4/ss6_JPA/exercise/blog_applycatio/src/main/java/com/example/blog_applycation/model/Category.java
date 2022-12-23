@@ -11,7 +11,7 @@ public class Category {
     private int idBlog;
     private String  nameBlog;
 
-    @OneToMany(mappedBy = "idBlog", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "category", fetch = FetchType.LAZY)
     private Set<Blog> blog;
 
     public Category() {

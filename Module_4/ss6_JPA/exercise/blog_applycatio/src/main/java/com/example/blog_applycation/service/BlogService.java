@@ -28,6 +28,11 @@ public class BlogService implements IBlogService {
     }
 
     @Override
+    public List<Blog> findAllByCategory_IdBlog(int idBlog) {
+        return iBlogRepository.findAllByCategory_IdBlog(idBlog);
+    }
+
+    @Override
     public void deleteById(int id) {
         iBlogRepository.deleteById(id);
     }
