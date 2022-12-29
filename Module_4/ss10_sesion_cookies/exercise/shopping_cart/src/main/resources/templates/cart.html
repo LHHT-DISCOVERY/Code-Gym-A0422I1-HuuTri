@@ -3,37 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <title>Shopping Cart</title>
+  <link rel="stylesheet" href="style.css">
+<!--    <link rel="stylesheet" href="/style2.css">-->
+
+    <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  >
+  <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+  >
+  <script src=
+                  "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+  </script>
+  <script src=
+                  "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
 </head>
 <body>
-<p>
-  <a href="/shop">Shop</a>
-</p>
-<h1>Your Cart</h1>
-<form th:action="@{/shop}" th:object="${cart}" method="post">
-  <h3>Total Items: <span th:text="${cart.countItemQuantity()}"></span></h3>
-  <h3>Total Products: <span th:text="${cart.countProductQuantity()}"></span></h3>
-  <table border="1">
-    <tr>
-      <th>Item</th>
-      <th>Quantity</th>
-      <th>Price</th>
-    </tr>
-    <tr th:each="product: ${cart.products}">
-      <td th:text="${product.getKey().name}"></td>
-      <td>
-        <a id="decrease_button" th:text="${'-'}"></a>
-        <span th:text="${product.getValue()}"></span>
-        <a id="increase_button" th:href="@{/add/__${product.getKey().id}__(action='show')}"
-           th:text="${'+'}"></a>
-      </td>
-      <td th:text="${product.getKey().price}"></td>
-    </tr>
-    <tr>
-      <td>Total</td>
-      <td></td>
-      <td th:text="${cart.countTotalPayment()}"></td>
-    </tr>
-  </table>
+<div class="card">
+    <form th:action="@{/shop}" th:object="${cart}" method="post" >
+    <div class="row">
+      <div class="col-md-8 cart">
+        <div class="title">
+          <div class="row">
+            <div class="col"><h4><b>Shopping Cart</b></h4></div>
+            <div class="col align-self-center text-right text-muted"></div>
+          </div>
+        </div>
+        <div th:each="product: ${cart.products}" class="row border-top border-bottom ">
+          <div class="row main align-items-center">
+            <div class="col-2"><img class="img-fluid" src="https://th.bing.com/th/id/R.b9a89b3af2bb21d46b389d6aadf1bf8d?rik=APl7xFcRpPTQ1Q&pid=ImgRaw&r=0"></div>
+            <div class="col">
+              <div th:text="${product.getKey().name}" class="row text-muted"></div>
+              <div th:text="${product.getKey().description}" class="row"></div>
+            </div>
+            <div class="col">
+              <a id="increase_button" th:href="@{/remove/__${product.getKey().id}__(action='show')}" class="border" th:text="${'-'}"></a><a href="#"></a>
+                <span th:text="${product.getValue()} "></span>
+              <a id="increase_button" th:href="@{/add/__${product.getKey().id}__(action='show')}" class="border" th:text=" ${'+'}"></a><a href="#"></a>
+            </div>
+            <div th:text="${product.getKey().price}" class="col">&euro; <span class="close">&#10005;</span></div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-4 summary">
+        <div><h5><b>Summary</b></h5></div>
+        <hr>
+        <form>
+          <p>SHIPPING</p>
+          <select><option class="text-muted">Standard-Delivery- &euro;5.00</option></select>
+          <p>GIVE CODE</p>
+          <input id="code" placeholder="Enter your code">
+        </form>
+        <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
+          <div class="col">TOTAL PRICE</div>
+          <div  th:text="${cart.countTotalPayment()}"  class="col text-right">&euro;</div>
+        </div>
+        <button class="btn">CHECKOUT</button>
+      </div>
+    </div>
+        <div >
+            <button style="background-color: #239252 ; ; " class="counter-btn" data-qty-minus>
+                <a style="font-size: 30px  ; text-decoration: none ;color: white " href="/shop"> Back to shop </a>
+            </button>
+        </div>
 </form>
+</div>
+
 </body>
 </html>

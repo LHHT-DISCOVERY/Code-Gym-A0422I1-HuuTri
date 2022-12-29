@@ -3,6 +3,11 @@ package com.example.shopping_cart.model;
 import java.util.HashMap;
 import java.util.Map;
 
+//Phương thức checkIntemInCart() để kiểm tra xem sản phẩm đó đã có trong giỏ hàng hay chưa
+//Phương thức addProduct() được sử dụng để thêm sản phẩm vào trong giỏ hàng.
+//Phương thức countProductQuantity() dùng để đếm số lượng sản phẩm đó hiện có trong giỏ hàng.
+//Phương thức countItemQuantity() để đếm số lượng sản phẩm có trong giỏ hàng.
+//Phương thức countTotalPayment() dùng để tính tổng số tiền cần phải thanh toán.
 public class Cart {
     private Map<Product, Integer> products = new HashMap<>();
 
@@ -41,6 +46,15 @@ public class Cart {
         } else {
             Map.Entry<Product, Integer> itemEntry = selectItemInCart(product);
             Integer newQuantity = itemEntry.getValue() + 1;
+            products.replace(itemEntry.getKey(), newQuantity);
+        }
+    }
+    public void removeProduct(Product product) {
+        if (!checkItemInCart(product)) {
+            products.remove(product, 1);
+        } else {
+            Map.Entry<Product, Integer> itemEntry = selectItemInCart(product);
+            Integer newQuantity = itemEntry.getValue() -1;
             products.replace(itemEntry.getKey(), newQuantity);
         }
     }
