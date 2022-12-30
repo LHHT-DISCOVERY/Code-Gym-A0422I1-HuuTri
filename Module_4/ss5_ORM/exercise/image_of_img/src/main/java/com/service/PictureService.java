@@ -1,6 +1,7 @@
 package com.service;
 
 import com.bean.Picture;
+import com.repository.IPictureRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -9,7 +10,7 @@ import java.util.List;
 @Service
 public class PictureService implements IPictureService {
     @Autowired
-    IPictureService pictureRepository;
+    IPictureRepository pictureRepository;
 
     @Override
     public Picture findById(int id) {

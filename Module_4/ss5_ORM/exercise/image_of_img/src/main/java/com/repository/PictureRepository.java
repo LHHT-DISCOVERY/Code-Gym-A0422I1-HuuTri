@@ -36,7 +36,7 @@ public class PictureRepository implements IPictureRepository {
 
     @Override
     public List<Picture> findAll() {
-        return entityManager.createQuery("select p from Picture p").getResultList();
+        return entityManager.createQuery("select p from Picture p ").getResultList();
     }
 
 }
