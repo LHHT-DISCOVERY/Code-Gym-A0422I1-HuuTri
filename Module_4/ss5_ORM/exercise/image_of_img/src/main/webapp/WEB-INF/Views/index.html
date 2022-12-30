@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head">
+<body>
+<h3>Picture</h3>
+<p>
+    <a th:href="@{/picture/create}">
+        add new feed back
+    </a>
+</p>
+<form th:action="@{/picture/search}">
+    <label>
+        <input type="text" placeholder="input name author">
+    </label>
+    <input type="submit" value="Search">
+</form>
+
+<table id="customers">
+    <thead>
+    <tr>
+        <th>STT</th>
+        <!--        đánh giá-->
+        <th>Evaluate</th>
+
+        <th>Author</th>
+        <th>Feed Back</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each=" row,rowStat : ${pictures}">
+        <td th:text="${rowStat.count}"></td>
+        <td th:text="${row.evaluate}"></td>
+        <td th:text="${row.author}"></td>
+        <td th:text="${row.feedBack}"></td>
+        <td><a th:href="@{/picture/{id}/edit(id=${row.getId()})}">edit</a></td>
+        <td><a th:href="@{/picture/{id}/delete(id=${row.getId()})}">delete</a></td>
+    </tr>
+    </tbody>
+</table>
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>

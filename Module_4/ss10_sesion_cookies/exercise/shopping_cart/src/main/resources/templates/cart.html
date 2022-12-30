@@ -44,7 +44,11 @@
                 <span th:text="${product.getValue()} "></span>
               <a id="increase_button" th:href="@{/add/__${product.getKey().id}__(action='show')}" class="border" th:text=" ${'+'}"></a><a href="#"></a>
             </div>
-            <div th:text="${product.getKey().price}" class="col">&euro; <span class="close">&#10005;</span></div>
+            <div class="col">
+            <div  class="row text-muted"> Price </div>
+            <div th:text="${product.getKey().price}"  class="row">&euro; <span class="close">&#10005;</span></div>
+            </div>
+
           </div>
         </div>
 
