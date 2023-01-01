@@ -8,11 +8,10 @@
 <h2>Create</h2>
 <form th:object="${bookBorrow}" th:action="@{/borrow}"  method="post">
     <table border="1">
-        <tr>
+        <tr>            
             <td>Name</td>
             <td><input th:field="*{name}"/></td>
-            <span class="text-danger" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span>
-            <span></span>
+            <span style="color: red ; " th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span>
         </tr>
         <tr>
             <td>Name book</td>
