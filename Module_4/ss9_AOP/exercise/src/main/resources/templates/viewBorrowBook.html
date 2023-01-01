@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="">
+<head th:replace="/layout :: head">
+    <title></title>
+<body>
+<h1><span class="glyphicon glyphicon-home"></span> Manager Customer</h1>
+<hr>
+<div class="container">
+    <a class="add" th:href="@{/home}"> <span class="glyphicon glyphicon-plus"></span> Back to list book</a>
+</div>
+
+<!--    table-->
+<div class="container-table">
+    <p>Person list</p>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>STT</th>
+            <th>Name Person</th>
+            <th>Name Book </th>
+            <th>Borrowed Date</th>
+            <th>Pay Day</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody th:each=" row,rowStat : ${bookBorrow}">
+        <tr th:object="${row}">
+            <td th:text="${rowStat.count}"></td>
+            <td th:text="*{name}"></td>
+            <td th:text="*{book.nameBook}"></td>
+            <td th:text="*{#dates.format(bookBorrow, 'dd/MM/yyyy')}"></td>
+            <td th:text="*{#dates.format(bookPay, 'dd/MM/yyyy')}"></td>
+
+            <td>
+                <button th:onclick="deleteInfo([[${row.id}]])"
+                        type="button"
+                        class="btn btn-outline-danger"
+                        data-bs-toggle="modal" data-bs-target="#delete">
+                    pay
+                </button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<!-- Modal delete -->
+<div class="modal fade" id="delete" tabindex="-1" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+<!--        gửi lên controller-->
+        <form th:action="@{/deleteBorrow}" method="get">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                </div>
+                <!--                gửi lên controller-->
+                <div class="modal-body">
+                    <input name="idDelete" id="idDelete" hidden >
+<!--                    <input name="idDeleteBook" id="idDeleteBook" hidden >-->
+                    <span style="color: red"> BẠN CÓ MUỐN XOÁ </span> <span id="deleteName"> </span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
+                    </button>
+                    <button type="submit" class="btn btn-primary">Pay</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+<script >
+    function deleteInfo(id) {
+        document.getElementById("idDelete").value = id;
+    }
+</script>
+</html>
