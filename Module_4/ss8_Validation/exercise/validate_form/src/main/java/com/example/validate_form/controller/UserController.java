@@ -23,8 +23,8 @@ public class UserController {
 
     @PostMapping("/signup")
     public String doSignUp(@Valid @ModelAttribute("user")User user , BindingResult bindingResult , Model model){
-        UserValidate userValidate = new UserValidate();
-        userValidate.validate(user , bindingResult);
+//        UserValidate userValidate = new UserValidate();
+//        userValidate.validate(user , bindingResult);
         if(bindingResult.hasErrors()){
             return "view/index";
         }
