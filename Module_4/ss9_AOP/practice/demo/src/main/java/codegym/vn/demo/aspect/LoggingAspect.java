@@ -10,11 +10,21 @@ import java.util.logging.Logger;
 @Aspect
 @Component
 public class LoggingAspect {
+    // tạo biến logger để ghi cái log nó ra
     private Logger logger = Logger.getLogger(LoggingAspect.class.getName());
 
+    // định nghĩa một cái method pointcut sau đó dùng advice để khai báo advice với method đó
+    // bỏ ở service (Hoặc repository cx đc ) . có .. nghĩa là tất cả những cái method
+    // trong BookServiceImpl sew theo phương thức này
     @Pointcut("execution(* codegym.vn.demo.service.BookServiceImpl.*(..))")
     public void bookService(){};
 
+    // khai báo before nghĩa là trc khi chạy cái đó thì nó sẽ làm
+    // sẽ gọi method trên là bookService()
+//    @Before("bookService()")
+    // tạo method mới và để Join point vào
+    // lấy method chuẩn bị gọi nó ra thông qua joint point bằng string
+    // sẽ trả về đúng method mà joint sẽ gọi
     @Before("bookService()")
     public void getLog(JoinPoint joinPoint) throws Throwable {
         String methodName = joinPoint.getSignature().getName();

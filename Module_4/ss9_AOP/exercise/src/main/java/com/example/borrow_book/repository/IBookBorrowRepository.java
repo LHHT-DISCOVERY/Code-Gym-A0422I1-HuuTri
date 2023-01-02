@@ -9,4 +9,7 @@ import javax.persistence.criteria.CriteriaBuilder;
 
 @Repository
 public interface IBookBorrowRepository extends JpaRepository<BookBorrow, Integer> {
+    //     đây là viết ra câu lệnh sql thuần'= , còn nếu ko dùng hql là bỏ nqtiveQuery
+    //    @Query(nativeQuery = true, "câu lệnh sql")
+    // tên method
 }
