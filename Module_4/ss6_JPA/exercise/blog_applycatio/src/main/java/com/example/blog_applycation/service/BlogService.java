@@ -33,7 +33,12 @@ public class BlogService implements IBlogService {
     }
 
     @Override
-    public void deleteById(int id) {
-        iBlogRepository.deleteById(id);
+    public void update(int id, String name , String content) {
+        iBlogRepository.update(id, name, content);
+    }
+
+    @Override
+    public void deleteById(int id ) {
+        iBlogRepository.deleteById(id );
     }
 }

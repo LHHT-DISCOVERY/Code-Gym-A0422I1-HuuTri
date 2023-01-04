@@ -1,0 +1,79 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>List Category</h1>-->
+<!--<table border="1">-->
+<!--    <tr>-->
+<!--        <th>ID</th>-->
+<!--        <th> Topic </th>-->
+<!--        <th>Detail</th>-->
+<!--    </tr>-->
+<!--    <tr th:each="stu, iter: ${categories}" >-->
+<!--        <td th:text="${stu.idBlog}"></td>-->
+<!--        <td th:text="${stu.nameBlog}"></td>-->
+<!--        <td><a th:href="@{/category/detail/{idBlog}(idBlog=*{stu.idBlog})}">Detail</a></td>-->
+<!--    </tr>-->
+<!--</table>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{template/template::header('List blog')}">
+</head>
+<body>
+<div th:replace="~{template/template::pageloader}"></div>
+<nav th:replace="~{template/template::navbar}"></nav>
+<section th:replace="~{category/layout::sidebar}"></section>
+
+<div>
+</div>
+
+<section class="content">
+    <div class="container-fluid">
+        <!-- Vertical Layout -->
+        <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="header">
+                        <h2>
+                            Category Blog List
+                            <br>
+                            <span style="color: green" th:text="${message}"></span>
+                        </h2>
+                    </div>
+                    <div class="body table-responsive">
+                        <a th:href="@{/category/create}" class="btn btn-primary btn-custom">
+                            <i class="fa fa-plus-circle" aria-hidden="true"></i> Add new Category
+                        </a>
+
+                        <table class="table table-striped" id="dataTable-listStudent">
+                            <thead>
+                            <tr>
+                                        <th>ID</th>
+                                        <th> Topic </th>
+                                        <th>Detail</th>
+                            </tr>
+                            </thead>
+                            <tbody th:each="cate, iter: ${categories}">
+                                    <td th:text="${cate.idBlog}"></td>
+                                    <td th:text="${cate.nameBlog}"></td>
+                                    <td><a th:href="@{/category/detail/{idBlog}(idBlog=*{cate.idBlog})}">Detail</a></td>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div th:replace="~{template/template::script}"></div>
+<div th:replace="~{template/template::footer}"></div>
+</body>
+</html>

@@ -10,10 +10,12 @@ public interface IBlogService {
 
     void createOrUpdate(Blog blog);
 
+
     Blog findById(int id);
 
     List<Blog> findAllByCategory_IdBlog(int idBlog);
 
+    void update(int id , String name , String content);
 
     void deleteById(int id);
 

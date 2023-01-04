@@ -45,9 +45,11 @@ public class BlogController {
     }
 
     @PostMapping("/update")
-    public String update(@ModelAttribute("blog") Blog blog) {
-        iBlogService.createOrUpdate(blog);
-        return "redirect:/";
+    public String update(@RequestParam("content") String content ,
+                         @RequestParam("id") int id ,
+                         @RequestParam("name") String name) {
+        iBlogService.update(id, name , content);
+        return "blog/list";
     }
 
     @GetMapping("/detail/{id}")

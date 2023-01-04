@@ -20,16 +20,20 @@ public class LoginController {
                           @RequestParam("password") String password,
                           Model model, HttpSession session) {
         if ("root".equals(username) && "123456".equals(password)) {
+//            lưu 1 cái session bằng cách khai báo thêm HttpSession session
             session.setAttribute("username", username);
             return "redirect:/student/list";
         }
+        // mục đích để thêm cái mesage vào
         model.addAttribute("error", "Login failed. Username or password doesn't correct");
         return "student/login";
     }
 
     @GetMapping("/logout")
     public String doLogout(HttpSession session) {
+        // đăng xuất bằng cách removeAttribute là user name
         session.removeAttribute("username");
+//        về lại trang login
         return "redirect:/login";
     }
 

@@ -40,13 +40,18 @@ public class StudentController {
 //        consumes = {MediaType.APPLICATION_JSON_VALUE}
 //            ,headers = {"Content-Type=text/html","Accept=application/xml"}
             )
+//    sử dụng cookie
     public String list(Model model, @CookieValue(name = "count", defaultValue = "0") Long count, HttpServletResponse response) {
         List<Student> students = service.findAll();
+        // B1: khởi tạo một cookie
         Cookie cookie = new Cookie("count", ++count +"");
         cookie.setPath("/");
-//        cookie.setMaxAge(0);
+//        cookie.setMaxAge(0); //=>  Xóa Cookie C1: xóa chủ động set thời gian sống về 0 | C2: đợi hết thời gian sống nó tự động xóa
+//      B2: add cookie vào respone (bằng cách Khai báo HttpServletResponse response )
         response.addCookie(cookie);
+//        sử dụng ssesion để đăng nhập
         String username = (String) httpSession.getAttribute("username");
+//        addAttribute  user để hiển thị xinh chào bên FE
         model.addAttribute("user", username);
         model.addAttribute("students", students);
         model.addAttribute("count", count);
@@ -61,6 +66,7 @@ public class StudentController {
 //    }
 
     // Dùng formatter
+    //Sử dụng cookie bình thường ko dùng annotation
     @GetMapping("/view/{student_id}")
     public String viewStudent(@PathVariable("student_id") Student student, Model model,
                               HttpServletResponse response, HttpServletRequest request) {
@@ -88,6 +94,7 @@ public class StudentController {
 
     @GetMapping("/update/{student_id}")
     public String updateStudent(@PathVariable("student_id") Student student, Model model) {
+//       sử dụng sesiond dể đăng nhập
         String username = (String) httpSession.getAttribute("username");
 //        if (username == null || "".equals(username.trim())) {
 //            return "redirect:/login";
