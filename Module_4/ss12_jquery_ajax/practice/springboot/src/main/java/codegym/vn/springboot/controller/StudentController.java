@@ -114,7 +114,7 @@ public class StudentController {
 
     @GetMapping("/create")
     public String viewCreate(Model model) {
-        String username = (String) httpSession.getAttribute("username");
+//        String username = (String) httpSession.getAttribute("username");
 //        if (username == null || "".equals(username.trim())) {
 //            return "redirect:/login";
 //        }

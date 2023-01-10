@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Smartphone</title>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<!--  Ajax jquery (cập nhật thông tin)-->
+  <script>
+    $(document).ready(function () {
+      $("#formUpdateSmartphone").submit(function (event) {
+        let producer = $("#producer").val();
+        let model = $("#model").val();
+        let price = $("#price").val();
+        let json = {
+          "producer": producer,
+          "model": model,
+          "price": price};
+        $.ajax({
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          type : "POST",
+          data: JSON.stringify(json),
+          url: $(this).attr("action"),
+          success: function(smartphone) {
+            let result = "Update successful";
+            $("#result").html(result);
+          }
+        });
+        event.preventDefault();
+      });
+    });
+  </script>
+</head>
+<body>
+<a th:href="@{/smartphones/list}">Back to List Smartphone</a>
+<form id="formUpdateSmartphone" th:object="${smartphone}">
+  <table>
+    <tbody>
+    <tr>
+      <td>Producer:</td>
+      <td><input type="text" th:field="*{producer}"></td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td><input type="text" th:field="*{model}"></td>
+    </tr>
+    <tr>
+      <td>Price</td>
+      <td><input type="text" th:field="*{price}"></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <button type="submit">Update</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</form>
+<h1 id="result" style="color: chartreuse ; "></h1>
+</body>
+</html>

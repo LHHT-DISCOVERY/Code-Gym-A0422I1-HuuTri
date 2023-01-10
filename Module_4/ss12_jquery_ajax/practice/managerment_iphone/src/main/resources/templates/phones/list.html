@@ -58,9 +58,12 @@
         }
 
         function getSmartphone(smartphone) {
-            return `<tr><td >${smartphone.producer}</td><td >${smartphone.model}</td><td >${smartphone.price}</td>
-                <td><a class="deleteSmartphone" href="${smartphone.id}">Delete</a></td>
-                <td><a class="" href="${smartphone.id}">Update</a></td></tr>`
+            return `<tr>
+                        <td >${smartphone.producer}</td>
+                        <td >${smartphone.model}</td><td >${smartphone.price}</td>
+                        <td><a class="deleteSmartphone" href="${smartphone.id}">Delete</a></td>
+                        <td><button >Update</button></td>
+                    </tr>`
 
         }
 
@@ -85,6 +88,34 @@
                 event.preventDefault();
             });
         })
+
+        $(document).ready(function () {
+            $("#smartphoneForm").submit(function (event) {
+                let producer = $("#producer").val();
+                let model = $("#model").val();
+                let price = $("#price").val();
+                let json = {"producer": producer, "model": model, "price": price};
+                $.ajax({
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    type : "POST",
+                    data: JSON.stringify(json),
+                    url: $(this).attr("action"),
+                    success: function(smartphone) {
+                        let respContent = "";
+                        respContent += "<span class='success'>Smartphone was updated: [";
+                        respContent += smartphone.producer + " : ";
+                        respContent += smartphone.model + " : " ;
+                        respContent += smartphone.price + "]</span>"
+                        $("#smartPhoneFromResponse").html(respContent);
+                    }
+                });
+                event.preventDefault();
+            });
+        });
+
     </script>
 </head>
 <body>
@@ -108,6 +139,8 @@
         </tr>
     </table>
 </form>
+
+
 <h1>Smartphone List</h1>
 <table id="smartphoneList">
     <tr>
@@ -115,7 +148,7 @@
         <td>Model</td>
         <td>Price</td>
         <td>Delete</td>
-        <td>Upadate</td>
+        <td>Update</td>
     </tr>
     <th:block th:each="smartphone: ${smartphones}">
         <tr>
@@ -123,7 +156,9 @@
             <td th:text="${smartphone.model}"></td>
             <td th:text="${smartphone.price}"></td>
             <td><a class="deleteSmartphone" th:href="${smartphone.getId()}">Delete</a></td>
-            <td><a class="" th:href="${smartphone.getId()}">Update</a></td>
+            <td>
+                <a th:href="@{/smartphones/update/{id}(id=*{smartphone.getId})}">Edit</a>
+            </td>
         </tr>
     </th:block>
 </table>

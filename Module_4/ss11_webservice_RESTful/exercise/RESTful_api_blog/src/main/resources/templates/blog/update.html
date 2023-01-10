@@ -12,8 +12,18 @@
             <td hidden>ID</td>
             <td hidden><input type="text" th:field="*{id}"></td>
         </tr>
+        // copy đoạn ni để chon type
         <tr>
-            <td>Name</td>
+            <select th:field="*{category}" class="form-control" tabindex="4">
+                <option value=""></option>
+                <option th:each="category : ${categorys}"
+                        th:value="${category.idBlog}"
+                        th:text="${category.nameBlog}"
+                        th:selected="${category.idBlog.equals(blog.category.idBlog)}"/>
+            </select>
+        </tr>
+        <tr>
+            <td>Summary</td>
             <td><input type="text" th:field="*{name}"></td>
         </tr>
         <tr>
