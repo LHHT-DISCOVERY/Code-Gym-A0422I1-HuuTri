@@ -11,6 +11,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.Date;
 
 @Controller
 @RequestMapping()
@@ -24,17 +25,18 @@ public class BorrowController {
     public String createBorrow(@PathVariable("id") int id, Model model) {
         BookBorrow bookBorrow = new BookBorrow();
         Book book = iBookService.findById(id);
-        model.addAttribute("bookBorrow", bookBorrow);
+        model.addAttribute("bookBorrowObj", bookBorrow);
         model.addAttribute("book", book);
         return "create";
     }
 
     @PostMapping("/borrow")
-    public String doCreate(@Valid @ModelAttribute("bookBorrow") BookBorrow bookBorrow, BindingResult bindingResult, Model model) {
+    public String doCreate(@Valid @ModelAttribute("bookBorrowObj") BookBorrow bookBorrow, BindingResult bindingResult, Model model) {
         if (bindingResult.hasErrors()) {
             model.addAttribute("book" , iBookService.findById(bookBorrow.getBook().getIdBook()));
             return "create";
         }
+
         iBookBorrowService.create(bookBorrow);
         return "redirect:/home";
     }

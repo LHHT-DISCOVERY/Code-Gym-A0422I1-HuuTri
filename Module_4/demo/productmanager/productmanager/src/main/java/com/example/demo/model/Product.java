@@ -13,12 +13,9 @@ import javax.validation.constraints.Size;
 import java.util.Date;
 
 @Entity
-@NoArgsConstructor
-@AllArgsConstructor
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     private Integer id;
     @Size(min = 5,max =50,message = "{name.validate}")
     private String name;

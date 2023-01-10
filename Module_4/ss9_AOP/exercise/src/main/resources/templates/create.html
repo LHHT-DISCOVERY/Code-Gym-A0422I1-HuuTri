@@ -6,7 +6,7 @@
 </head>
 <body>
 <h2>Create</h2>
-<form th:object="${bookBorrow}" th:action="@{/borrow}"  method="post">
+<form  th:action="@{/borrow}"  method="post" th:object="${bookBorrowObj}">
     <table border="1">
         <tr>            
             <td>Name</td>

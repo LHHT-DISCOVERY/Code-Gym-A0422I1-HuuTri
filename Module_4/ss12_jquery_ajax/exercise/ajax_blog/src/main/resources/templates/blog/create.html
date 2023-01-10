@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Create new Blog</h1>
+<form th:action="@{/blog/create}" method="post" th:object="${blog}">
+    <table border="1">
+        <tr>
+            <td hidden>ID</td>
+            <td hidden><input type="text" th:field="*{id}"></td>
+        </tr>
+        <tr>
+            <th> Topic</th>
+            <th>
+                <select th:field="*{category}" class="form-control" tabindex="4">
+                    <option th:each="category : ${categorys}"
+                            th:value="${category.idBlog}"
+                            th:text="${category.nameBlog}"/>
+                    th:selected="${category.idBlog.equals(blog.category.idblog)}"/>
+                </select>
+            </th>
+
+        </tr>
+        <tr>
+            <td>Content</td>
+            <td><input type="text" th:field="*{content}"></td>
+        </tr>
+
+        <tr>
+            <td>Summary</td>
+            <td><input type="text" th:field="*{name}"></td>
+        </tr>
+
+        <tr>
+            <td><input type="reset" value="Reset"></td>
+            <td><input type="submit" value="Submit"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

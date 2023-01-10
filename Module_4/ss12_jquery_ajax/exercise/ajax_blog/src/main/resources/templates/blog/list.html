@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<head th:replace="~{template/template::header('List blog')}">
+    <script src="js/app.js"></script>
+</head>
+<body>
+<div th:replace="~{template/template::pageloader}"></div>
+<nav th:replace="~{template/template::navbar}"></nav>
+<section th:replace="~{blog/layout::sidebar}"></section>
+
+<section class="content">
+    <div class="container-fluid">
+        <!-- Vertical Layout -->
+        <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="header">
+                        <h2>
+                            Blog List
+                        </h2>
+                    </div>
+                    <div class="body table-responsive">
+                        <a th:href="@{/blog/create}" class="btn btn-primary btn-custom">
+                            <i class="fa fa-plus-circle" aria-hidden="true"></i> Add new blog
+                        </a>
+                        <a th:href="@{/category/list}" class="btn btn-primary btn-custom">
+                            <i class="fa fa-plus-circle" aria-hidden="true"></i> Back category blog
+                        </a>
+
+                        <!--                        AJAX-JQUERY-->
+                        <input type="text" id="nameBlog"/>
+                        <button onclick="findByName()"> Find By Name Blog (Ajax)</button>
+
+                        <form th:action="@{/blog/search}" th:method="get">
+                            <input type="text" name="name">
+                            <input type="submit" value="Search by Summary">
+                        </form>
+
+                        <table class="table table-striped" id="dataTable-listStudent">
+                            <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>ID</th>
+                                <th>Content</th>
+                                <th>Summary</th>
+                                <th>Detail</th>
+                                <th>Update</th>
+                                <th>Delete</th>
+                            </tr>
+                            </thead>
+                            <tbody id="resultSearch">
+                                <tr th:each="stu, iter: ${blog}" th:object="${stu}">
+                                    <td th:text="${iter.count}"></td>
+                                    <td th:text="${stu.id}"></td>
+                                    <td th:text="*{content}"></td>
+                                    <td th:text="${iter.current.name}"></td>
+                                    <td><a th:href="@{/blog/detail/{id}(id=*{id})}">Detail</a></td>
+                                    <td><a th:href="@{/blog/update(id=*{id})}">Update</a></td>
+                                    <td><a th:href="@{/blog/delete/{id}(id=*{id})}">Delete</a></td>
+                                </tr>
+
+                            </tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div th:replace="~{template/template::script}"></div>
+<div th:replace="~{template/template::footer}"></div>
+</body>
+</html>

@@ -13,11 +13,11 @@ public class BookBorrow {
     private int id;
     @NotBlank(message = "{notempty}")
     private String name;
+
     @DateTimeFormat(pattern = "yyyy-MM-dd")
-    @Column(columnDefinition = "date")
     private Date bookBorrow;
+
     @DateTimeFormat(pattern = "yyyy-MM-dd")
-    @Column(columnDefinition = "date")
     private Date bookPay;
     @ManyToOne
     @JoinColumn(name = "idBook", referencedColumnName = "idBook")
