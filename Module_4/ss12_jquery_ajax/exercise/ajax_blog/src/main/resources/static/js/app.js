@@ -125,6 +125,8 @@ function compareTime(str1, str2) {
     }
 }
 
+// tìm kiếm theo tên blog bằng jquery-ajax
+
 function findByName() {
     let nameBlog = $("#nameBlog").val();
     $.ajax({
