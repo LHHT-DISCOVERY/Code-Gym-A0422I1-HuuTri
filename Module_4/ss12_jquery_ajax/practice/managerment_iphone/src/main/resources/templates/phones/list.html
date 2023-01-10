@@ -89,33 +89,6 @@
             });
         })
 
-        $(document).ready(function () {
-            $("#smartphoneForm").submit(function (event) {
-                let producer = $("#producer").val();
-                let model = $("#model").val();
-                let price = $("#price").val();
-                let json = {"producer": producer, "model": model, "price": price};
-                $.ajax({
-                    headers: {
-                        'Accept': 'application/json',
-                        'Content-Type': 'application/json'
-                    },
-                    type : "POST",
-                    data: JSON.stringify(json),
-                    url: $(this).attr("action"),
-                    success: function(smartphone) {
-                        let respContent = "";
-                        respContent += "<span class='success'>Smartphone was updated: [";
-                        respContent += smartphone.producer + " : ";
-                        respContent += smartphone.model + " : " ;
-                        respContent += smartphone.price + "]</span>"
-                        $("#smartPhoneFromResponse").html(respContent);
-                    }
-                });
-                event.preventDefault();
-            });
-        });
-
     </script>
 </head>
 <body>
