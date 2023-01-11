@@ -12,7 +12,6 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import java.security.AccessControlContext;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,6 +21,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     AccountRepository accountRepository;
     @Autowired
     AccountRoleRepository accountRoleRepository;
+
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         Account account = accountRepository.findByAccountName(username);
@@ -31,7 +31,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
         List<String> roles = accountRoleRepository.findAllRoleByUser(username);
         List<GrantedAuthority> authorityList = new ArrayList<>();
-        for (String roleName: roles) {
+        for (String roleName : roles) {
             authorityList.add(new SimpleGrantedAuthority(roleName));
         }
 

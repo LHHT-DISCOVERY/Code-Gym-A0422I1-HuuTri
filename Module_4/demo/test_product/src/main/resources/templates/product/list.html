@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{template/template::header('List products')}">
+</head>
+<body>
+<div th:replace="~{template/template::pageloader}"></div>
+<nav th:replace="~{template/template::navbar}"></nav>
+<section th:replace="~{product/layout::sidebar}"></section>
+
+<section class="content">
+    <div class="container-fluid">
+        <!-- Vertical Layout -->
+        <div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="header">
+                        <h2>
+                            products List
+                        </h2>
+                    </div>
+                    <div class="body table-responsive">
+                        <a th:href="@{/products/create}" class="btn btn-primary btn-custom">
+                            <i class="fa fa-plus-circle" aria-hidden="true"></i> Add new products
+                        </a>
+                        <a th:href="@{/category/list}" class="btn btn-primary btn-custom">
+                            <i class="fa fa-plus-circle" aria-hidden="true"></i> Back category products
+                        </a>
+                        <table class="table table-striped" id="dataTable-listStudent">
+                            <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>ID</th>
+                                <th>NAME</th>
+                                <th>PRICE</th>
+                                <th>datePublish</th>
+                                <th>description</th>
+                                <th>Detail</th>
+                                <th>Update</th>
+                                <th>Delete</th>
+                            </tr>
+                            </thead>
+                            <tbody th:each="stu, iter: ${products}" th:object="${stu}">
+                                    <td th:text="${iter.count}"></td>
+                                    <td th:text="${stu.id}"></td>
+                                    <td th:text="${iter.current.name}"></td>
+                                    <td th:text="*{price}"></td>
+                                    <td th:text="*{datePublish}"></td>
+                                    <td th:text="*{description}"></td>
+                                    <td><a th:href="@{/products/detail/{id}(id=*{id})}">Detail</a></td>
+                                    <td><a th:href="@{/products/update(id=*{id})}">Update</a></td>
+                                    <td><a th:href="@{/products/delete/{id}(id=*{id})}">Delete</a></td>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div th:replace="~{template/template::script}"></div>
+<div th:replace="~{template/template::footer}"></div>
+</body>
+</html>

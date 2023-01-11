@@ -1,0 +1,52 @@
+<!--<!DOCTYPE html>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Detail products</h1>-->
+<!--<table border="1" th:object="${products}">-->
+<!--    <tr>-->
+<!--        <td>ID</td>-->
+<!--        <td th:text="*{id}"></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Name</td>-->
+<!--        <td th:text="*{name}"></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Content</td>-->
+<!--        <td th:text="*{content}"></td>-->
+<!--    </tr>-->
+<!--</table>-->
+<!--<div th:insert="~{template.html::footer}"></div>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 th:text="#{title}"></h1>
+<h1>products detail</h1>
+<table border="1" th:object="${products}">
+    <tr>
+        <td>ID</td>
+        <td th:text="${products.id}"></td>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td th:text="*{name}"></td>
+    </tr>
+    <tr>
+        <td>Class Name</td>
+        <td></td>
+    </tr>
+</table>
+<a th:href="@{/products/list/}">Back to list</a>
+</body>
+</html>
