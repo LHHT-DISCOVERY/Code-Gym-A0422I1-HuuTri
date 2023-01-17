@@ -6,32 +6,42 @@
 </head>
 <body>
 <h1>Create new products</h1>
-<form th:action="@{/products/create}" method="post" th:object="${products}">
+<form th:action="@{/product/create}" method="post" th:object="${product}">
     <table border="1">
         <tr>
             <td hidden>ID</td>
             <td hidden><input type="text" th:field="*{id}"></td>
         </tr>
         <tr>
-            <th> Topic</th>
+            <th> Type Product</th>
             <th>
-                <select th:field="*{category}" class="form-control" tabindex="4">
-                    <option th:each="category : ${categorys}"
-                            th:value="${category.idBlog}"
-                            th:text="${category.nameBlog}"/>
-                    th:selected="${category.idBlog.equals(products.category.idblog)}"/>
+                <select th:field="*{productType}" class="form-control" tabindex="4">
+                    <option th:each="productType : ${productType}"
+                            th:value="${productType.idProductType}"
+                            th:text="${productType.name}"/>
+                    th:selected="${productType.idProductType.equals(product.productType.idProductType)}"/>
                 </select>
             </th>
 
         </tr>
         <tr>
-            <td>Content</td>
-            <td><input type="text" th:field="*{content}"></td>
+            <td>Name: </td>
+            <td><input type="text" th:field="*{name}"></td>
         </tr>
 
         <tr>
-            <td>Summary</td>
-            <td><input type="text" th:field="*{name}"></td>
+            <td>Price</td>
+            <td><input type="text" th:field="*{price}"></td>
+        </tr>
+
+        <tr>
+            <td>datePublish</td>
+            <td><input type="date" th:field="*{datePublish}"></td>
+        </tr>
+
+        <tr>
+            <td>description</td>
+            <td><input type="text" th:field="*{description}"></td>
         </tr>
 
         <tr>

@@ -33,4 +33,9 @@ public class productService implements IProductService {
     public void deleteById(int id) {
         iProductRepository.deleteById(id);
     }
+
+    @Override
+    public List<Product> findAllByIdProductType(int id) {
+        return iProductRepository.findAllByIdProductType(id);
+    }
 }

@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head th:replace="~{template/template::header('List products')}">
+<head th:replace="~{template/template::header('List productList')}">
 </head>
 <body>
 <div th:replace="~{template/template::pageloader}"></div>
 <nav th:replace="~{template/template::navbar}"></nav>
-<section th:replace="~{product/layout::sidebar}"></section>
 
 <section class="content">
     <div class="container-fluid">
@@ -15,15 +14,15 @@
                 <div class="card">
                     <div class="header">
                         <h2>
-                            products List
+                            productList List
                         </h2>
                     </div>
                     <div class="body table-responsive">
-                        <a th:href="@{/products/create}" class="btn btn-primary btn-custom">
-                            <i class="fa fa-plus-circle" aria-hidden="true"></i> Add new products
+                        <a th:href="@{/product/create}" class="btn btn-primary btn-custom">
+                            <i class="fa fa-plus-circle" aria-hidden="true"></i> Add new productList
                         </a>
-                        <a th:href="@{/category/list}" class="btn btn-primary btn-custom">
-                            <i class="fa fa-plus-circle" aria-hidden="true"></i> Back category products
+                        <a th:href="@{/productType/list}" class="btn btn-primary btn-custom">
+                            <i class="fa fa-plus-circle" aria-hidden="true"></i> Back category productList
                         </a>
                         <table class="table table-striped" id="dataTable-listStudent">
                             <thead>
@@ -39,16 +38,16 @@
                                 <th>Delete</th>
                             </tr>
                             </thead>
-                            <tbody th:each="stu, iter: ${products}" th:object="${stu}">
-                                    <td th:text="${iter.count}"></td>
-                                    <td th:text="${stu.id}"></td>
-                                    <td th:text="${iter.current.name}"></td>
-                                    <td th:text="*{price}"></td>
-                                    <td th:text="*{datePublish}"></td>
-                                    <td th:text="*{description}"></td>
-                                    <td><a th:href="@{/products/detail/{id}(id=*{id})}">Detail</a></td>
-                                    <td><a th:href="@{/products/update(id=*{id})}">Update</a></td>
-                                    <td><a th:href="@{/products/delete/{id}(id=*{id})}">Delete</a></td>
+                            <tbody th:each="stu, iter: ${productList}" th:object="${stu}">
+                            <td th:text="${iter.count}"></td>
+                            <td th:text="${stu.id}"></td>
+                            <td th:text="${iter.current.name}"></td>
+                            <td th:text="*{price}"></td>
+                            <td th:text="*{datePublish}"></td>
+                            <td th:text="*{description}"></td>
+                            <td><a th:href="@{/product/detail/{id}(id=*{id})}">Detail</a></td>
+                            <td><a th:href="@{/product/update(id=*{id})}">Update</a></td>
+                            <td><a th:href="@{/product/delete/{id}(id=*{id})}">Delete</a></td>
                             </tbody>
                         </table>
                     </div>
