@@ -18,7 +18,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-validation'
 
-    runtimeOnly 'mysql:mysql-connector-java'
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.31'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 

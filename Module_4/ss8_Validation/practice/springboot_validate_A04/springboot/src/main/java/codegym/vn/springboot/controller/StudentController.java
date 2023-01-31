@@ -78,6 +78,7 @@ public class StudentController {
         return "/student/create";
     }
 
+//    BindingResult phài nằm giữa
     @PostMapping("/create")
     public String create(@Valid @ModelAttribute("student") Student student,
                          BindingResult bindingResult, Model model) {

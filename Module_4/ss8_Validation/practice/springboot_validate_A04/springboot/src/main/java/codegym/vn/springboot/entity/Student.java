@@ -1,10 +1,8 @@
 package codegym.vn.springboot.entity;
 
-import org.hibernate.validator.constraints.Length;
-import org.springframework.format.annotation.DateTimeFormat;
-
 import javax.persistence.*;
-import javax.validation.constraints.*;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 import java.util.Date;
 
 @Entity
@@ -22,10 +20,10 @@ public class Student {
     private String email;
     private boolean sex;
     private String phoneNumber;
-    @Transient  
+    @Transient
     private String note;
 
-//    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    //    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date birthdate;
 
     public Student() {

@@ -2,54 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c39c7a8-981d-4607-ae00-a0a99366bf37" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/exercise/listen_music_basic/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/exercise/listen_music_basic/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/exercise/listen_music_basic/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/exercise/listen_music_basic/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/exercise/listen_music_basic/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/exercise/listen_music_basic/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/exercise/listen_music_basic/src/main/java/com/bean/Music.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/exercise/listen_music_basic/src/main/java/com/config/AppConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/exercise/listen_music_basic/src/main/java/com/config/AppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/exercise/listen_music_basic/src/main/java/com/controller/MusicController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/exercise/listen_music_basic/src/main/java/com/repository/IMusicRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/exercise/listen_music_basic/src/main/java/com/repository/impl/MusicRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/exercise/listen_music_basic/src/main/java/com/service/IMusicService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/exercise/listen_music_basic/src/main/java/com/service/impl/MusicServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/exercise/listen_music_basic/src/main/webapp/WEB-INF/thymeleaf/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/exercise/listen_music_basic/src/main/webapp/WEB-INF/thymeleaf/detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/exercise/listen_music_basic/src/main/webapp/WEB-INF/thymeleaf/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/exercise/listen_music_basic/src/main/webapp/WEB-INF/thymeleaf/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/exercise/listen_music_basic/src/main/webapp/WEB-INF/thymeleaf/template.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/exercise/listen_music_basic/src/main/webapp/WEB-INF/thymeleaf/update.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/ss6_JPA/exercise/blog_applycatio/src/main/java/com/example/blog_applycation/controller/BlogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/ss6_JPA/exercise/blog_applycatio/src/main/java/com/example/blog_applycation/model/Blog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/ss6_JPA/exercise/blog_applycatio/src/main/java/com/example/blog_applycation/repository/IBlogRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/ss6_JPA/exercise/blog_applycatio/src/main/java/com/example/blog_applycation/service/BlogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/ss6_JPA/exercise/blog_applycatio/src/main/java/com/example/blog_applycation/service/IBlogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/ss6_JPA/exercise/blog_applycatio/src/main/resources/templates/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/ss6_JPA/exercise/blog_applycatio/src/main/resources/templates/detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/ss6_JPA/exercise/blog_applycatio/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/ss6_JPA/exercise/blog_applycatio/src/main/resources/templates/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/ss6_JPA/exercise/blog_applycatio/src/main/resources/templates/template.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Module_4/ss6_JPA/exercise/blog_applycatio/src/main/resources/templates/update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module_4/casestudy/furama_managerment/src/main/resources/templates/common-layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_2.1/src/ss6_inheritance/project_circle_and_cylinder/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_2.1/src/ss6_inheritance/project_circle_and_cylinder/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module_4/ss5_ORM/practice/springDemoORM/springDemo/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/practice/springDemoORM/springDemo/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module_4/ss5_ORM/practice/springDemoORM/springDemo/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/practice/springDemoORM/springDemo/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module_4/ss5_ORM/practice/springDemoORM/springDemo/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/practice/springDemoORM/springDemo/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module_4/ss5_ORM/practice/springDemoORM/springDemo/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/practice/springDemoORM/springDemo/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module_4/ss5_ORM/practice/springDemoORM/springDemo/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/practice/springDemoORM/springDemo/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module_4/ss5_ORM/practice/springDemoORM/springDemo/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/practice/springDemoORM/springDemo/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module_4/ss5_ORM/practice/springDemoORM/springDemo/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/practice/springDemoORM/springDemo/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module_4/ss5_ORM/practice/springDemoORM/springDemo/build/classes/java/main/codegym/vn/config/AppConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/practice/springDemoORM/springDemo/build/classes/java/main/codegym/vn/config/AppConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module_4/ss5_ORM/practice/springDemoORM/springDemo/build/classes/java/main/codegym/vn/repository/StudentRepositoryImpl2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/practice/springDemoORM/springDemo/build/classes/java/main/codegym/vn/repository/StudentRepositoryImpl2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module_4/ss5_ORM/practice/springDemoORM/springDemo/build/classes/java/main/codegym/vn/service/StudentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/practice/springDemoORM/springDemo/build/classes/java/main/codegym/vn/service/StudentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module_4/ss5_ORM/practice/springDemoORM/springDemo/build/libs/springdemo-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/practice/springDemoORM/springDemo/build/libs/springdemo-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module_4/ss5_ORM/practice/springDemoORM/springDemo/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/practice/springDemoORM/springDemo/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module_4/ss5_ORM/practice/springDemoORM/springDemo/src/main/java/codegym/vn/config/AppConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/practice/springDemoORM/springDemo/src/main/java/codegym/vn/config/AppConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module_4/ss5_ORM/practice/springDemoORM/springDemo/src/main/java/codegym/vn/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/practice/springDemoORM/springDemo/src/main/java/codegym/vn/controller/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module_4/ss5_ORM/practice/springDemoORM/springDemo/src/main/java/codegym/vn/repository/StudentRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/practice/springDemoORM/springDemo/src/main/java/codegym/vn/repository/StudentRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module_4/ss5_ORM/practice/springDemoORM/springDemo/src/main/webapp/WEB-INF/thymeleaf/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss5_ORM/practice/springDemoORM/springDemo/src/main/webapp/WEB-INF/thymeleaf/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_4/casestudy/furama_managerment/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/casestudy/furama_managerment/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_4/casestudy/furama_managerment/src/main/resources/templates/heder_footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_4/casestudy/furama_managerment/src/main/resources/templates/home/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/casestudy/furama_managerment/src/main/resources/templates/home/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_4/ss8_Validation/practice/springboot_validate_A04/springboot/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss8_Validation/practice/springboot_validate_A04/springboot/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_4/ss8_Validation/practice/springboot_validate_A04/springboot/src/main/java/codegym/vn/springboot/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss8_Validation/practice/springboot_validate_A04/springboot/src/main/java/codegym/vn/springboot/controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_4/ss8_Validation/practice/springboot_validate_A04/springboot/src/main/java/codegym/vn/springboot/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss8_Validation/practice/springboot_validate_A04/springboot/src/main/java/codegym/vn/springboot/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_4/ss8_Validation/practice/springboot_validate_A04/springboot/src/main/java/codegym/vn/springboot/validate/StudentValidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss8_Validation/practice/springboot_validate_A04/springboot/src/main/java/codegym/vn/springboot/validate/StudentValidate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_4/ss8_Validation/practice/springboot_validate_A04/springboot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss8_Validation/practice/springboot_validate_A04/springboot/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_4/ss8_Validation/practice/springboot_validate_A04/springboot/src/main/resources/templates/student/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_4/ss8_Validation/practice/springboot_validate_A04/springboot/src/main/resources/templates/student/create.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +33,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Module_2.1/src/ss6_inheritance/project_circle_and_cylinder" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -97,6 +61,8 @@
       <workItem from="1668957335142" duration="494000" />
       <workItem from="1669967227729" duration="42000" />
       <workItem from="1670584225142" duration="1208000" />
+      <workItem from="1675172760826" duration="42000" />
+      <workItem from="1675172809719" duration="1022000" />
     </task>
     <servers />
   </component>

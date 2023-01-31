@@ -24,15 +24,14 @@ public class StudentValidate implements Validator {
         Student student = (Student) target;
 //        validate số điện thoại nên get trường số điện thoại ra để validate
 //        rejectValue : bắn về cái lỗi (field , errorCode , đối số , defaultMessage)
-//        field : trường gây ra lỗi , bắn đúng trường gây ra lỗi. vd mà để name thì trường name sẽ hiển thị lỗi của Phone => ko đúng
+//        field : trường gây ra lỗi bắn đúng trường gây ra lỗi vd mà để name thì trường name sẽ hiển thị lỗi của Phone => ko đúng
 //        errorCode : ở bên message properties ,  new String[]{"10"} để tạo đối số bên  message properties {0}
-//        defaultMessage : trường hợp nếu errorCode ko tồn tại  , sẽ hiện thị lỗi defaultMessage
+//        defaultMessage : trường hợp nếu vẫn sảy ra lỗi
         if (student.getPhoneNumber().length() != 10) {
             errors.rejectValue("phoneNumber", "phonenumber", new String[]{"10"}, "Số điện thoại không đúng định dạng");
         } else if (!student.getPhoneNumber().startsWith("0")) {
             errors.rejectValue("phoneNumber", "phonenumberstart", "Số điện thoại không đúng định dạng");
         }
     }
-//     đã xây dựng xong , muốn dùng ta sẽ quay lại StudentController : 83
-//    => ta thấy là :  những gì annotation ko bắt được thì qua đây ta custom và bắt đc hết
+//     đã xây dựng xong , muốn dùng quay lại StudentController : 83
 }

@@ -14,7 +14,7 @@
                     <div class="card">
                         <div class="header">
                             <h2 th:text="#{title.create}">
-                                Add new Student
+                                Add new Student Test
                             </h2>
                         </div>
                         <div class="body">
@@ -30,6 +30,9 @@
                                 <div class="form-group">
                                     <div class="form-line">
                                         <input id="name" th:field="*{name}" class="form-control" placeholder="Student Name" tabindex="2" />
+<!--                                       if: trường name có phát sinh ra lỗi hay ko ,
+                                            khi có lỗi nó sẽ đẩy lỗi về từng trường  để hiển thị ,
+                                            nếu trường name có lỗi thì sẽ lấy lỗi đó ra để hiển  thị?  -->
                                         <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span>
                                     </div>
                                 </div>
