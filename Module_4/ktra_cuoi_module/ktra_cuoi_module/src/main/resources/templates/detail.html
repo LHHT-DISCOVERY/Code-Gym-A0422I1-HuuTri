@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<head>
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body>
+<h2>Xin chào bạn <span th:text="${user}"></span></h2>
+<h2>Số lần truy cập trang web của bạn là <span th:text="${count}"></span></h2>
+<h1> Chi tiet giao dich</h1>
+<table  class="table table-dark">
+    <tr th:each="question:${listQuestion}">
+        <td><p th:text=${question.id}></td>
+        <td><p th:text=${question.date}></td>
+        <td><p th:text=${question.loaiDichVu}></td>
+        <td><p th:text=${question.dongia}></td>
+        <td><p th:text=${question.dienTich}></td>
+        <td><p th:text=${question.questionType.name}></td>
+        <td><p th:text=${question.questionType.phoneNumber}></td>
+        <td><p th:text=${question.questionType.email}></td>
+        <td>
+            <button th:onclick='deleteInfo([[${question.id}]],[[${question.questionType.name}]])' class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Delete
+        </button>
+        </td>
+    </tr>
+
+</table>
+<a th:href="@{/list5}" style="text-decoration: none">Quay lai trang list</a>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <form action="/delete" method="get">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input hidden name="deleteId" id="deleteId">
+                    <input hidden name="action" value="delete">
+                    <span>Bạn có muốn xoá </span><span id="deleteName"></span><span> Không?</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">OK</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    function deleteInfo(id,name) {
+        document.getElementById("deleteId").value=id;
+        document.getElementById("deleteName").innerText=name;
+    }
+</script>
+</body>
+</html>

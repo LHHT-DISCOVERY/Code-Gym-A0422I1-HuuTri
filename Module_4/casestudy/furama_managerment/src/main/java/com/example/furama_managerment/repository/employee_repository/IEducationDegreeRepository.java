@@ -1,4 +1,8 @@
 package com.example.furama_managerment.repository.employee_repository;
 
-public interface IEducationDegreeRepository {
+import com.example.furama_managerment.model.employee.EducationDegree;
+import com.example.furama_managerment.service.imp.EducationDegreeService;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface IEducationDegreeRepository extends JpaRepository<EducationDegree , Integer> {
 }
