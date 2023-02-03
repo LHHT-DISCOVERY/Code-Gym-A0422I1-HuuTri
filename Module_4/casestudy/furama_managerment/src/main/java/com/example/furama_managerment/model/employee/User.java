@@ -6,10 +6,7 @@ import java.util.Set;
 @Entity
 public class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int userId;
-
-    @Column(name= "user_name" , columnDefinition = "varchar(255)")
+    @Column(name= "user_name" , columnDefinition = "varchar(40)")
     private String userName;
 
     @Column(name= "pass_word" , columnDefinition = "varchar(255)")

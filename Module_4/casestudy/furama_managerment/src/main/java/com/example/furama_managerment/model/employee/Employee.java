@@ -40,7 +40,7 @@ public class Employee {
     private Division division;
 
     @ManyToOne
-    @JoinColumn(name = "user_id", referencedColumnName = "userId")
+    @JoinColumn(name = "user_name" )
     private User user;
 
     @OneToMany(mappedBy = "employee")

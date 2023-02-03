@@ -20,7 +20,7 @@ public class AddElement {
         } else {
             System.out.print("Nhập giá trị muốn chèn : ");
             value = scanner.nextInt();
-            for (int i = 5; i > index; i--) {
+            for (int i = 7; i > index; i--) {
                 array[i] = array[i - 1];
             }
             array[index] = value;

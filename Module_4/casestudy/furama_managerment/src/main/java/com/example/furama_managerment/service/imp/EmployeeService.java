@@ -4,6 +4,8 @@ import com.example.furama_managerment.model.employee.Employee;
 import com.example.furama_managerment.repository.employee_repository.IEmployeeRepository;
 import com.example.furama_managerment.service.employee_service.IEmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -14,12 +16,18 @@ public class EmployeeService implements IEmployeeService {
     IEmployeeRepository  iEmployeeRepository ;
 
     @Override
+    public Page<Employee> findAllPage(Pageable pageable) {
+        return iEmployeeRepository.findAll(pageable);
+    }
+
+    @Override
     public void createOrUpdate(Employee employee) {
         iEmployeeRepository.save(employee);
     }
 
+
     @Override
-    public List<Employee> findAll() {
-        return iEmployeeRepository.findAll();
+    public void deleteById(int id) {
+         iEmployeeRepository.deleteById(id);
     }
 }

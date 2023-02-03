@@ -2,7 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db51d79e-7775-4853-a006-3be4d208055f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_2.1/src/ss3_array_in_java/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_2.1/src/ss3_array_in_java/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_2.1/src/ss3_array_in_java/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_2.1/src/ss3_array_in_java/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_2.1/src/ss3_array_in_java/exercise/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_2.1/src/ss3_array_in_java/exercise/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/java/com/example/furama_managerment/controller/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/resources/templates/employee/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/resources/templates/employee/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_4/test_project/src/main/java/com/example/test_project/model/Classes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_4/test_project/src/main/java/com/example/test_project/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_4/test_project/src/main/java/com/example/test_project/repository/IClassRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_4/test_project/src/main/java/com/example/test_project/repository/IStudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_4/test_project/src/main/resources/templates/student/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_4/test_project/src/main/resources/templates/student/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_2.1/src/ss1_introduction/practice/SystemTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2.1/src/ss1_introduction/practice/SystemTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_2.1/src/ss6_inheritance/project_circle_and_cylinder/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2.1/src/ss6_inheritance/project_circle_and_cylinder/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_2.1/src/ss6_inheritance/project_circle_and_cylinder/out/production/project_circle_and_cylinder/ss6_inheritance/project_circle_and_cylinder/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2.1/src/ss6_inheritance/project_circle_and_cylinder/out/production/project_circle_and_cylinder/ss6_inheritance/project_circle_and_cylinder/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/case_study_sevlet_jsp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/case_study_sevlet_jsp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/casestudy/RDB.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/casestudy/RDB.mwb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/java/com/example/furama_managerment/repository/employee_repository/IDivisionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/java/com/example/furama_managerment/repository/employee_repository/IDivisionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/java/com/example/furama_managerment/repository/employee_repository/IEducationDegreeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/java/com/example/furama_managerment/repository/employee_repository/IEducationDegreeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/java/com/example/furama_managerment/repository/employee_repository/IEmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/java/com/example/furama_managerment/repository/employee_repository/IEmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/java/com/example/furama_managerment/repository/employee_repository/IPositionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/java/com/example/furama_managerment/repository/employee_repository/IPositionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/java/com/example/furama_managerment/service/employee_service/IDivisionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/java/com/example/furama_managerment/service/employee_service/IDivisionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/java/com/example/furama_managerment/service/employee_service/IEducationDegreeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/java/com/example/furama_managerment/service/employee_service/IEducationDegreeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/java/com/example/furama_managerment/service/employee_service/IEmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/java/com/example/furama_managerment/service/employee_service/IEmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/java/com/example/furama_managerment/service/employee_service/IPositionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/java/com/example/furama_managerment/service/employee_service/IPositionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/java/com/example/furama_managerment/service/imp/DivisionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/java/com/example/furama_managerment/service/imp/DivisionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/java/com/example/furama_managerment/service/imp/EducationDegreeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/java/com/example/furama_managerment/service/imp/EducationDegreeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/java/com/example/furama_managerment/service/imp/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/java/com/example/furama_managerment/service/imp/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/java/com/example/furama_managerment/service/imp/PositionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/java/com/example/furama_managerment/service/imp/PositionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/resources/templates/common-layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/resources/templates/common-layout.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +46,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2EHYQYQkLjArU0vDrNtT2JnmDIv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -21,7 +55,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Module_1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -57,6 +91,7 @@
       <workItem from="1662449567886" duration="706000" />
       <workItem from="1662451831602" duration="6000" />
       <workItem from="1662451850374" duration="13000" />
+      <workItem from="1675336881979" duration="21000" />
     </task>
     <servers />
   </component>

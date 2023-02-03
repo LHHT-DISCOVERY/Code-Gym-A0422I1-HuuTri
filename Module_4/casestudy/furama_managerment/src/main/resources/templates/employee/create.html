@@ -5,6 +5,7 @@
 <body style="background-color: #60f39c">
 <div th:replace="/common-layout :: navbar"></div>
 <div class="container-fluid" >
+
     <h1 style="font-size: 40px ; font-weight: bold ; color: white" > Create employye</h1>
     <div class="row">
         <div class="col">
@@ -16,6 +17,13 @@
                     <div class="col-5">
                         <a th:href="@{/}" class="btn btn-success">
                             Back to home
+                        </a>
+                    </div>
+                </div>
+                <div class="row m-4 d-flex">
+                    <div class="col-5">
+                        <a th:href="@{/employee/list}" class="btn btn-success">
+                            Go to list Employee
                         </a>
                     </div>
                 </div>
@@ -145,7 +153,7 @@
                                         <label class="form-label">User: </label>
                                     </div>
                                     <div class="col-9">
-                                        <input type="text" class="form-control"  th:field="*{employeeAddress}" >
+                                        <input type="text" class="form-control"  th:field="*{user.userName}" >
                                     </div>
                                 </div>
                             </div>
