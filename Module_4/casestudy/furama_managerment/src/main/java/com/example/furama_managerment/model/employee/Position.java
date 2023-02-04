@@ -1,7 +1,5 @@
 package com.example.furama_managerment.model.employee;
 
-import org.springframework.context.annotation.EnableAspectJAutoProxy;
-
 import javax.persistence.*;
 import java.util.Set;
 
@@ -16,8 +14,6 @@ public class Position {
 
     @OneToMany(mappedBy = "position")
     Set<Employee> employees;
-
-
 
 
     public Position() {

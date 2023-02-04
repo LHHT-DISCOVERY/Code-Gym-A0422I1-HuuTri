@@ -21,7 +21,7 @@ public interface IBlogRepository extends JpaRepository<Blog, Integer> {
 
     @Modifying
     @Query(value = " update Blog blog set blog.name = :name  , blog.content = :content where blog.id = :id",nativeQuery = false)
-    void update(@Param("id") int id, @Param("name") String name, @Param("content") String content);
+        void update(@Param("id") int id, @Param("name") String name, @Param("content") String content);
 //    String name đại diện cho tham số của hàm
 //    @Param("name") truyền lên câu query
 

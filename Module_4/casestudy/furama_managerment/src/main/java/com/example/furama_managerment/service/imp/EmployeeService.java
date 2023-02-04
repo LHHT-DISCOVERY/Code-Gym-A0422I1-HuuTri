@@ -13,7 +13,7 @@ import java.util.List;
 @Service
 public class EmployeeService implements IEmployeeService {
     @Autowired
-    IEmployeeRepository  iEmployeeRepository ;
+    IEmployeeRepository iEmployeeRepository;
 
     @Override
     public Page<Employee> findAllPage(Pageable pageable) {
@@ -28,6 +28,13 @@ public class EmployeeService implements IEmployeeService {
 
     @Override
     public void deleteById(int id) {
-         iEmployeeRepository.deleteById(id);
+        iEmployeeRepository.deleteById(id);
     }
+
+    @Override
+    public Page<Employee> findEmployeeByName(String name ,Pageable pageable ) {
+        return iEmployeeRepository.findEmployeeByEmployeeName(name, pageable );
+    }
+
+
 }

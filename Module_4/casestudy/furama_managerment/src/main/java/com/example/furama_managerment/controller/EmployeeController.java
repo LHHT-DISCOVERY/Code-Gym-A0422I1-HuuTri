@@ -6,10 +6,12 @@ import com.example.furama_managerment.service.employee_service.IEducationDegreeS
 import com.example.furama_managerment.service.employee_service.IEmployeeService;
 import com.example.furama_managerment.service.employee_service.IPositionService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
@@ -47,9 +49,20 @@ public class EmployeeController {
         return "redirect:/employee/list";
     }
 
+    @GetMapping("/search")
+    public ModelAndView search(@RequestParam(value = "name", defaultValue = "") String name, @RequestParam(value = "page", defaultValue = "0") int page, Model model) {
+        ModelAndView modelAndView = new ModelAndView("employee/list");
+        if (name == null || name.trim().isEmpty()) {
+            modelAndView.addObject("employees", iEmployeeService.findAllPage(PageRequest.of(page, 5)));
+            return modelAndView;
+        }
+        modelAndView.addObject("employees", iEmployeeService.findEmployeeByName(name, PageRequest.of(page, 6)));
+        return modelAndView;
+    }
+
     @GetMapping("/list")
     public String showList(Model model, @RequestParam(value = "page", defaultValue = "0") int page) {
-        model.addAttribute("employees", iEmployeeService.findAllPage(PageRequest.of(page, 2)));
+        model.addAttribute("employees", iEmployeeService.findAllPage(PageRequest.of(page, 5)));
         return "/employee/list";
     }
 }

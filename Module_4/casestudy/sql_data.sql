@@ -16,3 +16,5 @@ values
 	(2,	'Hành chính'),
 	(3,'Phục vụ'),
 	(4,	'Quản lý');
+    
+    select * from employee where employee_name like "%tri";
