@@ -1,15 +1,18 @@
 package com.example.furama_managerment.model.employee;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import java.util.Set;
 
 @Entity
 public class User {
     @Id
-    @Column(name= "user_name" , columnDefinition = "varchar(40)")
+    @Column(name = "user_name", columnDefinition = "varchar(40)")
     private String userName;
 
-    @Column(name= "pass_word" , columnDefinition = "varchar(255)")
+    @Column(name = "pass_word", columnDefinition = "varchar(255)")
     private String passWord;
 
     @OneToMany(mappedBy = "user")

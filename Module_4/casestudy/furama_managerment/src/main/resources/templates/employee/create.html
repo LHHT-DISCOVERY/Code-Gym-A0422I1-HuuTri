@@ -4,9 +4,9 @@
 </head>
 <body style="background-color: #60f39c">
 <div th:replace="/common-layout :: navbar"></div>
-<div class="container-fluid" >
+<div class="container-fluid">
 
-    <h1 style="font-size: 40px ; font-weight: bold ; color: white" > Create employye</h1>
+    <h1 style="font-size: 40px ; font-weight: bold ; color: white"> Create employye</h1>
     <div class="row">
         <div class="col">
             <ul th:replace="/common-layout :: left-sidebar"></ul>
@@ -37,7 +37,11 @@
                                     </div>
                                     <div class="col-9">
                                         <input type="text" class="form-control" th:field="*{employeeName}">
+                                        <div id="employeeNameError" class="form-text text-danger"
+                                             th:if="${#fields.hasErrors('employeeName')}" th:errors="*{employeeName}">
+                                        </div>
                                     </div>
+
                                 </div>
                             </div>
                             <div class="mb-3">
@@ -59,6 +63,10 @@
                                     <div class="col-9">
                                         <input type="text" class="form-control"
                                                aria-describedby="employeeIdCardError" th:field="*{employeeIdCard}">
+                                        <div class="form-text text-danger"
+                                             th:if="${#fields.hasErrors('employeeIdCard')}"
+                                             th:errors="*{employeeIdCard}">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -70,17 +78,24 @@
                                     <div class="col-9">
                                         <input type="text" class="form-control"
                                                aria-describedby="employeeSalaryError" th:field="*{employeeSalary}">
+                                        <div class="form-text text-danger"
+                                             th:if="${#fields.hasErrors('employeeSalary')}"
+                                             th:errors="*{employeeSalary}">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="mb-3">
                                 <div class="row">
                                     <div class="col-3">
-                                        <label  class="form-label">Phone: </label>
+                                        <label class="form-label">Phone: </label>
                                     </div>
                                     <div class="col-9">
                                         <input type="text" class="form-control"
                                                aria-describedby="employeePhoneError" th:field="*{employeePhone}">
+                                        <div class="form-text text-danger"
+                                             th:if="${#fields.hasErrors('employeePhone')}" th:errors="*{employeePhone}">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -90,18 +105,25 @@
                                         <label class="form-label">Email: </label>
                                     </div>
                                     <div class="col-9">
-                                        <input type="email" class="form-control"
+                                        <input type="text" class="form-control"
                                                aria-describedby="employeeEmailError" th:field="*{employeeEmail}">
+                                        <div class="form-text text-danger"
+                                             th:if="${#fields.hasErrors('employeeEmail')}" th:errors="*{employeeEmail}">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="mb-3">
                                 <div class="row">
                                     <div class="col-3">
-                                        <label  class="form-label">Address: </label>
+                                        <label class="form-label">Address: </label>
                                     </div>
                                     <div class="col-9">
                                         <input type="text" class="form-control" th:field="*{employeeAddress}">
+                                        <div class="form-text text-danger"
+                                             th:if="${#fields.hasErrors('employeeAddress')}"
+                                             th:errors="*{employeeAddress}">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -127,7 +149,8 @@
                                     <div class="col-9">
                                         <select th:field="*{educationDegree}" id="educationDegree" required>
                                             <option selected value="">Select</option>
-                                            <option th:each="educationDegree : ${educationDegrees}" th:value="${educationDegree.educationDegreeId}"
+                                            <option th:each="educationDegree : ${educationDegrees}"
+                                                    th:value="${educationDegree.educationDegreeId}"
                                                     th:text="${educationDegree.educationDegreeName}"></option>
                                         </select>
                                     </div>
@@ -139,7 +162,7 @@
                                         <label class="form-label">Division: </label>
                                     </div>
                                     <div class="col-9">
-                                        <select th:field="*{division}"  required>
+                                        <select th:field="*{division}" required>
                                             <option selected value="">Select</option>
                                             <option th:each="division : ${divisions}" th:value="${division.divisionId}"
                                                     th:text="${division.divisionName}"></option>
@@ -153,7 +176,7 @@
                                         <label class="form-label">User: </label>
                                     </div>
                                     <div class="col-9">
-                                        <input type="text" class="form-control"  th:field="*{user.userName}" >
+                                        <input type="text" class="form-control" th:field="*{user.userName}">
                                     </div>
                                 </div>
                             </div>
@@ -162,7 +185,9 @@
                                 <div class="row">
                                     <div class="col-3"></div>
                                     <div class="col-9">
-                                        <button type="submit" style="background-color: red" class="btn btn-primary"> Save </button>
+                                        <button type="submit" style="background-color: red" class="btn btn-primary">
+                                            Save
+                                        </button>
                                     </div>
                                 </div>
                             </div>

@@ -18,3 +18,11 @@ values
 	(4,	'Quản lý');
     
     select * from employee where employee_name like "%tri";
+    
+insert into customer_type(customer_type_id,customer_type_name)
+values
+	(1,	'Diamond'),
+	(2,	'Platinium'),
+	(3,	'Gold'),
+	(4,	'Silver'),
+	(5,	'Member');

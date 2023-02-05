@@ -4,8 +4,6 @@ import com.example.furama_managerment.model.employee.Employee;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
-import java.util.List;
-
 
 public interface IEmployeeService {
 
@@ -15,6 +13,8 @@ public interface IEmployeeService {
 
     void deleteById(int id);
 
-    Page<Employee> findEmployeeByName(String name , Pageable pageable );
+    Employee findById(int id);
+
+    Page<Employee> findEmployeeByName(String name, Pageable pageable);
 
 }

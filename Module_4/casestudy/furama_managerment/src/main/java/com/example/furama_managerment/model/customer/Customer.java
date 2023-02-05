@@ -1,10 +1,9 @@
 package com.example.furama_managerment.model.customer;
 
-import com.example.furama_managerment.model.contract.Contract;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.util.Date;
-import java.util.Set;
 
 @Entity
 public class Customer {
@@ -13,11 +12,12 @@ public class Customer {
     private int customerId;
 
     @ManyToOne
-    @JoinColumn(name = "customer_type_id" , referencedColumnName = "customerTypeId")
+    @JoinColumn(name = "customer_type_id", referencedColumnName = "customerTypeId")
     private CustomerType customerType;
 
     @Column(columnDefinition = "varchar(45)")
     private String customerName;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date customerBirthday;
     private Boolean customerGender;
     @Column(columnDefinition = "varchar(45)")
@@ -29,8 +29,6 @@ public class Customer {
     @Column(columnDefinition = "varchar(45)")
     private String customerAddress;
 
-    @OneToMany(mappedBy = "customer")
-    Set<Contract> contracts;
 
     public Customer() {
     }
@@ -107,11 +105,4 @@ public class Customer {
         this.customerAddress = customerAddress;
     }
 
-    public Set<Contract> getContracts() {
-        return contracts;
-    }
-
-    public void setContracts(Set<Contract> contracts) {
-        this.contracts = contracts;
-    }
 }

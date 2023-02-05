@@ -17,12 +17,12 @@ public class Service {
     private int serviceMaxPeople;
 
     @ManyToOne
-    @JoinColumn(name = "rent_type_id" , referencedColumnName = "rentTypeId")
-    private RentType rentType ;
+    @JoinColumn(name = "rent_type_id", referencedColumnName = "rentTypeId")
+    private RentType rentType;
 
     @ManyToOne
-    @JoinColumn(name = "service_type_id" , referencedColumnName = "serviceTypeId")
-    private ServiceType serviceType ;
+    @JoinColumn(name = "service_type_id", referencedColumnName = "serviceTypeId")
+    private ServiceType serviceType;
 
     private String standardRoom;
     private String descriptionOtherConvenience;

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
-      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+>
 <head th:fragment="head">
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -39,25 +39,28 @@
     <div class="row" style="background-color: #239252">
         <div class="col-3">
             <header class="jumbo jumbo-fluid">
-                <div class="container-fluid" >
+                <div class="container-fluid">
                     <a class="navbar-brand" href="#">
-                        <img src="https://khachsandanang.info/wp-content/themes/hotel/img/logo.png" alt="" style="width: 100% ; height: 100%"
+                        <img src="https://khachsandanang.info/wp-content/themes/hotel/img/logo.png" alt=""
+                             style="width: 100% ; height: 100%"
                              class="d-inline-block align-text-top">
                     </a>
                 </div>
             </header>
         </div>
-        <div class="col-6" >
+        <div class="col-6">
             <div class="row" style="
 
                  margin-left: 160px;
             ">
                 <div class="col-2">
-                                <img src="https://furamavietnam.com/wp-content/uploads/2018/08/logo@2x.png"  style="width: 100%;height: 80%;margin-top: 7px"; alt="">
+                    <img src="https://furamavietnam.com/wp-content/uploads/2018/08/logo@2x.png"
+                         style="width: 100%;height: 80%;margin-top: 7px" ; alt="">
                 </div>
                 <div class="col-9">
-                    <h4 class="navbar-text"  style="color: white ; text-align: center "> KHU NGHỈ DƯỠNG 5 SAO  </h4><br>
-                        <h3 class="navbar-text"  style="color: white ; text-align: center ;font-weight:bold " >Furama Villas Đà Nẵng </h3>
+                    <h4 class="navbar-text" style="color: white ; text-align: center "> KHU NGHỈ DƯỠNG 5 SAO </h4><br>
+                    <h3 class="navbar-text" style="color: white ; text-align: center ;font-weight:bold ">Furama Villas
+                        Đà Nẵng </h3>
                 </div>
             </div>
         </div>
@@ -65,8 +68,8 @@
         <div class="col-3" style="margin-left: -37px;margin-top: 25px;">
             <div class="row">
                 <div class="col-10">
-                    <h5 class="navbar-text"  style="color: white ; text-align: center  ;float: right ">
-                        Sign In / LogOut <span></span> </h5>
+                    <h5 class="navbar-text" style="color: white ; text-align: center  ;float: right ">
+                        Sign In / LogOut <span></span></h5>
                 </div>
 
                 <div class="col-2">
@@ -86,21 +89,23 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" th:href="@{/}"  style="color: white ; text-align: center ;font-weight:bold ">Home</a>
+                    <a class="nav-link" aria-current="page" th:href="@{/}"
+                       style="color: white ; text-align: center ;font-weight:bold ">Home</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="employeeDropdown" role="button"
-                       data-toggle="dropdown" aria-expanded="false"  style="color: white ; text-align: center ;font-weight:bold ">
+                       data-toggle="dropdown" aria-expanded="false"
+                       style="color: white ; text-align: center ;font-weight:bold ">
                         Employee
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="employeeDropdown">
                         <li>
                             <div>
-                                <a class="dropdown-item" th:href="@{/employee/create}"  >Create new employee</a>
+                                <a class="dropdown-item" th:href="@{/employee/create}">Create new employee</a>
                             </div>
                         </li>
                         <li>
-                            <div >
+                            <div>
                                 <a class="dropdown-item" th:href="@{/employee/list}">Go to list employees</a>
                             </div>
                         </li>
@@ -108,20 +113,22 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="customerDropdown" role="button"
-                       data-toggle="dropdown" aria-expanded="false"  style="color: white ; text-align: center ;font-weight:bold ">
+                       data-toggle="dropdown" aria-expanded="false"
+                       style="color: white ; text-align: center ;font-weight:bold ">
                         Customer
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="customerDropdown">
 
                         <li><a class="dropdown-item" th:href="@{/customer/create}">Create new customer</a></li>
-                        <li><a class="dropdown-item" th:href="@{/customer}">Go to list customers</a></li>
+                        <li><a class="dropdown-item" th:href="@{/customer/list}">Go to list customers</a></li>
 
 
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="serviceDropdown" role="button"
-                       data-toggle="dropdown" aria-expanded="false"  style="color: white ; text-align: center ;font-weight:bold ">
+                       data-toggle="dropdown" aria-expanded="false"
+                       style="color: white ; text-align: center ;font-weight:bold ">
                         Service
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="serviceDropdown">
@@ -137,7 +144,8 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="contractDropdown" role="button"
-                       data-toggle="dropdown" aria-expanded="false"  style="color: white ; text-align: center ;font-weight:bold ">
+                       data-toggle="dropdown" aria-expanded="false"
+                       style="color: white ; text-align: center ;font-weight:bold ">
                         Contract
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="contractDropdown">
@@ -151,25 +159,26 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false"  style="color: white ; text-align: center ;font-weight:bold ">
+                       aria-haspopup="true" aria-expanded="false"
+                       style="color: white ; text-align: center ;font-weight:bold ">
                         Other
                     </a>
                     <ul class="dropdown-menu dropright" aria-labelledby="navbarDropdownMenuLink">
-                        <li class="dropdown-submenu" >
+                        <li class="dropdown-submenu">
                             <a class="dropdown-item dropdown-toggle" href="#">Position</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" th:href="@{/position/create}">Create new position</a></li>
                                 <li><a class="dropdown-item" th:href="@{/position}">List position</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown-submenu" >
+                        <li class="dropdown-submenu">
                             <a class="dropdown-item dropdown-toggle" href="#">Division</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" th:href="@{/division/create}">Create new division</a></li>
                                 <li><a class="dropdown-item" th:href="@{/division}">List division</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown-submenu" >
+                        <li class="dropdown-submenu">
                             <a class="dropdown-item dropdown-toggle" href="#">Education degree</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" th:href="@{/education-degree/create}">Create new education
@@ -178,21 +187,21 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="dropdown-submenu" >
+                        <li class="dropdown-submenu">
                             <a class="dropdown-item dropdown-toggle" href="#">User</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" th:href="@{/user/create}">Create new user</a></li>
                                 <li><a class="dropdown-item" th:href="@{/user}">List user</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown-submenu" >
+                        <li class="dropdown-submenu">
                             <a class="dropdown-item dropdown-toggle" href="#">Role</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Create new role</a></li>
                                 <li><a class="dropdown-item" href="#">List role</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown-submenu" >
+                        <li class="dropdown-submenu">
                             <a class="dropdown-item dropdown-toggle" href="#">Customer type</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" th:href="@{/customer-type/create}">Create new customer
@@ -200,7 +209,7 @@
                                 <li><a class="dropdown-item" th:href="@{/customer-type}">List customer type</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown-submenu" >
+                        <li class="dropdown-submenu">
                             <a class="dropdown-item dropdown-toggle" href="#">Service type</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" th:href="@{/service-type/create}">Create new service
@@ -208,7 +217,7 @@
                                 <li><a class="dropdown-item" th:href="@{/service-type}">List service type</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown-submenu" >
+                        <li class="dropdown-submenu">
                             <a class="dropdown-item dropdown-toggle" href="#">Rent type</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" th:href="@{/rent-type/create}">Create new rent type</a>
@@ -227,8 +236,9 @@
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0" th:action="@{/employee/search}" method="get">
-                <input class="form-control mr-sm-2" name="name" type="search" placeholder="Search Name Employee" aria-label="Search">
-                <button class="btn btn-success my-2 my-sm-0"  type="submit">Search</button>
+                <input class="form-control mr-sm-2" name="name" type="search" placeholder="Search Name Employee"
+                       aria-label="Search">
+                <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
     </nav>
@@ -238,11 +248,11 @@
 </ul>
 
 <div class="container" th:fragment="footer">
-<!--    <footer class="py-3 bg-success">-->
-<!--        <div class="container">-->
-<!--            <p class="text-center">Copyright &copy; Furama</p>-->
-<!--        </div>-->
-<!--    </footer>-->
+    <!--    <footer class="py-3 bg-success">-->
+    <!--        <div class="container">-->
+    <!--            <p class="text-center">Copyright &copy; Furama</p>-->
+    <!--        </div>-->
+    <!--    </footer>-->
     <script
             src="https://code.jquery.com/jquery-3.6.0.js"
             integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="

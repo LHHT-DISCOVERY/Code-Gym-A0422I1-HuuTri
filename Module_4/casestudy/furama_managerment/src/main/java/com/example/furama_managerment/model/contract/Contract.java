@@ -19,15 +19,15 @@ public class Contract {
     private Double contractTotalMoney;
 
     @ManyToOne
-    @JoinColumn(name = "employee_id" , referencedColumnName = "employeeId")
+    @JoinColumn(name = "employee_id", referencedColumnName = "employeeId")
     private Employee employee;
 
     @ManyToOne
-    @JoinColumn(name = "customer_id" , referencedColumnName = "customerId")
+    @JoinColumn(name = "customer_id", referencedColumnName = "customerId")
     private Customer customer;
 
     @ManyToOne
-    @JoinColumn(name = "service_id" , referencedColumnName = "serviceId")
+    @JoinColumn(name = "service_id", referencedColumnName = "serviceId")
     private Service service;
 
 
