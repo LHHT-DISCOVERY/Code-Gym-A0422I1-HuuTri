@@ -7,14 +7,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+
 @Service
 public class ClassService implements IClassService {
     @Autowired
-    IClassRepository  iClassRepository ;
+    IClassRepository iClassRepository;
+
 
     @Override
     public List<Classes> findAll() {
-        return iClassRepository.findAll() ;
+        return iClassRepository.findAll();
     }
 
     @Override
@@ -25,5 +27,10 @@ public class ClassService implements IClassService {
     @Override
     public void deleteById(int id) {
         iClassRepository.deleteById(id);
+    }
+
+    @Override
+    public Classes findById(int id) {
+        return iClassRepository.findById(id).orElse(null);
     }
 }

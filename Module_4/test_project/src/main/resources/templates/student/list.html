@@ -1,90 +1,105 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Music</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TEST</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
 <div class="container">
-  <h3>Student Management</h3>
-  <h1 th:if="${message != null}">  <span th:text="${message}" > </span > </h1>
-  <p>
-    <a th:href="@{/student/create}">
-      Add new student
-    </a>
-    <a th:href="@{/mark}">
-      Go to list mark
-    </a>
+    <h3>Student Management</h3>
+    <h1 th:if="${message != null}"><span th:text="${message}"> </span></h1>
+    <p>
+        <a th:href="@{/student/create}">
+            Add new student
+        </a>
+        <a th:href="@{/student/list}">
+            Go to list student
+        </a>
+        <a th:href="@{/class/list}">
+            Go to list class
+        </a>
+        <a th:href="@{/class/create}">
+            Go to create class
+        </a>
 
-  </p>
-  <div class="container">
-    <table class="table table-striped table-hover">
-      <thead class="thead-inverse">
-      <tr>
-        <th>Name</th>
-        <th>Birthday</th>
-        <th>Email</th>
-        <th>Classes</th>
-        <th>Edit</th>
-        <th>Delete</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr th:each="student : ${students}">
-        <td th:text="${student.name}"></td>
+    </p>
 
-        <td th:text="${student.birthday}"></td>
+    <form class="form-inline my-2 my-lg-0" th:action="@{/student/search}" method="get">
+        <input class="form-control mr-sm-2" name="name" type="search" placeholder="Search Name Employee"
+               aria-label="Search">
+        <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
 
-        <td th:text="${student.email}"></td>
 
-        <td th:if="${student.classes}" th:text="${student.classes.name}"></td>
+    <div class="container">
+        <table class="table table-striped table-hover">
+            <thead class="thead-inverse">
+            <tr>
+                <th>Name</th>
+                <th>Birthday</th>
+                <th>email</th>
+                <th>Classes</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="student : ${students}">
+                <td th:text="${student.name}"></td>
 
-        <td>
-          <a th:href="@{/student/edit/{id} (id=${student.id})}" class="btn btn-warning">Edit</a>
-        </td>
+                <td th:text="${student.birthday}"></td>
 
-        <td>
-          <button th:onclick="|deleteByModal('${student.id}')|" type="button"
-                  class="btn btn-danger" data-toggle="modal" data-target="#modalDelete">
-            <i class="fas fa-trash-alt"></i>
-          </button>
-        </td>
+                <td th:text="${student.email}"></td>
 
-      </tr>
-      </tbody>
-    </table>
-  </div>
+                <td th:if="${student.classes}" th:text="${student.classes.name}"></td>
+
+                <td>
+                    <a th:href="@{/student/edit/{id} (id=${student.id})}" class="btn btn-warning">Edit</a>
+                </td>
+
+                <td>
+<!--                    đổi chỗ ni là ok -->
+                    <button th:onclick="|deleteByModal('${student.id}')|" type="button"
+                            class="btn btn-danger" data-toggle="modal" data-target="#modalDelete">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </td>
+
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
 
 <!-- Modal delete-->
 <div class="modal fade" id="modalDelete" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="deleteModalLabel">Confirm delete</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form method="post" id="formDelete" th:action="@{/student/delete}" hidden>
-<!--          lấy id => Name-->
-          <input type="text" name="idStudent" id="idStudent">
-        </form>
-        Are you sure delete this student ?
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" th:onclick="submitForm()">Yes</button>
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
-      </div>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">Confirm delete</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post" id="formDelete" th:action="@{/student/delete}" hidden>
+                    <!--          lấy id => Name-->
+                    <input type="text" name="idStudent" id="idStudent">
+                </form>
+                Are you sure delete this student ?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" th:onclick="submitForm()">Yes</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.js"
@@ -98,13 +113,35 @@
         crossorigin="anonymous"></script>
 
 <script>
-  function deleteByModal(id) {
-    document.getElementById("idStudent").value = id;
-  }
+    function deleteByModal(id) {
+        document.getElementById("idStudent").value = id;
+    }
 
-  function submitForm() {
-    document.getElementById("formDelete").submit();
-  }
+    function submitForm() {
+        document.getElementById("formDelete").submit();
+    }
 </script>
+
+<!--phân trang-->
+<div th:if="${students.totalPages > 1}">
+    <ul class="pagination justify-content-center">
+        <li class="page-item" th:if="${students.hasPrevious()}">
+            <a class="page-link"
+               th:href="@{'/student/list'(page=${students.number - 1})}">Previous</a>
+        </li>
+
+        <li th:each="i:${#numbers.sequence(0, students.totalPages - 1)}"
+            th:class="'page-item ' + (${i==students.number} ? 'active')" aria-current="page">
+            <a class="page-link"
+               th:href="@{'/student/list'(page=${i})}" th:text="${i+1}"></a>
+        </li>
+
+        <li class="page-item" th:if="${students.hasNext()}">
+            <a class="page-link"
+               th:href="@{'/student/list'(page=${students.number + 1})}">Next</a>
+        </li>
+    </ul>
+</div>
+
 </body>
 </html>

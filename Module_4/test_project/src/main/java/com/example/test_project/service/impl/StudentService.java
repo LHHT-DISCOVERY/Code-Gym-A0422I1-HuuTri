@@ -4,19 +4,20 @@ import com.example.test_project.model.Student;
 import com.example.test_project.repository.IStudentRepository;
 import com.example.test_project.service.IStudentService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 @Service
 public class StudentService implements IStudentService {
 
     @Autowired
-    IStudentRepository iStudentRepository ;
+    IStudentRepository iStudentRepository;
+
 
     @Override
-    public List<Student> findAll() {
-        return iStudentRepository.findAll();
+    public Page<Student> findAll(Pageable pageable) {
+        return iStudentRepository.findAll(pageable);
     }
 
     @Override
@@ -32,5 +33,10 @@ public class StudentService implements IStudentService {
     @Override
     public void deleteById(Long id) {
         iStudentRepository.deleteById(id);
+    }
+
+    @Override
+    public Page<Student> findByName(String name, Pageable pageable) {
+        return iStudentRepository.findName(name, pageable);
     }
 }

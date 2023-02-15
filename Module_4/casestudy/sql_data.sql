@@ -26,3 +26,7 @@ values
 	(3,	'Gold'),
 	(4,	'Silver'),
 	(5,	'Member');
+
+    insert into contract( contract_id, contract_deposit, contract_end_date, contract_start_date, contract_total_money, customer_id, employee_id, service_id)
+value 
+	(1,'2020-12-08','2020-12-08',0,3,1,3);

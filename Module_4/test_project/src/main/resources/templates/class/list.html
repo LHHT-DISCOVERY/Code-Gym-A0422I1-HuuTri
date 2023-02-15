@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Music</title>
+  <title>TEST</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -19,11 +19,15 @@
     <a th:href="@{/class/create}">
       Add new classes
     </a>
-    <a th:href="@{/mark}">
-      Go to list mark
+    <a th:href="@{/student/list}">
+      Go to list student
     </a>
 
   </p>
+
+
+
+
   <div class="container">
     <table class="table table-striped table-hover">
       <thead class="thead-inverse">
@@ -35,17 +39,17 @@
       </tr>
       </thead>
       <tbody>
-      <tr th:each="classes : ${classes}">
-        <td th:text="${classes.id}"></td>
+      <tr th:each="class : ${classes}">
+        <td th:text="${class.id}"></td>
 
-        <td th:text="${classes.name}"></td>
+        <td th:text="${class.name}"></td>
 
         <td>
-          <a th:href="@{/classes/edit/{id} (id=${classes.id})}" class="btn btn-warning">Edit</a>
+          <a th:href="@{/class/edit/{id} (id=${class.id})}" class="btn btn-warning">Edit</a>
         </td>
 
         <td>
-          <button th:onclick="|deleteByModal('${classes.id}')|" type="button"
+          <button th:onclick="|deleteByModal('${class.id}')|" type="button"
                   class="btn btn-danger" data-toggle="modal" data-target="#modalDelete">
             <i class="fas fa-trash-alt"></i>
           </button>
@@ -101,5 +105,7 @@
     document.getElementById("formDelete").submit();
   }
 </script>
+
+
 </body>
 </html>

@@ -4,12 +4,17 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Pattern;
 
 @Entity
 public class Classes {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
+    @NotBlank(message = "ko dc de trong")
+    @Pattern(regexp = "^(A0-)(\\d{4})$", message = "Mã Lớp học phải đúng định dạng: A0-XXXX.")
     private String name;
 
     public Classes() {

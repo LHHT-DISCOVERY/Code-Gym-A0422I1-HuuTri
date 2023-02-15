@@ -3,6 +3,7 @@ package com.example.test_project.model;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 import java.util.Date;
 
 @Entity
@@ -11,26 +12,20 @@ public class Student {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotBlank(message = "ko được để trống")
     private String name;
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date birthday;
 
-    private String  Email;
+    @NotBlank(message = "khong duoc trong")
+    private String email;
 
     @ManyToOne
     @JoinColumn(name = "class_id")
-    private Classes  classes;
+    private Classes classes;
 
     public Student() {
-    }
-
-    public Student(Long id, String name, Date birthday, String email, Classes classes) {
-        this.id = id;
-        this.name = name;
-        this.birthday = birthday;
-        Email = email;
-        this.classes = classes;
     }
 
     public Long getId() {
@@ -58,11 +53,11 @@ public class Student {
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
     public void setEmail(String email) {
-        Email = email;
+        this.email = email;
     }
 
     public Classes getClasses() {
