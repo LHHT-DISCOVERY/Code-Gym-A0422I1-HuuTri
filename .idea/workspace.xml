@@ -2,69 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db51d79e-7775-4853-a006-3be4d208055f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Module_4/exam_m4/exam_m4/src/main/java/com/example/exam_m4/controller/DichVuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/exam_m4/exam_m4/src/main/java/com/example/exam_m4/controller/HandleErrorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/exam_m4/exam_m4/src/main/java/com/example/exam_m4/controller/KhachHangController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/exam_m4/exam_m4/src/main/java/com/example/exam_m4/dto/DichVuValidate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/exam_m4/exam_m4/src/main/java/com/example/exam_m4/model/DichVu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/exam_m4/exam_m4/src/main/java/com/example/exam_m4/model/KhachHang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/exam_m4/exam_m4/src/main/java/com/example/exam_m4/repository/IDichVuRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/exam_m4/exam_m4/src/main/java/com/example/exam_m4/repository/IKhachHangRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/exam_m4/exam_m4/src/main/java/com/example/exam_m4/service/IDichVuService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/exam_m4/exam_m4/src/main/java/com/example/exam_m4/service/IKhachHangService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/exam_m4/exam_m4/src/main/java/com/example/exam_m4/service/impl/DichVuServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/exam_m4/exam_m4/src/main/java/com/example/exam_m4/service/impl/KhachHangServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/exam_m4/exam_m4/src/main/resources/messages.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/exam_m4/exam_m4/src/main/resources/templates/dichvu/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/exam_m4/exam_m4/src/main/resources/templates/dichvu/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/exam_m4/exam_m4/src/main/resources/templates/dichvu/update.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/exam_m4/exam_m4/src/main/resources/templates/error.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/exam_m4/exam_m4/src/main/resources/templates/khachhang/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/exam_m4/exam_m4/src/main/resources/templates/khachhang/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/exam_m4/exam_m4/src/main/resources/templates/khachhang/update.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/exam_module/exam_module/src/main/java/com/example/exam_module/controller/KhuyenMaiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/exam_module/exam_module/src/main/java/com/example/exam_module/model/KhuyenMai.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/exam_module/exam_module/src/main/java/com/example/exam_module/repository/IKhuyenMaiRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/exam_module/exam_module/src/main/java/com/example/exam_module/service/IKhuyenhMaiService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/exam_module/exam_module/src/main/java/com/example/exam_module/service/KhuyenhMaiService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/exam_module/exam_module/src/main/java/com/example/exam_module/validate/KhuyenMaiValidate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/exam_module/exam_module/src/main/resources/templates/khuyenmai/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/exam_module/exam_module/src/main/resources/templates/khuyenmai/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/exam_module/exam_module/src/main/resources/templates/khuyenmai/update.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/test_project/src/main/java/com/example/test_project/controller/HandleErrorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/test_project/src/main/java/com/example/test_project/dto/ValidateStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/test_project/src/main/resources/messages.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/test_project/src/main/resources/templates/class/update.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/test_project/src/main/resources/templates/error.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/test_project/src/main/resources/templates/student/update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/exam_again/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/exam_again/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/exam_again/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/exam_again/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/exam_again/.idea/exam_again.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/exam_again/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/exam_again/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/exam_again/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/exam_again/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/casestudy/sql_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/casestudy/sql_data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/ss4_Thymeleaf/exercise/product_managerment/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/ss4_Thymeleaf/exercise/product_managerment/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/ss4_Thymeleaf/exercise/product_managerment/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/ss5_ORM/practice/managerment_user/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/test_project/src/main/java/com/example/test_project/controller/ClassController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/test_project/src/main/java/com/example/test_project/controller/ClassController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/test_project/src/main/java/com/example/test_project/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/test_project/src/main/java/com/example/test_project/controller/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/test_project/src/main/java/com/example/test_project/model/Classes.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/test_project/src/main/java/com/example/test_project/model/Classes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/test_project/src/main/java/com/example/test_project/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/test_project/src/main/java/com/example/test_project/model/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/test_project/src/main/java/com/example/test_project/repository/IStudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/test_project/src/main/java/com/example/test_project/repository/IStudentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/test_project/src/main/java/com/example/test_project/service/IClassService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/test_project/src/main/java/com/example/test_project/service/IClassService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/test_project/src/main/java/com/example/test_project/service/IStudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/test_project/src/main/java/com/example/test_project/service/IStudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/test_project/src/main/java/com/example/test_project/service/impl/ClassService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/test_project/src/main/java/com/example/test_project/service/impl/ClassService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/test_project/src/main/java/com/example/test_project/service/impl/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/test_project/src/main/java/com/example/test_project/service/impl/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/test_project/src/main/resources/templates/class/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/test_project/src/main/resources/templates/class/create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/test_project/src/main/resources/templates/class/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/test_project/src/main/resources/templates/class/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/test_project/src/main/resources/templates/student/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/test_project/src/main/resources/templates/student/create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/test_project/src/main/resources/templates/student/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/test_project/src/main/resources/templates/student/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/ss2_typescript/exercise/fibonacci_assignment/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/ss2_typescript/exercise/fibonacci_assignment/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/ss2_typescript/exercise/fibonacci_assignment/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/ss2_typescript/exercise/fibonacci_assignment/src/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/ss2_typescript/exercise/fibonacci_assignment/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -76,6 +32,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -83,8 +40,9 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="ts.external.directory.path" value="F:\Code_Gym_A0422I1_HuuTri\Module_5\ss2_typescript\exercise\fibonacci_assignment\node_modules\typescript\lib" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.font-size-editor.component.html">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="case_study_module_2" />
       <method v="2">
@@ -98,8 +56,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="font-size-editor.component.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/case_study_module_2/Module_5/ss3_angular_overview/practice/change_font_size/angular-change-font-size/src/app/font-size-editor/font-size-editor.component.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/case_study_module_2/Module_5/ss2_typescript/exercise/fibonacci_assignment/build/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Module_5/ss2_typescript/exercise/fibonacci_assignment/build/index.js" working-dir="$PROJECT_DIR$/Module_5/ss2_typescript/exercise/fibonacci_assignment/build">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.font-size-editor.component.html" />
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="Node.js.index.js" />
+      </list>
+    </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -117,6 +91,9 @@
       <workItem from="1662451850374" duration="13000" />
       <workItem from="1675336881979" duration="21000" />
       <workItem from="1676294477793" duration="611000" />
+      <workItem from="1676434810233" duration="2431000" />
+      <workItem from="1676630647047" duration="203000" />
+      <workItem from="1676630867246" duration="5070000" />
     </task>
     <servers />
   </component>
@@ -136,9 +113,21 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1662451861456">
+    <state width="1515" height="213" key="GridCell.Tab.0.bottom" timestamp="1676633872143">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1662451861456" />
+    <state width="1515" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1676633872143" />
+    <state width="1515" height="213" key="GridCell.Tab.0.center" timestamp="1676633872143">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1676633872143" />
+    <state width="1515" height="213" key="GridCell.Tab.0.left" timestamp="1676633872143">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1676633872143" />
+    <state width="1515" height="213" key="GridCell.Tab.0.right" timestamp="1676633872143">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1676633872143" />
   </component>
 </project>
