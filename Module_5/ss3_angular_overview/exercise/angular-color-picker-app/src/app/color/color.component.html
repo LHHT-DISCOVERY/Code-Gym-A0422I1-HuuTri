@@ -1,0 +1,11 @@
+<div [ngStyle]="{'background-color': color}">
+  <div class="row">
+    <div class="col-12">
+      <div class="row">
+        <p>Chọn màu</p>
+        <input type="color" [(ngModel)]="color">
+      </div>
+    </div>
+    <span>Mã màu : </span>{{color}}
+  </div>
+</div>
