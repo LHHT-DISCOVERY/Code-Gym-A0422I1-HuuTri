@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fafc2c14-9cca-4efd-b29c-f14218216b89" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../Module_4/ss9_AOP/exercise/src/main/resources/messages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module_2.1/src/ss15_exception_and_debug/pratice/pratice.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Module_4/ss9_AOP/exercise/src/main/java/com/example/borrow_book/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module_4/ss9_AOP/exercise/src/main/java/com/example/borrow_book/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Module_4/ss9_AOP/exercise/src/main/java/com/example/borrow_book/controller/BorrowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module_4/ss9_AOP/exercise/src/main/java/com/example/borrow_book/controller/BorrowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exam_module_2/.idea/runConfigurations.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +20,23 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="casetudy_jsp_sevlet" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -53,17 +71,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "F:/Intern_FPT/Java Basic/Java Core_Day04_TriLHH/general_assignment/general_assignment",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Code_Gym_A0422I1_HuuTri\Module_3\case_study_sevlet_jsp\casetudy_jsp_sevlet\src\main\java" />
@@ -255,6 +274,7 @@
       <workItem from="1669020172901" duration="599000" />
       <workItem from="1669028347417" duration="26000" />
       <workItem from="1672548996164" duration="680000" />
+      <workItem from="1676855884979" duration="10311000" />
     </task>
     <servers />
   </component>
@@ -271,7 +291,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
