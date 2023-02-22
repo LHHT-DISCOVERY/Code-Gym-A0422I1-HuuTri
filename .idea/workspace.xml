@@ -2,16 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db51d79e-7775-4853-a006-3be4d208055f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Module_2.1/src/ss15_exception_and_debug/pratice/pratice.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Module_5/ss2_typescript/exercise/fibonacci_assignment/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Module_5/ss2_typescript/exercise/fibonacci_assignment/package-lock.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Module_5/ss2_typescript/exercise/fibonacci_assignment/package.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Module_5/ss2_typescript/exercise/fibonacci_assignment/src/index.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Module_5/ss2_typescript/exercise/fibonacci_assignment/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/case_study_sevlet_jsp/casetudy_jsp_sevlet/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/case_study_sevlet_jsp/casetudy_jsp_sevlet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/case_study_sevlet_jsp/casetudy_jsp_sevlet/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam_module_2/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/exam/.idea/exam.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/exam/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/exam/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/ss7_Spring_Data_Repository/practice/jpaA04/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/ss4_angular_component_template/paractice/angular-hackernews-ap/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss4_angular_component_template/paractice/angular-hackernews-ap/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/ss4_angular_component_template/paractice/angular-hackernews-ap/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss4_angular_component_template/paractice/angular-hackernews-ap/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/ss4_angular_component_template/paractice/angular-hackernews-ap/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss4_angular_component_template/paractice/angular-hackernews-ap/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/ss4_angular_component_template/paractice/angular-hackernews-ap/src/app/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss4_angular_component_template/paractice/angular-hackernews-ap/src/app/footer/footer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/ss4_angular_component_template/paractice/angular-hackernews-ap/src/app/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss4_angular_component_template/paractice/angular-hackernews-ap/src/app/navbar/navbar.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +108,8 @@
       <workItem from="1676630867246" duration="5574000" />
       <workItem from="1676793014809" duration="3939000" />
       <workItem from="1676799368596" duration="7658000" />
-      <workItem from="1676891276649" duration="3904000" />
+      <workItem from="1676891276649" duration="4782000" />
+      <workItem from="1677063272292" duration="1014000" />
     </task>
     <servers />
   </component>
