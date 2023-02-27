@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "casestudy-m5": {
+    "submit-form": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/casestudy-m5",
+            "outputPath": "dist/submit-form",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "casestudy-m5:build"
+            "browserTarget": "submit-form:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "casestudy-m5:build:production"
+              "browserTarget": "submit-form:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "casestudy-m5:build"
+            "browserTarget": "submit-form:build"
           }
         },
         "test": {
@@ -113,19 +113,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "casestudy-m5:serve"
+            "devServerTarget": "submit-form:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "casestudy-m5:serve:production"
+              "devServerTarget": "submit-form:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "casestudy-m5",
+  "defaultProject": "submit-form",
   "cli": {
-    "analytics": "9bbd522d-bd01-4694-8934-c9bd13d200b2"
+    "analytics": "00d9e0e1-2694-4098-8500-1c655f1e8795"
   }
 }
