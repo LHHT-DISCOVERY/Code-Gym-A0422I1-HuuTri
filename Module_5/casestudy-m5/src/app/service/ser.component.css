@@ -1,0 +1,12 @@
+.bg-ser{
+  background-color: red;
+}
+a{
+  color: #ff0000;
+}
+a:hover{
+  background-color: green;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 20px;
+}

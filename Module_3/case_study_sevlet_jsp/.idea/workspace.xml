@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c39c7a8-981d-4607-ae00-a0a99366bf37" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Module_2.1/src/ss1_introduction/practice/SystemTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_2.1/src/ss1_introduction/practice/SystemTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module_2.1/src/ss6_inheritance/project_circle_and_cylinder/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_2.1/src/ss6_inheritance/project_circle_and_cylinder/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Module_2.1/src/ss6_inheritance/project_circle_and_cylinder/out/production/project_circle_and_cylinder/ss6_inheritance/project_circle_and_cylinder/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_2.1/src/ss6_inheritance/project_circle_and_cylinder/out/production/project_circle_and_cylinder/ss6_inheritance/project_circle_and_cylinder/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,15 +18,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Module_2.1/src/ss6_inheritance/project_circle_and_cylinder" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "F:/Code_Gym_A0422I1_HuuTri/Module_3/case_study_sevlet_jsp",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -55,6 +50,7 @@
       <workItem from="1670584225142" duration="1208000" />
       <workItem from="1675172760826" duration="42000" />
       <workItem from="1675172809719" duration="1022000" />
+      <workItem from="1677480059178" duration="12000" />
     </task>
     <servers />
   </component>
@@ -71,6 +67,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

@@ -1,0 +1,15 @@
+.bg_footer{
+ background-color: #7cfc88;
+}
+a{
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+}
+a:hover{
+  background-color: #209e20;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fd0000;
+  font-weight: bold;
+}

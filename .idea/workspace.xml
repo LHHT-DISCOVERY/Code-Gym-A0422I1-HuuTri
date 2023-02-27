@@ -8,6 +8,23 @@
       <change afterPath="$PROJECT_DIR$/Module_5/ss2_typescript/exercise/fibonacci_assignment/src/index.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Module_5/ss2_typescript/exercise/fibonacci_assignment/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/case_study_sevlet_jsp/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/case_study_sevlet_jsp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/case_study_sevlet_jsp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/case_study_sevlet_jsp/casetudy_jsp_sevlet/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/case_study_sevlet_jsp/casetudy_jsp_sevlet/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/case_study_sevlet_jsp/casetudy_jsp_sevlet/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/case_study_sevlet_jsp/casetudy_jsp_sevlet/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/case_study_sevlet_jsp/casetudy_jsp_sevlet/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/case_study_sevlet_jsp/casetudy_jsp_sevlet/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/case_study_sevlet_jsp/casetudy_jsp_sevlet/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/case_study_sevlet_jsp/casetudy_jsp_sevlet/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/case_study_sevlet_jsp/casetudy_jsp_sevlet/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/case_study_sevlet_jsp/casetudy_jsp_sevlet/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/case_study_sevlet_jsp/casetudy_jsp_sevlet/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/case_study_sevlet_jsp/casetudy_jsp_sevlet/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/case_study_sevlet_jsp/casetudy_jsp_sevlet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/case_study_sevlet_jsp/casetudy_jsp_sevlet/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/case_study_sevlet_jsp/casetudy_jsp_sevlet/build/libs/casetudy_jsp_sevlet-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/case_study_sevlet_jsp/casetudy_jsp_sevlet/build/libs/casetudy_jsp_sevlet-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/exam/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/exam/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/exam/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/exam/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/exam/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/exam/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/exam/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/exam/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/exam/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/exam/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/exam/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/exam/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/exam/build/libs/exam-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/exam/build/libs/exam-1.0-SNAPSHOT.war" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +118,13 @@
       <workItem from="1676799368596" duration="7658000" />
       <workItem from="1676891276649" duration="4782000" />
       <workItem from="1677063272292" duration="2296000" />
+      <workItem from="1677065602420" duration="4099000" />
+      <workItem from="1677074869021" duration="816000" />
+      <workItem from="1677287404761" duration="368000" />
+      <workItem from="1677294573974" duration="1258000" />
+      <workItem from="1677391752229" duration="12972000" />
+      <workItem from="1677479043798" duration="2555000" />
+      <workItem from="1677495952266" duration="748000" />
     </task>
     <servers />
   </component>
@@ -136,9 +160,13 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1515" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1676637867584" />
-    <state x="478" y="19" width="590" height="795" key="find.popup" timestamp="1676805859605">
+    <state x="478" y="19" width="670" height="795" key="find.popup" timestamp="1677401050873">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="478" y="19" width="590" height="795" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1676805859605" />
+    <state x="478" y="19" width="670" height="795" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1677401050873" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1677396092834">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1677396092834" />
   </component>
 </project>

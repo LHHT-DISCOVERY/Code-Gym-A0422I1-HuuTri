@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fafc2c14-9cca-4efd-b29c-f14218216b89" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../Module_2.1/src/ss15_exception_and_debug/pratice/pratice.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../exam_module_2/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/casetudy_jsp_sevlet-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/casetudy_jsp_sevlet-1.0-SNAPSHOT.war" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +81,7 @@
   "keyToString": {
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "F:/Intern_FPT/Java Basic/Java Core_Day04_TriLHH/general_assignment/general_assignment",
+    "last_opened_file_path": "F:/Code_Gym_A0422I1_HuuTri/Module_3/exam",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -95,7 +101,7 @@
       <recent name="config" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BaseRepository">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.65">
     <configuration name="BaseRepository" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dao_repository.BaseRepository" />
       <module name="casetudy_jsp_sevlet.main" />
@@ -109,7 +115,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerDaoRepository" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerDaoRepository" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dao_repository.CustomerDaoRepository" />
       <module name="casetudy_jsp_sevlet.main" />
       <extension name="coverage">
@@ -237,7 +243,6 @@
         <item itemvalue="Application.BaseRepository" />
         <item itemvalue="Application.TypeCustomerRepository" />
         <item itemvalue="JavaScript Debug.add.jsp" />
-        <item itemvalue="Application.CustomerDaoRepository" />
       </list>
     </recent_temporary>
   </component>
@@ -275,6 +280,7 @@
       <workItem from="1669028347417" duration="26000" />
       <workItem from="1672548996164" duration="680000" />
       <workItem from="1676855884979" duration="10311000" />
+      <workItem from="1677480080142" duration="316000" />
     </task>
     <servers />
   </component>
