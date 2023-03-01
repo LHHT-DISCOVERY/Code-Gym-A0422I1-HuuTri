@@ -3,6 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="6c39c7a8-981d-4607-ae00-a0a99366bf37" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_5/casestudy-m5/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_5/casestudy-m5/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_5/casestudy-m5/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_5/casestudy-m5/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_5/casestudy-m5/src/app/service/ser.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_5/casestudy-m5/src/app/service/ser.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_5/casestudy-m5/src/app/service/ser.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_5/casestudy-m5/src/app/service/ser.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_5/ss6_angular_form/exercise/submit-form/src/app/login-component/login-component.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_5/ss6_angular_form/exercise/submit-form/src/app/login-component/login-component.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module_5/ss6_angular_form/exercise/submit-form/src/app/login-component/login-component.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module_5/ss6_angular_form/exercise/submit-form/src/app/login-component/login-component.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,13 +26,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "F:/Code_Gym_A0422I1_HuuTri/Module_3/case_study_sevlet_jsp",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/Code_Gym_A0422I1_HuuTri/Module_3/case_study_sevlet_jsp&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -51,6 +59,7 @@
       <workItem from="1675172760826" duration="42000" />
       <workItem from="1675172809719" duration="1022000" />
       <workItem from="1677480059178" duration="12000" />
+      <workItem from="1677573962934" duration="77000" />
     </task>
     <servers />
   </component>

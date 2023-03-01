@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="db51d79e-7775-4853-a006-3be4d208055f" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/Module_5/ss2_typescript/exercise/fibonacci_assignment/.gitignore" afterDir="false" />
@@ -8,7 +26,13 @@
       <change afterPath="$PROJECT_DIR$/Module_5/ss2_typescript/exercise/fibonacci_assignment/src/index.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Module_5/ss2_typescript/exercise/fibonacci_assignment/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/ss6_angular_form/exercise/submit-form/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss6_angular_form/exercise/submit-form/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/case_study_sevlet_jsp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/case_study_sevlet_jsp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/casestudy-m5/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/casestudy-m5/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/casestudy-m5/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/casestudy-m5/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/casestudy-m5/src/app/service/ser.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/casestudy-m5/src/app/service/ser.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/casestudy-m5/src/app/service/ser.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/casestudy-m5/src/app/service/ser.component.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_5/ss6_angular_form/exercise/submit-form/src/app/login-component/login-component.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss6_angular_form/exercise/submit-form/src/app/login-component/login-component.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_5/ss6_angular_form/exercise/submit-form/src/app/login-component/login-component.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss6_angular_form/exercise/submit-form/src/app/login-component/login-component.component.ts" afterDir="false" />
     </list>
@@ -42,10 +66,12 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="ts.external.directory.path" value="F:\Code_Gym_A0422I1_HuuTri\Module_5\ss3_angular_overview\practice\change_font_size\angular-change-font-size\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Code_Gym_A0422I1_HuuTri\Module_5\casestudy-m5\src\app" />
       <recent name="F:\Code_Gym_A0422I1_HuuTri\Module_5\ss6_angular_form\practice" />
     </key>
   </component>
@@ -115,7 +141,10 @@
       <workItem from="1677294573974" duration="1258000" />
       <workItem from="1677391752229" duration="12972000" />
       <workItem from="1677479043798" duration="2555000" />
-      <workItem from="1677495952266" duration="11328000" />
+      <workItem from="1677495952266" duration="11437000" />
+      <workItem from="1677550928212" duration="5479000" />
+      <workItem from="1677576320145" duration="678000" />
+      <workItem from="1677642711861" duration="2838000" />
     </task>
     <servers />
   </component>
@@ -135,6 +164,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="612" y="186" key="FileChooserDialogImpl" timestamp="1677576848458">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="612" y="186" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1677576848458" />
     <state width="1515" height="213" key="GridCell.Tab.0.bottom" timestamp="1676637867584">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -151,10 +184,18 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1515" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1676637867584" />
-    <state x="478" y="19" width="670" height="795" key="find.popup" timestamp="1677401050873">
+    <state x="261" y="0" key="SettingsEditor" timestamp="1677576883112">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="478" y="19" width="670" height="795" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1677401050873" />
+    <state x="261" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1677576883112" />
+    <state x="478" y="19" width="670" height="795" key="find.popup" timestamp="1677551540680">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="478" y="19" width="670" height="795" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1677551540680" />
+    <state x="545" y="299" width="767" height="343" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1677576881735">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="545" y="299" width="767" height="343" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1536.834@0.0.1536.834" timestamp="1677576881735" />
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1677396092834">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

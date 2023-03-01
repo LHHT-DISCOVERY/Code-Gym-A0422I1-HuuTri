@@ -7,6 +7,7 @@
         <label>Email address</label>
         <input type="email" class="form-control" formControlName="email" placeholder="name@example.com">
         <p class="text-danger" *ngIf="userForm.controls.email.hasError('required')&& userForm.controls.email.touched" >Không được để trống</p>
+        <p class="text-danger" *ngIf="userForm.controls.email.hasError('pattern')" >Không đúng định dạng email</p>
 
         <label>Password</label>
         <input type="password" class="form-control" formControlName="password">

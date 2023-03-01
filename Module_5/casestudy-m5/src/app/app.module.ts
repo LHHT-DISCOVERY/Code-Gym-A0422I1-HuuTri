@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
-import { SerComponent } from './service/ser.component';
+import { ServiceListComponent } from './service/service-list/service-list.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,7 @@ import { SerComponent } from './service/ser.component';
     HeaderComponent,
     NavbarComponent,
     FooterComponent,
-    SerComponent
+    ServiceListComponent
   ],
   imports: [
     BrowserModule,
