@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+.bg-form {
+    /* background-color: rgb(119, 255, 169); */
+    background-image: url("/assets/bg-ft-hd-form/bg.jpg");
+}

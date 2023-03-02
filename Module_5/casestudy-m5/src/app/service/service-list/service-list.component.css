@@ -10,3 +10,16 @@ a:hover{
   font-weight: bold;
   font-size: 15px;
 }
+
+h1{
+  color: aliceblue;
+}
+
+fix{
+  position: fixed;
+}
+
+.form-service-list{
+
+  margin: 34px 150px; border-radius: 10px;
+}

@@ -1,0 +1,17 @@
+.bg-customer-add {
+    /* background-color: rgb(119, 255, 169); */
+    background-image: url("/assets/bg-ft-hd-form/bg.jpg");
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border-radius: 25px;
+    margin: 25px , 25px;
+}
+
+.w-75{
+    width : 60%!important
+}
+
+.form-control{
+    width: 385px;
+
+}

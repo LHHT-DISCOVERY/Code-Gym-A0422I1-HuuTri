@@ -1,0 +1,184 @@
+<div class="container-fluid bg-form  bg-customer-edit w-75 m-auto">
+  <h1
+    style="font-size: 35px; font-weight: bold; color: white; margin-left: 276px"
+  >
+    Edit Customer
+  </h1>
+  <div class="row m-auto">
+    <div class="col">
+      <ul th:replace="/common-layout :: left-sidebar"></ul>
+    </div>
+    <div class="col-11">
+      <div class="container-fluid">
+        <div class="row m-4 d-flex">
+          <div class="col-5">
+            <a routerLink="" class="btn btn-warning"> Back to home </a>
+          </div>
+        </div>
+        <div class="row m-4 d-flex">
+          <div class="col-6 justify-content-center d-flex">
+            <form
+              th:action="@{/customer/save}"
+              th:object="${customer}"
+              method="post"
+            >
+              <div class="mb-3">
+                <div class="row">
+                  <div class="col-3">
+                    <label class="form-label">Name: </label>
+                  </div>
+                  <div class="col-9">
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="row">
+                  <div class="col-3">
+                    <label for="position" class="form-label"
+                      >Customer Type:
+                    </label>
+                  </div>
+                  <div class="col-9">
+                    <select required>
+                      <option selected value="">Loai khach hang</option>
+                      <option></option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="row">
+                  <div class="col-3">
+                    <label for="employeeBirthday" class="form-label"
+                      >Birthday:
+                    </label>
+                  </div>
+                  <div class="col-9">
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="employeeBirthday"
+                      aria-describedby="employeeBirthdayError"
+                      th:field="*{customerBirthday}"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="row">
+                  <div class="col-3">
+                    <label class="form-label">Customer Gender: </label>
+                  </div>
+                  <div class="col-9">
+                    <div class="form-group">
+                      <div class="form-line m-4">
+                        <input
+                          type="radio"
+                          th:value="true"
+                          name="gender"
+                          id="male"
+                          style="margin: 20px"
+                          th:tabindex="8"
+                        />
+                        <label> Nam</label>
+                        <input
+                          type="radio"
+                          id="female"
+                          name="gender"
+                          style="margin: 20px"
+                        />
+                        <label> Nữ </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="row">
+                  <div class="col-3">
+                    <label class="form-label">customer Id Card: </label>
+                  </div>
+                  <div class="col-9">
+                    <input
+                      type="text"
+                      class="form-control"
+                      aria-describedby="employeeSalaryError"
+                      th:field="*{customerIdCard}"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="row">
+                  <div class="col-3">
+                    <label class="form-label">Phone: </label>
+                  </div>
+                  <div class="col-9">
+                    <input
+                      type="text"
+                      class="form-control"
+                      aria-describedby="employeePhoneError"
+                      th:field="*{customerPhone}"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="row">
+                  <div class="col-3">
+                    <label class="form-label">Email: </label>
+                  </div>
+                  <div class="col-9">
+                    <input
+                      type="email"
+                      class="form-control"
+                      aria-describedby="employeeEmailError"
+                      th:field="*{customerEmail}"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="row">
+                  <div class="col-3">
+                    <label class="form-label">Address: </label>
+                  </div>
+                  <div class="col-9">
+                    <input
+                      type="text"
+                      class="form-control"
+                      th:field="*{customerAddress}"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <div class="row m-auto">
+                  <div class="col-3"></div>
+                  <div class="col-9">
+                    <button
+                      type="submit"
+                      style="margin-right: 75px"
+                      class="btn btn-danger"
+                    >
+                      Save
+                    </button>
+                    <button
+                      routerLink="/list-customer"
+                      type="submit"
+                      class="btn btn-secondary"
+                    >
+                      Back
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
