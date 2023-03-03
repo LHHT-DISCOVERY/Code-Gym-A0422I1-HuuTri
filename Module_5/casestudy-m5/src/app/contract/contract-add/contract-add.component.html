@@ -1,0 +1,105 @@
+<div class="container-fluid bg-customer-add w-75 m-auto">
+  <h1
+    style="font-size: 35px; font-weight: bold; color: white; margin-left: 276px"
+  >
+    Create Contract
+  </h1>
+  <div class="row m-auto">
+    <div class="col"></div>
+    <div class="col-11">
+      <div class="container-fluid">
+        <div class="row m-4 d-flex">
+          <div class="col-5">
+            <a routerLink="" class="btn btn-warning"> Back to home </a>
+          </div>
+        </div>
+        <div class="row m-4 d-flex">
+          <div class="col-6 justify-content-center d-flex">
+            <form
+              th:action="@{/customer/save}"
+              th:object="${customer}"
+              method="post"
+            >
+              <div class="mb-3">
+                <div class="row">
+                  <div class="col-3">
+                    <label class="form-label">Số hợp đồng </label>
+                  </div>
+                  <div class="col-9">
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="row">
+                  <div class="col-3">
+                    <label for="position" class="form-label"
+                      >Ngày bắt đầu
+                    </label>
+                  </div>
+                  <div class="col-9">
+                    <input type="date" class="form-control" />
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="row">
+                  <div class="col-3">
+                    <label for="employeeBirthday" class="form-label"
+                      >Ngày kết thúc:
+                    </label>
+                  </div>
+                  <div class="col-9">
+                    <input type="date" class="form-control" />
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="row">
+                  <div class="col-3">
+                    <label class="form-label">Số tiền cọc trước </label>
+                  </div>
+                  <div class="col-9">
+                    <input type="number" class="form-control" />
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="row">
+                  <div class="col-3">
+                    <label class="form-label">Tổng tiền thanh toán </label>
+                  </div>
+                  <div class="col-9">
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <div class="row m-auto">
+                  <div class="col-3"></div>
+                  <div class="col-9">
+                    <button
+                      type="submit"
+                      style="margin-right: 75px"
+                      class="btn btn-danger"
+                    >
+                      Save
+                    </button>
+                    <button
+                      routerLink="/list-contract"
+                      type="submit"
+                      class="btn btn-secondary"
+                    >
+                      Back
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

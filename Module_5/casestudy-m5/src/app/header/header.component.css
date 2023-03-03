@@ -6,3 +6,10 @@ a:hover{
 .bg-header{
   background-image: url("../../assets/bg-ft-hd-form/bg.jpg");
 }
+
+header{
+  position: sticky;
+    height: 100px;
+    top: 0;
+    width: 100%;
+}
