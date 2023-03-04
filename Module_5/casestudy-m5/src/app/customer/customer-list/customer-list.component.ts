@@ -1,3 +1,5 @@
+import { CustomerService } from './../../service-logic/customer/customer.service';
+import { Customer } from './../../model/customer';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./customer-list.component.css']
 })
 export class CustomerListComponent implements OnInit {
-
-  constructor() { }
+  customerList : Customer[] = [];
+  constructor(private customerService : CustomerService) { 
+    this.customerList = this.customerService.getAll();
+    console.log(this.customerList);
+   
+  }
 
   ngOnInit(): void {
+    // this.customerList = this.customerService.getAll();
+    // console.log(this.customerList);
   }
 
 }

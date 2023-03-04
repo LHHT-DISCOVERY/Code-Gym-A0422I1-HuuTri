@@ -22,15 +22,15 @@
       </tr>
     </thead>
     <tbody>
-      <tr th:each="customer : ${customers}">
-        <td>kjfa</td>
-        <td>kjhuj</td>
-        <td>rể</td>
-        <td>rể</td>
-        <td>rẻe</td>
-        <td>rể</td>
-        <td>rể</td>
-        <td>rể</td>
+      <tr *ngFor="let item of customerList">
+        <td>{{item.customerType}}</td>
+        <td>{{item.customerName}}</td>
+        <td>{{item.customerBirthday}}</td>
+        <td>{{item.customerGender}}</td>
+        <td>{{item.customerIdCard}}</td>
+        <td>{{item.customerPhone}}</td>
+        <td>{{item.customerEmail}}</td>
+        <td>{{item.customerAddress}}</td>
 
         <td>
           <div>

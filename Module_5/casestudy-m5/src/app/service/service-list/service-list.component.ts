@@ -1,4 +1,6 @@
+import { FacilityService } from './../../service-logic/facility/facility.service';
 import {Component, OnInit} from '@angular/core';
+import { Facility } from 'src/app/model/facility';
 
 @Component({
   selector: 'app-service-list',
@@ -7,38 +9,12 @@ import {Component, OnInit} from '@angular/core';
 })
 export class ServiceListComponent implements OnInit {
 
-  serviceList = [
-
-    {
-      name: "PHÒNG SUITE HƯỚNG BIỂN",
-      area: 85.8,
-      image: "../../assets/service/1.png"
-    }, {
-      name: "PHÒNG SUITE HƯỚNG BIỂN",
-      area: 85.8,
-      image: "../../assets/service/1.png"
-    }, {
-      name: "PHÒNG SUITE HƯỚNG BIỂN",
-      area: 85.8,
-      image: "../../assets/service/1.png"
-    }, {
-      name: "PHÒNG SUITE HƯỚNG BIỂN",
-      area: 85.8,
-      image: "../../assets/service/1.png"
-    }, {
-      name: "PHÒNG SUITE HƯỚNG BIỂN",
-      area: 85.8,
-      image: "../../assets/service/1.png"
-    }, {
-      name: "PHÒNG SUITE HƯỚNG BIỂN",
-      area: 85.8,
-      image: "../../assets/service/1.png"
-    }
-
-  ]
-
-  constructor() {
+  serviceList : Facility[] = [];
+  constructor(private facilityService : FacilityService) {
+    this.serviceList = this.facilityService.getAll();
   }
+
+  
 
   ngOnInit(): void {
   }
