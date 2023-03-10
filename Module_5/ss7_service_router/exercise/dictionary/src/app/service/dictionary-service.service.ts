@@ -24,7 +24,7 @@ export class DictionaryServiceService {
     if (!word) {
       return '';
     }
-    const wordTranslate = this.dictionaries.find(item => item.word === word.toLowerCase());
+    const wordTranslate = this.dictionaries.find(item => item.word.toLowerCase() === word.toLowerCase());
     if (wordTranslate) {
       return wordTranslate.mean;
     }
