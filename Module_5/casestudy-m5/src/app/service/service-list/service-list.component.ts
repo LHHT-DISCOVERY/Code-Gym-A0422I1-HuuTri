@@ -17,6 +17,8 @@ export class ServiceListComponent implements OnInit {
   
 
   ngOnInit(): void {
+    console.log(this.serviceList);
+    
   }
 
 }

@@ -16,17 +16,63 @@
         <div class="row m-4 d-flex">
           <div class="col-6 justify-content-center d-flex">
             <form
-              th:action="@{/customer/save}"
-              th:object="${customer}"
+              [formGroup]="userFormCustomer"
+              (ngSubmit)="createUser()"
               method="post"
             >
+              <div class="mb-3">
+                <div class="row">
+                  <div class="col-3">
+                    <label class="form-label">Mã khách hàng: </label>
+                  </div>
+                  <div class="col-9">
+                    <input
+                      formControlName="IdCustomer"
+                      type="text"
+                      class="form-control"
+                    />
+                    <p
+                      class="text-danger"
+                      *ngIf="
+                        userFormCustomer.controls.IdCustomer.hasError(
+                          'required'
+                        ) && userFormCustomer.controls.IdCustomer.touched
+                      "
+                    >
+                      Không được để trống
+                    </p>
+                    <p
+                      class="text-danger"
+                      *ngIf="
+                        userFormCustomer.controls.IdCustomer.hasError('pattern')
+                      "
+                    >
+                      Mã Khách hàng có định dạng là KH-XXXX (X là số từ 0-9).
+                    </p>
+                  </div>
+                </div>
+              </div>
               <div class="mb-3">
                 <div class="row">
                   <div class="col-3">
                     <label class="form-label">Name: </label>
                   </div>
                   <div class="col-9">
-                    <input type="text" class="form-control" />
+                    <input
+                      type="text"
+                      formControlName="nameCustomer"
+                      class="form-control"
+                    />
+                    <p
+                      class="text-danger"
+                      *ngIf="
+                        userFormCustomer.controls.nameCustomer.hasError(
+                          'required'
+                        ) && userFormCustomer.controls.nameCustomer.touched
+                      "
+                    >
+                      không được để trống
+                    </p>
                   </div>
                 </div>
               </div>
@@ -38,9 +84,14 @@
                     </label>
                   </div>
                   <div class="col-9">
-                    <select required>
+                    <select required formControlName="customerType">
                       <option selected value="">Loai khach hang</option>
-                      <option></option>
+                      <option>Diamond</option>
+                      <option>Platinium</option>
+                      <option>Gold</option>
+                      <option>Silver</option>
+                      <option>Member</option>
+                      <!-- <p class="text-danger" *ngIf="userFormCustomer.controls.customerType.hasError('required')">không được để trống</p> -->
                     </select>
                   </div>
                 </div>
@@ -56,10 +107,18 @@
                     <input
                       type="date"
                       class="form-control"
-                      id="employeeBirthday"
-                      aria-describedby="employeeBirthdayError"
-                      th:field="*{customerBirthday}"
+                      formControlName="customerBirthday"
                     />
+                    <p
+                      class="text-danger"
+                      *ngIf="
+                        userFormCustomer.controls.customerBirthday.hasError(
+                          'required'
+                        ) && userFormCustomer.controls.customerBirthday.touched
+                      "
+                    >
+                      không được để trống
+                    </p>
                   </div>
                 </div>
               </div>
@@ -101,9 +160,29 @@
                     <input
                       type="text"
                       class="form-control"
-                      aria-describedby="employeeSalaryError"
-                      th:field="*{customerIdCard}"
+                      formControlName="customerIdCard"
                     />
+                    <p
+                      class="text-danger"
+                      *ngIf="
+                        userFormCustomer.controls.customerIdCard.hasError(
+                          'required'
+                        ) && userFormCustomer.controls.customerIdCard.touched
+                      "
+                    >
+                      không được để trống
+                    </p>
+                    <p
+                      class="text-danger"
+                      *ngIf="
+                        userFormCustomer.controls.customerIdCard.hasError(
+                          'pattern'
+                        )
+                      "
+                    >
+                      Số CMND phải đúng định dạng XXXXXXXXX hoặc XXXXXXXXXXXX (X
+                      là số 0-9).
+                    </p>
                   </div>
                 </div>
               </div>
@@ -116,9 +195,29 @@
                     <input
                       type="text"
                       class="form-control"
-                      aria-describedby="employeePhoneError"
-                      th:field="*{customerPhone}"
+                      formControlName="customerPhone"
                     />
+                    <p
+                      class="text-danger"
+                      *ngIf="
+                        userFormCustomer.controls.customerPhone.hasError(
+                          'required'
+                        ) && userFormCustomer.controls.customerPhone.touched
+                      "
+                    >
+                      không được để trống
+                    </p>
+                    <p
+                      class="text-danger"
+                      *ngIf="
+                        userFormCustomer.controls.customerPhone.hasError(
+                          'pattern'
+                        )
+                      "
+                    >
+                      Số điện thoại phải đúng định dạng 090xxxxxxx hoặc
+                      091xxxxxxx hoặc (84)+90xxxxxxx hoặc (84)+91xxxxxxx.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -131,9 +230,28 @@
                     <input
                       type="email"
                       class="form-control"
-                      aria-describedby="employeeEmailError"
-                      th:field="*{customerEmail}"
+                      formControlName="customerEmail"
                     />
+                    <p
+                      class="text-danger"
+                      *ngIf="
+                        userFormCustomer.controls.customerEmail.hasError(
+                          'required'
+                        ) && userFormCustomer.controls.customerEmail.touched
+                      "
+                    >
+                      không được để trống
+                    </p>
+                    <p
+                      class="text-danger"
+                      *ngIf="
+                        userFormCustomer.controls.customerEmail.hasError(
+                          'pattern'
+                        )
+                      "
+                    >
+                      Địa chỉ Email phải đúng format .
+                    </p>
                   </div>
                 </div>
               </div>
@@ -146,7 +264,6 @@
                     <input
                       type="text"
                       class="form-control"
-                      th:field="*{customerAddress}"
                     />
                   </div>
                 </div>

@@ -25,8 +25,8 @@
         <td>{{item.service.serviceName}}</td>
         <td>{{item.startDateContract}}</td>
         <td>{{item.endDateContract}}</td>
-        <td>{{item.contractDeposits}}</td>
-        <td>{{item.contractTotalMoney}}</td>
+        <td>{{item.contractDeposits | currency}}</td>
+        <td>{{item.contractTotalMoney | currency}}</td>
       </tr>
     </tbody>
   </table>

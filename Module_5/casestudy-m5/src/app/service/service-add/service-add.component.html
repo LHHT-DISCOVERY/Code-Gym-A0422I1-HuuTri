@@ -1,5 +1,7 @@
 <div class="container-fluid bg-form w-75 m-auto">
-  <h1 style="font-size: 35px; font-weight: bold; color: white;">Create Service</h1>
+  <h1 style="font-size: 35px; font-weight: bold; color: white">
+    Create Service
+  </h1>
   <div class="row m-auto">
     <div class="col"></div>
     <div class="col-11">
@@ -11,14 +13,40 @@
         </div>
         <div class="row m-4 d-flex">
           <div class="col-6 justify-content-center d-flex">
-            <form method="post">
+            <form
+              [formGroup]="userServiceForm"
+              (ngSubmit)="addNewService()"
+              method="post"
+            >
               <div class="mb-3">
                 <div class="row">
                   <div class="col-3">
                     <label class="form-label">Name </label>
                   </div>
                   <div class="col-9">
-                    <input type="text" class="form-control" />
+                    <input
+                      type="text"
+                      formControlName="serviceName"
+                      class="form-control"
+                    />
+                    <p
+                      class="text-danger"
+                      *ngIf="
+                        userServiceForm.controls.serviceName.hasError(
+                          'required'
+                        ) && userServiceForm.controls.serviceName.touched
+                      "
+                    >
+                      Không được để trống
+                    </p>
+                    <p
+                      class="text-danger"
+                      *ngIf="
+                        userServiceForm.controls.serviceName.hasError('pattern')
+                      "
+                    >
+                      Tên dịch vụ Không được chứa chữ số
+                    </p>
                   </div>
                 </div>
               </div>
@@ -28,7 +56,20 @@
                     <label class="form-label">Image </label>
                   </div>
                   <div class="col-9">
-                    <input type="file" class="form-control" />
+                    <input
+                      formControlName="image"
+                      type="file"
+                      class="form-control"
+                    />
+                    <p
+                      class="text-danger"
+                      *ngIf="
+                        userServiceForm.controls.image.hasError('required') &&
+                        userServiceForm.controls.image.touched
+                      "
+                    >
+                      Không được để trống
+                    </p>
                   </div>
                 </div>
               </div>
@@ -38,7 +79,21 @@
                     <label class="form-label">Area </label>
                   </div>
                   <div class="col-9">
-                    <input type="number" class="form-control" />
+                    <input
+                      type="number"
+                      formControlName="serviceArea"
+                      class="form-control"
+                    />
+                    <p
+                      class="text-danger"
+                      *ngIf="
+                        userServiceForm.controls.serviceArea.hasError(
+                          'required'
+                        ) && userServiceForm.controls.serviceArea.touched
+                      "
+                    >
+                      Không được để trống
+                    </p>
                   </div>
                 </div>
               </div>
@@ -48,7 +103,21 @@
                     <label class="form-label">Giá phòng </label>
                   </div>
                   <div class="col-9">
-                    <input type="text" class="form-control" />
+                    <input
+                      type="number"
+                      formControlName="serviceCost"
+                      class="form-control"
+                    />
+                    <p
+                      class="text-danger"
+                      *ngIf="
+                        userServiceForm.controls.serviceCost.hasError(
+                          'required'
+                        ) && userServiceForm.controls.serviceCost.touched
+                      "
+                    >
+                      Không được để trống
+                    </p>
                   </div>
                 </div>
               </div>
@@ -58,7 +127,31 @@
                     <label class="form-label">Sức chứa (người) </label>
                   </div>
                   <div class="col-9">
-                    <input type="number" class="form-control" />
+                    <input
+                      type="number"
+                      formControlName="serviceMaxPeople"
+                      class="form-control"
+                    />
+                    <p
+                      class="text-danger"
+                      *ngIf="
+                        userServiceForm.controls.serviceMaxPeople.hasError(
+                          'required'
+                        ) && userServiceForm.controls.serviceMaxPeople.touched
+                      "
+                    >
+                      Không được để trống
+                    </p>
+                    <p
+                      class="text-danger"
+                      *ngIf="
+                        userServiceForm.controls.serviceMaxPeople.hasError(
+                          'pattern'
+                        )
+                      "
+                    >
+                      Phải là số nguyên dương
+                    </p>
                   </div>
                 </div>
               </div>
@@ -68,7 +161,22 @@
                     <label class="form-label">Tiêu chuẩn phòng </label>
                   </div>
                   <div class="col-9">
-                    <input type="text" class="form-control" />
+                    <input
+                      type="text"
+                      formControlName="serviceStandardRoom"
+                      class="form-control"
+                    />
+                    <p
+                      class="text-danger"
+                      *ngIf="
+                        userServiceForm.controls.serviceStandardRoom.hasError(
+                          'required'
+                        ) &&
+                        userServiceForm.controls.serviceStandardRoom.touched
+                      "
+                    >
+                      Không được để trống
+                    </p>
                   </div>
                 </div>
               </div>
@@ -78,7 +186,23 @@
                     <label class="form-label">Các tiện ích khác </label>
                   </div>
                   <div class="col-9">
-                    <input type="text" class="form-control" />
+                    <input
+                      formControlName="descriptionOtherConvenience"
+                      type="text"
+                      class="form-control"
+                    />
+                    <p
+                      class="text-danger"
+                      *ngIf="
+                        userServiceForm.controls.descriptionOtherConvenience.hasError(
+                          'required'
+                        ) &&
+                        userServiceForm.controls.descriptionOtherConvenience
+                          .touched
+                      "
+                    >
+                      Không được để trống
+                    </p>
                   </div>
                 </div>
               </div>
@@ -88,17 +212,66 @@
                     <label class="form-label">Hồ bơi </label>
                   </div>
                   <div class="col-9">
-                    <input type="text" class="form-control" />
+                    <input
+                      formControlName="servicePoolArea"
+                      type="number"
+                      class="form-control"
+                    />
+                    <p
+                      class="text-danger"
+                      *ngIf="
+                        userServiceForm.controls.servicePoolArea.hasError(
+                          'required'
+                        ) && userServiceForm.controls.servicePoolArea.touched
+                      "
+                    >
+                      Không được để trống
+                    </p>
+                    <p
+                      class="text-danger"
+                      *ngIf="
+                        userServiceForm.controls.servicePoolArea.hasError(
+                          'pattern'
+                        )
+                      "
+                    >
+                      Phải là số nguyên dương
+                    </p>
                   </div>
                 </div>
               </div>
               <div class="mb-3">
                 <div class="row">
                   <div class="col-3">
-                    <label class="form-label">Số tầng </label>
+                    <label class="form-label"> Số tầng </label>
                   </div>
                   <div class="col-9">
-                    <input type="number" class="form-control" />
+                    <input
+                      type="number"
+                      formControlName="serviceNumberOfFloors"
+                      class="form-control"
+                    />
+                    <p
+                      class="text-danger"
+                      *ngIf="
+                        userServiceForm.controls.serviceNumberOfFloors.hasError(
+                          'required'
+                        ) &&
+                        userServiceForm.controls.serviceNumberOfFloors.touched
+                      "
+                    >
+                      Không được để trống
+                    </p>
+                    <p
+                      class="text-danger"
+                      *ngIf="
+                        userServiceForm.controls.serviceNumberOfFloors.hasError(
+                          'pattern'
+                        )
+                      "
+                    >
+                      Phải là số nguyên dương
+                    </p>
                   </div>
                 </div>
               </div>
@@ -109,12 +282,22 @@
                     <label for="position" class="form-label"> Kiểu thuê </label>
                   </div>
                   <div class="col-9">
-                    <select required>
+                    <select required formControlName="serviceRentType">
                       <option selected value="">--- Choose ---</option>
                       <option>Theo Ngày</option>
                       <option>Theo Tháng</option>
                       <option>Theo Năm</option>
                     </select>
+                    <p
+                      class="text-danger"
+                      *ngIf="
+                        userServiceForm.controls.serviceRentType.hasError(
+                          'required'
+                        ) && userServiceForm.controls.serviceRentType.touched
+                      "
+                    >
+                      Không được để trống
+                    </p>
                   </div>
                 </div>
               </div>
@@ -123,16 +306,26 @@
                 <div class="row">
                   <div class="col-3">
                     <label for="position" class="form-label">
-                      Loại dịch vu
+                      Loại dịch vụ
                     </label>
                   </div>
                   <div class="col-9">
-                    <select required>
+                    <select required formControlName="serviceType">
                       <option selected value="">--- Choose ---</option>
                       <option>Villa</option>
                       <option>House</option>
                       <option>Room</option>
                     </select>
+                    <p
+                      class="text-danger"
+                      *ngIf="
+                        userServiceForm.controls.serviceType.hasError(
+                          'required'
+                        ) && userServiceForm.controls.serviceType.touched
+                      "
+                    >
+                      Không được để trống
+                    </p>
                   </div>
                 </div>
               </div>

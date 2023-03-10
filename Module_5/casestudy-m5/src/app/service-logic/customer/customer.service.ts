@@ -8,10 +8,10 @@ export class CustomerService {
 
   customerList : Customer[]  = [
     {
-      id : 1 ,
+      customerId : "1" ,
       customerType : "Platinium",
       customerName : "Lý Huỳnh Hữu Trí" ,
-      customerBirthday:"20/10/2001",
+      customerBirthday:"2001/02/12",
       customGender: true,
       customerIdCard : "0191903819231" ,
       customerPhone :"0333915138",
@@ -19,10 +19,10 @@ export class CustomerService {
       customerAddress : "Quảng Nam"
     },
     {
-      id : 1 ,
+      customerId : "1" ,
       customerType : "Platinium",
       customerName : "Lý Huỳnh Hữu Trí" ,
-      customerBirthday:"20/10/2001",
+      customerBirthday:"2001/02/12",
       customGender: true,
       customerIdCard : "0191903819231" ,
       customerPhone :"0333915138",
@@ -30,10 +30,10 @@ export class CustomerService {
       customerAddress : "Quảng Nam"
     },
     {
-      id : 1 ,
+      customerId : "1" ,
       customerType : "Platinium",
       customerName : "Lý Huỳnh Hữu Trí" ,
-      customerBirthday:"20/10/2001",
+      customerBirthday:"2001/02/12",
       customGender: true,
       customerIdCard : "0191903819231" ,
       customerPhone :"0333915138",
@@ -41,10 +41,10 @@ export class CustomerService {
       customerAddress : "Quảng Nam"
     },
     {
-      id : 1 ,
+      customerId : "1" ,
       customerType : "Platinium",
       customerName : "Lý Huỳnh Hữu Trí" ,
-      customerBirthday:"20/10/2001",
+      customerBirthday:"2001/10/20",
       customGender: true,
       customerIdCard : "0191903819231" ,
       customerPhone :"0333915138",

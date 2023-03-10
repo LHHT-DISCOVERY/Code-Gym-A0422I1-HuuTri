@@ -4,14 +4,14 @@
     color: rgb(0, 0, 0);
     font-weight: bold;
     border-radius: 25px;
-    margin: 25px , 25px;
+    margin: 25px, 25px;
 }
 
-.w-75{
-    width : 60%!important
+.w-75 {
+    width: 60% !important
 }
 
-.form-control{
+.form-control {
     width: 385px;
 
 }

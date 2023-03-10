@@ -1,3 +1,4 @@
+
 <div class="container-fluid">
   <div class="row align-items-center bg-header">
     <div class="col-3">
@@ -45,7 +46,7 @@
           <span> <i class="bi bi-android2"></i> </span>
         </h5>
         <div class="col-2">
-          <form method="POST">
+          <form  [formGroup]="" method="POST">
             <button type="submit">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +165,6 @@
       <li class="nav-item">
         <a
           class="nav-link"
-          href="#"
           routerLink="/list-customer"
           aria-haspopup="true"
           aria-expanded="false"
@@ -186,7 +186,7 @@
         </a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0" method="get">
+    <form [formGroup]="" class="form-inline my-2 my-lg-0" method="get">
       <input
         class="form-control mr-sm-2"
         name="name"

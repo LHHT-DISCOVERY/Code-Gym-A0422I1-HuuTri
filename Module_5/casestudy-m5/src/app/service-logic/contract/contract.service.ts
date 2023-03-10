@@ -9,7 +9,7 @@ export class ContractService {
     {
       contractId: 1,
       customer: {
-        id: 1,
+        customerId: "1",
         customerType: "Platinium",
         customerName: "Lý Huỳnh Hữu Trí",
         customerBirthday: "20/10/2001",
@@ -41,7 +41,7 @@ export class ContractService {
     {
       contractId: 1,
       customer: {
-        id: 1,
+        customerId: "1",
         customerType: "Platinium",
         customerName: "Lý Huỳnh Hữu Trí",
         customerBirthday: "20/10/2001",
@@ -73,7 +73,7 @@ export class ContractService {
     {
       contractId: 1,
       customer: {
-        id: 1,
+        customerId: "1",
         customerType: "Platinium",
         customerName: "Lý Huỳnh Hữu Trí",
         customerBirthday: "20/10/2001",
@@ -105,7 +105,7 @@ export class ContractService {
     {
       contractId: 1,
       customer: {
-        id: 1,
+        customerId: "1",
         customerType: "Platinium",
         customerName: "Lý Huỳnh Hữu Trí",
         customerBirthday: "20/10/2001",
@@ -137,7 +137,7 @@ export class ContractService {
     {
       contractId: 1,
       customer: {
-        id: 1,
+        customerId: "1",
         customerType: "Platinium",
         customerName: "Lý Huỳnh Hữu Trí",
         customerBirthday: "20/10/2001",

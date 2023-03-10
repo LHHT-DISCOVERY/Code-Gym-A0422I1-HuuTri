@@ -104,5 +104,11 @@ export class FacilityService {
     return this.serviceList ;
   }
 
+
+  addNewService (facility : Facility) { 
+    this.serviceList.push(facility)
+
+   }
+
   constructor() { }
 }
