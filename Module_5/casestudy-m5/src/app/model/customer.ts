@@ -1,5 +1,5 @@
 export interface Customer {
-    customerId : String;
+    customerId ?: String;
     customerType : string;
     customerName : string;
     customerBirthday : string;
@@ -9,3 +9,4 @@ export interface Customer {
     customerEmail : string;
     customerAddress : string;
 }
+

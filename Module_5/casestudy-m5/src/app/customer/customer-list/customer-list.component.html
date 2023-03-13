@@ -34,7 +34,7 @@
 
         <td>
           <div>
-            <a routerLink="/edit-customer" class="btn btn-warning"><i class="bi bi-pencil-square"></i></a>
+            <a [routerLink]="['/edit-customer' , item.customerId]" class="btn btn-warning"><i class="bi bi-pencil-square"></i></a>
           </div>
         </td>
         <td>

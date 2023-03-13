@@ -1,3 +1,4 @@
+import { element } from 'protractor';
 import { Customer } from './../../model/customer';
 import { Injectable } from '@angular/core';
 
@@ -55,6 +56,18 @@ export class CustomerService {
 
   getAll(){
     return this.customerList;
+  }
+
+  findByID(id : String){
+      return this.customerList.filter(element => element.customerId === id )[0];
+  }
+
+  updateCustomer(id : String , customer : Customer){  
+      for(let i = 0; i < this.customerList.length; i++){
+        if(this.customerList[i].customerId ===id){
+          this.customerList[i] = customer;
+        }
+      }
   }
  
   constructor() { }
