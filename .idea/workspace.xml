@@ -26,8 +26,9 @@
       <change afterPath="$PROJECT_DIR$/Module_5/ss2_typescript/exercise/fibonacci_assignment/src/index.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Module_5/ss2_typescript/exercise/fibonacci_assignment/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/casestudy-m5/src/app/service/service-list/service-list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/casestudy-m5/src/app/service/service-list/service-list.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/casestudy-m5/src/app/service/service-list/service-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/casestudy-m5/src/app/service/service-list/service-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/ss7_service_router/exercise/dictionary/src/app/dictionary-detail-component/dictionary-detail-component.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss7_service_router/exercise/dictionary/src/app/dictionary-detail-component/dictionary-detail-component.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/ss7_service_router/exercise/dictionary/src/app/dictionay-page-component/dictionay-page-component.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss7_service_router/exercise/dictionary/src/app/dictionay-page-component/dictionay-page-component.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/ss7_service_router/exercise/dictionary/src/app/service/dictionary-service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss7_service_router/exercise/dictionary/src/app/service/dictionary-service.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,19 +52,23 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSON" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../module5" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="ts.external.directory.path" value="F:\Code_Gym_A0422I1_HuuTri\Module_5\ss3_angular_overview\practice\change_font_size\angular-change-font-size\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="F:\Code_Gym_A0422I1_HuuTri\Module_5\ss3_angular_overview\exercise\angular-color-picker-app\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Code_Gym_A0422I1_HuuTri\Module_5\ss9_connect_back_end\practice\product-mangerment\src\app\data" />
       <recent name="F:\Code_Gym_A0422I1_HuuTri\Module_5\casestudy-m5\src\app" />
       <recent name="F:\Code_Gym_A0422I1_HuuTri\Module_5\ss6_angular_form\practice" />
     </key>
@@ -141,6 +146,21 @@
       <workItem from="1677668505030" duration="257000" />
       <workItem from="1677720516097" duration="3655000" />
       <workItem from="1677769505143" duration="2737000" />
+      <workItem from="1677955188965" duration="4671000" />
+      <workItem from="1677987418043" duration="1821000" />
+      <workItem from="1678090570862" duration="913000" />
+      <workItem from="1678410709177" duration="1615000" />
+      <workItem from="1678419759561" duration="8678000" />
+      <workItem from="1678450833794" duration="7576000" />
+      <workItem from="1678539948140" duration="104000" />
+      <workItem from="1678541024821" duration="2004000" />
+      <workItem from="1678600211886" duration="150000" />
+      <workItem from="1678600550185" duration="2370000" />
+      <workItem from="1678602944579" duration="7117000" />
+      <workItem from="1678627350371" duration="3405000" />
+      <workItem from="1678669457858" duration="10702000" />
+      <workItem from="1678695047916" duration="2199000" />
+      <workItem from="1678704974170" duration="4391000" />
     </task>
     <servers />
   </component>
@@ -160,10 +180,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="612" y="186" key="FileChooserDialogImpl" timestamp="1677576848458">
+    <state x="612" y="186" key="FileChooserDialogImpl" timestamp="1678543432705">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="612" y="186" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1677576848458" />
+    <state x="612" y="186" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1678543432705" />
     <state width="1515" height="213" key="GridCell.Tab.0.bottom" timestamp="1676637867584">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -180,21 +200,25 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1515" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1676637867584" />
-    <state x="261" y="0" key="SettingsEditor" timestamp="1677576883112">
+    <state x="261" y="0" key="SettingsEditor" timestamp="1678412780995">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="261" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1677576883112" />
-    <state x="478" y="19" width="670" height="795" key="find.popup" timestamp="1677551540680">
+    <state x="261" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1678412780995" />
+    <state x="478" y="19" width="892" height="795" key="find.popup" timestamp="1678455713755">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="478" y="19" width="670" height="795" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1677551540680" />
-    <state x="545" y="299" width="767" height="343" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1677576881735">
+    <state x="478" y="19" width="892" height="795" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1678455713755" />
+    <state x="545" y="299" width="767" height="343" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1678412780168">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="545" y="299" width="767" height="343" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1536.834@0.0.1536.834" timestamp="1677576881735" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1677396092834">
+    <state x="545" y="299" width="767" height="343" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1536.834@0.0.1536.834" timestamp="1678412780168" />
+    <state x="341" y="186" key="run.anything.popup" timestamp="1678600917079">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1677396092834" />
+    <state x="341" y="186" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1678600917079" />
+    <state x="431" y="155" width="840" height="678" key="search.everywhere.popup" timestamp="1678453336292">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="431" y="155" width="840" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1678453336292" />
   </component>
 </project>

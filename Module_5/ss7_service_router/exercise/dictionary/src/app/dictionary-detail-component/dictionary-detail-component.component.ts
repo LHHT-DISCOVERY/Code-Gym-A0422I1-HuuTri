@@ -23,11 +23,8 @@ export class DictionaryDetailComponentComponent implements OnInit {
       const mean = this.dictionaryService.translate(word);
       this.wordDetail = {word, mean};
     });
-    console.log(this.wordDetail)
   }
 
-  ngOnDestroy(): void {
-    this.sub.unsubscribe();
-  }
+
 
 }

@@ -12,14 +12,10 @@ export class DictionayPageComponentComponent implements OnInit {
   listDictionaries : IWord[] = [];
 
   constructor(private  dictionaries: DictionaryServiceService) {
-    this.listDictionaries = this.dictionaries.getAll();
+
   }
   ngOnInit(): void {
-    console.log(this.listDictionaries)
-  }
-
-  getAll(){
-    this.dictionaries.getAll();
+    this.listDictionaries = this.dictionaries.getAll()
   }
 
 
