@@ -19,54 +19,34 @@
   ],
   "productList": [
     {
-      "name": "Oppo A743",
-      "price": "2121212",
-      "description": "211",
-      "category": {
-        "name": "Oppo",
-        "id": 1
-      },
-      "id": 8
-    },
-    {
-      "id": 9,
       "name": "Iphone 8",
-      "price": "2121212",
+      "price": "1111",
       "description": "211",
       "category": {
         "name": "APPLE",
         "id": 3
-      }
+      },
+      "id": 9
     },
     {
-      "id": 10,
-      "name": "Oppo g",
-      "price": "2121212",
-      "description": "211",
-      "category": {
-        "name": "Oppo",
-        "id": 1
-      }
-    },
-    {
-      "id": 11,
-      "name": "Iphone note 11",
-      "price": "333333",
-      "description": "211",
-      "category": {
-        "name": "Xiaomi",
-        "id": 2
-      }
-    },
-    {
-      "id": 13,
-      "name": "SAM SUNG S21",
+      "name": "Iphone 11",
       "price": "1000",
-      "description": "Black",
+      "description": "211",
+      "category": {
+        "name": "APPLE",
+        "id": 3
+      },
+      "id": 11
+    },
+    {
+      "name": "SANG SUNG A90",
+      "price": "9999",
+      "description": "211",
       "category": {
         "name": "Sam Sung",
         "id": 4
-      }
+      },
+      "id": 12
     }
   ]
 }
