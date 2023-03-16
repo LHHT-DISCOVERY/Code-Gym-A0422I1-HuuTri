@@ -3,7 +3,7 @@ export interface Customer {
     customerType : string;
     customerName : string;
     customerBirthday : string;
-    customGender : boolean;
+    customGender : number;
     customerIdCard : string;
     customerPhone : string;
     customerEmail : string;

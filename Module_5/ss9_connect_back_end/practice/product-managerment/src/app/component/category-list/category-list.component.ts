@@ -1,25 +1,30 @@
-import { CategoryService } from "src/app/service/category-service/category.service";
-import { Component, OnInit } from "@angular/core";
-import { Category } from "src/app/model/category";
+// import { Router } from '@angular/router';
+// import { CategoryService } from "src/app/service/category-service/category.service";
+// import { Component, OnInit } from "@angular/core";
+// import { Category } from "src/app/model/category";
 
-@Component({
-  selector: "app-category-list",
-  templateUrl: "./category-list.component.html",
-  styleUrls: ["./category-list.component.css"],
-})
-export class CategoryListComponent implements OnInit {
-  categories: Category[] = [];
+// @Component({
+//   selector: "app-category-list",
+//   templateUrl: "./category-list.component.html",
+//   styleUrls: ["./category-list.component.css"],
+// })
+// // một
+// export class CategoryListComponent implements OnInit {
+//   categories: Category[] = [];
 
-  constructor(private categoryService: CategoryService) {
-  }
+//   constructor(private categoryService: CategoryService, private router: Router) {}
 
-  ngOnInit(): void {
-    this.getAll();
-  }
+//   ngOnInit(): void {
+//     this.getAllProduct();
+//   }
+//   getAllProduct() {
+//     this.categoryService.getAllCategory().subscribe((value) => {
+//       this.categories = value;
+//       console.log(this.categories);
+//     });
+//   }
 
-  getAll() {
-    this.categoryService.getAllCategory().subscribe(categories => {
-      this.categories = categories;
-    });
-  }
-}
+//   showEditPage(id: number) {
+//     this.router.navigate(["updateCategory", id]);
+//   }
+// }

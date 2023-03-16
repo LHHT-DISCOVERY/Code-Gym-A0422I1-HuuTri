@@ -19,7 +19,7 @@ export class ServiceAddComponent implements OnInit {
     this.userServiceForm = new FormGroup({
       serviceName: new FormControl("", [
         Validators.required,
-        Validators.pattern("^[^0-9()]+$"),
+        Validators.pattern("^[^0-9]+$"),
       ]),
       image: new FormControl("", [Validators.required]),
       serviceArea: new FormControl("", [Validators.required]),
@@ -27,7 +27,7 @@ export class ServiceAddComponent implements OnInit {
       serviceStandardRoom: new FormControl("", [Validators.required]),
       serviceMaxPeople: new FormControl("", [
         Validators.required,
-        Validators.pattern("^[0-9()]+$"),
+        Validators.pattern("^[0-9]+$"),
       ]),
       descriptionOtherConvenience: new FormControl("", [Validators.required]),
       servicePoolArea: new FormControl("", [
@@ -51,7 +51,7 @@ export class ServiceAddComponent implements OnInit {
       this.router.navigateByUrl("");
     }
     console.log(this.userServiceForm.value);
-    
+
   }
 
   ngOnInit(): void {}

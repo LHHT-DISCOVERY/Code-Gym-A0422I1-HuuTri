@@ -34,9 +34,7 @@
                     <p
                       class="text-danger"
                       *ngIf="
-                        userFormCustomer.controls.IdCustomer.hasError(
-                          'required'
-                        ) && userFormCustomer.controls.IdCustomer.touched
+                        userFormCustomer.controls.IdCustomer.touched
                       "
                     >
                       Không được để trống
@@ -79,7 +77,7 @@
               <div class="mb-3">
                 <div class="row">
                   <div class="col-3">
-                    <label for="position" class="form-label"
+                    <label  class="form-label"
                       >Customer Type:
                     </label>
                   </div>
@@ -99,7 +97,7 @@
               <div class="mb-3">
                 <div class="row">
                   <div class="col-3">
-                    <label for="employeeBirthday" class="form-label"
+                    <label class="form-label"
                       >Birthday:
                     </label>
                   </div>
@@ -133,15 +131,15 @@
                         <input
                           type="radio"
                           name="gender"
-                          id="male"
                           style="margin: 20px"
-                          th:tabindex="8"
+                          value="1"  checked="checked"
+
                         />
                         <label> Nam</label>
                         <input
                           type="radio"
-                          id="female"
                           name="gender"
+                          value="0"
                           style="margin: 20px"
                         />
                         <label> Nữ </label>

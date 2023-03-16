@@ -1,0 +1,130 @@
+<div class="container-fluid bg-form">
+ 
+    <div class="row m-4 d-flex justify-content-between">
+      <div class="">
+        <a routerLink="/createProduct" class="btn btn-primary"> add new Customer </a>
+      </div>
+      <form class="input-group w-25 h-25 flex-nowrap d-flex align-items-center" method="get">
+        <input type="text" class="form-control" placeholder="Search" formControlName="nameSearch">
+        <button type="submit" class="btn btn-success">Search</button>
+      </form> 
+      
+      
+      
+      <div class="">
+        <a routerLink="/categoryList" class="btn btn-primary"> go list  category  </a>
+      </div>
+    </div>
+    <table class="table table-striped table-hover">
+      <thead class="thead-inverse">
+        <tr>
+          <th>STT</th>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Description</th>
+          <th>Type phone </th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>
+            <div>
+              <a class="btn btn-warning"
+                ><i class="bi bi-pencil-square"></i
+              ></a>
+            </div>
+          </td>
+          <td>
+            <div>
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-toggle="modal"
+                data-target="#modalDelete"
+              
+              >
+                <i class="bi bi-trash-fill"></i>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <div class="row justify-content-center m-md-auto">
+      <nav aria-label="Page navigation example ">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  
+  <!-- Modal delete-->
+  <div
+      class="modal fade"
+      id="modalDelete"
+      tabindex="-1"
+      aria-labelledby="deleteModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="deleteModalLabel">Confirm delete</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="false">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form method="get" id="formDelete" hidden>
+              <input type="text" name="idCustomer" id="idCustomer" />
+            </form>
+            Are you sure delete this customer ?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger">Delete</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <script>
+      function deleteByModal(id) {
+        document.getElementById("idCustomer").value = id;
+      }
+  
+      function submitForm() {
+        document.getElementById("formDelete").submit();
+      }
+    </script>
+  

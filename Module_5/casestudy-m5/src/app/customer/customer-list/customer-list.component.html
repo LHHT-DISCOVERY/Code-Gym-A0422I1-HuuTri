@@ -26,7 +26,8 @@
         <td>{{item.customerType}}</td>
         <td>{{item.customerName}}</td>
         <td>{{item.customerBirthday | date:"EEEE dd/MM/yyyy"}}</td>
-        <td>{{item.customerGender}}</td>
+        <td *ngIf="item.customGender == 1">Nam</td>
+        <td *ngIf="item.customGender == 0">Nữ</td>
         <td>{{item.customerIdCard}}</td>
         <td>{{item.customerPhone}}</td>
         <td>{{item.customerEmail}}</td>

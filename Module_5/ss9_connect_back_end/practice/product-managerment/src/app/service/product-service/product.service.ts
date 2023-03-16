@@ -11,7 +11,7 @@ const API_URL = `${environment.apiUrl}`;
 })
 export class ProductService {
   constructor(private httpClient: HttpClient) {}
-
+// productList giống vs list trong file json 
   getAllProduct(): Observable<Product[]> {
     return this.httpClient.get<Product[]>(`${API_URL}/productList`);
   }

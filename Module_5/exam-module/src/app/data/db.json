@@ -1,0 +1,52 @@
+{
+  "categoryList": [
+    {
+      "name": "Oppo",
+      "id": 1
+    },
+    {
+      "name": "APPLE",
+      "id": 3
+    },
+    {
+      "name": "Sam Sung",
+      "id": 4
+    },
+    {
+      "name": "Xiaomi",
+      "id": 2
+    }
+  ],
+  "productList": [
+    {
+      "name": "Iphone 8",
+      "price": "1111",
+      "description": "211",
+      "category": {
+        "name": "APPLE",
+        "id": 3
+      },
+      "id": 9
+    },
+    {
+      "name": "Iphone 11",
+      "price": "1000",
+      "description": "211",
+      "category": {
+        "name": "APPLE",
+        "id": 3
+      },
+      "id": 11
+    },
+    {
+      "name": "SANG SUNG A90",
+      "price": "9999",
+      "description": "211",
+      "category": {
+        "name": "Sam Sung",
+        "id": 4
+      },
+      "id": 12
+    }
+  ]
+}

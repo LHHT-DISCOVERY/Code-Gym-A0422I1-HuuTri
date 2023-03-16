@@ -19,21 +19,42 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db51d79e-7775-4853-a006-3be4d208055f" name="Changes" comment="">
+    <list default="true" id="db51d79e-7775-4853-a006-3be4d208055f" name="Changes" comment="Changes">
       <change afterPath="$PROJECT_DIR$/Module_5/ss2_typescript/exercise/fibonacci_assignment/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Module_5/ss2_typescript/exercise/fibonacci_assignment/package-lock.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Module_5/ss2_typescript/exercise/fibonacci_assignment/package.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Module_5/ss2_typescript/exercise/fibonacci_assignment/src/index.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Module_5/ss2_typescript/exercise/fibonacci_assignment/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/casestudy-m5/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/casestudy-m5/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/ss13_Spring_Security_Phan_Quyen/practice/springsecurity/springsecurity/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/ss13_Spring_Security_Phan_Quyen/practice/springsecurity/springsecurity/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_5/casestudy-m5/src/app/customer/customer-add/customer-add.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/casestudy-m5/src/app/customer/customer-add/customer-add.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/casestudy-m5/src/app/customer/customer-edit/customer-edit.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/casestudy-m5/src/app/customer/customer-edit/customer-edit.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_5/casestudy-m5/src/app/customer/customer-edit/customer-edit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/casestudy-m5/src/app/customer/customer-edit/customer-edit.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_5/casestudy-m5/src/app/customer/customer-edit/customer-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/casestudy-m5/src/app/customer/customer-edit/customer-edit.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_5/casestudy-m5/src/app/customer/customer-list/customer-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/casestudy-m5/src/app/customer/customer-list/customer-list.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_5/casestudy-m5/src/app/model/customer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/casestudy-m5/src/app/model/customer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_5/casestudy-m5/src/app/service-logic/customer/customer.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/casestudy-m5/src/app/service-logic/customer/customer.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/casestudy-m5/src/app/service/service-add/service-add.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/casestudy-m5/src/app/service/service-add/service-add.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/component/category-edit/category-edit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/component/category-edit/category-edit.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/component/category-edit/category-edit.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/component/category-edit/category-edit.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/component/category-edit/category-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/component/category-edit/category-edit.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/component/category-list/category-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/component/category-list/category-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/component/category-list/category-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/component/category-list/category-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/component/product-create/product-create.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/component/product-create/product-create.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/component/product-create/product-create.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/component/product-create/product-create.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/component/product-create/product-create.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/component/product-create/product-create.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/component/product-delete/product-delete.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/component/product-delete/product-delete.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/component/product-delete/product-delete.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/component/product-delete/product-delete.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/component/product-edit/product-edit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/component/product-edit/product-edit.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/component/product-edit/product-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/component/product-edit/product-edit.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/component/product-list/product-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/component/product-list/product-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/component/product-list/product-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/component/product-list/product-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/data/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/data/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/model/product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/model/product.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/service/product-service/product.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/service/product-service/product.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +90,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="ts.external.directory.path" value="F:\Code_Gym_A0422I1_HuuTri\Module_5\ss3_angular_overview\exercise\angular-color-picker-app\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="F:\Code_Gym_A0422I1_HuuTri\Module_5\ss9_connect_back_end\practice\product-managerment\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -166,6 +187,11 @@
       <workItem from="1678669457858" duration="10702000" />
       <workItem from="1678695047916" duration="2199000" />
       <workItem from="1678704974170" duration="8195000" />
+      <workItem from="1678766844376" duration="11586000" />
+      <workItem from="1678842621334" duration="130000" />
+      <workItem from="1678862541696" duration="2699000" />
+      <workItem from="1678877087822" duration="651000" />
+      <workItem from="1678879124106" duration="3925000" />
     </task>
     <servers />
   </component>
@@ -189,22 +215,70 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="612" y="186" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1678543432705" />
-    <state width="1515" height="213" key="GridCell.Tab.0.bottom" timestamp="1676637867584">
+    <state width="1509" height="249" key="GridCell.Tab.0.bottom" timestamp="1678775800913">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1676637867584" />
-    <state width="1515" height="213" key="GridCell.Tab.0.center" timestamp="1676637867584">
+    <state width="1509" height="249" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1678775800913" />
+    <state width="1509" height="249" key="GridCell.Tab.0.center" timestamp="1678775800913">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1676637867584" />
-    <state width="1515" height="213" key="GridCell.Tab.0.left" timestamp="1676637867584">
+    <state width="1509" height="249" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1678775800913" />
+    <state width="1509" height="249" key="GridCell.Tab.0.left" timestamp="1678775800913">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1676637867584" />
-    <state width="1515" height="213" key="GridCell.Tab.0.right" timestamp="1676637867584">
+    <state width="1509" height="249" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1678775800913" />
+    <state width="1509" height="249" key="GridCell.Tab.0.right" timestamp="1678775800913">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1515" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1676637867584" />
+    <state width="1509" height="249" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1678775800913" />
+    <state width="1509" height="249" key="GridCell.Tab.1.bottom" timestamp="1678775800913">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1509" height="249" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1678775800913" />
+    <state width="1509" height="249" key="GridCell.Tab.1.center" timestamp="1678775800913">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1509" height="249" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1678775800913" />
+    <state width="1509" height="249" key="GridCell.Tab.1.left" timestamp="1678775800913">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1509" height="249" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1678775800913" />
+    <state width="1509" height="249" key="GridCell.Tab.1.right" timestamp="1678775800913">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1509" height="249" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1678775800913" />
+    <state width="1509" height="249" key="GridCell.Tab.2.bottom" timestamp="1678775800914">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1509" height="249" key="GridCell.Tab.2.bottom/0.0.1536.834@0.0.1536.834" timestamp="1678775800914" />
+    <state width="1509" height="249" key="GridCell.Tab.2.center" timestamp="1678775800913">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1509" height="249" key="GridCell.Tab.2.center/0.0.1536.834@0.0.1536.834" timestamp="1678775800913" />
+    <state width="1509" height="249" key="GridCell.Tab.2.left" timestamp="1678775800913">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1509" height="249" key="GridCell.Tab.2.left/0.0.1536.834@0.0.1536.834" timestamp="1678775800913" />
+    <state width="1509" height="249" key="GridCell.Tab.2.right" timestamp="1678775800914">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1509" height="249" key="GridCell.Tab.2.right/0.0.1536.834@0.0.1536.834" timestamp="1678775800914" />
+    <state width="1509" height="249" key="GridCell.Tab.3.bottom" timestamp="1678775800914">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1509" height="249" key="GridCell.Tab.3.bottom/0.0.1536.834@0.0.1536.834" timestamp="1678775800914" />
+    <state width="1509" height="249" key="GridCell.Tab.3.center" timestamp="1678775800914">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1509" height="249" key="GridCell.Tab.3.center/0.0.1536.834@0.0.1536.834" timestamp="1678775800914" />
+    <state width="1509" height="249" key="GridCell.Tab.3.left" timestamp="1678775800914">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1509" height="249" key="GridCell.Tab.3.left/0.0.1536.834@0.0.1536.834" timestamp="1678775800914" />
+    <state width="1509" height="249" key="GridCell.Tab.3.right" timestamp="1678775800914">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1509" height="249" key="GridCell.Tab.3.right/0.0.1536.834@0.0.1536.834" timestamp="1678775800914" />
     <state x="261" y="0" key="SettingsEditor" timestamp="1678412780995">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

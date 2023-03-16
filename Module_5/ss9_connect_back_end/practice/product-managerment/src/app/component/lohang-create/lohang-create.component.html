@@ -1,0 +1,135 @@
+<h2>Tạo mới sản phẩm</h2>
+<div class="col-6">
+  <form [formGroup]="loHangForm" (ngSubmit)="saveProduct()" novalidate>
+    <div class="row mb-3">
+      <div class="col-4">
+        <label for="name"  class="form-label">Mã Lô hàng </label>
+      </div>
+      <div class="col-8">
+        <input type="text" formControlName="codeName" class="form-control" id="name" aria-describedby="nameError">
+        <p
+        class="text-danger"
+        *ngIf="
+          loHangForm.controls.codeName.hasError(
+            'required'
+          )&& loHangForm.controls.codeName.touched
+        "
+      >
+        Không được để trống
+      </p>
+      <p
+        class="text-danger"
+        *ngIf="
+          loHangForm.controls.codeName.hasError('pattern')
+        "
+      >
+        Mã Lô Hàng có định dạng là LH-XXXX (X là số nguyên dương).
+      </p>
+      </div>
+    </div>
+    <div class="row mb-3">
+        <div class="col-4">
+          <label for="category" class="form-label">Sản phẩm </label>
+        </div>
+        <div class="col-8">
+          <select id="category" name="category" formControlName="product" aria-describedby="categoryError">
+            <option [value]="null" disabled>---Chọn sản phẩm---</option>
+            <option *ngFor="let c of productList" [ngValue]="c.id">{{c.name}}</option>
+          </select>
+        </div>
+      </div>
+    <div class="row mb-3">
+      <div class="col-4">
+        <label for="description" class="form-label">Sô lượng </label>
+      </div>
+      <div class="col-8">
+        <input type="text" class="form-control" id="description" formControlName="soLuong" aria-describedby="descriptionError">
+        <p
+        class="text-danger"
+        *ngIf="
+          loHangForm.controls.soLuong.hasError(
+            'required'
+          ) && loHangForm.controls.soLuong.touched
+        "
+      >
+        Không được để trống
+      </p>
+      <p
+        class="text-danger"
+        *ngIf="
+          loHangForm.controls.soLuong.hasError('pattern')
+        "
+      >
+        số lượng là số nguyên dương
+      </p>  
+    </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-4">
+        <label for="description" class="form-label">Ngày Sản Xuất  </label>
+      </div>
+      <div class="col-8">
+        <input type="date" class="form-control" id="description" formControlName="ngaySX" aria-describedby="descriptionError">
+        <p
+        class="text-danger"
+        *ngIf="
+          loHangForm.controls.ngaySX.hasError(
+            'required'
+          ) && loHangForm.controls.ngaySX.touched
+        "
+      >
+        Không được để trống
+      </p>
+    </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-4">
+        <label for="description" class="form-label">Ngày nhập hàng </label>
+      </div>
+      <div class="col-8">
+        <input type="date" class="form-control" id="description" formControlName="ngayNhap" aria-describedby="descriptionError">
+        <p
+        class="text-danger"
+        *ngIf="
+          loHangForm.controls.ngayNhap.hasError(
+            'required'
+          ) && loHangForm.controls.ngayNhap.touched
+        "
+      >
+        Không được để trống
+      </p>
+    </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-4">
+        <label for="description" class="form-label">Ngày hết hạn </label>
+      </div>
+      <div class="col-8">
+        <input type="date" class="form-control" id="description" formControlName="ngayHH" aria-describedby="descriptionError">
+        <p
+        class="text-danger"
+        *ngIf="
+          loHangForm.controls.ngayHH.hasError(
+            'required'
+          ) && loHangForm.controls.ngayHH.touched
+        "
+      >
+        Không được để trống
+      </p>
+    </div>
+    </div>
+    
+    <div class="row mb-3">
+      <div class="col-4"></div>
+      <div class="col-4">
+        <button type="submit" class="btn btn-primary">Tạo mới</button>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-4"></div>
+      <div class="col-4">
+        <button routerLink="/" type="submit" class="btn btn-primary">Quay lại </button>
+      </div>
+    </div>
+  </form>
+</div>

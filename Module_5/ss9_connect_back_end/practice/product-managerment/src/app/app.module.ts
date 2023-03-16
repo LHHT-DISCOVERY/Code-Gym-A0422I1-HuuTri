@@ -5,14 +5,16 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { HttpClientModule } from "@angular/common/http";
 import { ProductListComponent } from "./component/product-list/product-list.component";
-import { ProductEditComponent } from "./component/product-edit/product-edit.component";
-import { ProductDeleteComponent } from "./component/product-delete/product-delete.component";
-import { ProductCreateComponent } from "./component/product-create/product-create.component";
-import { CategoryListComponent } from "./component/category-list/category-list.component";
+// import { ProductEditComponent } from "./component/product-edit/product-edit.component";
+// import { ProductDeleteComponent } from "./component/product-delete/product-delete.component";
+// import { ProductCreateComponent } from "./component/product-create/product-create.component";
+// import { CategoryListComponent } from "./component/category-list/category-list.component";
 import { CategoryCreateComponent } from "./component/category-create/category-create.component";
-import { CategoryEditComponent } from "./component/category-edit/category-edit.component";
+// import { CategoryEditComponent } from "./component/category-edit/category-edit.component";
 import { ReactiveFormsModule } from "@angular/forms";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { LohangListComponent } from './component/lohang-list/lohang-list.component';
+import { LohangCreateComponent } from './component/lohang-create/lohang-create.component';
 
 
 
@@ -20,12 +22,14 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
   declarations: [
     AppComponent,
     ProductListComponent,
-    ProductEditComponent,
-    ProductDeleteComponent,
-    ProductCreateComponent,
-    CategoryListComponent,
+    // ProductEditComponent,
+    // ProductDeleteComponent,
+    // ProductCreateComponent,
+    // CategoryListComponent,
     CategoryCreateComponent,
-    CategoryEditComponent,
+    // CategoryEditComponent,
+    LohangListComponent,
+    LohangCreateComponent,
   ],
   imports: [
     BrowserModule,

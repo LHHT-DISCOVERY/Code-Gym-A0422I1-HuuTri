@@ -1,52 +1,57 @@
 {
-  "categoryList": [
-    {
-      "name": "Oppo",
-      "id": 1
-    },
-    {
-      "name": "APPLE",
-      "id": 3
-    },
-    {
-      "name": "Sam Sung",
-      "id": 4
-    },
-    {
-      "name": "Xiaomi",
-      "id": 2
-    }
-  ],
   "productList": [
     {
-      "name": "Iphone 8",
-      "price": "1111",
-      "description": "211",
-      "category": {
-        "name": "APPLE",
-        "id": 3
-      },
-      "id": 9
+      "name": "Sting",
+      "xuatXu": "Trung Quốc",
+      "id": 1,
+      "price": 1000,
+      "donVi": "thùng"
     },
     {
-      "name": "Iphone 11",
-      "price": "1000",
-      "description": "211",
-      "category": {
-        "name": "APPLE",
-        "id": 3
-      },
-      "id": 11
+      "name": "dầu gọi",
+      "xuatXu": "Trung Quốc",
+      "id": 2,
+      "price": 1000,
+      "donVi": "thùng"
     },
     {
-      "name": "SANG SUNG A90",
-      "price": "9999",
-      "description": "211",
-      "category": {
-        "name": "Sam Sung",
-        "id": 4
+      "name": "bia",
+      "xuatXu": "Trung Quốc",
+      "id": 3,
+      "price": 1000,
+      "donVi": "thùng"
+    }
+  ],
+  "loHangList": [
+    {
+      "id": 2,
+      "codeName": "LH-4322",
+      "product": {
+        "name": "Sting",
+        "xuatXu": "Trung Quốc",
+        "id": 1,
+        "price": 1000,
+        "donVi": "thùng"
       },
-      "id": 12
+      "soLuong": "211",
+      "ngayNhap": "2023-03-04",
+      "ngaySX": "2023-03-03",
+      "ngayHH": "2023-03-04"
+    },
+    {
+      "id": 3,
+      "codeName": "LH-4443",
+      "product": {
+        "name": "dầu gọi",
+        "xuatXu": "Trung Quốc",
+        "id": 2,
+        "price": 1000,
+        "donVi": "thùng"
+      },
+      "soLuong": "4",
+      "ngayNhap": "2023-03-10",
+      "ngaySX": "2023-03-10",
+      "ngayHH": "2023-03-04"
     }
   ]
 }
