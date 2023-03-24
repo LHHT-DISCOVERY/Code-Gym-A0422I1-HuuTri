@@ -39,19 +39,19 @@
       "ngayHH": "2023-03-04"
     },
     {
-      "id": 3,
-      "codeName": "LH-4443",
+      "id": 4,
+      "codeName": "LH-7632",
       "product": {
-        "name": "dầu gọi",
+        "name": "bia",
         "xuatXu": "Trung Quốc",
-        "id": 2,
+        "id": 3,
         "price": 1000,
         "donVi": "thùng"
       },
       "soLuong": "4",
       "ngayNhap": "2023-03-10",
-      "ngaySX": "2023-03-10",
-      "ngayHH": "2023-03-04"
+      "ngaySX": "2023-03-08",
+      "ngayHH": "2023-03-06"
     }
   ]
 }

@@ -26,18 +26,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
     }
 
-//    @Override
-//    protected void configure(HttpSecurity http) throws Exception {
-//        http.authorizeHttpRequests().antMatchers("/", "/index", "/login").permitAll();
-//        http.authorizeHttpRequests().antMatchers("/admin/**").hasRole("ADMIN");
-//        http.authorizeHttpRequests().antMatchers("/user/**").hasAnyRole("ADMIN","USER");
-//        http.authorizeHttpRequests().and().exceptionHandling().accessDeniedPage("/deny");
-//        http.authorizeHttpRequests().and().formLogin()
-//                .defaultSuccessUrl("/user/index")
-//                .and()
-//                .logout().logoutUrl("/logout");
-//    }
-
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests().antMatchers("/", "/index", "/login").permitAll();

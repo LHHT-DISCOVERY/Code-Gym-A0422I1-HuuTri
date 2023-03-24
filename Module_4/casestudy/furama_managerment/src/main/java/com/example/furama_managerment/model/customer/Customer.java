@@ -24,7 +24,7 @@ public class Customer {
     private String customerIdCard;
     @Column(columnDefinition = "varchar(45)")
     private String customerPhone;
-    @Column(columnDefinition = "varchar(45)")
+    @Column(columnDefinition = "varchar(45)")   
     private String customerEmail;
     @Column(columnDefinition = "varchar(45)")
     private String customerAddress;
