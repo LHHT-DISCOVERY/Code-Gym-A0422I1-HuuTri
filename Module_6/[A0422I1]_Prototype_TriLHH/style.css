@@ -1,3 +1,27 @@
-i{
-    font-size: 20px;
+section a:hover{
+    color: #f26b38;
 }
+
+
+section .card a:not(:hover) {
+    color: white;
+  }
+
+
+.card .mb-4{
+    font-weight: 500
+}
+
+html,body {
+    
+    height: 100%;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    color: #43464b;
+    margin: 0 auto;
+    padding: 0;
+    -webkit-text-size-adjust: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
