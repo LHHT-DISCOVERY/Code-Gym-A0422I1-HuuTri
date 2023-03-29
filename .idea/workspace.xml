@@ -26,10 +26,16 @@
       <change afterPath="$PROJECT_DIR$/Module_5/ss2_typescript/exercise/fibonacci_assignment/src/index.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Module_5/ss2_typescript/exercise/fibonacci_assignment/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/java/com/example/furama_managerment/model/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/java/com/example/furama_managerment/model/customer/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/ss13_Spring_Security_Phan_Quyen/practice/springsecurity/springsecurity/src/main/java/com/example/springsecurity/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/ss13_Spring_Security_Phan_Quyen/practice/springsecurity/springsecurity/src/main/java/com/example/springsecurity/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/casestudy-m5/src/app/customer/customer-list/customer-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/casestudy-m5/src/app/customer/customer-list/customer-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/data/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/data/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/resources/templates/employee/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/casestudy/furama_managerment/src/main/resources/templates/employee/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_6/[A0422I1]_Prototype_TriLHH/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_6/[A0422I1]_Prototype_TriLHH/.idea/[A0422I1]_Prototype_TriLHH.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_6/[A0422I1]_Prototype_TriLHH/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_6/[A0422I1]_Prototype_TriLHH/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_6/[A0422I1]_Prototype_TriLHH/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_6/[A0422I1]_Prototype_TriLHH/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Module_6/[A0422I1]_Prototype_TriLHH/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_6/[A0422I1]_Prototype_TriLHH/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_6/[A0422I1]_Prototype_TriLHH/user_point.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_6/[A0422I1]_Prototype_TriLHH/user_point.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_6/[A0422I1]_Prototype_TriLHH/user_ticket.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_6/[A0422I1]_Prototype_TriLHH/user_ticket.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,6 +178,7 @@
       <workItem from="1679655343430" duration="764000" />
       <workItem from="1679684431084" duration="24000" />
       <workItem from="1679685661459" duration="2196000" />
+      <workItem from="1680093867350" duration="1229000" />
     </task>
     <servers />
   </component>

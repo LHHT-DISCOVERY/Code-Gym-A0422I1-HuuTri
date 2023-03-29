@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Quản lý lịch sử điểm</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link
       rel="stylesheet"
@@ -31,17 +31,16 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
-
-    <link rel="stylesheet" href="/style.css" />
+      <link rel="stylesheet" href="style.css">
   </head>
-  <body style="background-color: #fff; font-family: Roboto, sans-serif">
+  <body style="background-color: #eee; font-family: Roboto, sans-serif">
     <section>
       <div class="container py-5">
         <div class="row">
           <div class="col">
             <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
                 <ol class="breadcrumb mb-0 ">
-                    <li class="breadcrumb-item active " aria-current="page"> <a class="text-decoration-none" href="#">Trang chủ</a> </li>
+                    <li class="breadcrumb-item active" aria-current="page"> <a class="text-decoration-none" href="#" >Trang chủ</a> </li>
                     <li class="breadcrumb-item active" aria-current="page"><a class="text-decoration-none" href="#">Quản lý tài khoản</a></li>
                 </ol>
             </nav>
@@ -53,8 +52,8 @@
             <!-- sidebar -->
             <div class="card mb-4">
               <div
-                class="card-header rounded-1 text-center"
-                style="background-color: rgba(0, 0, 0, 0.8)"
+                class="card-body rounded-1 text-center"
+                style="background-color: while"
               >
                 <div class="d-block justify-content-center">
                   <img
@@ -63,17 +62,14 @@
                     class="rounded-circle img-fluid"
                     style="width: 150px"
                   />
-                  <h5 class="my-3 text-light">John Smith</h5>
-                  <p class="mb-3 text-light">
+                  <h5 class="my-3 text-dark">John Smith</h5>
+                  <p class="mb-3 text-dark">
                     <i class="fab fa-empire"></i>Điểm tích lũy: 120
                   </p>
                   <div
                     class="d-flex align-items-center justify-content-center mb-2 font-weight-bold"
                   >
-                    <button type="button " class="btn btn-primary">
-                      Đăng xuất
-                      <i class="bi bi-box-arrow-right"></i>
-                    </button>
+
                   </div>
                   <hr />
                 </div>
@@ -100,7 +96,7 @@
                       <hr />
                       <a
                         class="text-decoration-none section-link font-weight-bold"
-                        href="#"
+                        href="./user_ticket.html"
                       >
                         <i
                           class="bi bi-ticket-perforated section-link divider mx-3"
@@ -108,13 +104,7 @@
                         >Vé đã đặt</a
                       >
                       <hr />
-                      <a
-                        class="text-decoration-none section-link font-weight-bold"
-                        href="#"
-                      >
-                        <i class="bi bi-ticket-perforated divider mx-3"></i>Vé
-                        đã hủy</a
-                      >
+
                     </div>
                   </div>
                 </div>
@@ -130,6 +120,7 @@
                 >
                   Lịch Sử
                 </div>
+              <div class="card">
                 <div class="card-body">
                   <div class="container">
                     <form>
@@ -147,7 +138,7 @@
                         <label
                           class="col-sm-3 col-form-label"
                           style="text-align: left"
-                          >Đến Ngày <span style="color: red">(*)</span></label
+                          >Đến Ngày <span style="color: rgb(255, 0, 0)">(*)</span></label
                         >
                         <div class="col-sm-9">
                           <input type="date" class="form-control" />
@@ -183,7 +174,7 @@
                         <div class="row mb-3 divider my-4">
                           <label class="col-sm-4 col-form-label"></label>
                           <div class="col-sm-8">
-                            <button type="submit" class="btn btn-primary">
+                            <button type="submit"  class="btn btn-primary border-0" style="background-color: #f26b38;">
                               <i class="fas fa-lock"></i>
                               Xem Điểm
                             </button>
@@ -193,13 +184,13 @@
                     </form>
                   </div>
                   <div class="card-body">
-                    <div class="table-responsive table-bordered rounded shadow">
+                    <div class="table-responsive table-bordered rounded ">
                       <table
-                        class="table table-hover text-center table-striped"
+                        class="table  text-center table-striped"
                       >
                         <thead
                           style="
-                            background-color: rgba(0, 0, 0, 0.8);
+                            background-color: #f26b38;
                             color: #fff;
                           "
                         >
@@ -213,17 +204,22 @@
                           <tr>
                             <td>21/01/2017 8:08</td>
                             <td>BIỆT ĐỘI RẤT ỔN</td>
-                            <td>9000</td>
+                            <td>6000</td>
                           </tr>
                           <tr>
-                            <td>21/01/2017 8:08</td>
-                            <td>BIỆT ĐỘI RẤT ỔN</td>
-                            <td>9000</td>
+                            <td>27/03/2017 8:08</td>
+                            <td>SIÊU LỪA GẶP SIÊU LẦY</td>
+                            <td>5000</td>
                           </tr>
                           <tr>
-                            <td>21/01/2017 8:08</td>
-                            <td>BIỆT ĐỘI RẤT ỔN</td>
-                            <td>9000</td>
+                            <td>22/04/2017 8:08</td>
+                            <td>TAY ĐẤM HUYỀN THOẠI</td>
+                            <td>5000</td>
+                          </tr>
+                          <tr>
+                            <td>21/06/2017 8:08</td>
+                            <td>CUỘC CHIẾN BẤT TỬ</td>
+                            <td>8000</td>
                           </tr>
                         </tbody>
                       </table>
@@ -234,29 +230,35 @@
                           <ul class="pagination">
                             <li class="page-item">
                               <a
-                                class="page-link text-primary"
+                                class="page-link"
                                 href="#"
                                 aria-label="Previous"
                               >
-                                <span aria-hidden="true">&laquo;</span>
+                                <span aria-hidden="true">Trước</span>
                               </a>
                             </li>
                             <li class="page-item">
-                              <a class="page-link text-primary" href="#">1</a>
+                              <a class="page-link " href="#">1</a>
                             </li>
                             <li class="page-item">
-                              <a class="page-link text-primary" href="#">2</a>
+                              <a class="page-link " href="#">2</a>
                             </li>
-                            <li class="page-item text-primary">
-                              <a class="page-link text-primary" href="#">3</a>
+                            <li class="page-item ">
+                              <a class="page-link"  href="#">...</a>
+                            </li>
+                            <li class="page-item ">
+                              <a class="page-link"  href="#">6</a>
+                            </li>
+                            <li class="page-item ">
+                              <a class="page-link"  href="#">7</a>
                             </li>
                             <li class="page-item">
                               <a
-                                class="page-link text-primary"
+                                class="page-link "
                                 href="#"
                                 aria-label="Next"
                               >
-                                <span aria-hidden="true">&raquo;</span>
+                                <span aria-hidden="true">Sau</span>
                               </a>
                             </li>
                           </ul>

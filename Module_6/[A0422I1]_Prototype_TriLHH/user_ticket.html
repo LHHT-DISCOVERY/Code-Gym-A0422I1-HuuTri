@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Quản lý tài khoản</title>
+    <title>Quản lý vé đặt</title>
     <!--    <script src="https://kit.fontawesome.com/8a37ea36e8.js" crossorigin="anonymous"></script>-->
     <!-- Font Awesome -->
     <!-- <link
@@ -36,7 +36,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body style="background-color: #eee; font-family: Roboto, sans-serif">
     <section>
@@ -55,10 +55,10 @@
         <div class="row">
           <div class="col-lg-4">
             <!-- sidebar -->
-            <div class="card mb-4 ">
+            <div class="card mb-4">
               <div
-                class="card-header rounded-1 text-center"
-                style="background-color: rgba(0, 0, 0, 0.8)"
+                class="card-body rounded-1 text-center"
+                style="background-color: while"
               >
                 <div class="d-block justify-content-center">
                   <img
@@ -67,17 +67,14 @@
                     class="rounded-circle img-fluid"
                     style="width: 150px"
                   />
-                  <h5 class="my-3 text-light">John Smith</h5>
-                  <p class="mb-3 text-light">
+                  <h5 class="my-3 text-dark">John Smith</h5>
+                  <p class="mb-3 text-dark">
                     <i class="fab fa-empire"></i>Điểm tích lũy: 120
                   </p>
                   <div
                     class="d-flex align-items-center justify-content-center mb-2 font-weight-bold"
                   >
-                    <button type="button " class="btn btn-primary">
-                      Đăng xuất
-                      <i class="bi bi-box-arrow-right"></i>
-                    </button>
+
                   </div>
                   <hr />
                 </div>
@@ -85,17 +82,17 @@
                 <div class="container">
                   <div class="row">
                     <div class="col-2"></div>
-                    <div class="col-9 text-start card-header">
+                    <div class="col-9 text-start">
                       <a class="text-decoration-none section-link" href="#"
                         ><i
-                          class="bi bi-person-bounding-box divider mx-3 font-weight-bold "
+                          class="bi bi-person-bounding-box divider mx-3 font-weight-bold"
                         ></i
                         >Thông tin tài khoản</a
                       >
                       <hr />
                       <a
                         class="text-decoration-none section-link font-weight-bold"
-                        href="#"
+                        href="./user_point.html"
                         ><i
                           class="bi bi-clock-history section-link divider mx-3"
                         ></i
@@ -104,7 +101,7 @@
                       <hr />
                       <a
                         class="text-decoration-none section-link font-weight-bold"
-                        href="#"
+                        href=""
                       >
                         <i
                           class="bi bi-ticket-perforated section-link divider mx-3"
@@ -112,13 +109,6 @@
                         >Vé đã đặt</a
                       >
                       <hr />
-                      <a
-                        class="text-decoration-none section-link font-weight-bold"
-                        href="#"
-                      >
-                        <i class="bi bi-ticket-perforated divider mx-3"></i>Vé
-                        đã hủy</a
-                      >
                     </div>
                   </div>
                 </div>
@@ -130,16 +120,17 @@
             <div class="col">
               <div class="card">
                 <div
-                  class="bg-light card card-header p-3 mb-4 text-uppercase display-"
+                  class="bg-light card card-header p-3 mb-4 text-uppercase font-weight: bold"
                 >
                   Vé Đã Đặt
                 </div>
-                <div class="card-body">
-                  <div class="table-responsive table-bordered rounded shadow">
-                    <table class="table table-striped table-hover text-center">
+              <div class="card">
+                <div class="card-body divider my-3">
+                  <div class="table-responsive table-bordered rounded ">
+                    <table class="table table-striped table-hover text-center ">
                       <thead
                         style="
-                          background-color: rgba(0, 0, 0, 0.8);
+                          background-color: #f26b38;
                           color: #fff;
                         "
                       >
@@ -152,59 +143,71 @@
                       </thead>
                       <tbody>
                         <tr>
-                          <td>THANH GƯƠM DIỆT QUỶ</td>
+                          <td>CÂU LẠC BỘ SÁT THỦ</td>
                           <td>21/01/2017 8:08</td>
-                          <td>Tổng Tiền</td>
+                          <td>70.000 VND</td>
+                          <td class="text-danger" >ĐỢI NHẬN VÉ</td>
+                        </tr>
+                        <tr>
+                          <td>SUPPER MARIO </td>
+                          <td>21/01/2017 8:08</td>
+                          <td>70.000 VND</td>
 
-                          <td>ĐỢI NHẬN VÉ</td>
+                          <td class="text-danger" >ĐỢI NHẬN VÉ</td>
+                        </tr>
+                        <tr>
+                          <td>ĐẢO TỘI ÁC</td>
+                          <td>21/01/2017 8:08</td>
+                          <td>70.000 VND</td>
+
+                          <td class="text-danger" >ĐỢI NHẬN VÉ </td>
+                        </tr>
+                        <tr>
+                          <td>BIỆT ĐỘI RẤT ỔN</td>
+                          <td>21/01/2017 8:08</td>
+                          <td>70.000 VND</td>
+                          <td class="text-success" >ĐÃ NHẬN VÉ</td>
+                        </tr>
+                        <tr>
+                          <td>CUỘC CHIẾN BẤT TỬ</td>
+                          <td>21/01/2017 8:08</td>
+                          <td>70.000 VND</td>
+
+                          <td class="text-success">ĐÃ NHẬN VÉ</td>
+                        </tr>
+                        <tr>
+                          <td>TAY ĐẤM HUYỀN THOẠI</td>
+                          <td>21/01/2017 8:08</td>
+                          <td>70.000 VND</td>
+
+                          <td class="text-success" >ĐÃ NHẬN VÉ</td>
+                        </tr>
+                        <tr>
+                          <td>PHI VỤ HOÀN HẢO</td>
+                          <td>21/01/2017 8:08</td>
+                          <td>70.000 VND</td>
+
+                          <td class="text-success" >ĐÃ NHẬN VÉ</td>
+                        </tr>
+                        <tr>
+                          <td>SIÊU LỪA GẶP SIÊU LẦY</td>
+                          <td>21/01/2017 8:08</td>
+                          <td>100.000 VND</td>
+
+                          <td class="text-success" >ĐÃ NHẬN VÉ</td>
                         </tr>
                         <tr>
                           <td>THANH GƯƠM DIỆT QUỶ</td>
                           <td>21/01/2017 8:08</td>
                           <td>100.000 VND</td>
-                          <td>ĐỢI NHẬN VÉ</td>
+                          <td class="text-success">ĐÃ NHẬN VÉ</td>
                         </tr>
                         <tr>
-                          <td>THANH GƯƠM DIỆT QUỶ</td>
+                          <td>CƠN THỊNH NỘ</td>
                           <td>21/01/2017 8:08</td>
                           <td>100.000 VND</td>
 
-                          <td>ĐÃ NHẬN VÉ</td>
-                        </tr>
-                        <tr>
-                          <td>THANH GƯƠM DIỆT QUỶ</td>
-                          <td>21/01/2017 8:08</td>
-                          <td>100.000 VND</td>
-
-                          <td>ĐÃ NHẬN VÉ</td>
-                        </tr>
-                        <tr>
-                          <td>THANH GƯƠM DIỆT QUỶ</td>
-                          <td>21/01/2017 8:08</td>
-                          <td>100.000 VND</td>
-
-                          <td>ĐÃ NHẬN VÉ</td>
-                        </tr>
-                        <tr>
-                          <td>THANH GƯƠM DIỆT QUỶ</td>
-                          <td>21/01/2017 8:08</td>
-                          <td>100.000 VND</td>
-
-                          <td>ĐÃ NHẬN VÉ</td>
-                        </tr>
-                        <tr>
-                          <td>THANH GƯƠM DIỆT QUỶ</td>
-                          <td>21/01/2017 8:08</td>
-                          <td>100.000 VND</td>
-
-                          <td>ĐÃ NHẬN VÉ</td>
-                        </tr>
-                        <tr>
-                          <td>THANH GƯƠM DIỆT QUỶ</td>
-                          <td>21/01/2017 8:08</td>
-                          <td>100.000 VND</td>
-
-                          <td>ĐÃ NHẬN VÉ</td>
+                          <td class="text-success">ĐÃ NHẬN VÉ</td>
                         </tr>
                       </tbody>
                     </table>
@@ -212,32 +215,38 @@
                       <nav
                         aria-label="Page navigation example justify-content-center "
                       >
-                        <ul class="pagination">
-                          <li class="page-item">
+                        <ul class="pagination border-0">
+                          <li class="page-item ">
                             <a
-                              class="page-link text-primary"
+                              class="page-link "
                               href="#"
                               aria-label="Previous"
                             >
-                              <span aria-hidden="true">&laquo;</span>
+                              <span aria-hidden="true">Trước</span>
                             </a>
                           </li>
                           <li class="page-item">
-                            <a class="page-link text-primary" href="#">1</a>
+                            <a class="page-link " href="#">1</a>
                           </li>
                           <li class="page-item">
-                            <a class="page-link text-primary" href="#">2</a>
+                            <a class="page-link " href="#">2</a>
                           </li>
-                          <li class="page-item text-primary">
-                            <a class="page-link text-primary" href="#">3</a>
+                          <li class="page-item ">
+                            <a class="page-link " href="#">...</a>
+                          </li>
+                          <li class="page-item ">
+                            <a class="page-link " href="#">6</a>
+                          </li>
+                          <li class="page-item ">
+                            <a class="page-link " href="#">7</a>
                           </li>
                           <li class="page-item">
                             <a
-                              class="page-link text-primary"
+                              class="page-link "
                               href="#"
                               aria-label="Next"
                             >
-                              <span aria-hidden="true">&raquo;</span>
+                              <span aria-hidden="true">Sau</span>
                             </a>
                           </li>
                         </ul>
