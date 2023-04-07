@@ -1,0 +1,21 @@
+để sử dụng thanh toán Paypal 
+- Bước 1 : Đăng kí tài khoản qua link : https://www.paypal.com/us/webapps/mpp/account-selection
+- Bước 2 : Đăng nhập vào  
+- Bước 3 : kích chọn "Apps & Credentials" chọn "Create App" nhập các trường yêu cầu để lấy Client_ID 
+- Bước 4 : trong project Agularjs  ở file index chèn đoạn mã js :  <script 
+    src="https://www.paypal.com/sdk/js?client-id= ..(Lấy từ lúc "create App")..."
+  </script>
+
+- Bước 5 : chạy lệnh terminal : npm i creditcardpayments
+- Bước 6 : trong file app-component-html : thêm thẻ DIV với Id như vd bên : <div id = "myPaypalButtons"></div>
+- Bước 7 : trogn app-component.ts : 
+		+ import : import {render} from "creditcardpayments/creditCardPayments";
+		+ trong contructor thêm :  render({
+      						id:"#myPaypalButtons",
+      						currency:"USD",
+      						value:"100.00",
+      						onApprove:(details => {
+        						alert("Transaction Successful")
+      							})
+    						}) 
+- Bước 8 : tiến hành thanh toán thử
