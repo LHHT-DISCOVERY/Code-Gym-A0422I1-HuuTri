@@ -16,7 +16,7 @@ const routes: Routes = [
     path: '', component: LohangListComponent
     
   },
-  {
+  { 
     path: 'createLoHang', component: LohangCreateComponent
     
   }

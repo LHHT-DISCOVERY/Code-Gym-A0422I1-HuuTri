@@ -1,19 +1,30 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
+  "movieList": [{
+
+    "id" : 1 ,
+    "name" : "Biệt Đội Rất Ổn",
+    "image" : "https://kenh14cdn.com/thumb_w/800/pr/2023/photo1680845676678-1680845677261644474218-63816473369371.jpg",
+    "price" : 10 
+  },
+  {
+    "id" : 2 ,
+    "name" : "Siêu Lừa Gặp Siêu Lầy",
+    "image" : "https://kenh14cdn.com/thumb_w/800/pr/2023/photo1680845676678-1680845677261644474218-63816473369371.jpg",
+    "price" : 8
+  } ,
+  {
+    "id" : 3 ,
+    "name" : "Tay Đấm Huyền Thoại",
+    "image" : "https://kenh14cdn.com/thumb_w/800/pr/2023/photo1680845676678-1680845677261644474218-63816473369371.jpg",
+    "price" : 7
+  },
+
+  {
+    "id" : 4,
+    "name" : "Cuộc Chiến Bất Tử",
+    "image" : "https://kenh14cdn.com/thumb_w/800/pr/2023/photo1680845676678-1680845677261644474218-63816473369371.jpg",
+    "price" : 9 
   }
+
+]
 }

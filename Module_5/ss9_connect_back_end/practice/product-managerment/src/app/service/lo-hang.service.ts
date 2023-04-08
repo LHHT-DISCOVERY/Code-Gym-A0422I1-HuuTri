@@ -16,7 +16,7 @@ export class LoHangService {
       return this.httpClient.get<LoHang[]>(`${API_URL}/loHangList`);
     }
     saveLoHang(loHang: LoHang): Observable<LoHang> {
-      return this.httpClient.post<LoHang>(`${API_URL}/loHangList`, loHang);
+      return this.httpClient.posx`t<LoHang>(`${API_URL}/loHangList`, loHang);
     }
     findById(id: number): Observable<LoHang> {
   

@@ -1,0 +1,23 @@
+<div class="container-fluid bg-form">
+  <div class="row m-4 d-flex">
+  </div>
+  <table class="table table-striped table-hover">
+    <thead class="thead-inverse">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Image</th>
+        <th>Price</th>
+        <th>PayPal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of movieList; index as i" >
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.Image}}</td>
+        <td>{{item.price }}</td>
+        <td> chua co phương thuc thanh toan </td>
+      </tr>
+    </tbody>
+  </table>
