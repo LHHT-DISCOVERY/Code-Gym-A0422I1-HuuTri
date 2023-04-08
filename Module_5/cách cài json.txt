@@ -1,0 +1,2 @@
+cài json-server : npm i json-server
+tạo file data.json : json-server --watch data.json

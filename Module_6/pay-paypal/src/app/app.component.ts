@@ -13,9 +13,9 @@ export class AppComponent {
     render({
       id:"#myPaypalButtons",
       currency:"USD",
-      value:"100.00",
+      value:"5.00",
       onApprove:(details => {
-        alert("Transaction Successful")
+        alert("Pay Successful")
       })
     })
 
