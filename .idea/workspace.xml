@@ -26,19 +26,7 @@
       <change afterPath="$PROJECT_DIR$/Module_5/ss2_typescript/exercise/fibonacci_assignment/src/index.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Module_5/ss2_typescript/exercise/fibonacci_assignment/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/service/lo-hang.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ss9_connect_back_end/practice/product-managerment/src/app/service/lo-hang.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_6/pay-paypal/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/Module_6/pay-paypal/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_6/pay-paypal/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Module_6/pay-paypal/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_6/pay-paypal/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Module_6/pay-paypal/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_6/pay-paypal/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module_6/pay-paypal/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_6/pay-paypal/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_6/pay-paypal/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_6/pay-paypal/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module_6/pay-paypal/src/app/app.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_6/pay-paypal/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module_6/pay-paypal/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_6/pay-paypal/src/app/data/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/Module_6/pay-paypal/src/app/data/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_6/pay-paypal/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module_6/pay-paypal/src/environments/environment.prod.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_6/pay-paypal/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Module_6/pay-paypal/src/environments/environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_6/pay-paypal/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Module_6/pay-paypal/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +62,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="ts.external.directory.path" value="F:\Code_Gym_A0422I1_HuuTri\Module_5\ss9_connect_back_end\practice\product-managerment\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="F:\Code_Gym_A0422I1_HuuTri\Module_5\exam-module\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -186,6 +174,8 @@
       <workItem from="1680521286615" duration="449000" />
       <workItem from="1680865769019" duration="5792000" />
       <workItem from="1680929280255" duration="4069000" />
+      <workItem from="1681059001606" duration="906000" />
+      <workItem from="1681099046071" duration="2186000" />
     </task>
     <servers />
   </component>
