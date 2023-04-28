@@ -3,7 +3,20 @@
   color: #f26b38;
 }
 
-.pagination .page-link:hover {
+.pagination .page-link{
+  background-color: aliceblue;
+  color: black;
+  border-color: white;
+}
+
+.page-item button {
+  border: none;
+  height: 90%;
+}
+
+
+
+.pagination .page-link.active {
   background-color: #f26b38;
   color: aliceblue;
 }
@@ -16,9 +29,6 @@ section .card a:not(:hover) {
   color: rgb(0, 0, 0);
 }
 
-button:hover {
-  color: white;
-}
 
 button {
   color: black;

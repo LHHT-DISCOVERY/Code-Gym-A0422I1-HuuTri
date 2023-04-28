@@ -19,6 +19,7 @@ export class UserPointHistoryComponent implements OnInit {
   errMessage: string;
   totalPoint: number;
   searchForm: FormGroup;
+  validatePage: string;
 
   getSumTotalPointByCustomer() {
     this.pointService.getSumPointByCustomer().subscribe(value => {
@@ -33,8 +34,8 @@ export class UserPointHistoryComponent implements OnInit {
   constructor(private pointService: PointService, private  router: Router, @Inject(LOCALE_ID) private locale: string) {
     this.searchForm = new FormGroup({
       startDate: new FormControl('', [Validators.required]),
-      endDate: new FormControl(),
-    }, [this.checkEndDate, this.checkNowDate])
+      endDate: new FormControl('', [Validators.required]),
+    }, [this.checkEndDate, this.checkNowStartDate, this.checkNowEndDate])
   }
 
   ngOnInit(): void {
@@ -58,7 +59,8 @@ export class UserPointHistoryComponent implements OnInit {
   getPointList(page: number) {
     const startDate = (this.searchForm.controls.startDate.value)
     const endDate = (this.searchForm.controls.endDate.value)
-    if (startDate !== '' && endDate !== '') {
+    this.validatePage = ""
+    if (this.searchForm.valid) {
       this.pointService.getAllPointByCustomerDateBetween(startDate, endDate, page, this.size).subscribe(value => {
         this.pointList = value.content
         this.indexPagination = value.number;
@@ -87,12 +89,20 @@ export class UserPointHistoryComponent implements OnInit {
     }
   }
 
-  checkNowDate(form: any) {
+  checkNowStartDate(form: any) {
     const nowDate = new Date().getTime()
     const startDate = new Date(form.controls.startDate.value).getTime()
+    if ((startDate > nowDate)) {
+      return {checkNowStartDate: true}
+    }
+  }
+
+
+  checkNowEndDate(form: any) {
+    const nowDate = new Date().getTime()
     const endDate = new Date(form.controls.endDate.value).getTime()
-    if ((startDate > nowDate || endDate > nowDate)) {
-      return {checkDate: true}
+    if (endDate > nowDate) {
+      return {checkNowEndDate: true}
     }
   }
 
@@ -105,11 +115,15 @@ export class UserPointHistoryComponent implements OnInit {
   validPage(page: number) {
     if (page >= this.totalPages || page < 0) {
       (document.getElementById("input-page-choice") as HTMLInputElement).value = "";
+      this.validatePage = "Trang nhập vào phải nằm trong khoảng từ trang  1 đến trang " + this.totalPages;
       return false;
     }
     if (isNaN(Number(page))) {
       (document.getElementById("input-page-choice") as HTMLInputElement).value = "";
+      this.validatePage = "Số trang nhập vào không được chứ kí tự"
+      return false;
     }
+    this.validatePage = ""
     return true;
   }
 

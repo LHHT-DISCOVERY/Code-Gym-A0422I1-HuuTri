@@ -130,6 +130,7 @@
                         "
                     >
                     <tr>
+                      <th> #</th>
                       <th>TÊN PHIM</th>
                       <th>NGÀY ĐẶT</th>
                       <th>TỔNG TIỀN</th>
@@ -137,9 +138,10 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr *ngFor="let t of ticketList">
-                      <td>{{t.showTime.movie.name}}</td>
-                      <td>{{t.book_datetime   | date: 'dd-MM-yyyy'}}</td>
+                    <tr *ngFor="let t of ticketList index as i">
+                      <td class="text-left">{{i + 1 + indexPagination * 5}}</td>
+                      <td>{{t.showtime.movie.name}}</td>
+                      <td>{{t.bookDateTime   | date: 'dd/MM/yyyy'}}</td>
                       <td>{{t.price  | currency : 'VND'}}</td>
                       <td *ngIf="t.status == false else  elseBlock " class="text-danger">ĐỢI NHẬN VÉ</td>
                       <ng-template #elseBlock>
@@ -149,20 +151,20 @@
                     </tbody>
                   </table>
                   <div class="d-flex justify-content-center m-md-auto ">
-                    <div *ngIf="(totalElements> 0)">
+                    <div *ngIf="(totalElements> 0) else isEmpty">
                       <ul class="pagination justify-content-center">
                         <li>
                           <button class="page-link"
                                   *ngIf="indexPagination != 0 ? 'disable': ''"
                                   (click)="getAllTicketByCustomer(indexPagination - 1)">
-                            Trước
+                            &laquo;
                           </button>
                         </li>
                         <li class="page-item" *ngFor="let item of [].constructor(totalPages); let i = index">
 
                           <ng-container *ngIf="i < 3 || i >= totalPages - 3">
                             <button class="page-link"
-                                    [ngClass]="indexPagination == i ? 'current': ''"
+                                    [ngClass]="{'page-link active': indexPagination == i}"
 
                                     (click)="getAllTicketByCustomer(i) ">
                               {{i + 1}}
@@ -171,14 +173,14 @@
                           <ng-container
                             *ngIf="3 <= i && i < totalPages - 3 &&(i == indexPagination + 1 || i== indexPagination-1 || i ==indexPagination)">
                             <button class="page-link"
-                                    [ngClass]="indexPagination == i ? 'current': ''"
+                                    [ngClass]="{'page-link active': indexPagination == i}"
 
                                     (click)="getAllTicketByCustomer(i)">
                               {{i + 1}}
                             </button>
                           </ng-container>
                           <ng-container
-                            *ngIf="(3 < i && i < totalPages - 3 && i != indexPagination && i != indexPagination + 1 && i!=indexPagination-1)">
+                            *ngIf="(3 < i && i < totalPages - 5 && i != indexPagination && i != indexPagination + 1 && i!=indexPagination-1)">
                             <button class="page-link">
                               ...
                             </button>
@@ -189,7 +191,7 @@
                                   *ngIf="indexPagination < totalPages - 1 ? 'disable': ''"
 
                                   (click)="getAllTicketByCustomer(indexPagination + 1)">
-                            Tiếp
+                            &raquo;
                           </button>
                         </li>
                         <li class="page-item">
@@ -205,12 +207,18 @@
                                    aria-label="Search" aria-describedby="search-addon"/>
                             <span class="input-group-text border-0" id="search-addon">
      <button class="page-link d-flex align-items-center" style=" height: 30px;"
-             (click)="getPageChoice(element.value-1)"> Đi tới </button>
+             (click)="getPageChoice(element.value-1)"> &raquo;</button>
   </span>
                           </div>
                         </li>
                       </ul>
+                      <p class="text-danger divider my-2"> {{validatePage}}</p>
                     </div>
+                    <ng-template #isEmpty class="clearfix">
+                      <div style="font-size: 18px; margin-left: 73px" class="hint-text">Không tìm thấy kết quả phù
+                        hợp<b> </b>
+                      </div>
+                    </ng-template>
                   </div>
                 </div>
               </div>

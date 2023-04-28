@@ -2,9 +2,23 @@
 .card a:active {
   color: #f26b38;
 }
+.pagination .page-link{
+  background-color: aliceblue;
+  color: black;
+  border-color: white;
+}
 
+.page-item button {
+  border: none;
+  height: 90%;
+}
 
 .pagination .page-link:hover {
+  background-color: #f26b38;
+  color: aliceblue;
+}
+
+.pagination .page-link.active {
   background-color: #f26b38;
   color: aliceblue;
 }
@@ -28,6 +42,11 @@ button {
 
 .text-decoration-none {
   color: rgb(0, 0, 0);
+}
+
+.section-link.active{
+  background-color: #f26b38;
+  color: aliceblue;
 }
 
 

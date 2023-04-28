@@ -19,7 +19,7 @@ import java.util.List;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:4200", allowedHeaders = "*")
-@RequestMapping("api/customer")
+@RequestMapping("api/user")
 public class PointController {
     @Autowired
     private IPointService iPointService;
@@ -30,6 +30,7 @@ public class PointController {
     @Autowired
     private IAccountService iAccountService;
 
+
     /**
      * @param price
      * @param descriptions
@@ -37,16 +38,15 @@ public class PointController {
      * @Method : Save Point
      * @Author : TriLHH
      */
-    @PostMapping("/savePoint")
-    public ResponseEntity<?> savePoint(@RequestParam(name = "price", required = false, defaultValue = "0") int price, @RequestParam String descriptions) {
+    @PostMapping("/save-point")
+    public ResponseEntity<Void> savePoint(@RequestParam(name = "price", required = false, defaultValue = "0") int price, @RequestParam String descriptions) {
         Account account = iAccountService.findByUsername("customer4");
         Customer customer = iCustomerService.findCustomerByAccount(account);
         Date dateBookingTicket = new Date();
         int pointPlus = (int) (price * 0.02);
-        String description = "do xem phim : " + descriptions;
         Point point = new Point();
         point.setDate(dateBookingTicket);
-        point.setDescription(description);
+        point.setDescription(descriptions);
         point.setPoint(pointPlus);
         point.setCustomers(customer);
         point.setIsDelete(false);
@@ -61,7 +61,7 @@ public class PointController {
      * @Author : TriLHH
      */
 
-    @GetMapping("/customer-point/{page}")
+    @GetMapping("/point/{page}")
     public ResponseEntity<Page<Point>> getAllPointByCustomer(@PathVariable int page) {
         Account account = iAccountService.findByUsername("customer4");
         Customer customer = iCustomerService.findCustomerByAccount(account);
@@ -79,7 +79,7 @@ public class PointController {
      * @Author : TriLHH
      */
 
-    @GetMapping("/customer-sum-point")
+    @GetMapping("/sum-point")
     public ResponseEntity<Integer> sumPoint() {
         Account account = iAccountService.findByUsername("customer4");
         Customer customer = iCustomerService.findCustomerByAccount(account);
@@ -103,7 +103,7 @@ public class PointController {
      * @Author : TriLHH
      */
 
-    @GetMapping("/customer-search-point")
+    @GetMapping("/search-point")
     public ResponseEntity<Page<Point>> getAllPointByDateBetween(@RequestParam("startDate") String startDate,
                                                                 @RequestParam("endDate") String endDate,
                                                                 @RequestParam int page, @RequestParam int size) {

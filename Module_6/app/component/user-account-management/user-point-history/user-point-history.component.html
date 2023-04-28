@@ -133,8 +133,12 @@
                       >
                       <div class="col-sm-9">
                         <input formControlName="startDate" type="date" placeholder="dd/MM/yyyy" class="form-control"/>
-                        <p class="text-warning divider my-2" *ngIf="searchForm.controls.startDate.hasError('checkDate')">
-                          Thời gian tìm kiếm không vượt quá thời gian hiện tại</p>
+                        <p class="text-danger divider my-2"
+                           *ngIf="searchForm.controls.startDate.hasError('required') && searchForm.controls.startDate.touched">
+                          Thời gian bắt đầu tìm kiếm không được để trống</p>
+                        <p class="text-danger divider my-2"
+                           *ngIf="searchForm.hasError('checkNowStartDate')">
+                          Thời gian bắt đầu tìm kiếm không vượt quá thời gian hiện tại</p>
                       </div>
                     </div>
                     <div class="row mb-3">
@@ -146,9 +150,14 @@
                       <div class="col-sm-9">
                         <input formControlName="endDate" type="date" placeholder="dd/MM/yyyy"
                                class="form-control"/>
-                        <p class="text-danger divider my-2" *ngIf="searchForm.hasError('checkDate')"> Thời gian tìm kiếm
+                        <p class="text-danger divider my-2"
+                           *ngIf="searchForm.controls.endDate.hasError('required') && searchForm.controls.endDate.touched">
+                          Thời gian kết thúc tìm kiếm không được để trống</p>
+                        <p class="text-danger divider my-2" *ngIf="searchForm.hasError('checkNowEndDate')"> Thời gian
+                          kết thúc tìm kiếm
                           không được vượt quá thời gian hiện tại</p>
-                        <p class="text-warning divider my-2" *ngIf="searchForm.hasError('startDateLargerEndDate')"> (*Lưu
+                        <p class="text-warning divider my-2" *ngIf="searchForm.hasError('startDateLargerEndDate')">
+                          (*Lưu
                           ý : Thời gian kết thúc tính từ sau thời gian bắt đầu
                           tìm kiếm )</p>
                       </div>
@@ -205,15 +214,17 @@
                           "
                       >
                       <tr>
+                        <th> #</th>
                         <th> NGÀY TẠO</th>
-                        <th> TÊN PHIM </th>
+                        <th> TÊN PHIM</th>
                         <th> ĐIỂM CỘNG</th>
                       </tr>
                       </thead>
                       <tbody>
-                      <tr *ngFor="let p of pointList">
-                        <td class="text-left">{{p.date | date: 'dd-MM-yyyy'}}</td>
-                        <td class="text-left">{{p.description}}</td>
+                      <tr *ngFor="let p of pointList index as i">
+                        <td class="text-left">{{i + 1 + indexPagination * 5}}</td>
+                        <td class="text-left">{{p.date | date: 'dd/MM/yyyy  HH:mm'}}</td>
+                        <td class="text-left">PHIM : {{p.description}}</td>
                         <td class="text-left">+ {{p.point}}</td>
                       </tr>
                       </tbody>
@@ -224,13 +235,13 @@
                           <li>
                             <button class="page-link" *ngIf="indexPagination != 0 ? 'disable': ''"
                                     (click)="getPointList(indexPagination - 1)">
-                              Trước
+                              &laquo;
                             </button>
                           </li>
                           <li class="page-item" *ngFor="let item of [].constructor(totalPages); let i = index">
 
                             <ng-container *ngIf="i < 3 || i >= totalPages - 3">
-                              <button class="page-link" [ngClass]="indexPagination == i ? 'current': ''"
+                              <button class="page-link" [ngClass]="{'page-link active': indexPagination == i}"
 
                                       (click)="getPointList(i)">
                                 {{i + 1}}
@@ -238,23 +249,23 @@
                             </ng-container>
                             <ng-container
                               *ngIf="3 <= i && i < totalPages - 3 &&(i == indexPagination + 1 || i== indexPagination-1 || i ==indexPagination)">
-                              <button class="page-link" [ngClass]="indexPagination == i ? 'current': ''"
+                              <button class="page-link" [ngClass]="{'page-link active': indexPagination == i}"
                                       (click)="getPointList(i)">
                                 {{i + 1}}
                               </button>
                             </ng-container>
                             <ng-container
-                              *ngIf="(3 < i && i < totalPages - 3 && i != indexPagination && i != indexPagination + 1 && i!=indexPagination-1)">
-                              <button class="page-link">
+                              *ngIf="(3 < i && i < totalPages - 5 && i != indexPagination && i != indexPagination + 1 && i!=indexPagination-1)">
+                              <a class="page-link">
                                 ...
-                              </button>
+                              </a>
                             </ng-container>
                           </li>
                           <li>
                             <button class="page-link" *ngIf="indexPagination < totalPages - 1 ? 'disable': ''"
 
                                     (click)="getPointList(indexPagination + 1)">
-                              Tiếp
+                              &raquo;
                             </button>
                           </li>
                           <li class="page-item">
@@ -262,24 +273,29 @@
                                 style="background-color: #f26b38 ; color: white">{{indexPagination + 1}}
                             / {{totalPages}}</span>
                           </li>
-                          <li class="page-item" >
+                          <li class="page-item">
                             <div class="input-group rounded">
                               <input id="input-page-choice" style="width: 150px; height: 40px;" type="search"
                                      class="form-control rounded"
                                      placeholder="chọn trong {{totalPages}} trang" #element
                                      aria-label="Search" aria-describedby="search-addon"/>
                               <span class="input-group-text border-0" id="search-addon">
-     <button class="page-link d-flex align-items-center" style=" height: 30px;" (click)="getPageChoice(element.value-1)"> Đi tới </button>
+     <button class="page-link d-flex align-items-center" style=" height: 30px;"
+             (click)="getPageChoice(element.value-1)">  &raquo; </button>
   </span>
+
                             </div>
                           </li>
                         </ul>
+                        <p class="text-danger divider my-2"> {{validatePage}}</p>
                       </div>
                       <ng-template #isEmpty class="clearfix">
-                        <div style="font-size: 18px; margin-left: 73px" class="hint-text">Không tìm thấy kết quả phù hợp<b> </b></div>
+                        <div style="font-size: 18px; margin-left: 73px" class="hint-text">Không tìm thấy kết quả phù hợp<b> </b>
+                        </div>
                       </ng-template>
                     </div>
                   </div>
+
                 </div>
               </div>
             </div>
