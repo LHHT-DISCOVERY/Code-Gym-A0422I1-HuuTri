@@ -19,7 +19,7 @@ Ngoài ra, repository còn chứa các ví dụ minh họa và dự án thực t
 Git & HTML , Tổng quan Javascript , lập trình hướng đối tượng , thuật toán
 
 Technologies: HTML , CSS , Javascript
-Duration: 2 tháng
+
 Link: https://github.com/LHHT-DISCOVERY/Code_Gym_A0422I1_HuuTri/tree/main/Module_1
 
 # Module2
@@ -27,23 +27,21 @@ Java, OOP Java , Clean Code & Refactoring , Java Collection Framework , Xử lí
 
 
 Technologies: Java Core, Java OOP , Clean Code & Refactoring , Java Collection Framework
-Duration: 2 tháng
+
 Link: https://github.com/LHHT-DISCOVERY/Code_Gym_A0422I1_HuuTri/tree/main/Module_2.1/src
 
 # Module3
 Database , CSS , Boostrap , MVC , JSP Sevlet
 
-
 Technologies: My SQL, CSS , Boostrap , MVC ,JSP Sevlet
-Duration: 2 tháng
+
 Link: https://github.com/LHHT-DISCOVERY/Code_Gym_A0422I1_HuuTri/tree/main/Module_3
 
 # Module4
 Spring Boot , Spring Data JPA , Validation , AOP , Session & Cookies , Web Service & RESTful , JQuery & AJAX , Deployment
 
-
 Technologies: Spring Boot , Spring Data JPA , Validation , AOP , Session & Cookies , Web Service & RESTful , JQuery & AJAX
-Duration: 2 tháng
+
 Link: https://github.com/LHHT-DISCOVERY/Code_Gym_A0422I1_HuuTri/tree/main/Module_4
 
 # Module5
@@ -51,15 +49,14 @@ UX/UI , TypeScript , Angular
 
 
 Technologies: Boostrap , TypeScript , Angular
-Duration: 2 tháng
+
 Link: https://github.com/LHHT-DISCOVERY/Code_Gym_A0422I1_HuuTri/tree/main/Module_5
 
 # Module6
 Phát triển hoàn thiện một project với Spring Boot và Angular
 
-
 Technologies: Spring Boot , Angular
-Duration: 2.5 tháng
+
 Link: https://github.com/A0422I1-Org
 
 ^__^
