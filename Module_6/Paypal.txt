@@ -19,3 +19,5 @@
       							})
     						}) 
 - Bước 8 : tiến hành thanh toán thử
+
+- npm i ngx-toastr@12.1.0 --save
