@@ -1,4 +1,4 @@
-## KHÓA HỌC Code_Gym_A0422I1_HuuTri
+#KHÓA HỌC Code_Gym_A0422I1_HuuTri
 # Lập trình Java Web Fullstack with Fontend AngularJS
  Repository này là một hướng dẫn đầy đủ cho các lập trình viên muốn học từ cơ bản đến nâng cao lập trình web và phát triển các ứng dụng web fullstack bằng Java,
  với phần frontend sử dụng AngularJS và phần backend kết nối với cơ sở dữ liệu MySQL.
